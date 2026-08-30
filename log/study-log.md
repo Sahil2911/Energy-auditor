@@ -10,12 +10,12 @@ Updated daily. The Reviewer reads this before each assessment.
 | Started | 30 August 2026 |
 | Curriculum ends | 14 September 2026 |
 | **Exam** | **26 September 2026, 14:00–16:30** |
-| Days completed | **1 / 15** |
+| Days completed | **3 / 16** |
 | Buffer after curriculum | 11 days |
 
 ```
-Curriculum  [██                            ]   7%   1/15 days
-Book-4 ch.  [██                            ]   7%   1/15 chapters (ch.1 in progress)
+Curriculum  [██████                        ]  19%   3/16 sessions
+Book-4 ch.  [██                            ]   7%   1/15 chapters (ch.1 nearly done)
 ```
 
 **Days to exam: 26.**
@@ -212,3 +212,26 @@ overloaded day.
 **Curriculum now 16 sessions**, ending 14 Sep. Buffer 11 days.
 
 **Next:** Day 2A — combustion air, one rung at a time.
+
+---
+
+### Days 2A & 2B — 30 August 2026
+
+**Both completed.** The rung-by-rung format worked where the combined lesson had
+not. No blocking issues reported.
+
+**Covered:** ultimate analysis as kg/kg · oxygen requirements from the reactions ·
+the 23% conversion to air · deriving 11.6, 34.8, 4.35 · the O₂/8 fuel-oxygen
+credit · theoretical air · excess air from flue gas O₂ · mass in = mass out ·
+dry flue gas mass · CO₂ carbon balance · the heat-balance rationale for the
+indirect method.
+
+**Chapter 1 (Boilers) now substantially covered** — direct method, evaporation
+ratio, combustion, flue gas, CO₂. Remaining: the seven losses (Day 3).
+
+**Note for the Reviewer:** completion was self-reported without drill answers, so
+retention is unverified. Day 3 therefore opens with a six-question readiness
+check on the 2A/2B rungs. If that check goes badly, the rungs need revisiting
+before the losses.
+
+**Next:** Day 3 — the indirect method, all seven losses.
