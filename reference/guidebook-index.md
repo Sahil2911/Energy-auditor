@@ -20,21 +20,21 @@ every remaining day sharper.
 
 | Ch. | Topic | Page |
 |---|---|---|
-| 1 | Boilers | |
-| 2 | Furnaces | |
-| 3 | Cogeneration, Turbines (gas, steam) | |
-| 4 | Heat Exchangers | |
-| 5 | Electric Motors, Variable Speed Drives | |
-| 6 | Fans and Blowers | |
-| 7 | Water Pumps | |
-| 8 | Compressors | |
-| 9 | HVAC systems | |
-| 10 | Performing Financial Analysis | |
-| 11 | Energy Performance Assessment in power plants | |
-| 12 | Energy Performance Assessment in steel industry | |
-| 13 | Energy Performance Assessment in process industry (cement) | |
-| 14 | Energy Performance assessment in buildings | |
-| 15 | Textile Industry | |
+| 1 | Boilers | 1 |
+| 2 | Furnaces | 27 |
+| 3 | Cogeneration, Turbines (gas, steam) | 43 |
+| 4 | Heat Exchangers | 59 |
+| 5 | Electric Motors, Variable Speed Drives | 77 |
+| 6 | Fans and Blowers | 93 |
+| 7 | Water Pumps | 107 |
+| 8 | Compressors | 119 |
+| 9 | HVAC systems | 129 |
+| 10 | Performing Financial Analysis | 149 |
+| 11 | Energy Performance Assessment in power plants | 163 |
+| 12 | Energy Performance Assessment in steel industry | 195 |
+| 13 | Energy Performance Assessment in process industry (cement) | 215 |
+| 14 | Energy Performance assessment in buildings | 239 |
+| 15 | Textile Industry | 265 |
 
 ## The lookup tables — these matter most
 
