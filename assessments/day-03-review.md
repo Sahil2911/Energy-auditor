@@ -76,9 +76,54 @@ which changes nothing downstream.
 
 ---
 
-## 18th sitting N-1 — correct answer, then un-corrected
+## 18th sitting N-1 — the redo, done cold
 
-This is the finding that matters.
+Full page now seen. **Essentially flawless.** Every value reproduces:
+
+| Step | Hers | Verified |
+|---|---|---|
+| A_th | 16.43 | 16.428 ✓ |
+| Excess air | 23.5% | ✓ |
+| AAS | 20.29 | 20.289 ✓ |
+| m_dfg | 19.22 | 19.219 ✓ |
+| L1 | 6.431% | 6.431 ✓ |
+| L2 | 10.374% | 10.374 ✓ |
+| q (NG) | 430.99 kg/hr | ✓ |
+| q (FO) | 547.62 kg/hr | ✓ |
+| CO₂ NG | 1154 kg/hr | 1154.7 ✓ |
+| CO₂ FO | 1688.2 kg/hr | ✓ |
+
+Formulas written before substitution throughout. `L3` correctly identified as
+covering *both* radiation and air moisture. Two errors caught unaided on the page
+— the FO rate (560.29 → 547.62) and the carbon fraction (0.82 → 0.73).
+
+**Timing: 22:24 → 22:53, twenty-nine minutes** for a 20-mark question done cold,
+against a 25-minute target. Acceptable for a first unaided run.
+
+### The sanity habit has landed
+
+Written unprompted on the page:
+
+> **"Sanity: L₂ > L₁ for NG ✓"**
+
+That is exactly the reasoning from Day 2B — gas is 23% hydrogen, so the water
+loss should exceed the stack loss. Stated as a check, before moving on. This was
+introduced three sessions ago and is now automatic.
+
+### One addition slip
+
+```
+    6.431 + 10.374 + 1.2 = 18.005      → η = 81.995 ≈ 82.0 %
+    written:               17.915      → η = 82.085 %
+```
+
+A 0.09 error in a three-term addition. It propagated as 0.821 instead of 0.820,
+moving q from 431.52 to 430.99 — immaterial downstream, but it is an uncaught
+arithmetic slip.
+
+## The revert — the finding that matters
+
+Following on from the above, on the next page:
 
 ```
     First written:  431.52 × 0.82 × 3.67 = 1298.6     ← 0.82 is the EFFICIENCY
@@ -113,11 +158,30 @@ downward from the corrected value. Never leave two live versions.
 
 | Tag | Note |
 |---|---|
-| Arithmetic | m_dfg — 0.21 for 0.22 in one line |
+| Arithmetic | m_dfg 0.21 for 0.22; loss sum 17.915 for 18.005 |
 | **Method** | Correction not propagated; correct answer discarded |
 | Concept | 0 |
 | Units | 0 |
 | Curriculum | 0 |
+
+## The pattern across four sessions
+
+Method is no longer the constraint. Every residual error is arithmetic hygiene:
+
+| # | Slip | Caught? |
+|---|---|---|
+| 1 | q vs 1/q (1.826) | ✓ |
+| 2 | Steam cost ×0.903 instead of ÷ | ✗ |
+| 3 | Cp 0.45 in L1 | ✗ (data was missing) |
+| 4 | m_dfg — 0.21 for 0.22 | ✗ |
+| 5 | Carbon fraction 0.82 for 0.73 | ✓ |
+| 6 | FO rate 560.29 | ✓ |
+| 7 | Loss sum 17.915 for 18.005 | ✗ |
+| 8 | Reverted a correct answer | ✗ |
+
+Four caught, four missed — and the catches happen *during* the work, never at the
+end. There is no final checking pass. With questions being finished inside the
+time limit, the surplus should be spent on one.
 
 ## Verdict
 

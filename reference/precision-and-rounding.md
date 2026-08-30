@@ -88,3 +88,25 @@ Three errors found in official model answers so far:
 method. A defensible chain with full precision earns full marks even where it
 diverges slightly from the printed answer. Show the working and state
 assumptions.
+
+---
+
+## 5. The two-minute checking pass
+
+Questions are being finished inside the time limit, and the residual errors are
+all arithmetic rather than method. That is exactly the situation a checking pass
+fixes. Spend the surplus.
+
+At the end of every question, before moving on:
+
+1. **Re-add every sum.** Three-term additions of loss percentages are a repeat
+   offender — `6.431 + 10.374 + 1.2` was written as 17.915 instead of 18.005.
+2. **Re-read each constant against the data table.** Carbon fraction or
+   efficiency? 0.22 or 0.21? Cp of gas or of vapour? These look alike on the page
+   and read as plausible either way.
+3. **Check no line below a correction still uses the old value.** See §3.
+4. **Say the sanity sentence aloud for the final answer** — bigger or smaller
+   than the input, and why.
+
+Two minutes. On the evidence so far it is worth more marks than any further
+theory.
