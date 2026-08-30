@@ -1,24 +1,93 @@
 # Day 2 — Fuels, Combustion and Carbon Accounting
 
-**Time: 3.5 hours. Book-4 Chapter 1 (p. 1) / Book-2 Chapter 1.**
+**Time: 3.5 hours.**
 
-> **Change of order.** This was originally Day 3, with the indirect method on
-> Day 2. That was backwards — you cannot compute the indirect method without
-> stoichiometry first. Combustion now comes before the losses that depend on it.
+**Source:** BEE Book 2 Chapter 1, *Fuels and Combustion* —
+[beeindia.gov.in/sites/default/files/2Ch1.pdf](https://beeindia.gov.in/sites/default/files/2Ch1.pdf)
+(26 pp, free). Read §1.6–1.9 alongside Block A. Book 4 Ch 1 (p. 1) for the
+assessment procedure.
+
+> **Rewritten 30 Aug.** The first version gave formulas without the physics
+> behind them. That was a teaching fault, not a consequence of the missing
+> guidebook. This version builds every formula from what is physically
+> happening, and cites the official chapter it comes from.
 
 Goals:
-1. Go from an **ultimate analysis** to theoretical air, excess air and dry flue
-   gas mass — the three quantities every indirect-method question needs.
-2. Master the **carbon balance** and CO₂ emission calculation.
-3. Finish the natural-gas half of the question you could not complete on Day 1.
+1. Understand **what combustion actually is** and where the heat comes from.
+2. Derive theoretical air, excess air and dry flue gas mass rather than
+   memorising them.
+3. Master the **carbon balance** and CO₂ emissions.
+4. Understand **why the indirect method exists** — the bridge to Day 3.
 
 ---
 
-## Block A — Concept (50 min)
+## Block A — Concept (75 min)
 
-### A1. The ultimate analysis
+### A1. What burning actually is
 
-Every solid or liquid fuel question opens with a table like this:
+Combustion is **rapid oxidation of fuel, releasing heat**. Only three things in
+any fuel actually burn:
+
+| Reaction | Heat released |
+|---|---|
+| C + O₂ → CO₂ | **8,084 kCal/kg of carbon** |
+| 2H₂ + O₂ → 2H₂O | **28,922 kCal/kg of hydrogen** |
+| S + O₂ → SO₂ | **2,224 kCal/kg of sulphur** |
+| 2C + O₂ → 2CO (incomplete) | only 2,430 kCal/kg of carbon |
+
+Read the last row carefully. Carbon burnt to CO instead of CO₂ releases 2,430
+instead of 8,084 — **a loss of 5,654 kCal for every kg of carbon that gets it
+wrong.** That is the entire reason CO in flue gas is a loss term, and why an
+analyser reading CO is reporting money going up the stack.
+
+Hydrogen is by far the most energetic per kg — but it produces **water**, and
+that will cost you later. Hold that thought until A7.
+
+### A2. Why air, and what nitrogen does to you
+
+You need oxygen, but you get it from air, which is only **20.9% oxygen** — the
+rest is essentially nitrogen.
+
+Nitrogen does not burn. It is a **thermal diluent**: it enters cold, absorbs heat
+from the flame, and leaves hot up the stack. Every kg of nitrogen you drag
+through the furnace carries heat out of it.
+
+That single fact drives most of this paper:
+
+- It is why **excess air is expensive** — more air means more nitrogen heated and
+  discarded
+- It is why the **dry flue gas loss (L1)** is usually the largest loss
+- It is why nitrogen dominates the flue gas mass, as you will see in A5
+
+At high flame temperatures some nitrogen also oxidises to NOₓ — a pollutant, not
+an energy term, but it is why you cannot simply raise flame temperature freely.
+
+**Two different percentages for air, and they trip people up:**
+
+| Basis | Oxygen | Nitrogen | Used for |
+|---|---|---|---|
+| By **mass** | 23% | 77% | Theoretical air, flue gas mass |
+| By **volume** | 21% | 79% | Excess air from an O₂ analyser |
+
+Flue gas analysers measure by volume, so 21 appears in the excess air formula.
+Mass balances use 23. Using the wrong one is a silent error that produces a
+plausible-looking wrong answer.
+
+### A3. The three T's
+
+Good combustion needs all three:
+
+- **Temperature** — high enough to ignite and sustain
+- **Turbulence** — fuel and air genuinely mixed
+- **Time** — long enough to finish burning before the gas leaves
+
+Fail any one and you get unburnt carbon and CO. This is the qualitative half of
+the subject and it appears in True/False questions and in "suggest improvements"
+sub-parts. Worth being able to state.
+
+### A4. From ultimate analysis to theoretical air
+
+The **ultimate analysis** is a mass breakdown of 1 kg of fuel:
 
 | Constituent | % by weight |
 |---|---|
@@ -28,124 +97,143 @@ Every solid or liquid fuel question opens with a table like this:
 | Oxygen | 0.5 |
 | Sulphur | 4 |
 
-That is a **mass** breakdown of 1 kg of fuel. Everything today flows from it.
+Now build the air requirement from the chemistry rather than memorising it.
 
-Three of those burn and release heat — **carbon, hydrogen, sulphur**. Nitrogen
-passes straight through. Oxygen already in the fuel is a *credit*: it is oxygen
-you do not have to supply from air.
+**Step 1 — oxygen needed per kg of each element**, straight from molecular
+weights:
 
-### A2. Theoretical air
+| Reaction | Mass ratio | O₂ per kg |
+|---|---|---|
+| C + O₂ → CO₂ | 12 → 32 | 32/12 = **2.67** |
+| 2H₂ + O₂ → 2H₂O | 4 → 32 | 32/4 = **8.0** |
+| S + O₂ → SO₂ | 32 → 32 | **1.0** |
 
-The minimum air for complete combustion:
+**Step 2 — convert oxygen to air.** Air is 23% O₂ by mass, so divide by 0.23:
+
+| Element | O₂ per kg | ÷ 0.23 → air per kg |
+|---|---|---|
+| Carbon | 2.67 | **11.6** |
+| Hydrogen | 8.0 | **34.8** |
+| Sulphur | 1.0 | **4.35** |
+
+Those are the three constants. You never have to memorise them — 32/12/0.23 and
+8/0.23 and 1/0.23 regenerate them in seconds.
+
+**Step 3 — the oxygen credit.** Oxygen already in the fuel is oxygen you need not
+supply. It is bound to hydrogen in the mass ratio 8:1 (from 2H₂ + O₂, where 8 kg
+of O₂ serves 1 kg of H₂). So `O₂/8` is hydrogen already spoken for — subtract it.
 
 ```
     A_th = { 11.6·C + 34.8·(H₂ − O₂/8) + 4.35·S } / 100     kg air / kg fuel
 ```
 
-with C, H₂, O₂, S as **percentages** from the ultimate analysis.
+### A5. Excess air — the central trade-off
 
-Where the constants come from — worth knowing so you never misremember them:
+Theoretical air is the *minimum*. In a real furnace, mixing is imperfect, so at
+exactly theoretical air some fuel would never meet oxygen and would leave unburnt.
+So you supply extra.
 
-| Reaction | Mass ratio | × (1/0.23) for air |
-|---|---|---|
-| C + O₂ → CO₂ | 32/12 = 2.67 kg O₂ per kg C | **11.6** |
-| 2H₂ + O₂ → 2H₂O | 8 kg O₂ per kg H₂ | **34.8** |
-| S + O₂ → SO₂ | 32/32 = 1.0 kg O₂ per kg S | **4.35** |
+But every extra kg of air is extra nitrogen heated and thrown away. That gives
+the trade-off that governs boiler operation:
 
-Air is 23% oxygen by mass, so each oxygen requirement is divided by 0.23 to get
-the air requirement. That is the only trick.
+```
+   too little air  →  unburnt carbon, CO, soot        (lost fuel)
+   too much air    →  nitrogen heated and discarded   (lost heat)
+```
 
-**The `O₂/8` term.** Oxygen already present in the fuel is bound to hydrogen in
-the ratio 8:1 by mass (2H₂ + O₂ → 2H₂O gives 8 kg O₂ per 1 kg H₂). So `O₂/8` is
-the hydrogen already spoken for. Subtract it — it will not burn for you.
+There is an optimum in between, and finding it is what combustion tuning *is*.
 
-### A3. Excess air from flue gas oxygen
-
-Real boilers supply more air than theoretical, and the leftover O₂ shows up in
-the flue gas. Working backwards:
+**Measuring it.** You cannot easily measure the air going in, but you can measure
+the oxygen coming out — whatever was not consumed. Working backwards:
 
 ```
     % EA = [ %O₂ / (21 − %O₂) ] × 100
+    AAS  = (1 + EA/100) × A_th
 ```
 
-21 is the percentage of oxygen in air **by volume** — flue gas analysers read by
-volume, which is why 21 appears here and 23 appeared above. Do not mix them up.
+Why `21 − %O₂` in the denominator: of the 21% oxygen that entered, `%O₂` survived
+unused, so `21 − %O₂` was consumed. The ratio of surviving to consumed is the
+ratio of excess air to theoretical air.
 
-Then:
+**Sanity anchor:** 4% O₂ ≈ 23% excess air; 6% ≈ 40%; 8% ≈ 62%. If your excess air
+comes out negative or above ~150%, re-read the question.
 
-```
-    AAS = (1 + EA/100) × A_th          kg air / kg fuel
-```
+### A6. Mass of dry flue gas
 
-### A4. Mass of dry flue gas
-
-Everything that goes up the stack, minus the water vapour. Two accepted routes:
-
-**Route 1 — constituent by constituent:**
+Everything leaving up the stack, minus the water. **Route 1**, constituent by
+constituent:
 
 ```
-    m_dfg = C×(44/12) + N₂_fuel + S×(64/32)
-            + (AAS × 0.77)                    ← nitrogen from air
-            + (AAS − A_th) × 0.23             ← unburnt excess oxygen
+    m_dfg = C×(44/12)              ← CO₂ formed
+          + N₂ in fuel
+          + S×(64/32)              ← SO₂ formed
+          + AAS × 0.77             ← nitrogen from air
+          + (AAS − A_th) × 0.23    ← unused excess oxygen
 ```
 
-**Route 2 — the shortcut:**
+Note what dominates: for the natural gas case you will do in Block B, nitrogen
+from air is 15.6 of 19.2 kg — **over 80% of the flue gas mass is nitrogen you
+never wanted.** That is A2 made numerical.
+
+**Route 2**, the shortcut — mass in equals mass out:
 
 ```
     m_dfg = (AAS + 1) − 9·H₂ − moisture
 ```
 
-Everything in (air + fuel) goes out; subtract the water formed from hydrogen
-(9 kg H₂O per kg H₂) and any fuel moisture, and what remains is dry.
+Air plus 1 kg of fuel goes in; subtract the water formed (9 kg of H₂O per kg of
+H₂, from 2H₂ + O₂ → 2H₂O) and any fuel moisture. What's left is dry.
 
-Both appear in model answers and both earn full marks. Route 2 is faster; Route 1
-is safer when the question gives you an odd constituent. **Learn Route 2, keep
-Route 1 as a check.**
+Both earn full marks. Learn Route 2, keep Route 1 as a check.
 
-### A5. The carbon balance and CO₂ — this is what you missed
+### A7. Why the indirect method exists — the bridge to Day 3
 
-Here is the whole idea, and it is simpler than it looks.
+Here is the idea Day 3 is built on, and it is worth getting now.
 
-**Every carbon atom in the fuel leaves as CO₂.** Not some of it — all of it,
-under complete combustion. Carbon does not accumulate in the boiler.
+The **direct method** you learnt on Day 1 asks: how much heat reached the steam,
+divided by how much heat the fuel held? Simple, but it tells you *nothing about
+where the losses went*. An auditor cannot act on it.
 
-So the carbon flow *in* equals the carbon flow *out*:
-
-```
-    C in fuel (kg/hr)  =  fuel rate × carbon fraction
-```
-
-Now convert carbon to CO₂ by molecular weight:
+The **indirect method** asks the complementary question: where did all the heat
+go? Track every loss, and whatever is left must have reached the steam.
 
 ```
-    C   +   O₂   →   CO₂
-    12  +   32   →   44
+    η = 100 − (sum of all losses)
 ```
 
-**1 kg of carbon produces 44/12 = 3.67 kg of CO₂.**
+This is just a **heat balance** — energy in equals energy out, so accounting for
+the leaks tells you the yield. Its value is that each loss is separately
+identified, so you know what to fix. That is why BEE requires it for audits and
+why Paper 4 examines it rather than the direct method.
 
-Put together:
+**Where the heat actually goes:**
 
-```
-    CO₂ (kg/hr) = fuel rate (kg/hr) × carbon fraction × 3.67
-```
+| Loss | Physically what happens |
+|---|---|
+| L1 dry flue gas | Hot gas — mostly nitrogen — leaves up the stack |
+| L2 hydrogen | H₂ burns to water; the water is vaporised and the latent heat leaves as steam |
+| L3 fuel moisture | Water already in the fuel is boiled off and lost |
+| L4 air moisture | Humidity in the combustion air is heated and lost |
+| L5 CO | Carbon burnt to CO instead of CO₂ — 5,654 kCal/kg forgone (A1) |
+| L6 radiation | Heat through the boiler shell to the boiler house |
+| L7 unburnt ash | Carbon leaving in the ash, never burnt at all |
 
-> **You have already met 3.67 today.** Look back at Route 1 in A4: the first term
-> is `C × (44/12)`. Same number, same chemistry — that term *is* the CO₂ in the
-> flue gas. The dry flue gas mass and the CO₂ emission are two uses of one fact.
-> If you had spotted that on Day 1 you would have had the emission calculation
-> already.
+You already have the physics for L1 (A2 — nitrogen carries heat out) and for L5
+(A1 — incomplete combustion). Day 3 does all seven in full.
 
-**Only carbon counts.** Hydrogen becomes H₂O. Sulphur becomes SO₂. Nitrogen
-passes through. None of them is CO₂. When a question asks for CO₂, look at the
-carbon row of the ultimate analysis and ignore everything else.
+**Now the hydrogen point from A1 pays off.** Natural gas is ~23% hydrogen against
+furnace oil's ~11%. Hydrogen releases the most heat per kg — but it makes water,
+and vaporising that water consumes ~584 kCal/kg of latent heat which goes
+straight up the stack. So:
 
-**Why natural gas is cleaner — two compounding effects:**
+> **A gas boiler shows lower efficiency on GCV than an oil boiler, despite gas
+> burning cleaner.** In Block B you will compute L2 = 10.37% for natural gas
+> against roughly 6–7% for oil. That difference is entirely hydrogen.
 
-1. Lower carbon fraction (73% vs 84%), so less CO₂ per kg burnt
-2. Higher GCV (13,000 vs 10,000 kCal/kg), so you burn fewer kg for the same heat
-
-The second effect is the larger one, and it is the one candidates forget.
+This is also the **GCV vs NCV** distinction. Gross calorific value counts the
+latent heat of that water as if recoverable; net calorific value does not. Indian
+practice and this exam use **GCV** unless a question says otherwise — which is
+why L2 must be subtracted explicitly.
 
 ---
 
@@ -153,14 +241,14 @@ The second effect is the larger one, and it is the one candidates forget.
 
 ### B1. Finish Day 1's question (35 min)
 
-Return to the 18th sitting, N-1 — the natural gas boiler in `papers/18-1.pdf`.
-You correctly found the furnace oil requirement. Now do the natural gas side.
+The 18th sitting N-1 (`papers/18-1.pdf`) — the natural gas boiler you could not
+complete. You now have every tool.
 
-Given for natural gas: C 73%, H₂ 23%, N₂ 3%, O₂ 1%, GCV 13,000 kCal/kg, flue gas
-O₂ 4%, exit gas 180 °C, ambient 30 °C, Cp gas 0.29, Cp vapour 0.45, radiation and
-moisture loss 1.2%.
+Natural gas: C 73%, H₂ 23%, N₂ 3%, O₂ 1%. GCV 13,000 kCal/kg. Flue gas O₂ 4%,
+exit 180 °C, ambient 30 °C. Cp gas 0.29, Cp vapour 0.45. Radiation + air moisture
+1.2%.
 
-**Step 1 — theoretical air**
+**Step 1 — theoretical air** (A4)
 
 ```
     A_th = 11.6 × 0.73 + 34.8 × (0.23 − 0.01/8)
@@ -168,16 +256,18 @@ moisture loss 1.2%.
          = 16.43 kg air / kg gas
 ```
 
-(No sulphur in natural gas, so the 4.35·S term vanishes.)
+No sulphur in natural gas, so that term vanishes.
 
-**Step 2 — excess air**
+**Step 2 — excess air** (A5)
 
 ```
     % EA = 4 / (21 − 4) × 100 = 23.5 %
     AAS  = 1.235 × 16.43 = 20.29 kg air / kg gas
 ```
 
-**Step 3 — dry flue gas**
+Matches the anchor in A5: 4% O₂ ≈ 23% excess air. ✓
+
+**Step 3 — dry flue gas** (A6)
 
 ```
     m_dfg = (0.73 × 44/12) + 0.03 + (20.29 × 0.77) + (20.29 − 16.43) × 0.23
@@ -185,22 +275,19 @@ moisture loss 1.2%.
           = 19.22 kg / kg gas
 ```
 
+Nitrogen from air is 15.62 of 19.22 — **81% of the flue gas.** A2, in numbers.
+
 **Step 4 — the two losses**
 
 ```
     L1 = 19.22 × 0.29 × (180 − 30) / 13000 × 100  =  6.43 %
-
-    L2 = 9 × 0.23 × [584 + 0.45 × (180 − 30)] / 13000 × 100
-       = 2.07 × 651.5 / 13000 × 100
-       = 10.37 %
+    L2 = 9 × 0.23 × [584 + 0.45 × (180 − 30)] / 13000 × 100  =  10.37 %
 ```
 
-L2 is large because natural gas is 23% hydrogen — it makes a lot of water, and
-the latent heat goes up the stack. **This is why gas boilers show lower GCV
-efficiency than oil boilers despite burning cleaner.** Worth remembering as a
-True/False trap.
+L2 exceeds L1. For a gas boiler the water from hydrogen costs more than the whole
+stack loss — exactly as A7 predicted.
 
-**Step 5 — efficiency, indirect method**
+**Step 5 — efficiency** (A7)
 
 ```
     η = 100 − (6.43 + 10.37 + 1.2) = 82 %
@@ -213,103 +300,109 @@ True/False trap.
     FO = 8000 × (665 − 90) / (0.84 × 10000) = 547.62 kg/hr   ← you had this
 ```
 
-**Step 7 — CO₂, the part you were missing**
+**Step 7 — CO₂**
+
+Every carbon atom leaves as CO₂. From C + O₂ → CO₂, 12 → 44, so **1 kg of carbon
+gives 44/12 = 3.67 kg CO₂**:
 
 ```
-    CO₂ from NG = 431.52 × 0.73 × 3.67 = 1156.1 kg/hr
-    CO₂ from FO = 547.62 × 0.84 × 3.67 = 1688.2 kg/hr
-    Increase    = 1688.2 − 1156.1      =  532.1 kg CO₂/hr
+    CO₂ (kg/hr) = fuel rate × carbon fraction × 3.67
+
+    NG:  431.52 × 0.73 × 3.67 = 1156.1 kg/hr
+    FO:  547.62 × 0.84 × 3.67 = 1688.2 kg/hr
+    Increase                  =  532.1 kg CO₂/hr
 ```
 
-**Step 8 — green power to offset it**
+**Only carbon makes CO₂.** Hydrogen → H₂O, sulphur → SO₂. And note 3.67 is the
+same 44/12 from Route 1 in A6 — that term *is* the CO₂ in the flue gas.
+
+Gas wins on CO₂ twice over: less carbon per kg (73 vs 84%), and fewer kg burnt
+because GCV is higher (13,000 vs 10,000). The second effect is the larger.
+
+**Step 8 — green power offset**
 
 ```
-    Green energy = 532.1 × 720 / 0.80 = 4,78,890 kWh per month
+    Green energy = 532.1 × 720 / 0.80 = 4,78,890 kWh/month
 ```
 
-Read that last step carefully. Every kWh of wind displaces 0.80 kg of CO₂, so you
-divide the excess CO₂ by 0.80 to get kWh. Multiply by 720 hours for the month.
-Dividing when you should multiply is the classic slip here — check by asking
-whether the answer should be bigger or smaller than the CO₂ figure.
+*Sanity sentence:* each kWh displaces only 0.8 kg CO₂, so the kWh figure must
+exceed the CO₂ figure. 478,890 > 383,112. ✓
 
 ### B2. Your turn (25 min)
 
-**24th sitting N-1, parts (c), (d), (e)** — the paddy husk boiler from Day 1's
-worked example, in `papers/24-1.pdf`. You did (a) and (b) on Day 1. Now finish it.
+**24th sitting N-1 (c)(d)(e)** — the paddy husk boiler (`papers/24-1.pdf`). You
+did (a) and (b) on Day 1.
 
-Paddy husk ultimate analysis: moisture 10.79, mineral matter 16.73, C 33.95,
-H₂ 5.01, N₂ 0.91, S 0.09, O₂ 32.52. Flue gas O₂ 6%, exit 225 °C, ambient 32 °C,
-radiation 1.6%, humidity factor 0.025, GCV 3500 kCal/kg.
+Husk: moisture 10.79, mineral matter 16.73, C 33.95, H₂ 5.01, N₂ 0.91, S 0.09,
+O₂ 32.52. Flue gas O₂ 6%, exit 225 °C, ambient 32 °C, radiation 1.6%, humidity
+factor 0.025, GCV 3500.
 
-Watch for: this fuel has **moisture and sulphur**, unlike natural gas, so you get
-extra loss terms. The model answer is in the paper.
+This fuel has **moisture and sulphur**, so extra loss terms appear. Predict before
+calculating: with 32.5% oxygen already in the fuel, will theoretical air be high
+or low compared with the natural gas case?
 
 ---
 
-## Block C — Timed question (55 min)
+## The sanity sentence — required from today
 
-**18th sitting, Set A, L-1** (`papers/18-1.pdf`) — 5 marks, 8 minutes.
-
-> The LP and HP boilers both have 83% efficiency on furnace oil, GCV
-> 10,000 kCal/kg. LP: steam enthalpy 666 kCal/kg, feedwater 95 °C. HP: steam
-> enthalpy 737 kCal/kg, feedwater 105 °C. The cost of steam from the LP boiler is
-> Rs 3000/tonne. Find the cost of steam from the HP boiler.
-
-This is pure Day 1 material — evaporation ratio and nothing else. It should take
-under eight minutes. If it doesn't, tell me, because that changes the plan.
-
-Then, with the remaining time, attempt **17th sitting N-1** — a cooling tower and
-CW pump question (`papers/17.pdf`). It is outside today's topic on purpose: I want
-to see how you handle an unfamiliar system, not whether you memorised today.
-
-## New rule from today — the sanity sentence
-
-Every final answer gets one written line before you move on:
+Every final answer gets one written line first:
 
 > *"This should be larger/smaller than X, because…"*
 
-Answer it from physics, in words, **before** checking your arithmetic. It takes
-three seconds and it catches the error type that cost you marks on Day 1 — see
+From physics, in words, **before** checking arithmetic. Three seconds, and it
+catches the inversion that cost you marks on Day 1. See
 `reference/reciprocal-traps.md`.
 
-Write it on the script. Examiners give marks for interpretation, and the model
-answers state exactly this kind of reasoning before calculating.
+Write it on the script — examiners award marks for interpretation, and the model
+answers state exactly this reasoning before calculating.
 
-## Block D — Log (25 min)
+---
 
-Mark both against the model answers. Tag every lost mark: **concept / method /
+## Block C — Timed question (45 min)
+
+**17th sitting N-1** (`papers/17.pdf`) — a cooling tower and CW pump system,
+20 marks, 25 minutes.
+
+Deliberately outside today's topic. I want to see how you approach an unfamiliar
+system, not whether you absorbed today's material. Read it, decide what physics
+applies, attempt what you can.
+
+## Block D — Log (20 min)
+
+Mark against the model answers. Tag each lost mark: **concept / method /
 arithmetic / units / lookup**.
 
-For the 17th N-1, note separately what you *could not start* versus what you
-started and got wrong. Those are different failures and need different fixes.
+For the 17th N-1, separate **could not start** from **started and got it wrong** —
+different failures, different fixes.
 
-Also log, separately from errors: **any inversion you caught yourself.** Those are
-the check working, not mistakes.
+Log separately any **inversion you caught yourself**. That is the check working.
 
 ---
 
 ## Homework before Day 3
 
-1. Memorise the three combustion constants — 11.6, 34.8, 4.35 — and be able to
-   say where each comes from. Reconstructing beats remembering.
-2. Memorise **3.67 kg CO₂ per kg carbon**, and that it is the same 44/12 in the
-   dry flue gas formula.
-3. Tab the combustion section (**CA**) and the loss formulas (**BE**). Both sit
-   in Book 4 Chapter 1, which starts at **p. 1** — you have the chapter pages in
-   `reference/guidebook-index.md`, now fill in the **lookup table** rows, which
-   are the ones that actually cost you time in the hall.
-4. Write out both m_dfg routes from memory and check them against A4.
+1. Read BEE Book 2 Ch 1 §1.6–1.9
+   ([2Ch1.pdf](https://beeindia.gov.in/sites/default/files/2Ch1.pdf)) — the source
+   for Block A.
+2. Be able to *derive* 11.6, 34.8 and 4.35, not recall them.
+3. Know why 23% appears in theoretical air and 21% in excess air.
+4. Memorise 3.67 kg CO₂ per kg carbon, and its link to 44/12.
+5. Tab **CA** (combustion) and **BE** (losses); fill the lookup rows in
+   `reference/guidebook-index.md`.
 
 ## Day 2 checklist
 
-- [ ] Can go from ultimate analysis → A_th → EA → AAS → m_dfg unaided
-- [ ] Understand why 23% appears in A_th and 21% in excess air
-- [ ] Can calculate CO₂ from any fuel and know why only carbon matters
-- [ ] Finished the 18th N-1 end to end
-- [ ] Attempted the 24th N-1 (c)(d)(e)
-- [ ] Both timed questions done and marked
-- [ ] Errors tagged in `log/study-log.md`
+- [ ] Can explain what nitrogen does and why excess air costs money
+- [ ] Can derive A_th from molecular weights unaided
+- [ ] Know why 23% vs 21%, and when each applies
+- [ ] Can compute m_dfg by both routes
+- [ ] Can calculate CO₂ and explain why only carbon counts
+- [ ] Can explain why the indirect method exists and what a heat balance is
+- [ ] Can say why a gas boiler shows lower GCV efficiency than an oil boiler
+- [ ] 18th N-1 finished end to end
+- [ ] 24th N-1 (c)(d)(e) attempted
+- [ ] 17th N-1 attempted under time
+- [ ] Sanity sentence written on every answer
 
-**Tomorrow:** the indirect method in full — all seven losses, not just the two
-you met today, and the sequencing that lets you compute a boiler efficiency from
-nothing but a flue gas analysis.
+**Tomorrow:** the indirect method in full — all seven losses with the physics of
+each, blowdown, and computing efficiency from nothing but a flue gas analysis.

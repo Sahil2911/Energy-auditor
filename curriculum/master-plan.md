@@ -31,6 +31,23 @@ go straight to the assessment methods and the numerical patterns.
 20-mark question under time. Reading theory without writing solutions is the
 most common way to fail this paper.
 
+## Teaching standard
+
+Set after Day 2 feedback. Every lesson must:
+
+1. **Explain the physics before the formula.** No formula appears without what is
+   physically happening and why it takes that form. Constants get derived, not
+   asserted — 11.6 comes from 32/12 ÷ 0.23, and saying so is faster than
+   memorising it.
+2. **Cite its source.** Each day names the BEE chapter behind it, with a link
+   where the chapter is publicly downloadable. See `reference/resources.md`.
+3. **Assume nothing.** Clearing Paper 2 proves a pass mark on thermal utilities,
+   not depth. Where a topic underpins Paper 4, it gets taught properly regardless
+   of what was assumed known.
+4. **Connect back.** Each concept links to where it reappears — the 44/12 in the
+   flue gas formula is the 3.67 in the CO₂ calculation, and saying so once
+   replaces memorising twice.
+
 ## Non-negotiable daily rhythm
 
 For a 3.5-hour day:
@@ -140,6 +157,9 @@ isn't lost.
 | 30 Aug | Days 2 and 3 swapped — combustion now precedes the indirect method | The indirect method depends on theoretical air, excess air and dry flue gas mass. Teaching it first was the wrong order. |
 | 30 Aug | Day 1 Block C replaced with a self-contained ER question | The original (18th N-1) needed Day 2–3 material for two-thirds of its marks. |
 | 30 Aug | CO₂ carbon balance added to Day 2 A5 | Surfaced as a real gap in the Day 1 assessment, and it recurs in sustainability-flavoured questions. |
+| 30 Aug | `reference/reciprocal-traps.md` added; sanity sentence required on every answer | Two inversions in one hour on Day 1, one caught, one missed. |
+| 30 Aug | **Day 2 rewritten theory-first; teaching standard added above** | Student's feedback: the lesson gave formulas without the physics, and assumed the indirect method was already understood. A teaching fault, not a consequence of the missing guidebook. |
+| 30 Aug | `reference/resources.md` added — official BEE chapters located and linked | Nine Book-4 chapters plus Fuels and Combustion are free on beeindia.gov.in. |
 
 ## Standing risks
 

@@ -18,6 +18,8 @@ Papers 1, 2 and 3 are already cleared. This repository covers Paper 4 only.
 | `reference/formula-sheet.md` | Every formula Paper 4 has asked for |
 | `reference/open-book-strategy.md` | How to tab and index the guidebooks |
 | `reference/guidebook-index.md` | Page index to fill in — replaces uploading the book |
+| `reference/resources.md` | Official BEE chapters, free and verified |
+| `reference/reciprocal-traps.md` | The inversion trap and the sanity check |
 | `question-bank/index.md` | All 120 past questions, classified by topic |
 | `assessments/` | Reviewer assessments and feedback to the tutor |
 | `log/study-log.md` | Daily journal and distance-to-finish tracker |
