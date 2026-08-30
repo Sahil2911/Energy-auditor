@@ -17,6 +17,7 @@ Papers 1, 2 and 3 are already cleared. This repository covers Paper 4 only.
 | `curriculum/day-NN.md` | Daily lessons — theory, worked examples, homework |
 | `reference/formula-sheet.md` | Every formula Paper 4 has asked for |
 | `reference/open-book-strategy.md` | How to tab and index the guidebooks |
+| `reference/guidebook-index.md` | Page index to fill in — replaces uploading the book |
 | `question-bank/index.md` | All 120 past questions, classified by topic |
 | `assessments/` | Reviewer assessments and feedback to the tutor |
 | `log/study-log.md` | Daily journal and distance-to-finish tracker |
@@ -34,4 +35,10 @@ Papers 1, 2 and 3 are already cleared. This repository covers Paper 4 only.
 
 1. Read `exam-brief.md` — especially the attempts rule.
 2. Read `curriculum/master-plan.md`.
-3. Begin `curriculum/day-01.md`.
+3. Fill in `reference/guidebook-index.md` from your guidebook contents pages.
+4. Begin `curriculum/day-01.md`.
+
+**Note:** the BEE guidebooks are not in this repository and should not be —
+they are ~357 MB, over GitHub's limits, and are BEE copyright while this repo
+is public. Keep them locally or in private cloud storage. See
+`reference/open-book-strategy.md`.

@@ -1,0 +1,20 @@
+# BEE guidebooks — do NOT commit
+# These are BEE copyright, issued to registered candidates, and this repo is
+# public. They are also far too large for git (357 MB). Keep them local or in
+# private cloud storage. See reference/guidebook-index.md for what belongs here
+# instead.
+guidebooks/
+*guidebook*.pdf
+*Guidebook*.pdf
+book-1*.pdf
+book-2*.pdf
+book-3*.pdf
+book-4*.pdf
+
+# Large files generally
+*.zip
+*.7z
+
+# Scratch
+scratch/
+*.tmp

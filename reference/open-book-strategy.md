@@ -75,6 +75,32 @@ Do **not** paste in extra sheets or insert loose paper — that is a separate
 written material and risks being treated as unfair means. Keep everything
 written directly on the book's own pages.
 
+## Getting the guidebook onto your machine
+
+The guidebook is not in this repository and should not be. It is ~357 MB — over
+GitHub's 25 MB web-upload limit and its 100 MB hard push limit — and it is BEE
+copyright material issued to registered candidates, while this repository is
+public.
+
+Keep it in private cloud storage (Drive, OneDrive, Dropbox) if you want it on
+more than one machine. What belongs in the repo instead is
+`reference/guidebook-index.md` — the page index, which is a couple of kilobytes
+and is the part that actually speeds you up.
+
+If the file is unwieldy locally, it is almost certainly a high-resolution scan.
+Ghostscript will shrink it hard without ruining the tables:
+
+    gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook \
+       -dNOPAUSE -dQUIET -dBATCH \
+       -sOutputFile=book4-small.pdf book4.pdf
+
+Use `/ebook` (150 dpi), not `/screen` (72 dpi) — at 72 dpi the property tables
+and correction-factor charts become unreadable, which defeats the point. Expect
+roughly 20–40 MB out.
+
+If the 357 MB is all four guidebooks in one file, split Book 4 out first — it is
+the only one permitted in the hall for Paper 4.
+
 ## Rehearse the lookups
 
 From Day 5 onward, every timed question is done with the books at hand and a
