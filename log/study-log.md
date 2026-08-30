@@ -10,12 +10,12 @@ Updated daily. The Reviewer reads this before each assessment.
 | Started | 30 August 2026 |
 | Curriculum ends | 14 September 2026 |
 | **Exam** | **26 September 2026, 14:00–16:30** |
-| Days completed | **3 / 16** |
+| Days completed | **4 / 16** |
 | Buffer after curriculum | 11 days |
 
 ```
-Curriculum  [██████                        ]  19%   3/16 sessions
-Book-4 ch.  [██                            ]   7%   1/15 chapters (ch.1 nearly done)
+Curriculum  [████████                      ]  25%   4/16 sessions
+Book-4 ch.  [██                            ]   7%   1/15 chapters (ch.1 COMPLETE)
 ```
 
 **Days to exam: 26.**
@@ -24,7 +24,7 @@ Book-4 ch.  [██                            ]   7%   1/15 chapters (ch.1 near
 
 | Ch. | Topic | Day | Status |
 |---|---|---|---|
-| 1 | Boilers | 1–3 | 🟨 direct method done |
+| 1 | Boilers | 1–3 | ✅ complete |
 | 2 | Furnaces | 6 | ⬜ |
 | 3 | Cogeneration, turbines | 4 | ⬜ |
 | 4 | Heat exchangers | 5 | ⬜ |
@@ -44,7 +44,7 @@ Book-4 ch.  [██                            ]   7%   1/15 chapters (ch.1 near
 
 | After day | Assessment | Max | Score | Date |
 |---|---|---|---|---|
-| 3 | Boiler & combustion diagnostic | 30 | — | — |
+| 3 | Boiler & combustion diagnostic | 20 | **18** | 30 Aug |
 | 7 | Mock A — thermal | 50 | — | — |
 | 10 | Electrical & fluids diagnostic | 30 | — | — |
 | 13 | Sector & systems diagnostic | 40 | — | — |
@@ -279,3 +279,49 @@ L1, and an explanation of why low-GCV fuels show high percentage losses.
 **Verdict:** the chain excess air → AAS → m_dfg → loss is solid, executed
 correctly on a harder fuel than the taught example, with exam-standard
 presentation.
+
+---
+
+### Day 3 — 30 August 2026
+
+**Completed.** Both practice questions attempted.
+
+**20th sitting N-1 (5 parts, 20 marks): 18/20.** Strongest session so far.
+
+A_th 16.2 ✓ · excess air 23.5% ✓ · AAS 20.01 ✓ · L1 7.6% ✓ · η 80.96% ✓ ·
+steam:fuel 18.651 ✓ · air 127.154 m³/min ✓ · improvement 2.63% ✓ ·
+saving 15.686 m³/hr ✓ · yearly Rs 33,54,294 ✓
+
+**More accurate than the official model on parts (c), (d) and (e).** The model
+rounded intermediates to 3 s.f. before subtracting, turning a 0.25% input error
+into a 9% output error. Its (e) also contradicts itself — "Rs 30,79,296 =
+Rs 33.793 lakhs".
+
+**Good exam economy:** started computing L2, spotted that 9.92% was given in the
+data table, struck it out and moved on.
+
+**Timing:** parts (c)–(e) in three minutes (23:13→23:16).
+
+**Errors:**
+
+| # | Error | Type | Fix |
+|---|---|---|---|
+| 1 | m_dfg 19.12 — used 0.21 for H₂ in one line | Arithmetic | none needed, isolated slip |
+| 2 | 18th N-1: correct answer reached, then reverted | **Method** | Rule-a-line correction discipline |
+
+**The significant finding.** On the 18th N-1 she initially used efficiency (0.82)
+where the carbon fraction (0.73) belongs, caught it unaided, corrected to 1154.66,
+and computed 4,80,186 kWh — correct. She then struck out both correct lines and
+substituted the values following from the original error. Right answer reached
+and discarded.
+
+**Assessment:** `assessments/day-03-review.md`
+
+**Added:** `reference/precision-and-rounding.md` — the subtraction trap, the
+15/571 cancellation shortcut, correction propagation, and a running list of errors
+found in official model answers.
+
+**Chapter 1 (Boilers) complete.** Direct method, evaporation ratio, combustion,
+flue gas, CO₂, all seven losses.
+
+**Next:** Day 4 — cogeneration and turbines.
