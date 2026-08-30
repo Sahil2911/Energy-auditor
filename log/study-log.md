@@ -6,12 +6,12 @@ Updated daily. The Reviewer reads this before each assessment.
 
 | | |
 |---|---|
-| Curriculum | 15 days, ~52 hours |
+| Curriculum | 16 sessions, ~52 hours |
 | Started | 30 August 2026 |
-| Curriculum ends | 13 September 2026 |
+| Curriculum ends | 14 September 2026 |
 | **Exam** | **26 September 2026, 14:00–16:30** |
 | Days completed | **1 / 15** |
-| Buffer after curriculum | 12 days |
+| Buffer after curriculum | 11 days |
 
 ```
 Curriculum  [██                            ]   7%   1/15 days
@@ -180,3 +180,35 @@ final answer requires a written sanity sentence.
 is verification, not knowledge.
 
 **Next:** Day 2 — fuels, combustion, carbon accounting.
+
+---
+
+### Day 2 — 30 August 2026
+
+**Planned:** Fuels, combustion, carbon accounting.
+
+**Outcome:** Could not follow worked examples B1 or B2. Could not attempt the
+Block C question.
+
+**Diagnosis — build fault, not a knowledge gap.** The lesson introduced five new
+ideas (theoretical air, excess air, dry flue gas mass, carbon balance, heat
+balance) and then required all five simultaneously in an eight-step worked
+example. One unclear link makes the whole example unreadable. Compounded by a
+deliberately off-topic 20-mark cooling tower question at the end of an already
+overloaded day.
+
+**Errors:** none attributable to the student. Tagged **Curriculum**.
+
+**Action taken:**
+- Day 2 split into **2A** (combustion air) and **2B** (flue gas, CO₂, heat balance)
+- Rewritten rung-by-rung: one idea per rung, each with a drill and a checkable
+  answer. Every drill answer verified numerically.
+- Combined example moved to the end of 2B, with each step labelled by the rung it
+  uses — so a failure points at a specific rung
+- Cooling tower question removed to Day 10
+- Reviewer trigger added: inability to follow a *worked example* is a build fault,
+  never logged as a student gap
+
+**Curriculum now 16 sessions**, ending 14 Sep. Buffer 11 days.
+
+**Next:** Day 2A — combustion air, one rung at a time.

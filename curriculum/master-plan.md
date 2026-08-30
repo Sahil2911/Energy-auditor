@@ -8,8 +8,8 @@
 | Background | Electrical engineer |
 | Available | 3–4 hours/day → **~52 hours** over 15 days |
 | Start | 30 August 2026 |
-| Curriculum ends | **13 September 2026** |
-| Exam | **26 September 2026** — 12 days of buffer |
+| Curriculum ends | **14 September 2026** (16 sessions) |
+| Exam | **26 September 2026** — 11 days of buffer |
 
 ## Design logic
 
@@ -63,14 +63,15 @@ Block D is not optional. The error log is what the Reviewer reads.
 
 ## The plan
 
-### Phase 1 — Thermal core (Days 1–7, ~24 hrs)
+### Phase 1 — Thermal core (Days 1–7, now 8 sessions, ~24 hrs)
 
 Your weak zone and the paper's centre of gravity.
 
 | Day | Topic | Book-4 ch. | Why here |
 |---|---|---|---|
 | 1 | Exam craft, open-book system, **Boilers I** — direct method, evaporation ratio | 1 | Appears 8/8 years |
-| 2 | **Fuels & combustion** — stoichiometric air, excess air from O₂, dry flue gas mass, **CO₂ carbon balance** | 1 | Prerequisite for the indirect method |
+| 2A | **Combustion air** — ultimate analysis, theoretical air, excess air. Rung-by-rung with drills | 1 | Prerequisite for everything thermal |
+| 2B | **Flue gas & heat balance** — dry flue gas mass, CO₂, why the indirect method exists | 1 | Prerequisite for the indirect method |
 | 3 | **Boilers II** — indirect method, all seven losses, blowdown | 1 | The single most-asked calculation |
 | 4 | **Cogeneration & turbines** — back-pressure, extraction, topping cycle, isentropic efficiency | 3 | 7/8 years |
 | 5 | **Heat exchangers** — LMTD, correction factor, effectiveness–NTU, fouling | 4 | 7/8 years |
@@ -159,6 +160,8 @@ isn't lost.
 | 30 Aug | CO₂ carbon balance added to Day 2 A5 | Surfaced as a real gap in the Day 1 assessment, and it recurs in sustainability-flavoured questions. |
 | 30 Aug | `reference/reciprocal-traps.md` added; sanity sentence required on every answer | Two inversions in one hour on Day 1, one caught, one missed. |
 | 30 Aug | **Day 2 rewritten theory-first; teaching standard added above** | Student's feedback: the lesson gave formulas without the physics, and assumed the indirect method was already understood. A teaching fault, not a consequence of the missing guidebook. |
+| 30 Aug | **Day 2 split into 2A and 2B; rung-by-rung format with self-check drills** | Student could not follow the worked examples or attempt the timed question. The rewrite still taught five ideas at once and then chained them into an eight-step example — too much simultaneous novelty. One idea per rung now, each with a checkable number, nothing chained until the rungs hold. Curriculum extends to 16 sessions; buffer absorbs it. |
+| 30 Aug | Off-topic cooling tower question removed from Day 2, returned to Day 10 | Setting an unfamiliar 20-mark system question on an already-overloaded day was a bad call. |
 | 30 Aug | `reference/resources.md` added — official BEE chapters located and linked | Nine Book-4 chapters plus Fuels and Combustion are free on beeindia.gov.in. |
 
 ## Standing risks
