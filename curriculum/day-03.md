@@ -83,6 +83,20 @@ Pure `m·Cp·ΔT`. Cp for flue gas is **0.24** in most papers (sometimes 0.23 or
 wanted. Reducing it means either less excess air or a lower stack temperature —
 which is exactly what an economiser or air preheater does.
 
+> ⚠️ **Cp here is flue gas — 0.24, not 0.45.** 0.45 belongs to superheated steam
+> and is used in L2–L4. L1 heats *gas*; L2–L4 heat *water vapour*. Substituting
+> the vapour value nearly doubles L1 and the answer still looks plausible. See
+> the specific-heat card in `reference/formula-sheet.md` §1.
+
+**Sanity anchor: typical L1 is 5–12%.** Above about 15%, suspect either a wrong
+Cp or a genuinely terrible boiler.
+
+**L1 is a ratio, and GCV is in the denominator.** A low-GCV fuel shows a *higher*
+percentage loss for the same absolute heat up the stack. Paddy husk (GCV 3500)
+gives L1 = 8.5% while natural gas (GCV 13,000) gives 6.4% — even though husk's
+flue gas mass is three times smaller. Small numerator over small denominator can
+still be large. Never judge a loss by the size of m_dfg alone.
+
 ---
 
 ## Rung 14 — L2, water made from hydrogen

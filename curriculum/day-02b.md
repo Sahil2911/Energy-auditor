@@ -199,6 +199,13 @@ boiler. You already found A_th = 4.27 in Day 2A Drill 4, so you are partway ther
 Husk: moisture 10.79%, C 33.95%, H₂ 5.01%, N₂ 0.91%, S 0.09%, O₂ 32.52%.
 Flue gas O₂ 6%, exit 225 °C, ambient 32 °C, radiation 1.6%, GCV 3500.
 
+**Cp of flue gas = 0.24. Cp of superheated steam = 0.43.**
+
+> These were missing when this practice was first set, which caused a wrong L1.
+> They are two different substances: **L1 heats gas (0.24); L2–L4 heat water
+> vapour (0.43–0.45).** The 24th paper gives neither — both come from the
+> guidebook. See `reference/formula-sheet.md` §1.
+
 Do only these:
 
 1. Excess air and AAS (Rung 2A-8)

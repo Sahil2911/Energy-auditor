@@ -57,12 +57,12 @@ Running count by error type. This is what tells the tutor what to change.
 
 | Type | Count | Note |
 |---|---|---|
-| Concept | 0 | Did not know the method |
+| Concept | 1 | Did not know the method |
 | Method | 2 | Knew it, applied it wrongly |
 | Arithmetic | 0 | Right method, wrong number |
 | Units | 0 | kCal/kJ, TPH/kg-hr mix-ups |
 | Lookup speed | 0 | Over 60 s to find something in the books |
-| Curriculum | 18 | Marks lost to material not yet taught — a planning fault, not a gap |
+| Curriculum | 18 + | Marks lost to material not yet taught, or data omitted from a question — a planning fault, not a gap |
 
 ---
 
@@ -235,3 +235,47 @@ check on the 2A/2B rungs. If that check goes badly, the rungs need revisiting
 before the losses.
 
 **Next:** Day 3 — the indirect method, all seven losses.
+
+---
+
+### Day 2B practice — paddy husk boiler (submitted 30 Aug)
+
+**4 of 5 steps correct.**
+
+```
+    Excess air = 6/(21−6) × 100            = 40 %          ✓
+    AAS        = 1.4 × 4.27                = 5.978         ✓
+    m_dfg      = 6.978 − 0.451 − 0.108     = 6.4192        ✓
+    L1         = 6.4192 × 0.45 × 193/3500  = 15.929 %      ✗  (Cp wrong)
+    L1 correct = 6.4192 × 0.24 × 193/3500  =  8.50 %
+```
+
+**Notable: the m_dfg of 6.4192 is right and the official model answer's 6.34 is
+wrong.** Recomputing from the paper's own inputs gives 6.42.
+
+**Error:** used Cp = 0.45 (superheated steam) in L1, which needs 0.24 (flue gas).
+Arithmetic itself was flawless.
+
+**Partly a curriculum fault:** the Day 2B practice data omitted both Cp values.
+The 24th paper does not give them either — both come from the guidebook — so the
+only Cp visible in the lesson was the 0.45 from the natural gas example.
+
+**Prediction written before calculating, unprompted** — the new habit has stuck.
+Direction was right (8.50% > 6.43%). Reasoning was incomplete: attributed it to
+excess air, when husk's flue gas mass is actually 3× *smaller*. The dominant term
+is GCV — 3500 vs 13,000 — since L1 is a ratio.
+
+| # | Error | Type | Fix |
+|---|---|---|---|
+| 1 | Cp flue gas vs vapour confused | Concept | Specific-heat card; Day 3 Rung 13 warning |
+| 2 | Cp values absent from practice data | Curriculum | Day 2B data corrected |
+
+**Assessment:** `assessments/day-02b-review.md`
+
+**Changes made:** specific-heat card added to formula sheet §1 · Day 2B practice
+data corrected · Day 3 Rung 13 gains the Cp warning, the 5–12% sanity anchor for
+L1, and an explanation of why low-GCV fuels show high percentage losses.
+
+**Verdict:** the chain excess air → AAS → m_dfg → loss is solid, executed
+correctly on a harder fuel than the taught example, with exam-standard
+presentation.

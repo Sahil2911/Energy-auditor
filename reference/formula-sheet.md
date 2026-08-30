@@ -48,6 +48,25 @@ Typical ER: coal 4–6 · oil 13–15 · gas 11–13 · bagasse/husk 2–3.5
 
 Blowdown loss is **not** part of the indirect method — a recurring True/False trap.
 
+### Specific heats — do not mix these up
+
+Two different substances, two different numbers, and they appear in adjacent
+lines of the same calculation.
+
+| Substance | Cp (kCal/kg°C) | Used in |
+|---|---|---|
+| **Flue gas** | **0.24** (0.23–0.29) | **L1** — dry flue gas |
+| **Superheated steam / water vapour** | **0.45** (or 0.43) | **L2, L3, L4** — water losses |
+| Air | 0.24 | air-side heating |
+| Water (liquid) | 1.0 | feedwater, blowdown |
+
+L1 heats *gas*. L2/L3/L4 heat *water vapour*. Using 0.45 in L1 roughly doubles the
+loss and is a silent error — the answer still looks plausible.
+
+**Which value to use:** whatever the question gives. Only if the question is
+silent do you take the guidebook value. The 18th sitting gave 0.45 for vapour;
+the 24th gave neither and its model answer used 0.24 for gas and 0.43 for vapour.
+
 ---
 
 ## 2. Fuels & combustion — Day 3
