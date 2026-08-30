@@ -214,3 +214,35 @@ in the 25th sitting.
 | 1 bar | ~1.02 kg/cm² |
 | 1 MU | 10⁶ kWh |
 | Air composition (mass) | 23% O₂, 77% N₂ |
+
+---
+
+## 13. CO₂ emissions & carbon balance — Day 2
+
+Every carbon atom in the fuel leaves as CO₂ under complete combustion.
+
+    C + O₂ → CO₂
+    12 + 32 → 44          ⟹  1 kg C produces 44/12 = 3.67 kg CO₂
+
+    CO₂ (kg/hr) = fuel rate (kg/hr) × carbon fraction × 3.67
+
+Only **carbon** produces CO₂. Hydrogen → H₂O, sulphur → SO₂, nitrogen passes
+through. Ignore them when asked for CO₂.
+
+Note 3.67 = 44/12 is the same factor as the `C × (44/12)` term in the Route 1
+dry flue gas mass formula. One fact, two uses.
+
+**Green power offset**
+
+    Green energy (kWh) = excess CO₂ (kg) / CO₂ displaced per kWh
+
+Multiply by operating hours for a monthly figure. Sanity check: the kWh number
+should be *larger* than the CO₂ number whenever the displacement factor is below
+1 kg/kWh.
+
+**Why gas beats oil on CO₂ — two compounding effects**
+
+1. Lower carbon fraction (73% vs 84%)
+2. Higher GCV (13,000 vs 10,000 kCal/kg) → fewer kg burnt for the same heat
+
+The second is the larger effect and the one most often missed.

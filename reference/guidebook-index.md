@@ -36,6 +36,10 @@ every remaining day sharper.
 | 14 | Energy Performance assessment in buildings | 239 |
 | 15 | Textile Industry | 265 |
 
+> ✅ Chapter pages filled in 30 Aug. **The table below is the part still
+> outstanding, and it matters more.** Chapter numbers get you to the right
+> 20 pages; these get you to the right line. Fill them in as each day tabs them.
+
 ## The lookup tables — these matter most
 
 These are what you will actually hunt for under time pressure. Note the book

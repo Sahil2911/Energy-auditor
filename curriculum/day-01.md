@@ -1,6 +1,6 @@
 # Day 1 — Exam Craft, the Open-Book System, and Boilers I
 
-**Time: 3.5 hours. Book-4 Chapter 1.**
+**Time: 3.5 hours. Book-4 Chapter 1 (p. 1).**
 
 Goals for today:
 1. Understand what Paper 4 actually tests, and why candidates fail it.
@@ -111,6 +111,12 @@ Typical ER values worth recognising as sanity checks:
 
 If you compute an ER of 40 for coal, you have made an error. Use these to catch
 yourself.
+
+> **A note on CO₂.** Some boiler questions end by asking for carbon dioxide
+> emissions or a green-power offset. That calculation rests on one fact — every
+> kg of carbon in the fuel leaves as **3.67 kg of CO₂** — and it is taught in
+> full on Day 2, section A5. If you meet it before then, that factor is all you
+> need.
 
 > **Careful — a True/False trap.** The 25th paper asked: *"Evaporation ratio is
 > based on actual performance data and does not depend on whether efficiency is
@@ -225,18 +231,33 @@ Check yourself against `papers/25-1.pdf`. Both routes are in the model answer.
 
 ## Block C — Timed question (60 min)
 
-Attempt **one full 20-mark question, closed notes, guidebooks only, 25 minutes on
-the clock.** Then stop, regardless of where you are.
+> **Corrected 30 Aug.** This block originally set the 18th sitting's N-1, the
+> natural gas boiler. That was a mis-set question: its natural-gas half requires
+> the indirect method and combustion stoichiometry, which are Days 2 and 3. Only
+> the furnace-oil half is solvable with Day 1 material. It has been replaced with
+> a question that is genuinely self-contained. The 18th N-1 is now finished on
+> Day 2, where you have the tools for it.
 
-Do: **18th sitting, Set A, N-1** — a 10 TPH natural gas fired boiler
-(`papers/18-1.pdf`).
+Attempt **one question, closed notes, guidebooks only, 8 minutes on the clock.**
+
+Do: **18th sitting, Set A, L-1** (`papers/18-1.pdf`), 5 marks.
+
+> The LP and HP boilers both have 83% efficiency on furnace oil, GCV
+> 10,000 kCal/kg. LP: steam enthalpy 666 kCal/kg, feedwater 95 °C. HP: steam
+> enthalpy 737 kCal/kg, feedwater 105 °C. The cost of steam from the LP boiler is
+> Rs 3000/tonne. Find the cost of steam from the HP boiler.
+
+Pure evaporation ratio. Nothing else required.
+
+Then, with the remaining time, attempt **16th sitting, L-1** (`papers/16.pdf`) —
+a diesel-fired heater in a hotel. Direct method again, different dressing.
 
 Rules:
 - Phone away. Timer visible.
 - Write formula → substitute → evaluate, every step.
 - If stuck for more than 3 minutes, write down what you would need and move on.
 
-Then spend the remaining 35 minutes marking yourself against the model answer.
+Then mark yourself against the model answers.
 
 ## Block D — Log your errors (25 min)
 

@@ -53,8 +53,8 @@ Your weak zone and the paper's centre of gravity.
 | Day | Topic | Book-4 ch. | Why here |
 |---|---|---|---|
 | 1 | Exam craft, open-book system, **Boilers I** — direct method, evaporation ratio | 1 | Appears 8/8 years |
-| 2 | **Boilers II** — indirect method, the seven losses, blowdown | 1 | The single most-asked calculation |
-| 3 | **Fuels & combustion** — stoichiometric air, excess air from O₂, dry flue gas mass | 1 | Feeds every indirect-method question |
+| 2 | **Fuels & combustion** — stoichiometric air, excess air from O₂, dry flue gas mass, **CO₂ carbon balance** | 1 | Prerequisite for the indirect method |
+| 3 | **Boilers II** — indirect method, all seven losses, blowdown | 1 | The single most-asked calculation |
 | 4 | **Cogeneration & turbines** — back-pressure, extraction, topping cycle, isentropic efficiency | 3 | 7/8 years |
 | 5 | **Heat exchangers** — LMTD, correction factor, effectiveness–NTU, fouling | 4 | 7/8 years |
 | 6 | **Furnaces, WHR, insulation** — furnace efficiency, recuperators, economisers | 2 | 4/8, but heavy when it appears |
@@ -129,6 +129,17 @@ Every one of the 15 official Book-4 chapters is covered:
 After each, the Reviewer writes to `assessments/` with a gap analysis, and the
 Tutor adjusts the remaining days. If Mock A comes in under 25/50, Phase 2
 compresses to two days and the freed day returns to thermal.
+
+## Revisions
+
+Changes made in response to Reviewer findings. Kept visible so the reasoning
+isn't lost.
+
+| Date | Change | Why |
+|---|---|---|
+| 30 Aug | Days 2 and 3 swapped — combustion now precedes the indirect method | The indirect method depends on theoretical air, excess air and dry flue gas mass. Teaching it first was the wrong order. |
+| 30 Aug | Day 1 Block C replaced with a self-contained ER question | The original (18th N-1) needed Day 2–3 material for two-thirds of its marks. |
+| 30 Aug | CO₂ carbon balance added to Day 2 A5 | Surfaced as a real gap in the Day 1 assessment, and it recurs in sustainability-flavoured questions. |
 
 ## Standing risks
 
