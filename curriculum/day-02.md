@@ -262,6 +262,19 @@ Then, with the remaining time, attempt **17th sitting N-1** — a cooling tower 
 CW pump question (`papers/17.pdf`). It is outside today's topic on purpose: I want
 to see how you handle an unfamiliar system, not whether you memorised today.
 
+## New rule from today — the sanity sentence
+
+Every final answer gets one written line before you move on:
+
+> *"This should be larger/smaller than X, because…"*
+
+Answer it from physics, in words, **before** checking your arithmetic. It takes
+three seconds and it catches the error type that cost you marks on Day 1 — see
+`reference/reciprocal-traps.md`.
+
+Write it on the script. Examiners give marks for interpretation, and the model
+answers state exactly this kind of reasoning before calculating.
+
 ## Block D — Log (25 min)
 
 Mark both against the model answers. Tag every lost mark: **concept / method /
@@ -269,6 +282,9 @@ arithmetic / units / lookup**.
 
 For the 17th N-1, note separately what you *could not start* versus what you
 started and got wrong. Those are different failures and need different fixes.
+
+Also log, separately from errors: **any inversion you caught yourself.** Those are
+the check working, not mistakes.
 
 ---
 

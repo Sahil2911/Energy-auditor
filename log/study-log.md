@@ -58,7 +58,7 @@ Running count by error type. This is what tells the tutor what to change.
 | Type | Count | Note |
 |---|---|---|
 | Concept | 0 | Did not know the method |
-| Method | 0 | Knew it, applied it wrongly |
+| Method | 2 | Knew it, applied it wrongly |
 | Arithmetic | 0 | Right method, wrong number |
 | Units | 0 | kCal/kJ, TPH/kg-hr mix-ups |
 | Lookup speed | 0 | Over 60 s to find something in the books |
@@ -141,3 +141,42 @@ were reachable with Day 1 material. Every reachable mark was earned.
 **Carry-over:** finish the 18th N-1 in Day 2 Block B1.
 
 **Next:** Day 2 — fuels, combustion and carbon accounting.
+
+---
+
+### Day 1 (continued) — Block C, corrected question
+
+**Timed question:** 18th sitting L-1, LP/HP steam cost. 5 marks.
+**Time: 13:27 → 13:34, seven minutes** against an eight-minute target.
+
+**Score: 3/5.**
+
+Ratio derivation fully correct — set η_LP = η_HP, cancelled GCV, obtained
+(Q/q)_HP = 0.903 (Q/q)_LP. Verified: ER_LP = 14.536, ER_HP = 13.133, ratio
+0.9035.
+
+Final step inverted: multiplied Rs 3000 by 0.903 to get Rs 2709 instead of
+dividing to get Rs 3322. Steam cost is inversely proportional to evaporation
+ratio.
+
+Also redid the furnace oil calculation correctly at 0.547 TPH.
+
+**Errors:**
+
+| # | Error | Type | Fix |
+|---|---|---|---|
+| 1 | Steam cost ∝ ER instead of 1/ER | Method | Sanity sentence; quantity-tracking method |
+
+**Caught unprompted:** the crossed-out 1.826 in the furnace oil working is the
+exact reciprocal of 0.547 — the same inversion, spotted and corrected. Two
+inversions in one hour, one caught, one missed.
+
+**Assessment:** `assessments/day-01-blockC-review.md`
+
+**Curriculum change:** `reference/reciprocal-traps.md` added. From Day 2, every
+final answer requires a written sanity sentence.
+
+**Confidence (1–5):** 4 on evaporation ratio, and the algebra is solid. The gap
+is verification, not knowledge.
+
+**Next:** Day 2 — fuels, combustion, carbon accounting.
