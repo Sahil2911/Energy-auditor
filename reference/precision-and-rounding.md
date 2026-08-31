@@ -83,6 +83,7 @@ Three errors found in official model answers so far:
 | 24th N-1 | States m_dfg = 6.34; its own inputs give 6.42 |
 | 20th N-1(c),(d) | Rounds intermediates early — 2.41% and 10.06 kg/hr should be 2.63% and 10.98 |
 | 20th N-1(e) | States "Rs 30,79,296 = Rs 33.793 lakhs" — 30,79,296 is 30.79 lakhs |
+| 18th N-2(c) | Question gives a separate boiler at 80%; the solution computes with 85% |
 
 **This does not mean you should chase the model's digits.** Examiners mark
 method. A defensible chain with full precision earns full marks even where it
