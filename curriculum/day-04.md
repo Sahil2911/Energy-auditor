@@ -71,6 +71,11 @@ rather than dumped.
 
 The single most examined idea in this chapter.
 
+> 📖 **For the intuition rather than the rule**, read
+> `reference/concept-isentropic-expansion.md`. It explains why a *less* efficient
+> turbine sends out exhaust with *more* energy in it — which is the part of this
+> formula that resists memorisation until it clicks.
+
 An **ideal** turbine expands steam with no losses — an isentropic (constant
 entropy) expansion. From the steam tables or Mollier chart, that ideal exhaust
 enthalpy is `h₂s`.
