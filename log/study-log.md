@@ -10,7 +10,7 @@ Updated daily. The Reviewer reads this before each assessment.
 | Started | 30 August 2026 |
 | Curriculum ends | 14 September 2026 |
 | **Exam** | **26 September 2026, 14:00–16:30** |
-| Days completed | **4 / 16** — Day 4 issued |
+| Days completed | **6 / 17** — Days 1, 2A, 2B, 3, 4, 4B done; Day 5 issued |
 | Buffer after curriculum | 11 days |
 
 ```
@@ -26,8 +26,8 @@ Book-4 ch.  [██                            ]   7%   1/15 chapters (ch.1 COMP
 |---|---|---|---|
 | 1 | Boilers | 1–3 | ✅ complete |
 | 2 | Furnaces | 6 | ⬜ |
-| 3 | Cogeneration, turbines | 4 | 🟨 issued |
-| 4 | Heat exchangers | 5 | ⬜ |
+| 3 | Cogeneration, turbines | 4, 4B | ✅ complete |
+| 4 | Heat exchangers | 5 | 🟨 issued |
 | 5 | Motors, VSD | 10 | ⬜ |
 | 6 | Fans and blowers | 9 | ⬜ |
 | 7 | Water pumps | 8 | ⬜ |
