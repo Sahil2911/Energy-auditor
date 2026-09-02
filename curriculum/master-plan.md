@@ -87,7 +87,7 @@ Your weak zone and the paper's centre of gravity.
 | 3 | **Boilers II** — indirect method, all seven losses, blowdown | 1 | The single most-asked calculation |
 | 4 | **Cogeneration & turbines** — back-pressure, extraction, topping cycle, isentropic efficiency | 3 | 7/8 years |
 | 5 | **Heat exchangers** — LMTD, F, ε–NTU, plus U as resistances, fouling, approach economics, selection | 4 | 7/8 years. One 4-hr session, Rungs 35–49 |
-| 6 | **Furnaces, WHR, insulation** — furnace efficiency, recuperators, economisers | 2 | 4/8, but heavy when it appears |
+| 6 | **Furnaces, WHR, insulation** — radiation physics, loss inventory, recuperators, air preheat | 2 | 4/8, but heavy when it appears. Rungs 51–64 |
 | 7 | **Consolidation + Mock A** (thermal only, 50 marks, timed) | 1–4 | First real checkpoint |
 
 ### Phase 2 — Electrical & fluid systems (Days 8–10, ~10 hrs)
@@ -177,6 +177,7 @@ isn't lost.
 | 30 Aug | `reference/resources.md` added — official BEE chapters located and linked | Nine Book-4 chapters plus Fuels and Combustion are free on beeindia.gov.in. |
 | 30 Aug | Day 4B added — gas turbine cogeneration | Day 4 taught steam turbine cogeneration then set a gas turbine question calling it "same logic". It is not. |
 | 30 Aug | `reference/unit-discipline.md`; speed now tracked | Same kCal/kJ mix cost the same 5 marks twice — a layout problem, not a knowledge gap. |
+| 30 Aug | **Day 6 rebuilt from first principles** | Same treatment as Day 5. Rungs 51–64: what a furnace is and why it has doors, radiation vs convection at temperature, types, the thermodynamic ceiling on efficiency, then the loss inventory derived by walking round the furnace, the black-body chart reproduced from σT⁴, the skin-loss chart reproduced from its own formula, and the preheat rule derived from AAS × Cp / GCV. |
 | 30 Aug | **Day 5 rewritten three times: depth added, merged to one session, then rebuilt from first principles** | Student's feedback in three stages — two formulas was too thin; the supplement should not be a separate day; and the lesson still opened with `Q = m·Cp·ΔT` rather than building to it. Now Rungs 35–50: what a heat exchanger is, the three heat transfer modes, U constructed from the resistance chain, types and why each exists, then the energy balance, then the **LMTD derived by integration**, then the design equation. |
 | 30 Aug | **Prerequisite rule added to the Reviewer framework** | Three timed questions have now required untaught material (Days 1, 4, 5). Every sub-part must be checked before a question is set. |
 
