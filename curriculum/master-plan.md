@@ -80,7 +80,7 @@ Your weak zone and the paper's centre of gravity.
 | 2B | **Flue gas & heat balance** — dry flue gas mass, CO₂, why the indirect method exists | 1 | Prerequisite for the indirect method |
 | 3 | **Boilers II** — indirect method, all seven losses, blowdown | 1 | The single most-asked calculation |
 | 4 | **Cogeneration & turbines** — back-pressure, extraction, topping cycle, isentropic efficiency | 3 | 7/8 years |
-| 5 | **Heat exchangers** — LMTD, correction factor, effectiveness–NTU, fouling | 4 | 7/8 years |
+| 5 | **Heat exchangers** — LMTD, F, ε–NTU, plus U as resistances, fouling, approach economics, selection | 4 | 7/8 years. One 4-hr session, Rungs 35–49 |
 | 6 | **Furnaces, WHR, insulation** — furnace efficiency, recuperators, economisers | 2 | 4/8, but heavy when it appears |
 | 7 | **Consolidation + Mock A** (thermal only, 50 marks, timed) | 1–4 | First real checkpoint |
 
@@ -171,7 +171,7 @@ isn't lost.
 | 30 Aug | `reference/resources.md` added — official BEE chapters located and linked | Nine Book-4 chapters plus Fuels and Combustion are free on beeindia.gov.in. |
 | 30 Aug | Day 4B added — gas turbine cogeneration | Day 4 taught steam turbine cogeneration then set a gas turbine question calling it "same logic". It is not. |
 | 30 Aug | `reference/unit-discipline.md`; speed now tracked | Same kCal/kJ mix cost the same 5 marks twice — a layout problem, not a knowledge gap. |
-| 30 Aug | **Day 5B added — heat exchanger depth** | Student's feedback: Day 5 taught two formulas for a chapter appearing in 7 of 8 sittings. Correct. U as series resistances, fouling, approach temperature economics, temperature cross, ε–NTU, exchanger selection. |
+| 30 Aug | **Day 5 rewritten with depth, then merged back to one session** | Student's feedback in two parts: the original taught two formulas for a chapter in 7 of 8 sittings, and the supplement should not have been a separate day since the chapter is short. Day 5 is now a single 4-hour session, Rungs 35–49, calculation then behaviour. |
 | 30 Aug | **Prerequisite rule added to the Reviewer framework** | Three timed questions have now required untaught material (Days 1, 4, 5). Every sub-part must be checked before a question is set. |
 
 ## Standing risks
