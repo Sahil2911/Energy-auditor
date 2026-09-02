@@ -51,6 +51,12 @@ Set after Day 2 feedback. Every lesson must:
    the engineering behind the formulas — what the quantities physically are, what
    dominates, what an auditor would measure — not just a calculation recipe. If a
    lesson reduces to "here are the formulas", it is unfinished.
+7. **Build to the formula, never open with it.** Start from what the equipment is
+   and what physically happens inside it. Introduce each symbol only when the
+   physics demands it, and **derive** the non-obvious results rather than quoting
+   them — the LMTD is an integration, not a definition, and seeing that is the
+   difference between recall and understanding. A rung that opens with an
+   unexplained equation is a rung written backwards.
 6. **Check prerequisites before setting a question.** See the Reviewer framework.
    Name the reachable parts, or pick another question.
 
@@ -171,7 +177,7 @@ isn't lost.
 | 30 Aug | `reference/resources.md` added — official BEE chapters located and linked | Nine Book-4 chapters plus Fuels and Combustion are free on beeindia.gov.in. |
 | 30 Aug | Day 4B added — gas turbine cogeneration | Day 4 taught steam turbine cogeneration then set a gas turbine question calling it "same logic". It is not. |
 | 30 Aug | `reference/unit-discipline.md`; speed now tracked | Same kCal/kJ mix cost the same 5 marks twice — a layout problem, not a knowledge gap. |
-| 30 Aug | **Day 5 rewritten with depth, then merged back to one session** | Student's feedback in two parts: the original taught two formulas for a chapter in 7 of 8 sittings, and the supplement should not have been a separate day since the chapter is short. Day 5 is now a single 4-hour session, Rungs 35–49, calculation then behaviour. |
+| 30 Aug | **Day 5 rewritten three times: depth added, merged to one session, then rebuilt from first principles** | Student's feedback in three stages — two formulas was too thin; the supplement should not be a separate day; and the lesson still opened with `Q = m·Cp·ΔT` rather than building to it. Now Rungs 35–50: what a heat exchanger is, the three heat transfer modes, U constructed from the resistance chain, types and why each exists, then the energy balance, then the **LMTD derived by integration**, then the design equation. |
 | 30 Aug | **Prerequisite rule added to the Reviewer framework** | Three timed questions have now required untaught material (Days 1, 4, 5). Every sub-part must be checked before a question is set. |
 
 ## Standing risks
