@@ -47,6 +47,12 @@ Set after Day 2 feedback. Every lesson must:
 4. **Connect back.** Each concept links to where it reappears — the 44/12 in the
    flue gas formula is the 3.67 in the CO₂ calculation, and saying so once
    replaces memorising twice.
+5. **Depth in proportion to weight.** A chapter appearing in 7 of 8 sittings gets
+   the engineering behind the formulas — what the quantities physically are, what
+   dominates, what an auditor would measure — not just a calculation recipe. If a
+   lesson reduces to "here are the formulas", it is unfinished.
+6. **Check prerequisites before setting a question.** See the Reviewer framework.
+   Name the reachable parts, or pick another question.
 
 ## Non-negotiable daily rhythm
 
@@ -163,6 +169,10 @@ isn't lost.
 | 30 Aug | **Day 2 split into 2A and 2B; rung-by-rung format with self-check drills** | Student could not follow the worked examples or attempt the timed question. The rewrite still taught five ideas at once and then chained them into an eight-step example — too much simultaneous novelty. One idea per rung now, each with a checkable number, nothing chained until the rungs hold. Curriculum extends to 16 sessions; buffer absorbs it. |
 | 30 Aug | Off-topic cooling tower question removed from Day 2, returned to Day 10 | Setting an unfamiliar 20-mark system question on an already-overloaded day was a bad call. |
 | 30 Aug | `reference/resources.md` added — official BEE chapters located and linked | Nine Book-4 chapters plus Fuels and Combustion are free on beeindia.gov.in. |
+| 30 Aug | Day 4B added — gas turbine cogeneration | Day 4 taught steam turbine cogeneration then set a gas turbine question calling it "same logic". It is not. |
+| 30 Aug | `reference/unit-discipline.md`; speed now tracked | Same kCal/kJ mix cost the same 5 marks twice — a layout problem, not a knowledge gap. |
+| 30 Aug | **Day 5B added — heat exchanger depth** | Student's feedback: Day 5 taught two formulas for a chapter appearing in 7 of 8 sittings. Correct. U as series resistances, fouling, approach temperature economics, temperature cross, ε–NTU, exchanger selection. |
+| 30 Aug | **Prerequisite rule added to the Reviewer framework** | Three timed questions have now required untaught material (Days 1, 4, 5). Every sub-part must be checked before a question is set. |
 
 ## Standing risks
 

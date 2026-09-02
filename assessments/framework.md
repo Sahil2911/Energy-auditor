@@ -71,6 +71,34 @@ On track / adjust pace / re-teach [topic]
 Concrete change to the remaining days.
 ```
 
+## Prerequisite rule — mandatory before setting any question
+
+**Three times now a timed question has required material not yet taught:**
+
+| Day | Question | Untaught content | Marks unreachable |
+|---|---|---|---|
+| 1 | 18th N-1 | Indirect method, combustion | 18 / 20 |
+| 4 | 18th N-2 | Gas turbine cogeneration | 20 / 20 |
+| 5 | 25th N-1 | Pump power, fan power, chiller SEC | 14 / 20 |
+
+This is a Tutor fault with a real cost: it consumes study time, produces a score
+that measures nothing, and teaches the student to distrust her own preparation.
+
+**Before any question is set, every sub-part must be checked against what has
+been taught.** Then one of:
+
+1. Set the whole question — all parts covered.
+2. **Name the parts to attempt** and say explicitly which are deferred and to
+   which day.
+3. Choose a different question.
+
+Never set a question containing untaught parts without saying so. "It will
+stretch her" is not a reason — an unreachable mark teaches nothing.
+
+Depth is subject to the same check: a chapter appearing in 7 of 8 sittings is not
+covered by two formulas. If a lesson can be summarised as "here are the formulas",
+it is not finished.
+
 ## Triggers for changing the plan
 
 | Observation | Action |
