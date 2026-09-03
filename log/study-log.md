@@ -10,7 +10,7 @@ Updated daily. The Reviewer reads this before each assessment.
 | Started | 30 August 2026 |
 | Curriculum ends | 14 September 2026 |
 | **Exam** | **26 September 2026, 14:00–16:30** |
-| Days completed | **8 / 16** — through Day 6; Mock A issued |
+| Days completed | **9 / 16** — through Day 7 (Mock A) |
 | Buffer after curriculum | 11 days |
 
 ```
@@ -45,7 +45,7 @@ Book-4 ch.  [██                            ]   7%   1/15 chapters (ch.1 COMP
 | After day | Assessment | Max | Score | Date |
 |---|---|---|---|---|
 | 3 | Boiler & combustion diagnostic | 20 | **18** | 30 Aug |
-| 7 | Mock A — thermal | 60 | — | — |
+| 7 | Mock A — thermal | 60 | **29** | 30 Aug |
 | 10 | Electrical & fluids diagnostic | 30 | — | — |
 | 13 | Sector & systems diagnostic | 40 | — | — |
 | 14 | Full Mock 1 | 100 | — | — |
@@ -371,3 +371,46 @@ theoretical air, furnace SEC, turbine heat rates, pump power scale.
 **Book-4 Chapters 1, 2, 3 and 4 now complete.**
 
 **Next:** Day 7 — consolidation and Mock A, thermal only, 50 marks, timed.
+
+---
+
+### Day 7 — Mock A
+
+**29 / 60 raw (48%). 29 / 50 on attemptable material (58%).** Pass equivalent 30/60.
+
+| Section | Score |
+|---|---|
+| I — True/False | **8/10** |
+| II — Short numericals | **9/10** |
+| III — N-1 reverse combustion | ~2/20 |
+| III — N-2 heat exchanger | ~10/20 (B(i) correct; B(ii),(iii) untaught) |
+
+**Sections I and II: 17/20 combined.** L-1 exact. L-2 values all correct, labelled
+MWh instead of MW.
+
+**N-1 is where the paper was lost.** She recalled every relationship correctly but
+wrote `TA = 11.6C + 34.8(H₂ − O₂/8)` — with C and H₂ being precisely what the
+question asks for. A problem-recognition failure, not a knowledge gap: all the
+tools were Day 2A rungs.
+
+**N-2 part B(i) fully correct**, including both block diagrams and the 97.2% area
+increase (exact 97.1%).
+
+**Two Section I errors, both concepts covered explicitly:** the isentropic
+direction (she can apply the formula and still misjudge the direction), and a
+compound statement whose fact is true and inference false.
+
+**Tutor fault — fourth prerequisite breach.** The 17th N-2's parts (ii) and (iii)
+need chiller COP (Day 11). The question's *topic* was checked; its *sub-parts* were
+not. Rule tightened to sub-part level.
+
+**Tags:** concept ~20 (almost all N-1), units 1, curriculum 10.
+**Strip N-1 out and the rest reads 27/30.**
+
+**Added:** `reference/inverse-problems.md` — the four inverse types in Paper 4,
+the recognition trigger, and the anchor-and-chain method.
+
+**Still missing after two requests: per-question timing.** Pace under exam
+conditions remains unmeasured, and it is now the most important unknown.
+
+**Next:** Day 8 — pumps and pumping systems. Phase 2 begins.

@@ -127,6 +127,8 @@ these:
 | Furnace SEC, oil-fired | 40–60 litres/tonne |
 | Steam turbine heat rate | condensing ~2,500 · back-pressure ~30,000 kCal/kWh |
 | Pump/fan hydraulic power | tens of kW, not thousands, for typical plant flows |
+| **Turbine exhaust enthalpy** | **always between h₂s and h₁** — never below the isentropic value |
+| Effectiveness ε, isentropic η | between 0 and 1, never above |
 
 If an intermediate is ten times outside its anchor, stop there — do not wait for
 the final answer to look wrong, because it may not.

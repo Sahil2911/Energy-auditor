@@ -80,12 +80,15 @@ Concrete change to the remaining days.
 | 1 | 18th N-1 | Indirect method, combustion | 18 / 20 |
 | 4 | 18th N-2 | Gas turbine cogeneration | 20 / 20 |
 | 5 | 25th N-1 | Pump power, fan power, chiller SEC | 14 / 20 |
+| 7 | 17th N-2 | Chiller COP | 10 / 20 |
 
 This is a Tutor fault with a real cost: it consumes study time, produces a score
 that measures nothing, and teaches the student to distrust her own preparation.
 
-**Before any question is set, every sub-part must be checked against what has
-been taught.** Then one of:
+**Before any question is set, EVERY NUMBERED SUB-PART must be traced to a taught
+rung — not the question's apparent topic.** The Mock A breach happened because the
+question was confirmed to be "a heat exchanger question" and its sub-parts were
+never read; parts (ii) and (iii) needed chiller COP. Then one of:
 
 1. Set the whole question — all parts covered.
 2. **Name the parts to attempt** and say explicitly which are deferred and to
