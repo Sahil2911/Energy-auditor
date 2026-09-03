@@ -45,7 +45,7 @@ Book-4 ch.  [██                            ]   7%   1/15 chapters (ch.1 COMP
 | After day | Assessment | Max | Score | Date |
 |---|---|---|---|---|
 | 3 | Boiler & combustion diagnostic | 20 | **18** | 30 Aug |
-| 7 | Mock A — thermal | 60 | **29** | 30 Aug |
+| 7 | Mock A — thermal | 60 | **29** | 03 Sep |
 | 10 | Electrical & fluids diagnostic | 30 | — | — |
 | 13 | Sector & systems diagnostic | 40 | — | — |
 | 14 | Full Mock 1 | 100 | — | — |
