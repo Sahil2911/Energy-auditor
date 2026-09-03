@@ -89,6 +89,7 @@ Your weak zone and the paper's centre of gravity.
 | 5 | **Heat exchangers** — LMTD, F, ε–NTU, plus U as resistances, fouling, approach economics, selection | 4 | 7/8 years. One 4-hr session, Rungs 35–49 |
 | 6 | **Furnaces, WHR, insulation** — radiation physics, loss inventory, recuperators, air preheat | 2 | 4/8, but heavy when it appears. Rungs 51–64 |
 | 7 | **Consolidation + Mock A** (thermal only, 60 marks, 90 min at exam pace) | 1–4 | First real checkpoint |
+| 7B | **Reverse calculations from flue gas analysis** — Orsat basis, the three anchors, the reverse chain | 1 | Added after Mock A: N-1 was lost entirely to this |
 
 ### Phase 2 — Electrical & fluid systems (Days 8–10, ~10 hrs)
 
