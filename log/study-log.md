@@ -10,7 +10,7 @@ Updated daily. The Reviewer reads this before each assessment.
 | Started | 30 August 2026 |
 | Curriculum ends | 14 September 2026 |
 | **Exam** | **26 September 2026, 14:00–16:30** |
-| Days completed | **7 / 16** — Days 1, 2A, 2B, 3, 4, 4B, 5 done; Day 6 issued |
+| Days completed | **8 / 16** — through Day 6 |
 | Buffer after curriculum | 11 days |
 
 ```
@@ -25,7 +25,7 @@ Book-4 ch.  [██                            ]   7%   1/15 chapters (ch.1 COMP
 | Ch. | Topic | Day | Status |
 |---|---|---|---|
 | 1 | Boilers | 1–3 | ✅ complete |
-| 2 | Furnaces | 6 | 🟨 issued |
+| 2 | Furnaces | 6 | ✅ complete |
 | 3 | Cogeneration, turbines | 4, 4B | ✅ complete |
 | 4 | Heat exchangers | 5 | ✅ complete |
 | 5 | Motors, VSD | 10 | ⬜ |
@@ -325,3 +325,49 @@ found in official model answers.
 flue gas, CO₂, all seven losses.
 
 **Next:** Day 4 — cogeneration and turbines.
+
+---
+
+### Day 6 — 24th sitting L-2, re-rolling furnace
+
+**Time: 20:39 → 20:56, seventeen minutes** for a 5-mark question (target 10).
+
+**All final answers correct — full marks.**
+
+```
+    η        = 38.302 %                    ✓
+    SEC      = 40.429 kg/tonne             ✓
+    Cost, FO = Rs 2223.595/tonne           ✓
+    Cost, electric = Rs 1788.303/tonne     ✓
+    Conclusion: electric furnace economical ✓
+```
+
+**Best self-correction yet.** She first wrote SEC as `36000/(1565×0.93)` — the
+inversion — then struck it out and wrote `(1565×0.93)/36`. That is the fourth
+appearance of the reciprocal family and **the first caught on the first pass,
+unprompted**.
+
+**One slip that did not propagate.** `5,985,473.68 / 860 = 6,959.85 kWh/hr` was
+written as **695.985** — a factor of ten — and carried into SEC as 19.333 kWh/T
+instead of 193.33. But the final cost line reads Rs 1788.303, which requires
+193.33 × 9.25. So the arithmetic performed was right; only the two transcribed
+intermediates were out by ten.
+
+Lucky rather than caught. The checking pass still is not running.
+
+**The anchor that would have caught it instantly:** heating one tonne of steel to
+1250 °C needs 0.13 × 1215 = 157,950 kCal = **~184 kWh, irreducibly**. An answer of
+19.3 kWh/tonne is ten times below the thermodynamic minimum.
+
+| # | Error | Type | Fix |
+|---|---|---|---|
+| 1 | 6959.85 written as 695.985 | Arithmetic | Order-of-magnitude anchors added to the checking pass |
+
+**Added:** `reference/precision-and-rounding.md` §5 now requires an
+order-of-magnitude check on every *intermediate*, plus a table of physical
+anchors — steel heating energy, ER bands, efficiency bands, L1 bands,
+theoretical air, furnace SEC, turbine heat rates, pump power scale.
+
+**Book-4 Chapters 1, 2, 3 and 4 now complete.**
+
+**Next:** Day 7 — consolidation and Mock A, thermal only, 50 marks, timed.

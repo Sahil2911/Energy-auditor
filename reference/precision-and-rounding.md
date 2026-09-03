@@ -108,6 +108,28 @@ At the end of every question, before moving on:
 3. **Check no line below a correction still uses the old value.** See §3.
 4. **Say the sanity sentence aloud for the final answer** — bigger or smaller
    than the input, and why.
+5. **Check the order of magnitude of every intermediate**, not just the answer. A
+   factor-of-10 slip in a transcribed intermediate is invisible line-to-line and
+   obvious against a physical anchor.
+
+## Order-of-magnitude anchors
+
+A factor-of-10 slip cannot survive contact with a number you already know. Keep
+these:
+
+| Quantity | Anchor |
+|---|---|
+| Heating 1 t steel to 1250 °C | **~185 kWh minimum** (0.13 × 1215 kCal/kg ÷ 860) |
+| Evaporation ratio | coal 4–6 · oil 13–15 · gas 11–13 |
+| Boiler efficiency | 80–90% · furnace **25–40%** |
+| Dry flue gas loss L1 | boiler 5–12% · furnace **50–60%** |
+| Theoretical air | oil/gas 13–17 · coal 6–8 · biomass 3–5 kg/kg |
+| Furnace SEC, oil-fired | 40–60 litres/tonne |
+| Steam turbine heat rate | condensing ~2,500 · back-pressure ~30,000 kCal/kWh |
+| Pump/fan hydraulic power | tens of kW, not thousands, for typical plant flows |
+
+If an intermediate is ten times outside its anchor, stop there — do not wait for
+the final answer to look wrong, because it may not.
 
 Two minutes. On the evidence so far it is worth more marks than any further
 theory.
