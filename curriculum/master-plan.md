@@ -88,7 +88,7 @@ Your weak zone and the paper's centre of gravity.
 | 4 | **Cogeneration & turbines** — back-pressure, extraction, topping cycle, isentropic efficiency | 3 | 7/8 years |
 | 5 | **Heat exchangers** — LMTD, F, ε–NTU, plus U as resistances, fouling, approach economics, selection | 4 | 7/8 years. One 4-hr session, Rungs 35–49 |
 | 6 | **Furnaces, WHR, insulation** — radiation physics, loss inventory, recuperators, air preheat | 2 | 4/8, but heavy when it appears. Rungs 51–64 |
-| 7 | **Consolidation + Mock A** (thermal only, 50 marks, timed) | 1–4 | First real checkpoint |
+| 7 | **Consolidation + Mock A** (thermal only, 60 marks, 90 min at exam pace) | 1–4 | First real checkpoint |
 
 ### Phase 2 — Electrical & fluid systems (Days 8–10, ~10 hrs)
 

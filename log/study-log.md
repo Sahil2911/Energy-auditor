@@ -10,7 +10,7 @@ Updated daily. The Reviewer reads this before each assessment.
 | Started | 30 August 2026 |
 | Curriculum ends | 14 September 2026 |
 | **Exam** | **26 September 2026, 14:00–16:30** |
-| Days completed | **8 / 16** — through Day 6 |
+| Days completed | **8 / 16** — through Day 6; Mock A issued |
 | Buffer after curriculum | 11 days |
 
 ```
@@ -45,7 +45,7 @@ Book-4 ch.  [██                            ]   7%   1/15 chapters (ch.1 COMP
 | After day | Assessment | Max | Score | Date |
 |---|---|---|---|---|
 | 3 | Boiler & combustion diagnostic | 20 | **18** | 30 Aug |
-| 7 | Mock A — thermal | 50 | — | — |
+| 7 | Mock A — thermal | 60 | — | — |
 | 10 | Electrical & fluids diagnostic | 30 | — | — |
 | 13 | Sector & systems diagnostic | 40 | — | — |
 | 14 | Full Mock 1 | 100 | — | — |

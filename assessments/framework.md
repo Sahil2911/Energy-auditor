@@ -8,7 +8,7 @@ lost, and tell the Tutor what to change.
 | After day | Assessment | Max | Format |
 |---|---|---|---|
 | 3 | Boiler & combustion diagnostic | 30 | 1 long + 2 short, 45 min |
-| 7 | Mock A — thermal only | 50 | 2 long + 2 short, 75 min |
+| 7 | Mock A — thermal only | 60 | 10 T/F + 2 short + 2 long, 90 min |
 | 10 | Electrical & fluids diagnostic | 30 | 1 long + 2 short, 45 min |
 | 13 | Sector & systems diagnostic | 40 | 2 long, 60 min |
 | 14 | Full Mock 1 | 100 | Full paper, 2.5 hrs, exam conditions |
