@@ -13,13 +13,13 @@ was being maintained.*
 | Curriculum | **18 sessions** (grew from 15 — see note) |
 | Started | 30 August 2026 |
 | **Exam** | **26 September 2026, 14:00–16:30** |
-| Sessions completed | **11 / 18** |
-| Book-4 chapters complete | **7 / 15** |
+| Sessions completed | **12 / 18** |
+| Book-4 chapters complete | **8 / 15** |
 | Days to exam | **~21** |
 
 ```
-Sessions    [██████████████████            ]  61%   11/18
-Book-4 ch.  [██████████████                ]  47%   7/15
+Sessions    [████████████████████          ]  67%   12/18
+Book-4 ch.  [████████████████              ]  53%   8/15
 ```
 
 **Why 18 sessions, not the original 15.** Four were added in response to
@@ -48,9 +48,9 @@ Net +3. The buffer absorbed it; 21 days still remain after Day 10.
 | 6 | Furnaces, WHR, insulation | ✅ |
 | 7 | **Mock A** — 29/60 | ✅ |
 | 7B | Reverse flue gas calculations | 🟨 issued, not yet reported |
-| 8 | Pumps | ✅ (tracer done; 24th L-2 outstanding) |
+| 8 | Pumps | ✅ (24th L-2 now cleared) |
 | 9 | Fans, blowers, compressed air | ✅ |
-| 10 | Motors, VSD, cooling towers | 🟨 issued |
+| 10 | Motors, VSD, cooling towers | ✅ |
 | 11 | HVAC, chillers, refrigeration | ⬜ |
 | 12 | Power plants, heat rate, PAT | ⬜ |
 | 13 | Cement, steel, textile, sugar, financial | ⬜ |
@@ -66,6 +66,8 @@ Pace under exam conditions. Target is ~1.5 min per mark (150 min for 100 marks).
 | 8 | 17th L-2 tracer | 5 | 4 min | 8 | ✅ well inside |
 | 9 | 23rd N-1 compressed air | 20 | 32 min | 30 | ✅ at budget |
 | 9 | 19th N-2 fan/pump | — | 20 min | — | ✅ |
+| 10 | 17th N-1 cooling tower | 20 | 33 min | 30 | ✅ at budget |
+| 10 | 24th L-2 pump | 5 | 5 min | 8 | ✅ well inside |
 
 **Every measured question is at or inside budget.**
 
@@ -77,7 +79,7 @@ Pace under exam conditions. Target is ~1.5 min per mark (150 min for 100 marks).
 | 2 | Furnaces | 6 | ✅ complete |
 | 3 | Cogeneration, turbines | 4, 4B | ✅ complete |
 | 4 | Heat exchangers | 5 | ✅ complete |
-| 5 | Motors, VSD | 10 | 🟨 issued |
+| 5 | Motors, VSD | 10 | ✅ complete |
 | 6 | Fans and blowers | 9 | ✅ complete |
 | 7 | Water pumps | 8 | ✅ complete |
 | 8 | Compressors | 9 | ✅ complete |
@@ -588,3 +590,75 @@ resurface — the *air* ΔT was to hand, so it got used. The recognition trigger
 Pace is at or inside budget on every measured question.
 
 **Next:** Day 10 — motors, VSDs and cooling towers.
+
+---
+
+### Day 10 — cooling tower and pump
+
+## 17th sitting N-1, cooling tower — strong, one part unfinished
+
+**Time: 18:17 → 18:50, thirty-three minutes** against a thirty-minute target.
+
+Everything attempted is correct:
+
+```
+    Before:  effectiveness 60% → range 6 °C, T_out 29 °C, m 500 m³/hr
+    After:   effectiveness 70% → range 7 °C, T_out 28 °C, m 428.571 m³/hr
+
+    Head = 40 − (−1) = 41 m          ← negative suction handled correctly
+    Hydraulic:  55.858 → 47.879 kW   (reduction 7.979 kW)
+    Motor input: 116.226 → 101.503 kW (reduction 14.723 kW)
+
+    Evaporation: 4.59 m³/hr both cases
+    Blowdown:    1.84 → 1.15 m³/hr
+    Makeup:      154.2 → 137.76 m³/day
+```
+
+**The suction head sign was handled correctly** — 4 kg/cm²(g) is 40 m, suction is
+−1 m, so the head is 41 m not 39. That was flagged as this chapter's sign trap on
+Day 8 and it did not catch her.
+
+**A result worth noticing, which the page does not comment on:** the evaporation
+loss is **identical** before and after — 4.59 m³/hr both times. That is not a
+coincidence. Evaporation depends on heat rejected, and `m × range = Q` is fixed by
+the process. Raising effectiveness changes the flow and the range in inverse
+proportion, leaving evaporation untouched. **All the water saving comes from the
+COC change, none from the refurbishment.** That is exactly the kind of observation
+that earns interpretation marks.
+
+**Two things incomplete:**
+
+1. **The makeup reduction is not stated.** Both figures are computed but the
+   question asks for the *reduction*: 154.22 − 137.70 = **16.52 kL/day**. Same
+   "check the noun" issue as the Day 8 tracer question — the answer to the question
+   asked was one subtraction away.
+2. **The fan power reduction was not reached.** "Air Flow =" is written and left
+   blank at 18:50. Part 1 asks for pump *and* fan.
+
+## 24th sitting Set B L-2, pump — **5 / 5**
+
+**Time: 19:10 → 19:15. Five minutes** against an eight-minute target.
+
+```
+    η_hydraulic = (QH/367 × 1000) / (√3·V·I·cos φ − 19,500) = 81.83 %
+    η_overall   = (QH/367 × 1000) / (√3·V·I·cos φ)          = 76.92 %
+```
+
+Verified: 81.73% and 76.83%. The model answer's 81.4% and 76.5% come from
+rounding the hydraulic power to 249 kW; hers carries full precision and is the
+better answer.
+
+**Another catch on the page.** She first wrote 76.921 for the *hydraulic*
+efficiency, struck it out, and replaced it with 81.828 — recognising that pump
+efficiency measures against motor **output** (after subtracting the 19.5 kW of
+losses), while overall efficiency measures against motor **input**. That
+distinction is the whole point of the question, and she corrected herself into it.
+
+| # | Error | Type | Fix |
+|---|---|---|---|
+| 1 | Makeup *reduction* not stated | Method — question reading | Checking pass step 4b |
+| 2 | Fan power part not reached | Time | — |
+
+**Chapter 5 (Motors, VSD) complete. Book-4 chapters done: 1, 2, 3, 4, 5, 6, 7, 8.**
+
+**Five timing points now, all at or inside budget.**
