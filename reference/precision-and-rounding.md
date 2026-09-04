@@ -108,6 +108,9 @@ At the end of every question, before moving on:
 3. **Check no line below a correction still uses the old value.** See §3.
 4. **Say the sanity sentence aloud for the final answer** — bigger or smaller
    than the input, and why.
+4b. **Re-read what the question asked for.** Not what you computed — what was
+   asked. A tracer question that yields *total* flow when *water* flow was
+   requested is fully correct arithmetic and a lost mark. Check the noun.
 5. **Check the order of magnitude of every intermediate**, not just the answer. A
    factor-of-10 slip in a transcribed intermediate is invisible line-to-line and
    obvious against a physical anchor.

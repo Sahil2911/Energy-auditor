@@ -414,3 +414,42 @@ the recognition trigger, and the anchor-and-chain method.
 conditions remains unmeasured, and it is now the most important unknown.
 
 **Next:** Day 8 — pumps and pumping systems. Phase 2 begins.
+
+---
+
+### Day 8 — 17th sitting L-2, tracer flow measurement
+
+**Time: 10:52 → 10:56. Four minutes** against an eight-minute target.
+**First per-question timing recorded in the series.**
+
+**4 / 5.**
+
+```
+    Salt dosed    = 0.2 × 2 = 0.4 litres/min of salt        ✓
+    Downstream    = 0.005 x = 0.4                            ✓
+    x             = 80 litres/min                            ✓
+    Water flow    = 80 − 2 = 78 litres/min                   ✗ not done
+```
+
+Method exact — this is `C₁V₁ = C₂V₂` and she applied it cleanly and fast. The
+80 litres/min is the **total** downstream flow, which includes the 2 litres/min of
+tracer solution added. The question asks for the **water** flow, so the dosing rate
+comes off: 78 litres/min.
+
+A read-the-question loss, not a method loss. The model answer states it both ways
+and subtracts in each.
+
+**Worth noticing: this is an inverse problem.** You cannot meter an open channel,
+so you dose a known tracer and measure the dilution downstream — measure the
+effect, infer the cause. Exactly the shape of Day 7B, in a different chapter.
+
+| # | Error | Type | Fix |
+|---|---|---|---|
+| 1 | Total flow reported instead of water flow | Method — question reading | Final-answer check: is this the quantity actually asked for? |
+
+**Timing note.** Four minutes on a five-mark question, against a target of eight,
+is the first hard evidence on pace and it is **well inside** the exam budget. One
+data point is not a trend, but it is the right direction.
+
+**Outstanding:** the 24th Set B L-2 pump-efficiency question, the main Day 8 timed
+piece, has not yet been submitted.
