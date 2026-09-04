@@ -40,6 +40,9 @@ towers. Book-4 chapters 5, 6, 7 and 8.
    wet bulb of 25 °C is performing worse than one achieving 32 °C on a day with a
    wet bulb of 28 °C.
 
+   *(Corrected: the original answer key marked this False on the claim that both
+   approaches were 5 °C. They are 5 °C and 4 °C. The answer is **True**.)*
+
 ---
 
 # SECTION II — Short Numerical (5 marks, 8 minutes)
@@ -106,8 +109,16 @@ Calculate:
    appears stationary to the rotor, no EMF is induced, no rotor current flows, and
    no torque is produced. (Day 10, Rung 95)
 
-5. **False.** Judge a tower against the **wet bulb**, never an absolute temperature.
-   Both have a 5 °C approach and are performing identically. (Day 10, Rung 102)
+5. **True.** Judge a tower against the **wet bulb**, never an absolute temperature —
+   and doing so here gives approaches of **5 °C and 4 °C**. The second tower has the
+   tighter approach and is therefore the better performer, so the first *is* performing
+   worse. (Day 10, Rung 102)
+
+   > **Answer key error, found by the student.** This was originally marked False on
+   > the assertion that both approaches were 5 °C. 32 − 28 = 4. The intended question
+   > needed 33 °C against a 28 °C wet bulb; the numbers as written make the statement
+   > true. She answered False first, then struck it out and wrote True — which means
+   > she computed both approaches rather than pattern-matching the rule.
 </details>
 
 ## Section II
@@ -127,6 +138,11 @@ Calculate:
 
     Pump efficiency = 8.32 / 15.03 × 100 = 55.4 %                      [1]
 ```
+
+> **The second trap.** Dividing hydraulic power by the *motor input* of 16.7 kW
+> gives 49.8% — that is the **overall pump-set efficiency**, not the pump
+> efficiency. The question asks for the pump. The motor efficiency must be applied
+> first. The two answers differ by exactly the motor efficiency: 49.8/55.4 = 0.90.
 
 **The sign is the whole question.** Reading the suction as +3 gives H = 42 m and
 an efficiency of 48.5% — plausible-looking and wrong.

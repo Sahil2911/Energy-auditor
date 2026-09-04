@@ -68,6 +68,7 @@ Pace under exam conditions. Target is ~1.5 min per mark (150 min for 100 marks).
 | 9 | 19th N-2 fan/pump | — | 20 min | — | ✅ |
 | 10 | 17th N-1 cooling tower | 20 | 33 min | 30 | ✅ at budget |
 | 10 | 24th L-2 pump | 5 | 5 min | 8 | ✅ well inside |
+| — | **E&F diagnostic** | 30 | 30 min | 45 | ✅ well inside |
 
 **Every measured question is at or inside budget.**
 
@@ -98,7 +99,7 @@ Pace under exam conditions. Target is ~1.5 min per mark (150 min for 100 marks).
 | 3 | Boiler & combustion diagnostic | 20 | **18** | 30 Aug |
 | 7 | Mock A — thermal | 60 | **29** | 03 Sep |
 | 10 | Electrical & fluids diagnostic | 30 | — | — |
-| 10 | Electrical & fluids diagnostic | 30 | — | issued |
+| 10 | Electrical & fluids diagnostic | 30 | **28** | — |
 | 13 | Sector & systems diagnostic | 40 | — | — |
 | 14 | Full Mock 1 | 100 | — | — |
 | 15 | Full Mock 2 | 100 | — | — |
@@ -702,3 +703,32 @@ distinction is the whole point of the question, and she corrected herself into i
 **Chapter 5 (Motors, VSD) complete. Book-4 chapters done: 1, 2, 3, 4, 5, 6, 7, 8.**
 
 **Five timing points now, all at or inside budget.**
+
+---
+
+### Electrical & Fluids Diagnostic — **28 / 30**
+
+**Time: 20:45 → 21:15, thirty minutes** against forty-five.
+
+Section I 5/5 · Section II 4/5 · Section III 19/20.
+
+**She found an error in the answer key.** Question 5's two towers have approaches
+of 5 °C and 4 °C, not 5 and 5 as the key claimed, so the statement is True. She
+wrote False, struck it out, and wrote True — computing both approaches rather than
+pattern-matching the "judge against the wet bulb" rule. Key corrected.
+
+**Section II:** suction lift sign handled correctly (48 m, the question's main
+trap), but the final division used motor input rather than shaft power, giving the
+**overall** efficiency of 49.8% where the **pump** efficiency of 55.4% was asked.
+The two differ by exactly the motor efficiency.
+
+Same distinction she got right on Day 10's pump question by self-correcting.
+Understood, not yet automatic.
+
+**Section III:** complete and correct, including deriving range from effectiveness
+and approach, and **a mass flow diagram drawn unprompted** — marks are allocated to
+it. One digit slip in the diagram (16,593 for 19,593) that nothing depends on.
+
+**Assessment:** `assessments/diagnostic-electrical-fluids-review.md`
+
+**Verdict: Phase 2 secure.** The diagnostic's own scale puts 24+ at "proceed".

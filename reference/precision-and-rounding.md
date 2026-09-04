@@ -111,6 +111,10 @@ At the end of every question, before moving on:
 4a. **Label every ΔT with its stream before substituting.** A heat exchanger has
    two streams and four temperatures, and the wrong pair is always available and
    always plausible. Write "air: 60−30" or "water: 47−25" beside the number.
+4a2. **When a question asks for "the efficiency", name which one first.** Pump,
+   overall, motor, hydraulic, isothermal, isentropic — each differs from its
+   neighbour by exactly one efficiency term, and every one of them produces a
+   plausible number. Write the word before computing.
 4b. **Re-read what the question asked for.** Not what you computed — what was
    asked. A tracer question that yields *total* flow when *water* flow was
    requested is fully correct arithmetic and a lost mark. Check the noun.
