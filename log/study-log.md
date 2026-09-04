@@ -98,6 +98,7 @@ Pace under exam conditions. Target is ~1.5 min per mark (150 min for 100 marks).
 | 3 | Boiler & combustion diagnostic | 20 | **18** | 30 Aug |
 | 7 | Mock A — thermal | 60 | **29** | 03 Sep |
 | 10 | Electrical & fluids diagnostic | 30 | — | — |
+| 10 | Electrical & fluids diagnostic | 30 | — | issued |
 | 13 | Sector & systems diagnostic | 40 | — | — |
 | 14 | Full Mock 1 | 100 | — | — |
 | 15 | Full Mock 2 | 100 | — | — |
