@@ -4,21 +4,70 @@ Updated daily. The Reviewer reads this before each assessment.
 
 ## Progress tracker
 
+*Last updated: 05 September 2026. **Update the bars whenever the chapter table
+below changes** — they went stale between Day 3 and Day 10 because only the table
+was being maintained.*
+
 | | |
 |---|---|
-| Curriculum | 16 sessions, ~52 hours |
+| Curriculum | **18 sessions** (grew from 15 — see note) |
 | Started | 30 August 2026 |
-| Curriculum ends | 14 September 2026 |
 | **Exam** | **26 September 2026, 14:00–16:30** |
-| Days completed | **12 / 18** — through Day 9; Day 10 issued |
-| Buffer after curriculum | 11 days |
+| Sessions completed | **11 / 18** |
+| Book-4 chapters complete | **7 / 15** |
+| Days to exam | **~21** |
 
 ```
-Curriculum  [████████                      ]  25%   4/16 sessions
-Book-4 ch.  [██                            ]   7%   1/15 chapters (ch.1 COMPLETE)
+Sessions    [██████████████████            ]  61%   11/18
+Book-4 ch.  [██████████████                ]  47%   7/15
 ```
 
-**Days to exam: 26.**
+**Why 18 sessions, not the original 15.** Four were added in response to
+assessments, and one was merged back:
+
+| Change | Reason |
+|---|---|
+| +2A / 2B (was one Day 2) | Worked examples were unfollowable; split one-idea-per-rung |
+| +4B | Day 4 taught steam turbine cogeneration then set a gas turbine question |
+| +7B | Mock A lost 18 marks to reverse flue gas calculations, never taught |
+| −5B (merged into Day 5) | Student's request: the chapter is short |
+
+Net +3. The buffer absorbed it; 21 days still remain after Day 10.
+
+## Sessions
+
+| # | Session | Status |
+|---|---|---|
+| 1 | Exam craft, boilers I | ✅ |
+| 2A | Combustion air | ✅ |
+| 2B | Flue gas, CO₂, heat balance | ✅ |
+| 3 | Indirect method, seven losses | ✅ |
+| 4 | Cogeneration & turbines | ✅ |
+| 4B | Gas turbine cogeneration | ✅ |
+| 5 | Heat exchangers | ✅ |
+| 6 | Furnaces, WHR, insulation | ✅ |
+| 7 | **Mock A** — 29/60 | ✅ |
+| 7B | Reverse flue gas calculations | 🟨 issued, not yet reported |
+| 8 | Pumps | ✅ (tracer done; 24th L-2 outstanding) |
+| 9 | Fans, blowers, compressed air | ✅ |
+| 10 | Motors, VSD, cooling towers | 🟨 issued |
+| 11 | HVAC, chillers, refrigeration | ⬜ |
+| 12 | Power plants, heat rate, PAT | ⬜ |
+| 13 | Cement, steel, textile, sugar, financial | ⬜ |
+| 14 | **Full Mock 1** — 100 marks, 2.5 hrs | ⬜ |
+| 15 | Gap closure + **Full Mock 2** | ⬜ |
+
+## Timing record
+
+Pace under exam conditions. Target is ~1.5 min per mark (150 min for 100 marks).
+
+| Session | Question | Marks | Time | Target | Verdict |
+|---|---|---|---|---|---|
+| 8 | 17th L-2 tracer | 5 | 4 min | 8 | ✅ well inside |
+| 9 | 23rd N-1 compressed air | 20 | 32 min | 30 | ✅ at budget |
+| 9 | 19th N-2 fan/pump | — | 20 min | — | ✅ |
+
+**Every measured question is at or inside budget.**
 
 ## Chapter coverage
 

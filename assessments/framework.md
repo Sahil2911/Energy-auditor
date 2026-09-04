@@ -47,6 +47,16 @@ The distribution is the signal. Mostly Concept after Day 7 means the curriculum
 is moving too fast. Mostly Arithmetic means it is working and the student needs
 composure, not more teaching.
 
+## Logger maintenance rule
+
+`log/study-log.md` carries the same state in three places — the summary table, the
+progress bars, and the chapter/session tables. They drifted apart between Day 3 and
+Day 10 because only the tables were updated, leaving the bars reading 25% when the
+true figure was 61%.
+
+**On every session, update all three or none.** The bars are the part a reader sees
+first and the part least likely to be maintained, so check them explicitly.
+
 ## Feedback format
 
 Each assessment produces `assessments/day-NN-review.md`:
