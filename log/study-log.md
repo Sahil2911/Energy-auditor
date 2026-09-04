@@ -51,7 +51,7 @@ Net +3. The buffer absorbed it; 21 days still remain after Day 10.
 | 8 | Pumps | ✅ (24th L-2 now cleared) |
 | 9 | Fans, blowers, compressed air | ✅ |
 | 10 | Motors, VSD, cooling towers | ✅ |
-| 11 | HVAC, chillers, refrigeration | ⬜ |
+| 11 | HVAC, chillers, refrigeration | 🟨 issued |
 | 12 | Power plants, heat rate, PAT | ⬜ |
 | 13 | Cement, steel, textile, sugar, financial | ⬜ |
 | 14 | **Full Mock 1** — 100 marks, 2.5 hrs | ⬜ |
