@@ -105,6 +105,15 @@ never read; parts (ii) and (iii) needed chiller COP. Then one of:
    which day.
 3. Choose a different question.
 
+**Then check the data table.** Every quantity a question supplies must have a use
+you have taught. **Unused given data is the tell that something is missing.**
+
+The Day 10 cooling tower question supplied an L/G ratio, an air density and a fan
+pressure. None of the three appeared anywhere in the lesson, and the sub-part check
+passed anyway because "fan power" mapped to a rung that existed — while the step
+that gets you *to* the fan, air flow from L/G, did not. Sub-parts are ambiguous;
+a data table is not.
+
 Never set a question containing untaught parts without saying so. "It will
 stretch her" is not a reason — an unreachable mark teaches nothing.
 

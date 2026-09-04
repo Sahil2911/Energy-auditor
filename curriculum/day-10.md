@@ -360,6 +360,66 @@ it to 0.02% or less, and questions often say "ignore drift".
 
 ---
 
+## Rung 105b — Air flow, and the L/G ratio
+
+*Added after Day 10 — the timed question needs this and the lesson did not have it.*
+
+To find fan power you need the **air** flow, and nothing measured on the water
+side gives it directly. The link is the **liquid-to-gas ratio**:
+
+```
+    L/G  =  mass flow of water / mass flow of air        (both kg/hr)
+```
+
+**Why it exists.** A cooling tower's job is to bring water and air into contact.
+Too little air and the air saturates before it has absorbed much heat; too much
+and you burn fan power moving air that leaves barely warmed. Designers settle on a
+ratio, and for most induced-draught towers it lands between **1.2 and 1.8** — say
+1.5 kg of water per kg of air.
+
+It is a **design parameter given in the question**, not something you derive. When
+a cooling tower question gives you an L/G ratio and an air density, it is telling
+you the fan calculation is coming.
+
+**The chain, water side to fan power:**
+
+```
+    G (kg/hr)      = L / (L/G)                       ← mass of air
+    Q_air (m³/hr)  = G / ρ_air                        ← ρ_air ≈ 1.29 kg/m³
+    Q_air (m³/s)   = Q_air / 3600
+    Fan hydraulic  = Q (m³/s) × Δp (mmWC) / 102       ← Day 9, Rung 84
+    Motor input    = hydraulic / (η_fan × η_motor)    ← divide, never multiply
+```
+
+Note `ρ_air = 1.29` rather than 1.2 — cooling tower questions use the density at
+the tower's own conditions, and it is always given.
+
+**Drill 58b.** Water 500,000 kg/hr, L/G = 1.5, air density 1.29 kg/m³, fan
+develops 20 mmWC, fan efficiency 55%, fan motor 90%. Find the fan's electrical
+input.
+
+<details><summary>Answer</summary>
+
+```
+    G      = 500,000 / 1.5      = 3,33,333 kg/hr
+    Q_air  = 333,333 / 1.29     = 2,58,398 m³/hr = 71.78 m³/s
+    Fan hydraulic = 71.78 × 20 / 102 = 14.07 kW
+    Motor input   = 14.07 / (0.55 × 0.90) = 28.43 kW
+```
+
+*Sanity:* the fan moves 258,000 m³/hr against only 20 mmWC — a huge volume at
+almost no pressure, which is exactly what a cooling tower fan is. And 28 kW of fan
+against 116 kW of pump is the usual split: **the pump dominates, the fan does
+not.**
+</details>
+
+> **A useful consequence for the refurbishment question.** Raising effectiveness
+> reduces the water flow (less water needed for the same heat at a bigger range).
+> With L/G fixed, **the air flow falls in the same proportion**, so the fan saves
+> too. Both machines benefit from the same change.
+
+---
+
 ## Rung 106 — What an auditor checks at a cooling tower
 
 1. **Measure wet bulb**, hot and cold water temperatures. Compute range, approach,
@@ -390,8 +450,12 @@ refurbishment. Effectiveness rises 60% → 70%, COC rises 3.5 → 5. Find:
 1. Reduction in pump and fan power
 2. Reduction in makeup water in kL/day
 
-**Prerequisite check:** effectiveness and COC → Rungs 103–105 · pump power →
-Day 8 Rung 75 · fan power → Day 9 Rung 84. **All parts covered.**
+**Prerequisite check:** effectiveness and COC → Rungs 103–105 · air flow from L/G
+→ Rung 105b · pump power → Day 8 Rung 75 · fan power → Day 9 Rung 84.
+
+> The first version of this check missed Rung 105b entirely — the question gives
+> an L/G ratio, an air density and a fan pressure, and nothing in the lesson used
+> them. See the data-item rule in `assessments/framework.md`.
 
 Approach: use effectiveness to get the new cold water temperature, then the new
 range, then evaporation, then makeup at each COC.
@@ -427,6 +491,8 @@ budget — keep the run going.
 - [ ] **Can derive the evaporation loss** and explain the 89%
 - [ ] **Can derive B = E/(COC−1) and M = E·COC/(COC−1)** from the two balances
 - [ ] Can explain why raising COC saves water and what limits it
+- [ ] **Can get air flow from the L/G ratio** and compute fan power from it
+- [ ] Can say why raising effectiveness saves fan power as well as pump power
 - [ ] Can list audit checks and recommendations
 
 **Next (Day 11):** HVAC, chillers and refrigeration — 7 of 8 sittings, and where
