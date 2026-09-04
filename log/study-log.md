@@ -10,7 +10,7 @@ Updated daily. The Reviewer reads this before each assessment.
 | Started | 30 August 2026 |
 | Curriculum ends | 14 September 2026 |
 | **Exam** | **26 September 2026, 14:00–16:30** |
-| Days completed | **10 / 18** — through Day 8; Day 9 issued |
+| Days completed | **11 / 18** — through Day 9 |
 | Buffer after curriculum | 11 days |
 
 ```
@@ -29,9 +29,9 @@ Book-4 ch.  [██                            ]   7%   1/15 chapters (ch.1 COMP
 | 3 | Cogeneration, turbines | 4, 4B | ✅ complete |
 | 4 | Heat exchangers | 5 | ✅ complete |
 | 5 | Motors, VSD | 10 | ⬜ |
-| 6 | Fans and blowers | 9 | 🟨 issued |
-| 7 | Water pumps | 8 | 🟨 issued |
-| 8 | Compressors | 9 | 🟨 issued |
+| 6 | Fans and blowers | 9 | ✅ complete |
+| 7 | Water pumps | 8 | ✅ complete |
+| 8 | Compressors | 9 | ✅ complete |
 | 9 | HVAC | 11 | ⬜ |
 | 10 | Financial analysis | 13 | ⬜ |
 | 11 | Power plants | 12 | ⬜ |
@@ -453,3 +453,89 @@ data point is not a trend, but it is the right direction.
 
 **Outstanding:** the 24th Set B L-2 pump-efficiency question, the main Day 8 timed
 piece, has not yet been submitted.
+
+---
+
+### Day 9 — compressed air and fans
+
+## 23rd sitting N-1, compressed air — **20 / 20**
+
+**Time: 15:14 → 15:46, thirty-two minutes** for a 20-mark five-part question
+(target 30). Inside the exam budget.
+
+Every part exact:
+
+```
+    A) FAD                    = 13.311 m³/min           ✓
+    B) Daily energy / cost    = 1455.6 kWh / Rs 14,556  ✓
+    C) Isothermal power       = 46.572 kW               ✓
+       Isothermal efficiency  = 56.795 %                ✓
+    D) New motor pulley       = 234 mm                  ✓
+    E) Saving 4.317 kWh/hr, payback 4.17 months         ✓
+```
+
+**First full-marks long question of the series.** Method, arithmetic, units and
+presentation all clean, on a chapter met that same day.
+
+**Fifth reciprocal catch, again unprompted.** The payback line was first written as
+`43.17 × 8000 / 1,20,000`, then reworked to `1,20,000 / (43.17 × 8000)`. Payback is
+cost over annual saving; the inversion was caught on the page.
+
+## 19th sitting N-2, fan and pump power — partially correct
+
+**Time: 15:49 → 16:09, twenty minutes.**
+
+**Fan side fully correct:**
+
+```
+    Air mass    = 370,125 kg/hr = 102.813 kg/s     ✓
+    Air volume  = 79.7 m³/s                         ✓
+    Fan power   = 79.7 × 30 / 102 = 23.441 kW       ✓
+    Annual      = 23.441 × 5000/(0.65 × 0.9) = 2,00,350 kWh   ✓
+```
+
+The 102 constant used correctly on its first outing, and the efficiency chain
+divided rather than multiplied.
+
+**Pump side — one error, carried through:**
+
+```
+    She wrote:  m(60 − 30) = 63,450(80 − 38)   →  m = 88,830 kg/hr
+```
+
+**60 − 30 is the air's temperature rise, not the water's.** The cooling water
+enters at 25 °C and the exchanger's effectiveness of 0.4 sets its outlet:
+
+```
+    T_out = 0.4 × (80 − 25) + 25 = 47 °C   so ΔT = 22, not 30
+    m = 26,64,900 / 22 = 1,21,132 kg/hr
+```
+
+Consequences: pump power 7.261 kW instead of **9.902 kW**, annual pump energy
+53,785 instead of **73,347 kWh**, and annual saving 146,565 instead of
+**127,004 kWh** — overstated by 15%.
+
+Everything downstream of that substitution is arithmetically correct.
+
+**Why it matters more than the marks.** She computed this same 47 °C correctly on
+Day 5, in the guided walkthrough. Doing it cold, the effectiveness step did not
+resurface — the *air* ΔT was to hand, so it got used. The recognition trigger for
+"which stream does this ΔT belong to" is not yet automatic.
+
+| # | Error | Type | Fix |
+|---|---|---|---|
+| 1 | Air ΔT used for the water stream | Concept — stream identity | Label every ΔT with its stream before substituting |
+
+**Chapters 6, 7 and 8 now complete.** Book-4 chapters done: 1, 2, 3, 4, 6, 7, 8.
+
+**Timing picture, now three points:**
+
+| Question | Marks | Time | Target |
+|---|---|---|---|
+| 17th L-2 tracer | 5 | 4 min | 8 |
+| 23rd N-1 compressed air | 20 | 32 min | 30 |
+| 19th N-2 fan/pump | — | 20 min | — |
+
+Pace is at or inside budget on every measured question.
+
+**Next:** Day 10 — motors, VSDs and cooling towers.

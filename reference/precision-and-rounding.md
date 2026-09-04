@@ -108,6 +108,9 @@ At the end of every question, before moving on:
 3. **Check no line below a correction still uses the old value.** See §3.
 4. **Say the sanity sentence aloud for the final answer** — bigger or smaller
    than the input, and why.
+4a. **Label every ΔT with its stream before substituting.** A heat exchanger has
+   two streams and four temperatures, and the wrong pair is always available and
+   always plausible. Write "air: 60−30" or "water: 47−25" beside the number.
 4b. **Re-read what the question asked for.** Not what you computed — what was
    asked. A tracer question that yields *total* flow when *water* flow was
    requested is fully correct arithmetic and a lost mark. Check the noun.
