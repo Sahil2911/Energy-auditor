@@ -379,6 +379,45 @@ flue gas, CO₂, all seven losses.
 
 ---
 
+### Day 4 — cogeneration
+
+*Logged retrospectively.*
+
+**19th N-1: 15/20**, 21:53 → 22:19 (26 min). Parts (a) 21.41 MW, (b) 17.63 TPH and
+(d) 2058.37 kCal/kWh all correct. Part (c) EUF returned 0.611 against 0.788 —
+electrical in kCal, heat and fuel in kJ, one term of three in the wrong system.
+
+**18th N-2 gas turbine: not attemptable.** 22:20 → 22:32, then stopped. Correct
+call — Day 4 had taught steam turbine cogeneration and called the gas turbine
+question "same logic", which it is not. **Second prerequisite breach.**
+
+**After Day 4B: 18th N-2 = 20/20**, 22:16 → 23:06 (50 min), including using the
+question's 80% boiler efficiency rather than the model answer's 85%.
+**19th N-1 (c) redo: 0.611 again** — same unit mix, second occurrence.
+
+**Added:** `curriculum/day-04b.md`, `reference/unit-discipline.md`.
+**Assessment:** `assessments/day-04-review.md`
+
+---
+
+### Day 5 — heat exchangers
+
+*Logged retrospectively.*
+
+**18th L-2: 5/5.** Water flow 1.204 kg/s, corrected LMTD 18.374 °C, area 14.451 m².
+
+**25th N-1: part (a) correct** — 55.372 m² against the model's 55.2. Part (b)
+hydraulic power correct in value (9,800 W) but labelled kW, and the efficiencies
+**multiplied instead of divided** — 7.03 kW where the answer is 13.67. Parts (c)
+and (d) untaught. **Third prerequisite breach: 14 of 20 marks.**
+
+**Student's criticism:** the chapter had been taught as two formulas. Correct, and
+it drove three rewrites of Day 5, ending with the LMTD derived by integration.
+
+**Assessment:** `assessments/day-05-review.md`
+
+---
+
 ### Day 6 — 24th sitting L-2, re-rolling furnace
 
 **Time: 20:39 → 20:56, seventeen minutes** for a 5-mark question (target 10).
