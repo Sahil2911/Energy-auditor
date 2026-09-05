@@ -79,18 +79,48 @@ the 24th gave neither and its model answer used 0.24 for gas and 0.43 for vapour
 
 **Excess air from flue gas O₂**
 
-    % EA = [ %O₂ / (21 − %O₂) ] × 100
+    % EA = [ %O₂ / (21 − %O₂) ] × 100         %O₂ is BY VOLUME, dry basis
+    % EA = [ (O₂ − CO/2) / (21 − (O₂ − CO/2)) ] × 100      when CO is reported
+
+⚠️ **This is an approximation, not an identity.** It assumes the dry flue gas has
+the same mole count as the air supplied, so that the O₂ supplied is 21% of the dry
+gas. Carbon combustion is mole-neutral (1 mol O₂ → 1 mol CO₂), so the only thing
+that breaks the assumption is **hydrogen** — its water is removed on the dry basis,
+taking its oxygen with it.
+
+    coal (H₂ ~4%)          shrinkage ~2%     shortcut fine
+    furnace oil (H₂ ~12%)  shrinkage ~4%     shortcut fine
+    H₂-rich fuel (H₂ 34%)  shrinkage 11%     shortcut over-reads EA by ~13%
+
+**If the flue gas composition is given, do not use this formula at all** — get the
+actual air from the nitrogen instead (`AAS = N₂/0.77`), which is an exact mass
+balance. See Day 7B.
 
 **Actual air supplied**
 
     AAS = (1 + EA/100) × A_th
 
-**Mass of dry flue gas** — two routes, both accepted:
+**Mass of dry flue gas** — three routes. They are the same equation; what differs
+is where the actual air came from.
 
-    m_dfg = C×(44/12) + S×(64/32) + (AAS − A_th)×0.23 + AAS×0.77
-    m_dfg = (AAS + 1) − 9·H₂ − M
+    (a) from FLUE GAS composition, when it is given — EXACT, no approximation
+        AAS = N₂ / 0.77        then   m_dfg = (AAS + 1) − 9·H₂ − M
+        or the standard form:
+        m_dfg = [11·CO₂ + 8·O₂ + 7·(CO + N₂)] / [3·(CO₂ + CO)] × C
+                (percentages BY VOLUME from the Orsat; C is the mass fraction
+                 of carbon in the fuel)
 
-Air is 23% O₂ and 77% N₂ by mass.
+    (b) from the FUEL, via excess air — carries the shortcut's approximation
+        AAS = (1 + EA/100) × A_th      then   m_dfg = (AAS + 1) − 9·H₂ − M
+
+    (c) constituent-by-constituent, equivalent to (b)
+        m_dfg = C×(44/12) + S×(64/32) + (AAS − A_th)×0.23 + AAS×0.77
+
+Air is 23% O₂ and 77% N₂ **by mass** (21% / 79% by volume).
+
+> **Rule.** Flue gas composition given → route (a). Only the ultimate analysis
+> given → route (b). **Never cross over mid-question.** If both are available and
+> they disagree, report (a) and say why in one line.
 
 ---
 

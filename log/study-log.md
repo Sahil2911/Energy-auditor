@@ -4,7 +4,7 @@ Updated daily. The Reviewer reads this before each assessment.
 
 ## Progress tracker
 
-*Last updated: 05 September 2026 (Day 12 reported, 28/30; Days 13 + 13B issued). **Update the bars whenever
+*Last updated: 05 September 2026 (Day 7B reported 19/20; plan switched to mock-driven). **Update the bars whenever
 the chapter table below changes** — they went stale between Day 3 and Day 10
 because only the table was being maintained.*
 
@@ -13,22 +13,22 @@ because only the table was being maintained.*
 | Curriculum | **19 sessions** (grew from 15 — see note) |
 | Started | 30 August 2026 |
 | **Exam** | **26 September 2026, 14:00–16:30** |
-| Sessions **reported back** | **14 / 19** |
-| Sessions **issued** | **17 / 19** |
+| Sessions **reported back** | **16 / 19** |
+| Sessions **issued** | **18 / 19** |
 | Book-4 chapters **taught** | **15 / 15** ✅ |
 | Book-4 chapters **assessed** | **12 / 15** |
 | Days to exam | **21** |
 
 ```
-Reported    [██████████████████████        ]  74%   14/19
-Issued      [███████████████████████████   ]  89%   17/19
+Reported    [█████████████████████████     ]  84%   16/19
+Issued      [████████████████████████████  ]  95%   18/19
 Ch. taught  [██████████████████████████████] 100%   15/15
 Ch. assessed[████████████████████████      ]  80%   12/15
 ```
 
 **All fifteen Book-4 chapters now have a lesson behind them.** What remains is
-not teaching but *reporting back* — Days 7B, 13 and 13B are issued and not yet
-worked — plus the diagnostic and two full mocks.
+not teaching but *mock practice* — Days 13 and 13B were read rather than drilled,
+by design (see the Phase 4 note in the master plan) — plus the diagnostic and two full mocks.
 
 **Why 18 sessions, not the original 15.** Four were added in response to
 assessments, and one was merged back:
@@ -56,17 +56,19 @@ Net +4. The buffer absorbed it; 21 days still remain.
 | 5 | Heat exchangers | ✅ |
 | 6 | Furnaces, WHR, insulation | ✅ |
 | 7 | **Mock A** — 29/60 | ✅ |
-| 7B | Reverse flue gas calculations | 🟨 issued, not yet reported |
+| 7B | Reverse flue gas calculations | ✅ **19/20** |
 | 8 | Pumps | ✅ (24th L-2 now cleared) |
 | 9 | Fans, blowers, compressed air | ✅ |
 | 10 | Motors, VSD, cooling towers | ✅ |
 | 11 | HVAC, chillers, refrigeration | ✅ |
 | 12 | Power plants, heat rate, PAT | ✅ **28/30** |
-| 13 | Cement, steel, textile, sugar, financial | 🟨 issued |
-| 13B | Buildings & cooling load | 🟨 issued |
-| — | **Sector & systems diagnostic** — 40 marks, 60 min | ⬜ |
-| 14 | **Full Mock 1** — 100 marks, 2.5 hrs | ⬜ |
-| 15 | Gap closure + **Full Mock 2** | ⬜ |
+| 13 | Cement, steel, textile, sugar, financial | 📖 read (drills optional) |
+| 13B | Buildings & cooling load | 📖 skimmed (by agreement) |
+| — | ~~Sector & systems diagnostic~~ | ⛔ retired — folded into Mock 1 |
+| 14 | **Full Mock 1** — 100 marks, 2.5 hrs | 🟨 issued |
+| 15 | Gap closure from Mock 1 | ⬜ |
+| 16 | **Full Mock 2** | ⬜ |
+| 17 | Gap closure + **Full Mock 3** if time | ⬜ |
 
 ## Timing record
 
@@ -82,6 +84,8 @@ Pace under exam conditions. Target is ~1.5 min per mark (150 min for 100 marks).
 | — | **E&F diagnostic** | 30 | 30 min | 45 | ✅ well inside |
 | 11 | 25th N-1 chilled water | 20 | 32 min | 30 | ✅ at budget |
 | 11 | 17th N-2 (ii)(iii) | — | 16 min | 15 | ✅ |
+| 7B | 25th N-2 reverse combustion | 20 | 29 min | 30 | ✅ at budget |
+| 7B | Practice 2 — m_dfg formula | — | 7 min | — | ✅ |
 | 12 | 23rd N-1 pet coke boiler | 20 | 28 min | 30 | ✅ inside budget |
 | 12 | 25th L-1 PAT | 5 | 4 min | 8 | ✅ well inside |
 | 12 | 19th L-1 plant comparison | 5 | 3 min | 8 | ✅ well inside |
@@ -936,3 +940,78 @@ Trend 2.
 **Answers verified before writing:** Q1 ρ 0.6198 / 0.6241, 155.2 / 20.84 / 116.1,
 **0.121 kg/kg**; Q2 **₹52.27 lakh**, **COP 5.02**, 16,87,800 vs 16,63,200 →
 **not adequate**.
+
+---
+
+### Day 7B — Reverse Flue Gas Calculations — **19 / 20**
+
+**Attempted 05 Sep, deliberately delayed.** She held the attempt back to put a gap
+between the lesson and the work — testing recall rather than short-term memory. The
+reverse chain came back whole: carbon from CO₂, air from N₂, oxygen balance,
+hydrogen from what is left, fuel composition C 65.71% / H₂ 34.29%, dry flue gas
+**4015.3 kg/hr**. 29 minutes against a 30-minute budget.
+
+**This is the question that scored 0/20 in Mock A.** The Day 7B insertion has paid
+for itself.
+
+**Practice 2** applied the standard `[11CO₂ + 8O₂ + 7(CO+N₂)]/[3(CO₂+CO)] × C`
+formula and the **CO-corrected** excess air `(O₂ − CO/2)/(21 − (O₂ − CO/2))` =
+37.71%, which most candidates omit. One arithmetic slip: 14.41 where 754/37.5 ×
+0.72 = 14.48.
+
+**Her question, and it was a better question than the paper's.** She computed the
+dry flue gas two ways and got 4015.3 and 4084.4, and stopped to ask which.
+
+> **Answer, for the record.** The two routes are the *same equation*. Feed Route 1's
+> actual air (110.39/4.981 = 22.164 kg/kg) into Route 2's `AAS + 1 − 9H₂` and you
+> get 20.078 kg/kg — Route 1 exactly. The whole 1.7% gap is one number: the excess
+> air. Measured from nitrogen it is **13.34%**; the shortcut `%O₂/(21 − %O₂)` gives
+> **15.10%**.
+>
+> **The shortcut assumes the dry flue gas has the same mole count as the air
+> supplied.** Carbon combustion is mole-neutral (1 mol O₂ → 1 mol CO₂); only
+> hydrogen shrinks the count, because its water is removed on the dry basis. This
+> fuel is **34% hydrogen by mass** — 15.4 kg of water per 100 kg of dry gas leaves,
+> an 11% mole shrinkage, so O₂ supplied is 23.3% of the dry gas rather than 21%.
+> At coal's 4% or furnace oil's 12% hydrogen the shortcut is fine, which is why it
+> has served without trouble since Day 2A.
+
+> **Note to the Tutor.** The excess-air formula has been taught unqualified since
+> Day 2A. It is now qualified in `reference/formula-sheet.md`, and the dry flue gas
+> entry rewritten as **three routes with a precedence rule**: flue gas composition
+> given → use the nitrogen balance, which is exact; only the ultimate analysis
+> given → use excess air; never cross over mid-question. This was a genuine gap in
+> the curriculum found by the student, not by me.
+
+**Assessment:** `assessments/day-07b-review.md`
+
+---
+
+### Plan change — mock-driven from here — *05 Sep*
+
+**Her call, and it is the right one.** After reading Days 13 and 13B she judged
+that the five Day 13 drills alone exceed a day, that Section III's sector questions
+are optional (N-4 is "answer any ONE of four"), and that sitting full mocks and
+letting gaps surface beats pre-drilling material she may never choose to answer.
+
+**Accepted with one qualification, recorded so it is not lost:** Sections I and II
+are compulsory and *do* draw on sector concepts — the 25th sitting alone carried
+two sector True/Falses and the 16th a Profitability Index short. Reading Day 13,
+which she has done, covers that. The drills are demoted, not the chapter.
+
+She also asked to "learn all nuances of the concepts learnt", naming **vapour
+compression vs vapour absorption refrigeration** as something she does not yet
+know. `reference/concept-distinctions.md` created — thirteen entries, written as
+physics rather than definitions, with VCR/VAR first and at length. It is now the
+spine of the remaining plan and grows after every mock.
+
+**Remaining plan:** Mock 1 (issued) → gap closure → Mock 2 → gap closure + Mock 3
+if time → final revision. 21 days, so there is room for four mocks.
+
+**Mock 1 design note.** Every question unseen, and **N-4 deliberately offers two
+sector options** (DRI steel, cement WHRB) against one HVAC option. That is her own
+hypothesis put to the test: can the sector numericals be done from the book plus
+general concepts? She picks; the log records why. All answers verified against the
+model answers before issue — EUF 0.78, 8488.4 Gcal/yr, 3879.7 Sm³/day; η 68.28%,
+24.14 m³/hr; evaporation 206.3, blowdown 68.8, 80 hrs each way; HP boiler 87.9%;
+₹3070/day.

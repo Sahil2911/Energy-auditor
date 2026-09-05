@@ -110,14 +110,44 @@ The chapters most candidates neglect, and where recent papers have shifted.
 | 11 | **HVAC, chillers, refrigeration** — COP, kW/TR, chilled water balance, ice plant | 9 | 7/8 years |
 | 12 | **Power plants** — gross/net heat rate, auxiliary power, PAT, e-certificates | 11 | 7/8 and rising |
 | 13 | **Cement, steel, textile, sugar + financial analysis** | 13, 12, 15, 10 | New 4th-ed chapters. Rungs 134–153 |
-| 13B | **Buildings & cooling load** — the eight-row load table, CLTD, CLF, infiltration | 14 | 2/8, but a full 20-mark option when it appears. Rungs 154–162 |
+| 13B | **Buildings & cooling load** — the eight-row load table, CLTD, CLF, infiltration | 14 | 2/8, and the new exam scheme splits buildings into its own auditor stream. **Skim only** — read 05 Sep, drills optional |
 
-### Phase 4 — Integration (Days 14–15, ~7 hrs)
+> **Days 13 and 13B are reading, not drilling.** Read once for the concepts; the
+> drills are optional practice for the buffer. See the Phase 4 note.
+
+### Phase 4 — Mock-driven (Days 14 onward)
+
+**Revised 05 September at the student's request, and the reasoning is sound.**
+
+She read Days 13 and 13B and judged that (a) Day 13's five drills alone exceed a
+day's study, (b) Section III's sector questions are **optional** — N-4 is "answer
+any ONE of four" — and (c) the faster route now is to sit full mocks and let the
+gaps surface, rather than pre-drill material she may never choose to answer.
+
+**Accepted, with one qualification.** Section III's sector questions are optional,
+but **Sections I and II are compulsory and do draw on sector concepts** — the 25th
+sitting alone carried two sector True/Falses (cement kiln loss, steel rolling
+mills) and the 16th a Profitability Index short. So Day 13's *conceptual* layer
+still earns marks even when its numericals are never attempted. Reading it, which
+she has done, is enough for that. The drills are demoted to optional.
+
+**What replaces the drilling:** every gap a mock exposes is written into
+`reference/concept-distinctions.md` — the physics of the distinction, not a
+definition. She asked to "learn all nuances of the concepts learnt", and named
+vapour compression vs vapour absorption as an example. That file is now the spine
+of the remaining plan and grows after every mock.
 
 | Day | What |
 |---|---|
-| — | **Sector & systems diagnostic** — 40 marks, 2 long questions, 60 min, Days 11–13B |
-| 14 | **Full Mock 1** — 100 marks, 2.5 hrs, open book, exam conditions. Then full review. |
+| 14 | **Full Mock 1** — 100 marks, 2.5 hrs, exam conditions. All questions unseen. N-4 offers a sector option deliberately, to test her judgement. |
+| 15 | **Gap closure** built from Mock 1's errors, not from a syllabus |
+| 16 | **Full Mock 2** |
+| 17 | Gap closure + **Full Mock 3** if time allows |
+| — | Final revision: formula sheet, concept distinctions, guidebook index |
+
+**Retired:** the standalone sector & systems diagnostic. Its chiller question is
+now Mock 1's N-4(A); its cement kiln question stays in
+`assessments/diagnostic-sector-systems.md` as optional extra practice.
 | 15 | Gap closure on Mock 1 errors + **finalise the guidebook index** + **Full Mock 2** |
 
 ### Days 16–27 — buffer (not part of the 15-day curriculum)
