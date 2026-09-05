@@ -106,6 +106,27 @@ Heat input is unchanged, so:
 > gross, because the same fuel now buys less exported electricity. If your net heat
 > rate comes out lower than gross, you have inverted it.
 
+> ### ⚠️ Direction: heat rate is an INVERSE quantity
+>
+> **Lower heat rate = better plant.** Every other performance number in this paper
+> — efficiency, COP, evaporation ratio, effectiveness, EUF — runs the normal way,
+> so the habit of "the bigger number wins" is strong and it fires automatically.
+> Heat rate reverses it, and reading a heat-rate comparison the ordinary way turns
+> a correct calculation into a wrong answer in one sentence.
+>
+> **So never answer a comparison on the inverse quantity. Convert both sides to
+> efficiency first**, where higher is unambiguously better:
+>
+> ```
+>     2500 kCal/kWh  →  η = 860/2500   = 34.40 %
+>     2608.7         →  η = 860/2608.7 = 32.97 %      ⟹  the 2500 plant wins
+> ```
+>
+> Two extra divisions, and the direction cannot invert. The same rule covers
+> **kW/TR against COP** (Day 11) and **SEC against output per unit energy**
+> (Day 6): whenever the quantity is "input per unit output", flip it before you
+> compare.
+
 **Drill 64.** Plant A: gross heat rate 2400 kCal/kWh, auxiliary power 8%.
 Plant B: net heat rate 2500. Which is more efficient?
 
@@ -115,11 +136,26 @@ Plant B: net heat rate 2500. Which is more efficient?
     Plant A net = 2400 / (1 − 0.08) = 2400/0.92 = 2608.7 kCal/kWh
 ```
 
-**Plant B is more efficient** — 2500 against 2608.7.
+Now convert both to efficiency before answering:
 
-The trap is comparing 2400 with 2500 and choosing A. **They are not the same
-quantity.** Always convert to a common basis before comparing, and net is the
-honest basis because it is what leaves the gate.
+```
+    Plant A:  η = 860/2608.7 = 32.97 %
+    Plant B:  η = 860/2500   = 34.40 %
+```
+
+**Plant B is more efficient** — 34.40% against 32.97%.
+
+**There are two traps here, not one.**
+
+The first is comparing 2400 with 2500 and choosing A. They are not the same
+quantity; convert to a common basis first, and net is the honest basis because it
+is what leaves the gate.
+
+The second is subtler and it is the one that actually catches people who got the
+first one right: computing 2608.7 correctly, observing correctly that it is
+**higher** than 2500, and then concluding that A is better. **Higher heat rate is
+worse.** Writing the two efficiencies down makes that impossible to get backwards,
+which is the whole reason for spending the extra two divisions.
 </details>
 
 ---
@@ -322,8 +358,12 @@ sulphur, and the question supplies a humidity figure — so L4 is in play.
 
 ## Then — 25th sitting L-2 (10 min)
 
-`papers/25-2.pdf` — the PAT e-certificate question. 5 marks, 8 minutes. Drill 65
-is this question.
+`papers/25-2.pdf` — the PAT e-certificate question, **L-1** in this (Pink) set.
+5 marks, 8 minutes. Drill 65 is this question.
+
+> The sets reorder the questions: it is L-1 in `25-2.pdf` and L-2 in `25-1.pdf`.
+> Always check the label against the paper in front of you rather than trusting a
+> pointer — including mine.
 
 Also do **19th L-1** (`papers/19-1.pdf`) — the two-plant comparison, Drill 64.
 It is a one-line answer that most candidates get backwards.
@@ -343,6 +383,8 @@ coke boiler, comment on whether 82% is good for a solid fuel boiler and why.
 - [ ] Can distinguish turbine, gross and net heat rate
 - [ ] **Know net heat rate = gross/(1 − APC)** and that net is always worse
 - [ ] Can compare two plants quoted on different bases
+- [ ] **Know heat rate is an inverse quantity — lower is better** — and convert
+      both sides to efficiency before answering any comparison
 - [ ] Know why part-load operation raises heat rate
 
 **PAT**

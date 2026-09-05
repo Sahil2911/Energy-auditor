@@ -97,6 +97,27 @@ Every ratio in this paper that can be flipped, and the sentence that settles it.
 | 8 | **Day 13** | **Thermic fluid heater fuel after efficiency improvement** | Same heat duty, better efficiency → **less** fuel. So `new fuel = old × η_old/η_new`. If it went up, you inverted it. |
 | 9 | **Day 13** | **Textile liquor-ratio loss margin** | Do losses make the computed bath bigger or smaller? Smaller — so the margin divides. |
 | 10 | **Day 13** | **Cement-to-clinker factor** | Cement always weighs *more* than the clinker in it. If cement < clinker, flip it. |
+| 11 | **Day 12** | **Heat rate — comparing two plants** ⚠️ *first uncaught inversion since Day 1* | Heat rate is input per unit output, so **lower is better**. Never answer on the inverse quantity: convert both to efficiency (`860/HR`) and compare those. |
+
+## The general rule behind #5, #7 and #11
+
+Three of these are the same trap wearing different clothes. Each pairs an
+**inverse** quantity (input per unit output — lower is better) with a **direct**
+one (output per unit input — higher is better):
+
+| Inverse — lower is better | Direct — higher is better | Bridge |
+|---|---|---|
+| Heat rate, kCal/kWh | Efficiency, % | `η = 860/HR` |
+| kW/TR | COP | `COP = 3024/(kW/TR × 860)` |
+| Specific energy consumption | Output per unit energy | reciprocal |
+
+Every *other* performance number in this paper — efficiency, COP, evaporation
+ratio, effectiveness, EUF, yield — runs the normal way. So "the bigger number
+wins" is a heavily reinforced reflex, and on these three it fires and is wrong.
+
+**The habit that removes the risk entirely: never answer a comparison on the
+inverse quantity.** Convert both sides to the direct one, then compare. It costs
+two divisions and it cannot go wrong.
 
 **The pattern to watch is not how many you make** — it is whether the ratio you get
 wrong is one you have already met.

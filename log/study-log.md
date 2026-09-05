@@ -4,7 +4,7 @@ Updated daily. The Reviewer reads this before each assessment.
 
 ## Progress tracker
 
-*Last updated: 05 September 2026 (Day 13 + 13B issued). **Update the bars whenever
+*Last updated: 05 September 2026 (Day 12 reported, 28/30; Days 13 + 13B issued). **Update the bars whenever
 the chapter table below changes** — they went stale between Day 3 and Day 10
 because only the table was being maintained.*
 
@@ -13,21 +13,21 @@ because only the table was being maintained.*
 | Curriculum | **19 sessions** (grew from 15 — see note) |
 | Started | 30 August 2026 |
 | **Exam** | **26 September 2026, 14:00–16:30** |
-| Sessions **reported back** | **13 / 19** |
+| Sessions **reported back** | **14 / 19** |
 | Sessions **issued** | **17 / 19** |
 | Book-4 chapters **taught** | **15 / 15** ✅ |
-| Book-4 chapters **assessed** | **11 / 15** |
+| Book-4 chapters **assessed** | **12 / 15** |
 | Days to exam | **21** |
 
 ```
-Reported    [████████████████████          ]  68%   13/19
+Reported    [██████████████████████        ]  74%   14/19
 Issued      [███████████████████████████   ]  89%   17/19
 Ch. taught  [██████████████████████████████] 100%   15/15
-Ch. assessed[██████████████████████        ]  73%   11/15
+Ch. assessed[████████████████████████      ]  80%   12/15
 ```
 
 **All fifteen Book-4 chapters now have a lesson behind them.** What remains is
-not teaching but *reporting back* — Days 7B, 12, 13 and 13B are issued and not yet
+not teaching but *reporting back* — Days 7B, 13 and 13B are issued and not yet
 worked — plus the diagnostic and two full mocks.
 
 **Why 18 sessions, not the original 15.** Four were added in response to
@@ -61,7 +61,7 @@ Net +4. The buffer absorbed it; 21 days still remain.
 | 9 | Fans, blowers, compressed air | ✅ |
 | 10 | Motors, VSD, cooling towers | ✅ |
 | 11 | HVAC, chillers, refrigeration | ✅ |
-| 12 | Power plants, heat rate, PAT | 🟨 issued |
+| 12 | Power plants, heat rate, PAT | ✅ **28/30** |
 | 13 | Cement, steel, textile, sugar, financial | 🟨 issued |
 | 13B | Buildings & cooling load | 🟨 issued |
 | — | **Sector & systems diagnostic** — 40 marks, 60 min | ⬜ |
@@ -82,8 +82,11 @@ Pace under exam conditions. Target is ~1.5 min per mark (150 min for 100 marks).
 | — | **E&F diagnostic** | 30 | 30 min | 45 | ✅ well inside |
 | 11 | 25th N-1 chilled water | 20 | 32 min | 30 | ✅ at budget |
 | 11 | 17th N-2 (ii)(iii) | — | 16 min | 15 | ✅ |
+| 12 | 23rd N-1 pet coke boiler | 20 | 28 min | 30 | ✅ inside budget |
+| 12 | 25th L-1 PAT | 5 | 4 min | 8 | ✅ well inside |
+| 12 | 19th L-1 plant comparison | 5 | 3 min | 8 | ✅ well inside |
 
-**Every measured question is at or inside budget.**
+**Every measured question is at or inside budget — now eleven in a row.**
 
 ## Chapter coverage
 
@@ -99,7 +102,7 @@ Pace under exam conditions. Target is ~1.5 min per mark (150 min for 100 marks).
 | 8 | Compressors | 9 | ✅ complete |
 | 9 | HVAC | 11 | ✅ complete |
 | 10 | Financial analysis | 13 | 🟨 issued |
-| 11 | Power plants | 12 | 🟨 issued |
+| 11 | Power plants | 12 | ✅ complete |
 | 12 | Steel | 13 | 🟨 issued |
 | 13 | Cement | 13 | 🟨 issued |
 | 14 | Buildings | **13B** | 🟨 issued |
@@ -125,9 +128,9 @@ Running count by error type. This is what tells the tutor what to change.
 
 | Type | Count | Note |
 |---|---|---|
-| Concept | 1 | Did not know the method |
-| Method | 2 | Knew it, applied it wrongly |
-| Arithmetic | 0 | Right method, wrong number |
+| Concept | **2** | Did not know the method — +1: heat rate read as "higher is better" (Day 12) |
+| Method | 2 | Knew it, applied it wrongly — *plus 1 caught on the page, not counted* |
+| Arithmetic | 0 | Right method, wrong number — *plus 1 caught on the page, not counted* |
 | Units | 0 | kCal/kJ, TPH/kg-hr mix-ups |
 | Lookup speed | 0 | Over 60 s to find something in the books |
 | Curriculum | 18 + | Marks lost to material not yet taught, or data omitted from a question — a planning fault, not a gap |
@@ -773,6 +776,59 @@ the electrical basis is the right one.
 **Assessment:** `assessments/day-11-review.md`
 
 **Chapter 9 complete. Book-4 chapters done: 1–9.**
+
+---
+
+### Day 12 — Power Plants, Heat Rate and PAT — **28 / 30**
+
+**23rd N-1: 20/20**, 14:02 → 14:30 (28 min against 30). Six losses, evaporation
+ratio, and a **flash steam fraction taught that morning** — all correct at the first
+attempt: A_th 11.649, EA 40%, AAS 16.309, m_dfg 16.971, losses 12.983 / 2.653 /
+0.115 / 0.395 / 1 / 0.5, **η 82.354%**, ER 11.15, **x 0.441 kg/kg**.
+
+**Two errors made, two caught on the page.** Theoretical air first written 27.153,
+struck out, corrected to 11.649. Then `m_dfg` computed as 16.971 but **17.309
+substituted into L₁** — giving 13.241 — struck out and re-substituted correctly.
+The second is the harder catch, because a wrong number carried one line forward
+leaves working that *looks* consistent. The checking pass found it.
+
+**25th L-1 PAT: 5/5** in four minutes. 2500 net, 100 reduction, **50,000
+e-certificates**, MU and TOE conversions in a single line.
+
+**She corrected my pointer.** Day 12 sent her to "25th L-2"; in `papers/25-2.pdf`
+(Pink set) it is **L-1**. She wrote "L-1 not L-2" at the top of the page. Fixed in
+the curriculum, with a note that the sets reorder questions and a pointer — mine
+included — is not to be trusted over the paper in hand.
+
+**19th L-1: 3/5 — the finding of the session.** NHR of A computed correctly as
+2608.696, and the comparison sentence written correctly: *A's is higher than B's*.
+Then the inference flipped — **"Plant A is more efficient"**, where higher heat rate
+means worse.
+
+> **Note to the Tutor.** This is *not* the trap Day 12 warned about. The lesson
+> predicted she would compare 2400 with 2500 and pick A. She did not — she
+> converted to a common basis, the step most candidates miss. The failure is the
+> **reciprocal family, uncaught for the first time since Day 1**: heat rate is
+> inverse efficiency, and on an inverse quantity bigger is worse. Every other
+> number in this paper — efficiency, COP, ER, effectiveness, EUF, yield — runs the
+> normal way, so "the bigger number wins" is a reinforced reflex that fires
+> automatically.
+>
+> It is also *sharper* than Trend 2. Trend 2 was right work with a **missing**
+> final sentence; this is right work with an **inverted** one, which contradicts
+> the line above it and reads worse to an examiner.
+>
+> **Curriculum changed the same day.** Day 12 Rung 123 now carries an explicit
+> direction rule with the 32.97% / 34.40% anchor, the drill answer states the
+> conversion rather than the bare verdict, and the checklist has a line for it.
+> `reference/reciprocal-traps.md` gained entry 11 and a new section naming the
+> general rule: **never answer a comparison on an inverse quantity — convert both
+> sides to the direct one first.** That covers heat rate vs efficiency, kW/TR vs
+> COP, and SEC vs output per unit energy in one habit.
+
+**Assessment:** `assessments/day-12-review.md`
+
+**Chapter 11 complete. Book-4 chapters done: 1–9, 11.**
 
 ---
 
