@@ -52,7 +52,7 @@ Net +3. The buffer absorbed it; 21 days still remain after Day 10.
 | 9 | Fans, blowers, compressed air | ✅ |
 | 10 | Motors, VSD, cooling towers | ✅ |
 | 11 | HVAC, chillers, refrigeration | ✅ |
-| 12 | Power plants, heat rate, PAT | ⬜ |
+| 12 | Power plants, heat rate, PAT | 🟨 issued |
 | 13 | Cement, steel, textile, sugar, financial | ⬜ |
 | 14 | **Full Mock 1** — 100 marks, 2.5 hrs | ⬜ |
 | 15 | Gap closure + **Full Mock 2** | ⬜ |
@@ -88,7 +88,7 @@ Pace under exam conditions. Target is ~1.5 min per mark (150 min for 100 marks).
 | 8 | Compressors | 9 | ✅ complete |
 | 9 | HVAC | 11 | ✅ complete |
 | 10 | Financial analysis | 13 | ⬜ |
-| 11 | Power plants | 12 | ⬜ |
+| 11 | Power plants | 12 | 🟨 issued |
 | 12 | Steel | 13 | ⬜ |
 | 13 | Cement | 13 | ⬜ |
 | 14 | Buildings | 11 | ⬜ |
