@@ -157,6 +157,18 @@ The 3.517 is just the TR-to-kW conversion from Rung 111.
 | 5.0 | 0.703 | 17.1 |
 | 6.0 | 0.586 | 20.5 |
 
+> ⚠️ **The two numbers may sit on different sides of the motor.** COP is usually
+> quoted against the compressor's **shaft** power; kW/TR is usually quoted against
+> the **motor input**, since that is what the meter records. When motor losses are
+> given, `3.517 / (kW/TR)` will *not* reproduce the quoted COP — the gap is the
+> motor efficiency. Check which basis a question is using before converting.
+>
+> **And for any energy saving, use the electrical basis.** A reduction in cooling
+> load is not a reduction in electricity: convert TR to kW by multiplying by kW/TR
+> on motor input. Dividing the thermal load by 860 gives the heat no longer moved,
+> not the power no longer drawn — an error of roughly 4× at typical chiller
+> performance.
+
 **Anchors:** a good centrifugal chiller runs **0.55–0.70 kW/TR**; a reciprocating
 or scroll machine **0.8–1.1**; anything above 1.2 needs investigating.
 

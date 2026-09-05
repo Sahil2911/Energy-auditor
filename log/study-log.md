@@ -13,13 +13,13 @@ was being maintained.*
 | Curriculum | **18 sessions** (grew from 15 — see note) |
 | Started | 30 August 2026 |
 | **Exam** | **26 September 2026, 14:00–16:30** |
-| Sessions completed | **12 / 18** |
-| Book-4 chapters complete | **8 / 15** |
+| Sessions completed | **13 / 18** |
+| Book-4 chapters complete | **9 / 15** |
 | Days to exam | **~21** |
 
 ```
-Sessions    [████████████████████          ]  67%   12/18
-Book-4 ch.  [████████████████              ]  53%   8/15
+Sessions    [██████████████████████        ]  72%   13/18
+Book-4 ch.  [██████████████████            ]  60%   9/15
 ```
 
 **Why 18 sessions, not the original 15.** Four were added in response to
@@ -51,7 +51,7 @@ Net +3. The buffer absorbed it; 21 days still remain after Day 10.
 | 8 | Pumps | ✅ (24th L-2 now cleared) |
 | 9 | Fans, blowers, compressed air | ✅ |
 | 10 | Motors, VSD, cooling towers | ✅ |
-| 11 | HVAC, chillers, refrigeration | 🟨 issued |
+| 11 | HVAC, chillers, refrigeration | ✅ |
 | 12 | Power plants, heat rate, PAT | ⬜ |
 | 13 | Cement, steel, textile, sugar, financial | ⬜ |
 | 14 | **Full Mock 1** — 100 marks, 2.5 hrs | ⬜ |
@@ -69,6 +69,8 @@ Pace under exam conditions. Target is ~1.5 min per mark (150 min for 100 marks).
 | 10 | 17th N-1 cooling tower | 20 | 33 min | 30 | ✅ at budget |
 | 10 | 24th L-2 pump | 5 | 5 min | 8 | ✅ well inside |
 | — | **E&F diagnostic** | 30 | 30 min | 45 | ✅ well inside |
+| 11 | 25th N-1 chilled water | 20 | 32 min | 30 | ✅ at budget |
+| 11 | 17th N-2 (ii)(iii) | — | 16 min | 15 | ✅ |
 
 **Every measured question is at or inside budget.**
 
@@ -84,7 +86,7 @@ Pace under exam conditions. Target is ~1.5 min per mark (150 min for 100 marks).
 | 6 | Fans and blowers | 9 | ✅ complete |
 | 7 | Water pumps | 8 | ✅ complete |
 | 8 | Compressors | 9 | ✅ complete |
-| 9 | HVAC | 11 | ⬜ |
+| 9 | HVAC | 11 | ✅ complete |
 | 10 | Financial analysis | 13 | ⬜ |
 | 11 | Power plants | 12 | ⬜ |
 | 12 | Steel | 13 | ⬜ |
@@ -732,3 +734,29 @@ it. One digit slip in the diagram (16,593 for 19,593) that nothing depends on.
 **Assessment:** `assessments/diagnostic-electrical-fluids-review.md`
 
 **Verdict: Phase 2 secure.** The diagnostic's own scale puts 24+ at "proceed".
+
+---
+
+### Day 11 — HVAC
+
+**25th N-1: 20/20**, 08:57 → 09:29 (32 min). The question set and withdrawn on
+Day 5 for being 70% untaught, now complete at full marks — area 55.373 m²,
+auxiliaries 74.268 kW across three machines and six efficiencies, SEC 0.799 and
+1.107 kW/TR, Rs 108.355 lakh a year.
+
+**The interpretation habit has formed.** She wrote "(good)" against the chiller SEC,
+"(requires improvement)" against the system SEC, and "(good)" against the COP — all
+unprompted after being asked once, and all correct.
+
+**17th N-2 (ii): COP 4.411** ✓. **(iii): TR reduction 22.321 correct**, but the
+energy saving computed as 565 MWh against 147 MWh — `67,500/860` gives the *heat*
+no longer moved, where the question asks for the *electricity* no longer drawn. The
+bridge is kW/TR on motor input (0.916), not 860.
+
+Worth noting the plant carries two performance numbers on different sides of the
+motor: COP 4.411 on shaft power, kW/TR 0.916 on motor input. For an energy saving
+the electrical basis is the right one.
+
+**Assessment:** `assessments/day-11-review.md`
+
+**Chapter 9 complete. Book-4 chapters done: 1–9.**

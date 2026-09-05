@@ -139,6 +139,7 @@ these:
 | Pump/fan hydraulic power | tens of kW, not thousands, for typical plant flows |
 | **Turbine exhaust enthalpy** | **always between h₂s and h₁** — never below the isentropic value |
 | Effectiveness ε, isentropic η | between 0 and 1, never above |
+| **Cooling load vs electrical load** | **never equal** — divide TR by the plant's kW/TR, not by 860 |
 
 If an intermediate is ten times outside its anchor, stop there — do not wait for
 the final answer to look wrong, because it may not.
