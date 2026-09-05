@@ -109,12 +109,14 @@ The chapters most candidates neglect, and where recent papers have shifted.
 |---|---|---|---|
 | 11 | **HVAC, chillers, refrigeration** — COP, kW/TR, chilled water balance, ice plant | 9 | 7/8 years |
 | 12 | **Power plants** — gross/net heat rate, auxiliary power, PAT, e-certificates | 11 | 7/8 and rising |
-| 13 | **Cement, steel, textile, sugar + financial analysis** | 12–15, 10 | New 4th-ed chapters |
+| 13 | **Cement, steel, textile, sugar + financial analysis** | 13, 12, 15, 10 | New 4th-ed chapters. Rungs 134–153 |
+| 13B | **Buildings & cooling load** — the eight-row load table, CLTD, CLF, infiltration | 14 | 2/8, but a full 20-mark option when it appears. Rungs 154–162 |
 
 ### Phase 4 — Integration (Days 14–15, ~7 hrs)
 
 | Day | What |
 |---|---|
+| — | **Sector & systems diagnostic** — 40 marks, 2 long questions, 60 min, Days 11–13B |
 | 14 | **Full Mock 1** — 100 marks, 2.5 hrs, open book, exam conditions. Then full review. |
 | 15 | Gap closure on Mock 1 errors + **finalise the guidebook index** + **Full Mock 2** |
 
@@ -181,6 +183,8 @@ isn't lost.
 | 30 Aug | **Day 6 rebuilt from first principles** | Same treatment as Day 5. Rungs 51–64: what a furnace is and why it has doors, radiation vs convection at temperature, types, the thermodynamic ceiling on efficiency, then the loss inventory derived by walking round the furnace, the black-body chart reproduced from σT⁴, the skin-loss chart reproduced from its own formula, and the preheat rule derived from AAS × Cp / GCV. |
 | 30 Aug | **Day 5 rewritten three times: depth added, merged to one session, then rebuilt from first principles** | Student's feedback in three stages — two formulas was too thin; the supplement should not be a separate day; and the lesson still opened with `Q = m·Cp·ΔT` rather than building to it. Now Rungs 35–50: what a heat exchanger is, the three heat transfer modes, U constructed from the resistance chain, types and why each exists, then the energy balance, then the **LMTD derived by integration**, then the design equation. |
 | 30 Aug | **Prerequisite rule added to the Reviewer framework** | Three timed questions have now required untaught material (Days 1, 4, 5). Every sub-part must be checked before a question is set. |
+| 05 Sep | **Day 13B added — Buildings (Ch 14)** | Chapter 14 was the last Book-4 chapter with no lesson behind it. Only 2/8 sittings, but a full 20-mark option each time, and the physics is `U·A·ΔT` already known from Day 5. Adding a 1.5-hour session closes chapter coverage at **15/15**. |
+| 05 Sep | **The "unused data" rule qualified** | Two questions in Days 13 and 13B supply data their own BEE model answers never use. The data-item prerequisite check stays in force for *question selection*, but it is a check on this curriculum, not a promise about BEE's papers. Day 13B Rung 162 tells the student what to do with leftover data: one line, then move on. |
 
 ## Standing risks
 

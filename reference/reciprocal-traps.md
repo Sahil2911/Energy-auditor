@@ -78,3 +78,25 @@ confident, quantities when not.**
 Good — that is the check working. Note it in the study log as a *caught*
 inversion rather than an error. The pattern worth watching is not how many you
 make, but whether the ratio you get wrong is one you have already met.
+
+---
+
+## The running list
+
+Every ratio in this paper that can be flipped, and the sentence that settles it.
+
+| # | Where | The ratio | The settling question |
+|---|---|---|---|
+| 1 | Day 1 | Evaporation ratio q vs 1/q | Does a *better* boiler make more steam per kg fuel, or less? |
+| 2 | Day 1 | Steam cost × vs ÷ efficiency | Does *worse* efficiency make steam dearer? Then divide. |
+| 3 | Day 3 | Carbon fraction of the fuel | Which fuel is it? Read the row again. |
+| 4 | Day 6 | SEC — energy per unit output | Does *more* output at the same energy give a bigger or smaller SEC? |
+| 5 | Day 9 | Payback = cost / saving | A bigger saving pays back *sooner*, so saving is on the bottom. |
+| 6 | Day 10 | Pump vs overall efficiency | Motor input or shaft power in the denominator? Overall uses motor input. |
+| 7 | Day 11 | COP vs kW/TR | They are reciprocals. Higher COP, lower kW/TR. |
+| 8 | **Day 13** | **Thermic fluid heater fuel after efficiency improvement** | Same heat duty, better efficiency → **less** fuel. So `new fuel = old × η_old/η_new`. If it went up, you inverted it. |
+| 9 | **Day 13** | **Textile liquor-ratio loss margin** | Do losses make the computed bath bigger or smaller? Smaller — so the margin divides. |
+| 10 | **Day 13** | **Cement-to-clinker factor** | Cement always weighs *more* than the clinker in it. If cement < clinker, flip it. |
+
+**The pattern to watch is not how many you make** — it is whether the ratio you get
+wrong is one you have already met.

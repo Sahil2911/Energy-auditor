@@ -265,3 +265,129 @@ should be *larger* than the CO₂ number whenever the displacement factor is bel
 2. Higher GCV (13,000 vs 10,000 kCal/kg) → fewer kg burnt for the same heat
 
 The second is the larger effect and the one most often missed.
+
+---
+
+## 14. Cement — Day 13
+
+**Heat of formation of clinker** (loss-free basis, % of each oxide):
+
+    ΔH_R = 2.22·Al₂O₃ + 6.48·MgO + 7.646·CaO − 5.116·SiO₂ − 0.59·Fe₂O₃   kCal/kg
+
+Signs: Al₂O₃ and MgO **plus**, SiO₂ and Fe₂O₃ **minus**. Each coefficient × 100 is
+kCal per kg of that oxide — 7.646 → 765, which is the calcination enthalpy of
+limestone (ΔH 178 kJ/mol ÷ 56 g/mol = 758 kCal/kg CaO). Typical result 380–420.
+
+**Kiln heat balance.** Heat of formation is on the **OUT** side (it is the useful
+output, not a loss):
+
+    m_fuel × GCV + Σ(other heat in) = ΔH_R + Σ(losses out)
+
+    ⟹  m_fuel = [ΔH_R + Σlosses − Σother in] / GCV      kg fuel / kg clinker
+
+**The two specific energies — different denominators:**
+
+    SEEC = net kWh for cement production / tonnes of CEMENT      (65–80 kWh/t)
+    STEC = Σ(fuel mass × GCV) / kg of CLINKER                    (700–800 kCal/kg)
+
+    net kWh = CPP + WHR + import − export − colony/non-process
+    cement tonnes = clinker tonnes × cement-to-clinker factor   (cement > clinker)
+
+**Fuel blending** (mass basis, GCV is linear in mass fraction):
+
+    GCV_blend = x·GCV_A + (1−x)·GCV_B        ⟹  x = (GCV_B − GCV_blend)/(GCV_B − GCV_A)
+
+**WHR chain:** clinker rate → heat available (kCal/kg clinker × rate) → × recovery
+→ ÷ (h_steam − h_fw) = steam → × Δh × η_cycle × η_gear × η_alt ÷ 860 = kW.
+
+Largest kiln loss: **preheater exit gas**, not clinker discharge.
+
+## 15. Steel (DRI route) — Day 13
+
+    HR = 860 / η_CPP                          ← sourcing: what fuel did this kWh cost?
+    860 alone                                 ← unit conversion only
+
+    SEC_DRI = (kg coal/t × GCV) + (kWh/t × HR)          kCal per t of sponge iron
+
+**The yield chain — never add two SECs:**
+
+    ingots = sponge iron × yield
+    SEC_plant = [sponge iron t × SEC_DRI + ingot t × SEC_SMS] / ingot tonnes
+
+    coal total = (sponge iron × specific coal) + (total kWh × HR / GCV)
+
+## 16. Textile — Day 13
+
+**Liquor ratio** (bath mass per kg fabric, quoted 1 : L):
+
+    m_steam × h_steam = m_fabric × L × Cp × ΔT × (loss margin)
+
+Margin sits on the **demand** side (denominator when solving for L).
+
+**Thermic fluid heater** — sensible only, no phase change:
+
+    Q = V × ρ × Cp × (T_supply − T_return)      V in m³/h
+    duty = rated capacity × % loading
+    η = duty / (fuel rate × GCV)                ← direct method
+    new fuel = old fuel × η_old/η_new           ← reciprocal
+
+**Stenter drying** — anchor on bone-dry cloth:
+
+    bone dry     = wet feed × (1 − inlet moisture)
+    outlet cloth = bone dry / (1 − outlet moisture)      ← divide, don't multiply
+    evaporated   = (wet feed − bone dry) − (outlet cloth − bone dry)
+    Q = m_evap × [Cp·ΔT + 540]
+    η_drying = Q / (fuel × GCV × η_heater)              typical 45–55%
+
+## 17. Sugar cogeneration — Day 13
+
+    TPH cane = TCD / 24              plant demand = TPH × kW per tonne (~29)
+    bagasse GCV ≈ 2270 kCal/kg
+
+    gross kW = steam × (h_in − h_out)/860 × η_turb × η_alt
+    export   = gross × (1 − aux%) − plant demand
+    bagasse  = BOILER steam × (h_steam − h_fw) / (GCV × η_boiler)   ← boiler steam,
+                                                                      not turbine steam
+
+## 18. Financial analysis — Day 13
+
+    Simple payback = investment / annual saving        (quote months if < 1 year)
+
+    Discount factor = 1/(1+r)ⁿ           from  F = P(1+r)ⁿ
+
+    NPV = −I + Σ Sₜ/(1+r)ᵗ               accept if NPV > 0
+    IRR = the r at which NPV = 0         accept if IRR > hurdle rate
+
+    PI (standard) = PV of inflows / I
+    PI (BEE)      = NPV / I              ⚠️ the two differ by exactly 1
+
+Discounted payback: build the cumulative-PV column and interpolate where it
+crosses the investment. It is always longer than simple payback.
+
+## 19. Building cooling load — Day 13B
+
+**The eight rows.** External: wall, roof, window conduction + solar through glass.
+Internal: people, lighting, equipment, infiltration. Latent only from **people,
+infiltration** (and wet processes).
+
+    conduction  Q = U × A × CLTD          wall area = gross − windows
+    solar       Q = A_glass × SC × SCL
+    people      sensible = N × q_s × CLF ;  latent = N × q_l      ← no CLF on latent
+    lighting    Q = (W/m² × floor area) × ballast factor × CLF
+    equipment   Q = W/m² × floor area
+    infiltration  V̇ = (volume × ACH)/3600            m³/s
+                  sensible = 1210 × V̇ × ΔT           1210 = ρCp
+                  latent   = 3010 × V̇ × Δ(g/kg)      3010 = ρh_fg
+
+    Total load = Σ sensible + Σ latent
+
+    Power (W) = cooling load (W) / COP    ← the TR/kCal route cancels exactly,
+                                            since 3516/3024 = 1000/860
+
+**Pitot traverse in a hot duct (kiln, furnace, flue) — Day 13 Rung 137B**
+
+    ρ_duct = ρ_NTP × (P_bar + P_static)/10334 × 273/(273 + t)
+             P_static is SIGNED — suction (upstream of an ID fan) is NEGATIVE
+    v  = C_p × √(2 g Δp_dynamic / ρ_duct)        C_p ≈ 0.85
+    ṁ  = v × A × ρ_duct
+    Q  = (ṁ / production rate) × Cp × (t_gas − t_reference)   per kg of product

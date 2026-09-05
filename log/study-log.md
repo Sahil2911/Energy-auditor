@@ -4,23 +4,31 @@ Updated daily. The Reviewer reads this before each assessment.
 
 ## Progress tracker
 
-*Last updated: 05 September 2026. **Update the bars whenever the chapter table
-below changes** — they went stale between Day 3 and Day 10 because only the table
-was being maintained.*
+*Last updated: 05 September 2026 (Day 13 + 13B issued). **Update the bars whenever
+the chapter table below changes** — they went stale between Day 3 and Day 10
+because only the table was being maintained.*
 
 | | |
 |---|---|
-| Curriculum | **18 sessions** (grew from 15 — see note) |
+| Curriculum | **19 sessions** (grew from 15 — see note) |
 | Started | 30 August 2026 |
 | **Exam** | **26 September 2026, 14:00–16:30** |
-| Sessions completed | **13 / 18** |
-| Book-4 chapters complete | **9 / 15** |
-| Days to exam | **~21** |
+| Sessions **reported back** | **13 / 19** |
+| Sessions **issued** | **17 / 19** |
+| Book-4 chapters **taught** | **15 / 15** ✅ |
+| Book-4 chapters **assessed** | **11 / 15** |
+| Days to exam | **21** |
 
 ```
-Sessions    [██████████████████████        ]  72%   13/18
-Book-4 ch.  [██████████████████            ]  60%   9/15
+Reported    [████████████████████          ]  68%   13/19
+Issued      [███████████████████████████   ]  89%   17/19
+Ch. taught  [██████████████████████████████] 100%   15/15
+Ch. assessed[██████████████████████        ]  73%   11/15
 ```
+
+**All fifteen Book-4 chapters now have a lesson behind them.** What remains is
+not teaching but *reporting back* — Days 7B, 12, 13 and 13B are issued and not yet
+worked — plus the diagnostic and two full mocks.
 
 **Why 18 sessions, not the original 15.** Four were added in response to
 assessments, and one was merged back:
@@ -31,8 +39,9 @@ assessments, and one was merged back:
 | +4B | Day 4 taught steam turbine cogeneration then set a gas turbine question |
 | +7B | Mock A lost 18 marks to reverse flue gas calculations, never taught |
 | −5B (merged into Day 5) | Student's request: the chapter is short |
+| +13B | Book-4 Ch 14 (Buildings) had no lesson; it is a 20-mark option in 2/8 sittings |
 
-Net +3. The buffer absorbed it; 21 days still remain after Day 10.
+Net +4. The buffer absorbed it; 21 days still remain.
 
 ## Sessions
 
@@ -53,7 +62,9 @@ Net +3. The buffer absorbed it; 21 days still remain after Day 10.
 | 10 | Motors, VSD, cooling towers | ✅ |
 | 11 | HVAC, chillers, refrigeration | ✅ |
 | 12 | Power plants, heat rate, PAT | 🟨 issued |
-| 13 | Cement, steel, textile, sugar, financial | ⬜ |
+| 13 | Cement, steel, textile, sugar, financial | 🟨 issued |
+| 13B | Buildings & cooling load | 🟨 issued |
+| — | **Sector & systems diagnostic** — 40 marks, 60 min | ⬜ |
 | 14 | **Full Mock 1** — 100 marks, 2.5 hrs | ⬜ |
 | 15 | Gap closure + **Full Mock 2** | ⬜ |
 
@@ -87,12 +98,15 @@ Pace under exam conditions. Target is ~1.5 min per mark (150 min for 100 marks).
 | 7 | Water pumps | 8 | ✅ complete |
 | 8 | Compressors | 9 | ✅ complete |
 | 9 | HVAC | 11 | ✅ complete |
-| 10 | Financial analysis | 13 | ⬜ |
+| 10 | Financial analysis | 13 | 🟨 issued |
 | 11 | Power plants | 12 | 🟨 issued |
-| 12 | Steel | 13 | ⬜ |
-| 13 | Cement | 13 | ⬜ |
-| 14 | Buildings | 11 | ⬜ |
-| 15 | Textile | 13 | ⬜ |
+| 12 | Steel | 13 | 🟨 issued |
+| 13 | Cement | 13 | 🟨 issued |
+| 14 | Buildings | **13B** | 🟨 issued |
+| 15 | Textile | 13 | 🟨 issued |
+
+**15/15 chapters taught.** ✅ complete = lesson delivered *and* a question from
+that chapter marked. 🟨 issued = lesson written, work not yet reported back.
 
 ## Assessment scores
 
@@ -100,9 +114,8 @@ Pace under exam conditions. Target is ~1.5 min per mark (150 min for 100 marks).
 |---|---|---|---|---|
 | 3 | Boiler & combustion diagnostic | 20 | **18** | 30 Aug |
 | 7 | Mock A — thermal | 60 | **29** | 03 Sep |
-| 10 | Electrical & fluids diagnostic | 30 | — | — |
-| 10 | Electrical & fluids diagnostic | 30 | **28** | — |
-| 13 | Sector & systems diagnostic | 40 | — | — |
+| 10 | Electrical & fluids diagnostic | 30 | **28** | 04 Sep |
+| 13B | Sector & systems diagnostic | 40 | — | — |
 | 14 | Full Mock 1 | 100 | — | — |
 | 15 | Full Mock 2 | 100 | — | — |
 
@@ -760,3 +773,110 @@ the electrical basis is the right one.
 **Assessment:** `assessments/day-11-review.md`
 
 **Chapter 9 complete. Book-4 chapters done: 1–9.**
+
+---
+
+### Day 13 — Cement, Steel, Textile, Sugar, Financial — *issued 05 Sep*
+
+**Curriculum:** `curriculum/day-13.md`. Rungs 134–153, four sectors and financial
+analysis in one 3.5–4 hour session. Book-4 Ch 13, 12, 15, 10.
+
+**Where the depth went.** Cement is the largest block, because it is the largest
+sector presence in the papers — a 20-mark N-4 option in each of the last four
+sittings. The heat-of-formation formula is **derived, not quoted**: its CaO
+coefficient of 7.646 (= 765 kCal/kg of CaO) is the calcination enthalpy of
+limestone, ΔH = 178 kJ/mol ÷ 56 g/mol = **758 kCal/kg**, a 1% match. The negative
+SiO₂ and Fe₂O₃ terms are the exothermic formation of the clinker minerals. Once
+that is seen, the sign pattern cannot be forgotten, and the sign is where the marks
+go.
+
+**The idea that carries the steel marks is not about steel.** It is the yield
+chain: energy spent making 100 t of sponge iron is carried by only 85 t of ingots,
+so `SEC_plant ≠ SEC_DRI + SEC_SMS`. Improving yield is an energy saving even with
+no fuel reduction.
+
+**Two conversion rules made explicit** (Rung 142), because they are confusable:
+860 kCal/kWh is a *unit conversion*; `860/η` is a *sourcing* question. SEC and PAT
+work is always the second kind, and using 860 there understates energy fourfold.
+
+**Financial** is deliberately short — it is never a standalone question in this
+paper, always the last 3 marks of a bigger one. But the **PI convention clash** is
+flagged hard: BEE's 16th-sitting model answer uses NPV/I (0.258), while the 25th
+sitting's True/False is stated on the standard PV/I convention. They differ by
+exactly 1 and both appear in the same exam.
+
+**Every number verified against the model answers before writing** — 23rd N-4(C)
+(412.56 / 72.94, 0.1244 / 0.0744 kg/kg, ₹310/t), 25th N-4(A) (73.46, 920.78, 44:56),
+24th N-4(C) (14.49 MW, 382), 24th N-4(D) (12.41 / 11.01 Mcal/t, 58.6 t/day),
+23rd N-4(D) (1:5.74, 97.4 m³/h, 54.87%, 276 t/yr, 46.9%), 24th N-2 (4414 / 5384 kW,
+36.45 / 32.91 TPH). All reproduce exactly.
+
+**Timed question:** 24th N-4(D), DRI steel, 20 marks, 35 min.
+
+---
+
+### Day 13B — Buildings & Cooling Load — *issued 05 Sep*
+
+**Curriculum:** `curriculum/day-13b.md`. Rungs 154–162, 1.5 hours. Book-4 Ch 14.
+
+**Why it was added.** Chapter 14 was the last chapter in the book with no lesson
+behind it. It appears in only 2 of 8 machine-readable sittings — but each time as a
+full 20-mark option, and the physics is `U·A·ΔT`, already known since Day 5. It was
+free marks sitting uncovered. **This closes chapter coverage at 15/15.**
+
+Content is the eight-row load table, the sensible/latent split, CLTD as a lookup
+containing solar and thermal lag, the net-wall-area trap, glass counted twice
+(conduction *and* transmission), **CLF on sensible gains only**, and infiltration
+with its two constants derived — 1210 = ρCp of air, 3010 = ρh_fg.
+
+**One result worth the session on its own** (Rung 160): `power = cooling load ÷ COP`
+in watts, directly. BEE's model answers route through TR and kCal/hr, but
+3516/3024 = 1000/860, so the TR cancels exactly. Same answer, four fewer lines,
+and one fewer place to drop a factor.
+
+**A second over-supplied question, two days running.** The 23rd sitting supplies a
+90% compressor motor efficiency that its own model answer ignores (using it gives a
+2.13-year payback against the official 2.36). Combined with the 24th cement WHRB's
+three unused gas temperatures, this needed a rule rather than a shrug — Rung 162:
+finish every part asked, check once whether a *named* quantity is unproduced, write
+one line about the leftover, move on. **Never let leftover data stop you finishing.**
+
+> **Note to the Reviewer.** "Unused data is the tell" was tightened to data-item
+> level after the Day 10 breach, and it works — as a check on *this curriculum*. It
+> is not a law about BEE's papers, and Day 13B now says so explicitly. The rule
+> stays in force for question selection; it is no longer offered to the student as
+> a guarantee about the exam.
+
+**Timed question:** 23rd N-4(A), building cooling load + roof insulation payback,
+20 marks, 30 min.
+
+**Book-4 chapters taught: 1–15. All fifteen.**
+
+---
+
+### Sector & systems diagnostic — *written 05 Sep, not yet attempted*
+
+`assessments/diagnostic-sector-systems.md`. 40 marks, 60 minutes, two 20-mark
+questions, per the framework's schedule.
+
+**Q1 — 16th N-4(D), cement kiln specific coal consumption.** Chosen because it
+forces the full kiln heat balance through *measured* loss streams rather than
+given ones. The data-item check on it found a genuine gap: Day 9 taught the pitot
+traverse at standard air density only, and this question needs hot-duct density
+correction with a **signed** static pressure. Rather than drop the question,
+**Rung 137B was added to Day 13** to teach it. That is the prerequisite rule
+working the way it is supposed to — the gap surfaced before the question was set,
+not after it was marked.
+
+**Q2 — 20th N-3, absorption vs centrifugal chiller and cooling tower adequacy.**
+Chosen because it turns on the shaft-power-vs-motor-input distinction, which is
+the only concept she has got wrong twice (Day 10 pump, Day 11 energy saving). Here
+the 87.5% motor efficiency is load-bearing in both part (b) and part (c), so the
+question cannot be passed by ignoring it.
+
+Both questions end in a **judgement** rather than a number — deliberately, against
+Trend 2.
+
+**Answers verified before writing:** Q1 ρ 0.6198 / 0.6241, 155.2 / 20.84 / 116.1,
+**0.121 kg/kg**; Q2 **₹52.27 lakh**, **COP 5.02**, 16,87,800 vs 16,63,200 →
+**not adequate**.
