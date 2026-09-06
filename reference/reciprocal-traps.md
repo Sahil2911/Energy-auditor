@@ -119,5 +119,18 @@ wins" is a heavily reinforced reflex, and on these three it fires and is wrong.
 inverse quantity.** Convert both sides to the direct one, then compare. It costs
 two divisions and it cannot go wrong.
 
+## A cousin: differencing before converting
+
+Not an inversion, but the same shape of mistake — combining two cases before
+putting them on a common footing.
+
+```
+    Δ(E)/k  ≠  Δ(E/k)        whenever k differs between the two cases
+```
+
+If the two cases quote **different GCVs, tariffs or emission factors**, you must
+convert each one *first* and difference afterwards. On the 24th sitting's DRI
+question this is worth 40% of the answer. See `concept-distinctions.md` entry 14.
+
 **The pattern to watch is not how many you make** — it is whether the ratio you get
 wrong is one you have already met.

@@ -4,7 +4,7 @@ Updated daily. The Reviewer reads this before each assessment.
 
 ## Progress tracker
 
-*Last updated: 05 September 2026 (Day 7B reported 19/20; plan switched to mock-driven). **Update the bars whenever
+*Last updated: 06 September 2026 (Mock 1 N-4 reported 20/20). **Update the bars whenever
 the chapter table below changes** — they went stale between Day 3 and Day 10
 because only the table was being maintained.*
 
@@ -65,7 +65,7 @@ Net +4. The buffer absorbed it; 21 days still remain.
 | 13 | Cement, steel, textile, sugar, financial | 📖 read (drills optional) |
 | 13B | Buildings & cooling load | 📖 skimmed (by agreement) |
 | — | ~~Sector & systems diagnostic~~ | ⛔ retired — folded into Mock 1 |
-| 14 | **Full Mock 1** — 100 marks, 2.5 hrs | 🟨 issued |
+| 14 | **Full Mock 1** — 100 marks, 2.5 hrs | 🟨 N-4 done **20/20**; rest outstanding |
 | 15 | Gap closure from Mock 1 | ⬜ |
 | 16 | **Full Mock 2** | ⬜ |
 | 17 | Gap closure + **Full Mock 3** if time | ⬜ |
@@ -89,6 +89,7 @@ Pace under exam conditions. Target is ~1.5 min per mark (150 min for 100 marks).
 | 12 | 23rd N-1 pet coke boiler | 20 | 28 min | 30 | ✅ inside budget |
 | 12 | 25th L-1 PAT | 5 | 4 min | 8 | ✅ well inside |
 | 12 | 19th L-1 plant comparison | 5 | 3 min | 8 | ✅ well inside |
+| 14 | Mock 1 N-4(B) DRI steel | 20 | 30 min | 25 | 🟨 1.2× budget |
 
 **Every measured question is at or inside budget — now eleven in a row.**
 
@@ -1015,3 +1016,61 @@ general concepts? She picks; the log records why. All answers verified against t
 model answers before issue — EUF 0.78, 8488.4 Gcal/yr, 3879.7 Sm³/day; η 68.28%,
 24.14 m³/hr; evaporation 206.3, blowdown 68.8, 80 hrs each way; HP boiler 87.9%;
 ₹3070/day.
+
+---
+
+### Mock 1, N-4(B) — DRI steel — **20 / 20** — 06 Sep, 08:44 → 09:14
+
+**The experiment came back positive.** Mock 1's N-4 offered one drilled HVAC option
+against two undrilled sector options. **She picked a sector question and scored full
+marks on it in thirty minutes, from the guidebook.** The plan change is vindicated:
+the sector chapters needed the concepts underneath them — heat rate as a sourcing
+conversion, yield chains, specific energy denominators — and those were already in
+place from Days 6, 11 and 12.
+
+Parts 1 and 2 exact: **12.409** and **11.01 million kCal/tonne of ingot**. Part 2
+was solved a line shorter than the model answer, dividing the sponge iron energy by
+the ingot tonnage and adding the ingot SEC directly rather than summing then
+dividing.
+
+**A sharp margin note:** *"850 is not SEC but Specific Power Consumption."* The data
+table calls it SEC; the units are kWh/tonne. It becomes a specific *energy*
+consumption only after the heat rate is applied. Catching a loose label in the
+paper itself is the habit that stops a reflex multiplication by 860.
+
+**Part 3: 41.54 TPD — and BEE's key says 41.85, which is wrong by its own
+arithmetic.** The key states `2.805 × 255 − 2.573 × 264 = 38.07`; it is 36.00. Her
+number is the official method executed correctly. **Sixth error found in an official
+key.**
+
+> **Note to the Tutor — the finding is underneath the marks.** The official *method*
+> is also physically wrong. It differences the energy and converts once at one GCV,
+> which is only valid if the GCV is equal in both years. It improves from 6000 to
+> 6200.
+>
+> ```
+>   Base coal 527.37 TPD  −  assessment coal 468.82 TPD  =  58.55 TPD
+>   (cross-checked stream by stream: 390.0 + 137.37 and 345.0 + 123.82)
+> ```
+>
+> A 40% gap, decomposing as **42.92 TPD from using less energy + 15.63 TPD from
+> burning better coal**. Differencing first discards the second half entirely.
+>
+> `Δ(E)/k ≠ Δ(E/k)` whenever k differs between cases — the distributive law needs a
+> constant k. Added as `concept-distinctions.md` entry 14, cross-referenced from
+> `reciprocal-traps.md` as a cousin of the inversion family, and Day 14's answer key
+> now carries the correction plus the exam wording: give 58.55, then one
+> parenthetical line containing the model answer's 41.5 and why they differ.
+>
+> **The trap generalises** — fuel saving when GCV changes, cost saving when tariffs
+> differ, CO₂ when emission factors differ, TOE across a fuel switch. The tell is
+> two values of the same constant in one data table.
+
+**Timing:** 30 minutes against a 25-minute budget, 1.2×, on a chapter read once and
+never drilled. Absorbable.
+
+**Assessment:** `assessments/mock-1-N4-review.md`
+
+**Outstanding:** Mock 1 Sections I and II, and N-1, N-2, N-3. **To be sat in one
+2-hour block** — the thing a full mock measures is whether the pace holds across a
+whole paper, and that cannot be measured a question at a time.

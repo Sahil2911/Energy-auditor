@@ -363,3 +363,66 @@ Where each appears:
 | Boiler losses | dry flue gas | hydrogen, fuel moisture |
 | Stenter drying | warming the water to 80 °C | the 540 that evaporates it |
 | Thermic fluid | **all of it** — no phase change | none |
+
+---
+
+## 14. Difference-then-convert vs convert-then-difference
+
+> **When the conversion factor differs between the two cases, convert each case
+> first, then take the difference. Never difference first and convert once.**
+
+```
+    Δ(E)/k  ≠  Δ(E/k)        whenever k is not the same on both sides
+```
+
+The distributive law you use without thinking — `(a − b)/k = a/k − b/k` — needs the
+**same k** on both terms. The moment the two cases have different conversion
+factors, it fails, and it fails silently: the answer looks reasonable and is out by
+tens of per cent.
+
+**Worked, from the 24th sitting's DRI steel question.** Coal improved from GCV 6000
+to 6200 between the base and assessment years.
+
+```
+  Difference first, convert once (what BEE's model answer does):
+      energy saved = 257.55 million kCal/day
+      ÷ 6200                                                    = 41.5 TPD
+
+  Convert each year, then difference (physically correct):
+      base coal       = 3164.18 × 10⁶ / 6000 / 1000             = 527.37 TPD
+      assessment coal = 2906.63 × 10⁶ / 6200 / 1000             = 468.82 TPD
+      reduction                                                  =  58.55 TPD
+```
+
+**A 40% gap.** Decompose it and both halves show up:
+
+```
+    using less energy   (at the base year's GCV)      = 42.92 TPD
+    burning better coal (6000 → 6200, same energy)    = 15.63 TPD
+                                                        ───────────
+                                                         58.55 TPD
+```
+
+Differencing the energy first **throws away the fuel-quality half entirely**.
+
+### Where this trap is waiting
+
+| Situation | The factor that changes |
+|---|---|
+| Fuel saving across two years | **GCV** — a fuel switch or a better grade |
+| Cost saving between two options | **Tariff** — grid vs captive, day vs night |
+| CO₂ reduction from a fuel switch | **Emission factor** — coal vs gas vs biomass |
+| PAT / TOE across a period | **Any** fuel mix change inside the period |
+| Coal per kWh across two plants | **Heat rate** and **GCV**, both |
+
+### The tell
+
+**If two cases quote different values for the same conversion constant, you are in
+this trap.** Look at the data table before you start: two GCVs, two tariffs, two
+emission factors in the same problem is the warning.
+
+### And in the exam
+
+BEE's model answers sometimes use the shortcut. Give the correct answer first, then
+the model answer's number in one parenthetical line saying why they differ — the
+marker finds their number in your working, and the reasoning can only earn credit.

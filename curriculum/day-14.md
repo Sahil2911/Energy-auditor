@@ -374,7 +374,7 @@ not "check" your answer by assuming they should match.
   16 87 800 > 16 63 200  ⟹  NOT adequate, by 1.5 %
 ```
 
-**(B) 24th N-4(D) DRI steel**
+**(B) 24th N-4(D) DRI steel** — ⚠️ *see the note after this block on part 3*
 ```
   Base:       HR = 860/0.2606 = 3300;  SEC_SI = 1.3×1000×6000 + 110×3300
                                               = 8.163 Mcal/t
@@ -397,6 +397,36 @@ not "check" your answer by assuming they should match.
 ```
 Note this question supplies three gas temperatures its own model answer never uses.
 Say so in one line and move on (Day 13B Rung 162).
+
+---
+
+> **⚠️ Option (B) part 3 — the model answer is wrong, and it is worth knowing why.**
+>
+> BEE differences the **energy** first and converts once, at the assessment year's
+> GCV: `257.55 × 10⁶/6200 = 41.5 TPD`. That is only valid if the GCV is the same in
+> both years, and here it improves from 6000 to 6200.
+>
+> ```
+>   Base year coal       = 3164.18 × 10⁶/6000/1000       = 527.37 TPD
+>   Assessment year coal = 2906.63 × 10⁶/6200/1000       = 468.82 TPD
+>   REDUCTION                                             =  58.55 TPD
+> ```
+>
+> Cross-checked stream by stream: base 390.0 (DRI) + 137.37 (CPP) = 527.37;
+> assessment 345.0 + 123.82 = 468.82. The 40% gap decomposes as **42.92 TPD from
+> using less energy + 15.63 TPD from burning better coal** — and the model answer's
+> method is blind to the second half.
+>
+> `Δ(E)/k ≠ Δ(E/k)` whenever k differs between the two cases. See
+> `reference/concept-distinctions.md` entry 14.
+>
+> **In the exam:** give 58.55 as the answer, then one parenthetical line — *"the
+> energy saving of 257.55 million kCal/day converted at 6200 gives 41.5 TPD; the
+> tonnage difference is used because the GCV changes between years."* The marker
+> finds their number in your working and the reasoning can only earn credit.
+>
+> (BEE's key also mis-states 715.275 − 679.272 as 38.07 instead of 36.00, so its
+> own stated 41.85 should be 41.5 even on its own method.)
 </details>
 
 ---
