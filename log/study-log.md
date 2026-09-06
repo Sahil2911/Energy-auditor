@@ -10,7 +10,7 @@ because only the table was being maintained.*
 
 | | |
 |---|---|
-| Curriculum | **19 sessions** (grew from 15 — see note) |
+| Curriculum | **20 sessions** (grew from 15 — see note) |
 | Started | 30 August 2026 |
 | **Exam** | **26 September 2026, 14:00–16:30** |
 | Sessions **reported back** | **18 / 20** |
@@ -67,7 +67,7 @@ Net +4. The buffer absorbed it; 21 days still remain.
 | — | ~~Sector & systems diagnostic~~ | ⛔ retired — folded into Mock 1 |
 | 14 | **Full Mock 1** — 100 marks, 2.5 hrs | ✅ **84/100** in 149 min |
 | 15 | Gap closure from Mock 1 | 🟨 issued |
-| 16 | **Full Mock 2** | ⬜ |
+| 16 | **Full Mock 2** — 21st + 22nd, genuinely unseen | 🟨 issued |
 | 17 | Gap closure + **Full Mock 3** if time | ⬜ |
 
 ## Timing record
@@ -1227,3 +1227,68 @@ every question and every model answer is legible. Full inventory in
   −850 mmWC**, and **N-4(B) is the eight-row building cooling load table.** Both
   confirm Day 13 Rung 137B and Day 13B as live 20-mark options rather than
   curiosities — and Mock 1's dropped Section I Q8 was the same pitot sign.
+
+---
+
+### 22nd sitting recovered, and Mock 2 built — 06 Sep
+
+**Both scanned sittings are now readable. All 10 sittings in `papers/` are usable.**
+Same method as the 21st: PyMuPDF at 170 dpi, pages read directly. Full inventory in
+`question-bank/22nd-sitting.md`.
+
+**What the 22nd contains**
+
+| | Topic |
+|---|---|
+| Section I | 10 items — **two of which are fill-in-the-blank, not True/False** |
+| L-1 | Thermic fluid heater: oil vs briquettes — **the "hold the service constant" question** |
+| L-2 | Back-pressure turbine replacing a PRDS to drive a gas compressor |
+| N-1 | Biogas back-pressure cogeneration + 2000 TR absorption chiller + CT pump |
+| N-2 | Two-stage air compressor; air-fin cooler + water-cooled chiller retrofit |
+| N-3 | Water tube boiler and air preheater — design vs operating, APH leakage |
+| N-4 | (A) 500 MW turbine heat rate · (B) building grid-vs-cogen · (C) cement pitot · **(D) DRI steel — twin of the 24th** |
+
+**Three findings worth recording.**
+
+**1. The ledger caught a duplicate before it reached a paper.** The 22nd N-4(D) is
+the same DRI steel problem as the 24th N-4(D), which was Day 13's Block C. It is
+excluded from Mock 2 and assigned instead as **Day 15 Drill 76** — where it is
+ideal, because the GCV moves 5000 → 5200 and the yield runs *backwards* (88 → 85%),
+so the `Δ(E)/k ≠ Δ(E/k)` trap gives **50.2 TPD against a true 71.7** — a 43% gap,
+wider than the 24th's 40%. She owns the method; the drill tests one idea only.
+
+**2. The hot-duct pitot with a negative static is now confirmed in three
+sittings** — 16th N-4(D), 21st N-4(A) (−850 mmWC), 22nd N-4(C) (−440 and
+−28 mmWC), all printed with the sign. Day 13 Rung 137B is not a curiosity, and
+Mock 1's dropped Section I Q8 was the same thing.
+
+**3. The 21st's N-2 gives the chiller-rejection formula in general form** —
+`Condenser duty = TR × 3024 × (1 + 1/COP)` — and the 22nd's N-1 exercises the same
+idea from the hot end, where the driving steam heat (75.6 lakh kCal/h) is *larger*
+than the cooling load (60.5 lakh) because the COP is 0.8. Both are in Mock 2. The
+concept that cost ~10 marks in Mock 1 is now tested twice from two directions.
+
+**Mock 2 issued** — `curriculum/day-16.md`. **Every question from the 21st or
+22nd**, neither of which appears anywhere in `used-ledger.md`, because until this
+week they were unreadable images. **This time "unseen" was verified against the
+ledger rather than remembered.**
+
+It is also built to probe the four Day 15 items without signposting them:
+
+| Day 15 item | Where Mock 2 tests it |
+|---|---|
+| Chiller heat rejection | N-1 part (v), and N-4(A) part (d) |
+| Hold the service constant | L-1 — the heat load belongs to the fluid, not either fuel |
+| Totals before all the parts are in | N-1 has five parts, N-2 has seven |
+| Stock vs flow | N-3 mixes % losses with kCal/hr; L-2 wants Wh/h/m² |
+
+Two traps in it are new and worth naming in advance of marking: **L-2's denominator
+excludes 8000 m² of parking and basement** (dividing by 18,000 gives a
+plausible-looking 55.5), and **N-1's schematic says "NIL CONDENSATE"**, which is
+what forces the 30 °C makeup into the mixing temperature.
+
+**Answers verified before issue:** L-1 ₹4606 vs ₹1772/hr (and BEE's Cp discrepancy
+2.223 printed vs 2.233 used, flagged); L-2 EPI 100, AAHEPI 40; N-1 15.96 / 13.5 /
+2.46 TPH, 1917.6 Sm³/h, 265.8 kW; N-2 130.5 kW, 123.2 TR, COP 5.4, 1.059 → 0.984
+kW/TR, ₹3,77,460; N-3 72,01,107 → 95,38,560 kCal/h, 15.86% APH leakage; N-4(A)
+₹886.41 lakh, (B) 83.84 kW, (C) 1.686 Nm³/kg clinker.

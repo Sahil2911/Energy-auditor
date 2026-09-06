@@ -1,18 +1,20 @@
 # Question Bank — Past Papers by Topic
 
-Every long (20-mark) and short (5-mark) question from the eight machine-readable
-sittings in `papers/`, classified by primary topic and mapped to the curriculum day.
+Every long (20-mark) and short (5-mark) question from the sittings in `papers/`,
+classified by primary topic and mapped to the curriculum day. **Eight sittings were
+machine-readable from the start; the 21st and 22nd were recovered from scan on
+06 Sep** and are indexed in their own files.
 
 **Set A / Set B (Green / Pink) contain the same questions reordered.** Where both
 appear below, solve it once.
 
 All listed papers include worked solutions.
 
-> **21st and 22nd sittings — status.** Both were image-only scans with no text
-> layer, so they were unusable and excluded from this index. **The 21st was
-> recovered on 06 Sep** by rendering each page at 170 dpi and reading the images;
-> see **`21st-sitting.md`** for its full inventory with answers. The 22nd is next
-> and becomes the source for Mock 2.
+> **21st and 22nd sittings — recovered 06 Sep.** Both were image-only scans with no
+> text layer and were unusable from Day 1 to Day 15. Rendered at 170 dpi with
+> PyMuPDF and read page by page; every question and every model answer is legible.
+> Full inventories in **`21st-sitting.md`** and **`22nd-sitting.md`**.
+> **All 10 sittings are now readable**, and Mock 2 is built entirely from these two.
 
 > **See also `used-ledger.md`** — every question already assigned in the
 > curriculum. Check it before building any mock.

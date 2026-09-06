@@ -411,11 +411,25 @@ Redo, cold, the two parts you did not finish. **They are not new questions.**
 | 73 | 20th N-3, **part (c) only** — tower adequacy | 10 | 15 min |
 | 74 | 16th N-2, **parts 2, 3 and 4** — trigeneration | 14 | 20 min |
 | 75 | 16th L-1 — heat pump, from scratch | 5 | 8 min |
+| 76 | **22nd N-4(D)** — DRI steel, the coal reduction only | 5 | 10 min |
+
+**Drill 76 is new, from the 22nd sitting recovered on 06 Sep.** It is the same DRI
+plant as Day 13's Block C with different numbers — you already own the method, so
+it tests one thing only: `Δ(E)/k ≠ Δ(E/k)`. The yield runs *backwards* here
+(88% → 85%) and the GCV moves further (5000 → 5200), so the trap bites harder:
+
+```
+    difference-then-convert    = 50.2 TPD
+    convert-then-difference    = 71.7 TPD      ← a 43 % gap
+```
 
 <details><summary>Answers</summary>
 
 **73:** capacity 16,63,200; new load 10,87,800 + 6,00,000 = 16,87,800; **NOT
 adequate by 1.5%**, recoverable with a modest tower upgrade.
+
+**76:** plant SEC 10.60 → 9.955 Mcal/t. Coal 559.9 → 488.2 TPD, **reduction
+71.7 TPD**. (BEE's own method gives 50.2; give 71.7 and note theirs in one line.)
 
 **74:** daily useful energy **25,722,500 kCal**; annual **8488.4 Gcal**; gas
 **3879.7 Sm³/day**; VAR needs 362,880 kCal/h against 588,412 available in the
@@ -443,5 +457,7 @@ jacket water → **feasible**.
 - [ ] Subtract the ash from `m_dfg` for coal and biomass
 - [ ] **Can run the nine-item checking pass from memory**
 
-**Next: Full Mock 2.** All questions unseen again, and this time the target is not
-the pass mark — it is a clean checking pass.
+**Next: Full Mock 2** — `curriculum/day-16.md`, built entirely from the 21st and
+22nd sittings, which were unreadable scans until this week and appear nowhere in
+the used-question ledger. **This time "unseen" was checked rather than remembered.**
+The target is not the pass mark; it is a clean checking pass.

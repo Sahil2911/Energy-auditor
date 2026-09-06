@@ -33,6 +33,10 @@ anywhere in `curriculum/` or `assessments/`, with the files referencing it.**
 | 20th | N1 | `checkpoint-day-04`, `checkpoint-phase-2`, `day-03-review` |
 | 20th | N1(C) | `checkpoint-phase-2` |
 | 20th | N3 | `day-14`, `day-15`, `diagnostic-sector-systems` |
+| 21th | N2 | `day-16` |
+| 21th | N4(B) | `day-16` |
+| 22th | N4(C) | `day-16` |
+| 22th | N4(D) | `day-15`, `day-16` |
 | 23th | N1 | `checkpoint-phase-2`, `day-09`, `day-09-review`, `day-12-review`, `day-13` |
 | 23th | N3 | `day-12` |
 | 23th | N3(B) | `day-13` |
@@ -45,11 +49,11 @@ anywhere in `curriculum/` or `assessments/`, with the files referencing it.**
 | 24th | N2 | `day-13` |
 | 24th | N3 | `day-14`, `diagnostic-electrical-fluids` |
 | 24th | N4(C) | `day-13`, `day-14` |
-| 24th | N4(D) | `day-13`, `day-13-review`, `day-14` |
+| 24th | N4(D) | `day-13`, `day-13-review`, `day-14`, `day-16` |
 | 25th | L1 | `day-12-review`, `day-14` |
 | 25th | L2 | `day-12`, `day-12-review` |
 | 25th | N1 | `checkpoint-phase-2`, `day-05-review`, `day-10-review`, `day-11`, `day-11-review`, `framework`, `mock-a-review` |
 | 25th | N2 | `day-07b-review` |
 | 25th | N4(A) | `day-13` |
 
-**37 distinct questions used so far.**
+**41 distinct questions used so far.**
