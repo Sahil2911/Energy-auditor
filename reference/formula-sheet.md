@@ -112,6 +112,12 @@ is where the actual air came from.
 
     (b) from the FUEL, via excess air — carries the shortcut's approximation
         AAS = (1 + EA/100) × A_th      then   m_dfg = (AAS + 1) − 9·H₂ − M
+        FOR COAL AND BIOMASS also subtract the ASH:
+                                       m_dfg = (AAS + 1) − 9·H₂ − M − ash
+        (AAS + 1) assumes the whole kg of fuel leaves as gas. Ash does not — it
+        drops out of the furnace bottom, which is what the bottom-ash loss counts.
+        Counting it in the flue gas too counts it twice. Worth ~0.13% at 8% ash,
+        ~0.5% at 30%.
 
     (c) constituent-by-constituent, equivalent to (b)
         m_dfg = C×(44/12) + S×(64/32) + (AAS − A_th)×0.23 + AAS×0.77

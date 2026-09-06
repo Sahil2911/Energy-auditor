@@ -4,7 +4,7 @@ Updated daily. The Reviewer reads this before each assessment.
 
 ## Progress tracker
 
-*Last updated: 06 September 2026 (Day 13 Block C reported 20/20). **Update the bars whenever
+*Last updated: 06 September 2026 (**Mock 1: 84/100**, inside time). **Update the bars whenever
 the chapter table below changes** — they went stale between Day 3 and Day 10
 because only the table was being maintained.*
 
@@ -13,15 +13,15 @@ because only the table was being maintained.*
 | Curriculum | **19 sessions** (grew from 15 — see note) |
 | Started | 30 August 2026 |
 | **Exam** | **26 September 2026, 14:00–16:30** |
-| Sessions **reported back** | **17 / 19** |
-| Sessions **issued** | **18 / 19** |
+| Sessions **reported back** | **18 / 20** |
+| Sessions **issued** | **19 / 20** |
 | Book-4 chapters **taught** | **15 / 15** ✅ |
 | Book-4 chapters **assessed** | **13 / 15** |
 | Days to exam | **21** |
 
 ```
-Reported    [███████████████████████████   ]  89%   17/19
-Issued      [████████████████████████████  ]  95%   18/19
+Reported    [███████████████████████████   ]  90%   18/20
+Issued      [████████████████████████████  ]  95%   19/20
 Ch. taught  [██████████████████████████████] 100%   15/15
 Ch. assessed[██████████████████████████    ]  87%   13/15
 ```
@@ -65,8 +65,8 @@ Net +4. The buffer absorbed it; 21 days still remain.
 | 13 | Cement, steel, textile, sugar, financial | ✅ **20/20** on Block C |
 | 13B | Buildings & cooling load | 📖 skimmed (by agreement) |
 | — | ~~Sector & systems diagnostic~~ | ⛔ retired — folded into Mock 1 |
-| 14 | **Full Mock 1** — 100 marks, 2.5 hrs | 🟨 issued — N-4(B) withdrawn, now seen |
-| 15 | Gap closure from Mock 1 | ⬜ |
+| 14 | **Full Mock 1** — 100 marks, 2.5 hrs | ✅ **84/100** in 149 min |
+| 15 | Gap closure from Mock 1 | 🟨 issued |
 | 16 | **Full Mock 2** | ⬜ |
 | 17 | Gap closure + **Full Mock 3** if time | ⬜ |
 
@@ -90,6 +90,7 @@ Pace under exam conditions. Target is ~1.5 min per mark (150 min for 100 marks).
 | 12 | 25th L-1 PAT | 5 | 4 min | 8 | ✅ well inside |
 | 12 | 19th L-1 plant comparison | 5 | 3 min | 8 | ✅ well inside |
 | 13 | Block C — 24th N-4(D) DRI steel | 20 | 30 min | 35 | ✅ inside budget |
+| 14 | **Mock 1 — whole paper** | 100 | **149 min** | 150 | ✅ **inside, with a 25-min false start** |
 
 **Every measured question is at or inside budget — now eleven in a row.**
 
@@ -106,12 +107,12 @@ Pace under exam conditions. Target is ~1.5 min per mark (150 min for 100 marks).
 | 7 | Water pumps | 8 | ✅ complete |
 | 8 | Compressors | 9 | ✅ complete |
 | 9 | HVAC | 11 | ✅ complete |
-| 10 | Financial analysis | 13 | 🟨 issued |
+| 10 | Financial analysis | 13 | 📖 read |
 | 11 | Power plants | 12 | ✅ complete |
 | 12 | Steel | 13 | ✅ complete |
-| 13 | Cement | 13 | 🟨 issued |
-| 14 | Buildings | **13B** | 🟨 issued |
-| 15 | Textile | 13 | 🟨 issued |
+| 13 | Cement | 13 | ✅ complete (Mock 1 N-4) |
+| 14 | Buildings | **13B** | 📖 read |
+| 15 | Textile | 13 | 📖 read |
 
 **15/15 chapters taught.** ✅ complete = lesson delivered *and* a question from
 that chapter marked. 🟨 issued = lesson written, work not yet reported back.
@@ -122,6 +123,7 @@ that chapter marked. 🟨 issued = lesson written, work not yet reported back.
 |---|---|---|---|---|
 | 3 | Boiler & combustion diagnostic | 20 | **18** | 30 Aug |
 | 7 | Mock A — thermal | 60 | **29** | 03 Sep |
+| 14 | **Full Mock 1** | 100 | **≈84** | 06 Sep |
 | 10 | Electrical & fluids diagnostic | 30 | **28** | 04 Sep |
 | 13B | Sector & systems diagnostic | 40 | — | — |
 | 14 | Full Mock 1 | 100 | — | — |
@@ -1078,3 +1080,84 @@ never drilled. Absorbable.
 Choose **(A) HVAC changeover or (C) cement WHRB**. Mock 1 outstanding in full, to be
 sat in one 2.5-hour block — the thing a full mock measures is whether the pace holds
 across a whole paper, and that cannot be measured a question at a time.
+
+---
+
+### Full Mock 1 — **≈ 84 / 100** — 06 Sep, 10:39 → 13:08
+
+**149 minutes against a 150-minute paper, including about 25 minutes spent on
+N-4(A) before abandoning it for N-4(C).** Mock A was 29/60. The pace question that
+Mock A left open is now closed: she can finish this paper, with a false start in
+the middle, and land inside the bell.
+
+| Section | Score |
+|---|---|
+| I — True/False | 7/10 |
+| II — L-1 boiler efficiency | **5/5** |
+| II — L-2 heat pump | 3/5 |
+| N-1 trigeneration | ≈12/20 |
+| N-2 sawdust briquette boiler | **20/20** |
+| N-3 cooling tower & sump | **20/20** |
+| N-4(C) cement WHRB | 17/20 |
+
+**N-2 and N-3 are flawless.** N-2 produced all seven losses including CO and bottom
+ash, neither ever drilled, and — critically — **finished the question**, taking the
+efficiency through to the 24.114 m³/hr circulation rate that carries six of its
+twenty marks. N-3 was exact throughout with the mass flow diagram drawn unprompted.
+
+**Her stated problem — "I couldn't understand the refrigeration one" — is not what
+happened.** She scored 10 of N-4(A)'s 20 marks before stopping, both parts exactly
+right: ₹52,27,200/year and COP 5.023, the latter with the motor efficiency in the
+correct place for the second time running. She stalled on **one line** in part (c).
+
+> **Note to the Tutor — the single largest gap.** She used the *absorption*
+> chiller's heat rejection (5544 kCal/h per TR) for both the tower's capacity and
+> the new load, so her comparison was the old plant against itself. The missing
+> line is the centrifugal's rejection, `3024 + 0.7 × 860 = 3626`, and the missing
+> idea is that **what a chiller rejects = cooling load + the energy spent doing
+> the cooling**, where "spent" is shaft work for a VCR and generator heat for a
+> VAR. Rung 163 now derives it, gives the two-line template
+> (`capacity = what the OLD machine rejected; new load = what the NEW one
+> rejects + anything newly connected`), and drills it on a fresh 500 TR case.
+>
+> The equivalent section in `concept-distinctions.md` entry 1 has been rewritten
+> from a pair of numbers into the conservation statement they come from.
+
+**Four errors, and three share a shape.** In each case a quantity was computed
+correctly and then combined with the wrong partner:
+
+| Error | Marks | Diagnosis |
+|---|---|---|
+| Chiller rejection: VAR figure used for the VCR | ~10 | Concept — Rung 163 |
+| Heat pump sized on the diesel heater's *input* | 2 | Concept — Rung 164 |
+| Daily total omitted the electricity already computed | ~7 | Checking pass — Rung 165 |
+| 347.659 MWh/day written as "MW per day" | 3 | Units — Rung 166 |
+
+**None is a failure to know how.** The MWh error is one division from full marks
+and the wrong unit was in her own handwriting — `MW per day` is not a unit, and it
+should have stopped the pen.
+
+**Section I lost Q5 (ER blind to feedwater temperature), Q8 (suction duct is a
+draft — subtract) and Q9 (STEC per kg clinker, SEEC per tonne cement).**
+
+> **On the plan change.** Q8 and Q9 come from Days 13 and 13B — the chapters read
+> rather than drilled. **Two marks.** Against the hours the five Day 13 drills
+> would have cost, that is a trade worth repeating, and the mock's 84 says so.
+> But it confirms the qualification recorded when the plan changed: Sections I and
+> II are compulsory and do reach into sector material. The remedy is a re-read of
+> the concept lines, which is Rung 167, not the numericals.
+
+**One refinement found, worth nothing here and half a mark on Indian coal:**
+`m_dfg = (AAS + 1) − 9H₂ − M − **ash**` for solid fuels. `(AAS + 1)` assumes the
+whole kilogram of fuel leaves as gas; ash drops out of the furnace bottom, which is
+what the bottom-ash loss already counts. Added to the formula sheet.
+
+**Assessment:** `assessments/mock-1-review.md`
+
+**Day 15 issued** — Rungs 163–169, built from these seven errors and nothing else,
+ending in a **nine-item checking pass** whose first three items are new after this
+mock: did I produce every named quantity; is every total ≥ its largest part; did
+every part I computed reach its total. Any one of them catches N-1.
+
+`concept-distinctions.md` gains entries 15 (hold the service constant, not the
+input) and 16 (stock vs flow, with a sanity-anchor table).

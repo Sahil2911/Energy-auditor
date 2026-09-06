@@ -104,15 +104,38 @@ exactly what the 20th sitting's N-3 asks:
 ### The number an auditor actually cares about: heat rejection
 
 **This is the one that shows up in exam questions and in real retrofits.**
-Everything that goes in must come out at the condenser side.
+Everything that goes in must come out at the condenser side — conservation of
+energy with nowhere else to go:
 
 ```
-  VCR  rejects = cooling load + compressor SHAFT work
-               = 3024 + (0.8 × 0.875) × 860  = 3626 kCal/h per TR
-
-  VAR  rejects = cooling load + generator heat
-               = 3024 + 2520                 = 5544 kCal/h per TR
+    Q_rejected  =  Q_cooling  +  the energy spent doing the cooling
 ```
+
+What changes between the machines is **what "spent" is made of**:
+
+```
+  VCR  spent = compressor SHAFT work
+       per TR = 3024 + (kW/TR × η_motor) × 860
+              = 3024 + (0.8 × 0.875) × 860  = 3024 +  602 = 3626 kCal/h
+
+  VAR  spent = GENERATOR heat
+       per TR = 3024 + 3024/COP
+              = 3024 + 2520                 = 3024 + 2520 = 5544 kCal/h
+```
+
+> **The motor losses are NOT in the VCR line.** They become heat in the motor
+> housing and the plant room, not in the refrigerant. The tower sees **shaft**
+> power — which is why the same 87.5% that belongs in the COP belongs here.
+
+**On a tower-adequacy question, write these two lines first:**
+
+```
+    CAPACITY  = what the OLD machine rejected   (the tower was sized for it)
+    NEW LOAD  = what the NEW machine rejects  +  anything newly connected
+```
+
+Two different rejection figures, two different roles. Using one figure on both
+sides compares the old plant to itself and answers nothing.
 
 **A VAR throws away about 50% more heat per TR than a VCR.** So:
 
@@ -426,3 +449,85 @@ emission factors in the same problem is the warning.
 BEE's model answers sometimes use the shortcut. Give the correct answer first, then
 the model answer's number in one parenthetical line saying why they differ — the
 marker finds their number in your working, and the reasoning can only earn credit.
+
+---
+
+## 15. Comparing options: hold the SERVICE constant, not the input
+
+```
+     RIGHT:  both options must deliver the same OUTPUT
+     WRONG:  both options must consume the same INPUT
+```
+
+Before comparing anything, write one line naming **what stays the same** — the job
+being done. Then ask each option what it costs to deliver that job.
+
+| Comparison | The invariant |
+|---|---|
+| Diesel heater vs heat pump | kCal delivered to the water |
+| Absorption vs centrifugal chiller | TR of cooling |
+| Throttle vs VSD | m³/hr at the required head |
+| Coal vs gas boiler | kg/hr of steam at the required enthalpy |
+| Old vs new motor | shaft kW at the driven machine |
+
+**Worked, from the 16th sitting's L-1.** A 70%-efficient diesel heater vs a heat
+pump at COP 2.5, both delivering 24,000 L/day lifted 40 °C.
+
+```
+   The service = 24 000 × 40 × 1 = 960 000 kCal/day    ← belongs to the WATER
+
+   Diesel:     burns 960 000/0.7 = 1 371 429 kCal → 150.7 L → ₹7535/day
+   Heat pump:  supplies 960 000 kCal
+               electricity = 960 000/2.5 = 384 000 kCal = 446.5 kWh → ₹4465/day
+   REDUCTION                                                        = ₹3070/day
+```
+
+Running the heat pump on 1,371,429 kCal instead makes it heat the water **and**
+recreate the diesel heater's 30% loss. The saving then comes out at ₹1157 — a third
+of the truth.
+
+> **The tell:** an efficiency or a COP belonging to *one* option appearing anywhere
+> inside the *other* option's calculation.
+
+---
+
+## 16. Stock vs flow — decide before writing the unit
+
+```
+   STOCK  (a quantity)   kWh, MWh, kCal, Gcal, tonnes, litres, m³, ₹
+   FLOW   (a rate)       kW, MW, kCal/hr, TPH, m³/hr, TPD, ₹/day, kg/s
+```
+
+A stock has no time in it. **A flow already contains one, so a second "per time" on
+a flow is an error, not emphasis** — "MW per day" is not a unit.
+
+Two questions before writing any unit:
+
+1. **Does the question want a stock or a flow?** "Power output in MW" → flow.
+   "Annual energy in Gcal" → stock. "Coal reduction in TPD" → flow.
+2. **Is that what I have?** If the answer should be MW and your working carries a
+   `/day`, divide by 24.
+
+**Worked.** A cement WHRB recovering 910.656 Gcal/day through a 36% cycle:
+
+```
+   910.656 × 0.36 × 0.95 × 0.96 ÷ 860 = 347.659 MWh per DAY     ← a stock/day
+   ÷ 24 h                              =  14.49 MW              ← the power
+```
+
+### Sanity anchors — an answer outside its range is wrong until proved otherwise
+
+| Quantity | Range |
+|---|---|
+| Cement WHR power | ~2 MW per 1000 TPD of kiln |
+| Cement STEC | 700–800 kCal/kg clinker |
+| Cement SEEC | 65–80 kWh/t cement |
+| Kiln heat of formation | 380–420 kCal/kg clinker |
+| Boiler efficiency, solid fuel | 65–85 % |
+| Electric chiller | 0.6–0.9 kW/TR, COP 4–6 |
+| Absorption chiller COP | 0.6–0.7 single, 1.1–1.4 double effect |
+| Cooling tower approach | 3–6 °C |
+| Power plant net heat rate | 2300–2800 kCal/kWh |
+| Stenter drying efficiency | 45–55 % |
+| Motor efficiency | 88–95 % |
+| Pump efficiency | 65–85 % |
