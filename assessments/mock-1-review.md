@@ -4,6 +4,26 @@
 
 ## Score: **≈ 84 / 100.** Pass is 50.
 
+> ### ⚠️ Correction, 06 Sep — the paper was not all unseen
+>
+> It was issued claiming every question was unseen. **Four of eight had already
+> been assigned:** L-1 was Day 1's Block B3 verbatim, N-4(A) was the sector
+> diagnostic's Q2, N-4(B) was Day 13's Block C, and N-4(C) was Day 13's Drill 68 —
+> whose answers are printed in `day-13.md`.
+>
+> **She answered two of them:** L-1 (5/5) and N-4(C) (17/20). So 22 of the ~84
+> marks came from questions she had seen.
+>
+> On the genuinely unseen material — Section I, L-2, N-1, N-2, N-3 — the score is
+> **62/75 = 83%**, against 84% overall. **The rate is the same, so nothing below
+> changes**; but the headline was inflated by construction and the claim was
+> false. Guard now in `question-bank/used-ledger.md`.
+>
+> One thing this sharpens rather than softens: **the N-4(C) units error happened
+> with the answer already published to her.** `day-13.md` states "Drill 68: 14.49
+> MW". Writing 347.659 MW without reconciling against a figure she had been given
+> is a checking-pass failure on top of a units one.
+
 | Section | Score | Notes |
 |---|---|---|
 | I — True/False | **7 / 10** | Q5, Q8, Q9 |

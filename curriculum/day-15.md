@@ -66,6 +66,31 @@ spent" is made of.**
 
 **5544 against 3626 — an absorption machine dumps about 50% more heat per TR.**
 
+### BEE writes it as one formula, and it is worth memorising in that form
+
+The 21st sitting's N-2 — recovered from the scan on 06 Sep — states the general
+case outright:
+
+```
+    Condenser duty  =  TR × 3024 × (1 + 1/COP)
+```
+
+One expression for both machines. The whole difference is the multiplier:
+
+| Machine | COP | 1 + 1/COP |
+|---|---|---|
+| Centrifugal | 4.4 | **1.227** |
+| Centrifugal | 5.0 | 1.200 |
+| Double-effect VAM | 1.2 | **1.833** |
+| Single-effect VAM | 0.7 | 2.429 |
+
+**A COP below 1 rejects more than twice the cooling load.** That is the entire
+reason absorption retrofits are cooling tower projects.
+
+*(For a VCR quoted in kW/TR rather than COP, convert first — `COP = 3.517/(kW/TR
+× η_motor)` — or use the `3024 + shaft kW × 860` form directly. Both give 3626 for
+0.8 kW/TR at 87.5% motor.)*
+
 Say why in one sentence: *a VCR's driving energy arrives as a few hundred kCal of
 shaft work; a VAR's arrives as two and a half thousand kCal of generator heat, and
 all of it has to come back out at the condenser.*

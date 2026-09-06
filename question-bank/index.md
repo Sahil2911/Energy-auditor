@@ -6,8 +6,16 @@ sittings in `papers/`, classified by primary topic and mapped to the curriculum 
 **Set A / Set B (Green / Pink) contain the same questions reordered.** Where both
 appear below, solve it once.
 
-All listed papers include worked solutions. The 21st and 22nd sittings are scanned
-images and are not indexed here.
+All listed papers include worked solutions.
+
+> **21st and 22nd sittings — status.** Both were image-only scans with no text
+> layer, so they were unusable and excluded from this index. **The 21st was
+> recovered on 06 Sep** by rendering each page at 170 dpi and reading the images;
+> see **`21st-sitting.md`** for its full inventory with answers. The 22nd is next
+> and becomes the source for Mock 2.
+
+> **See also `used-ledger.md`** — every question already assigned in the
+> curriculum. Check it before building any mock.
 
 ---
 
@@ -22,7 +30,7 @@ images and are not indexed here.
 | Pumps & pumping | 9 | Day 8 |
 | Cement | 9 | Day 13 |
 | Furnaces & reheating | 8 | Day 6 |
-| Unclassified | 7 | Day — |
+| ~~Unclassified~~ → reclassified 06 Sep | 0 | — |
 | HVAC / chillers / refrigeration | 6 | Day 11 |
 | Steel | 5 | Day 13 |
 | Fuels & combustion | 4 | Day 3 |
@@ -166,19 +174,30 @@ images and are not indexed here.
 | 2024 (24th) | `24-1` L-2 | 5 | A medium-sized re-rolling plant has installed a batch-type reheating furnace. The furnace opera… |
 | 2024 (24th) | `24-2` L-1 | 5 | A medium-sized rerolling plant has installed a batch-type reheating furnace. The furnace operat… |
 
-## Unclassified
+## ~~Unclassified~~ — resolved 06 Sep
 
-*Curriculum day: — — 7 questions*
+The classifier keyed on the opening words of each extracted block. These seven rows
+opened either mid-answer (`Ans Effy ᶯ = …`) or with wording that matched no keyword,
+so they fell through. **They were never unclassifiable — only unmatched.**
 
-| Sitting | Q | Marks | Opening |
-|---|---|---|---|
-| 2016 (17th) | `17` L-2 | 5 | While carrying out an energy audit of a pumping system, the treated water flow (in open channel… |
-| 2019 (20th) | `20-1` N2 | 20 | Pressurized hot water circulation system is employed for heating in a process industry. Ho t wa… |
-| 2019 (20th) | `20-2` N1 | 20 | Pressurized hot water circulation system is employed for heating in a process industry. Hot wat… |
-| 2025 (25th) | `25-1` L-1 | 5 | Ans Effy ᶯ = ER. (hg – hf) / GCV EffyL.P ᶯ1 = 0.82 = 14 x(665 – 80) / GCV EffyH.P ᶯ2 = 14 x(732… |
-| 2025 (25th) | `25-1` N-4 | 20 | (D) Ans a) Steam and Coal Required for the Coal-Fired Boiler Dry cloth mass: m_dry = 1,250 × (1… |
-| 2025 (25th) | `25-2` L-2 | 5 | Ans Effy ᶯ = ER. (hg – hf) / GCV EffyL.P ᶯ1 = 0.8 = 14 x(665 – 80) / GCV EffyH.P ᶯ2 = 14 x(732… |
-| 2025 (25th) | `25-2` N-4 | 20 | (C) Ans a) Steam and Coal Required for the Coal-Fired Boiler Dry cloth mass: m_dry = 1,250 × (1… |
+Seven rows are **four distinct questions**, since Green and Pink duplicate each other:
+
+| Sitting | Q | Marks | Actually is | Now filed under | Day |
+|---|---|---|---|---|---|
+| 17th | `17` L-2 | 5 | Tracer dilution: total flow vs water flow in an open channel | **Pumps & pumping** | 8 |
+| 20th | `20-1` N2 = `20-2` N1 | 20 | Pressurised hot water circulation for process heating — boiler efficiency into a circulation rate | **Boiler efficiency** | 3 |
+| 25th | `25-1` L-1 = `25-2` L-2 | 5 | LP/HP boilers, same evaporation ratio of 14 — find HP efficiency | **Boiler efficiency** | 1 |
+| 25th | `25-1` N-4(D) = `25-2` N-4(C) | 20 | Textile stenter: steam and coal for a coal-fired boiler from a drying duty | **Textile** | 13 |
+
+**Already done:** the 17th L-2 tracer (Day 8, 4/5) and the 25th L-1 boiler (Day 1
+Block B3, and again as Mock 1's L-1 — see `used-ledger.md`).
+
+**Not yet touched, and both worth doing:**
+
+- **20th N-2** — pressurised hot water circulation. Same shape as the 19th N-3 she
+  scored 20/20 on in Mock 1, so it is a fair cold re-test of the same chain.
+- **25th N-4(D)** — textile stenter *into* a boiler duty. Combines Day 13's stenter
+  moisture balance with Day 1's evaporation ratio, which no other question does.
 
 ## HVAC / chillers / refrigeration
 
