@@ -1,6 +1,7 @@
-# Mock 1, N-4(B) Review — DRI Steel Plant
+# Day 13 Review — Block C, DRI Steel Plant
 
-**08:44 → 09:14, thirty minutes.** 24th sitting N-4(D), 20 marks.
+**08:44 → 09:14, thirty minutes.** 24th sitting N-4(D), 20 marks — **Day 13's Block
+C timed question**, sat cold after reading the lesson.
 
 ## Score: **20 / 20**
 
@@ -8,21 +9,22 @@ And more than that — her arithmetic is **better than BEE's own model answer**.
 
 ---
 
-## The experiment, and its result
+## What this settles
 
-Mock 1's N-4 deliberately offered three options: one HVAC question she had drilled
-the concepts for, and **two sector questions she had only read about**. The note in
-the paper said:
+Day 13's drills were demoted to optional on the judgement that the sector chapters
+could be handled from the book plus the concepts already built, rather than from
+repeated practice. **She then sat Day 13's timed question anyway, cold, and scored
+full marks on it in thirty minutes.**
 
-> *"You judged that the sector chapters can be handled from the book plus general
-> concepts rather than from drilled practice. Options B and C test exactly that."*
-
-**She picked a sector question and scored full marks on it in thirty minutes.**
-
-Her judgement was right, and the plan change was the correct call. The sector
-chapters do not need drilling; they need the concepts underneath them — heat rate
+That is the strongest possible version of the evidence: not a question chosen under
+exam pressure from a menu, but the chapter's own set-piece, attempted once, after a
+single reading. The sector material needed the concepts underneath it — heat rate
 as a sourcing conversion, yield chains, specific energy denominators — and those
 were already in place from Days 6, 11 and 12.
+
+> **One consequence for Mock 1.** N-4 option (B) is this question, so it is now
+> seen. **In Mock 1, choose (A) or (C).** Option (C), the cement WHRB, keeps the
+> sector test honest; (A) is the HVAC changeover.
 
 ---
 
@@ -184,11 +186,12 @@ the day, a 1.2× on your chosen N-4 is comfortably absorbed.
 
 ## Verdict
 
-**20/20 on a sector question, from the book, cold.** The hypothesis behind the plan
-change is confirmed: the sector chapters are reachable with the concepts already
-built, and drilling them would have been time better spent elsewhere.
+**20/20 on a sector question, from the book, cold, at the first attempt.** The
+judgement behind the plan change is confirmed — and confirmed more strongly by her
+having sat the timed question rather than skipping it.
 
-The remaining Mock 1 questions — Section I, Section II, N-1, N-2, N-3 — are
-outstanding. **Sit them in one 2-hour block** rather than singly, because the thing
-Mock 1 is really measuring is whether the pace holds across a whole paper, and that
-cannot be measured a question at a time.
+**Chapter 12 (Steel) complete.**
+
+Mock 1 remains outstanding in full. **Sit it in one 2.5-hour block**, choosing N-4
+(A) or (C) since (B) is now seen — the thing a full mock measures is whether the
+pace holds across a whole paper, and that cannot be measured a question at a time.

@@ -142,13 +142,16 @@ cooling tower**, two makeup pumps, and a sump.
 | Option | Paper | Topic |
 |---|---|---|
 | **(A)** | `papers/20-1.pdf`, N-3 | Absorption → centrifugal chiller changeover, and whether the cooling tower can take an added process load |
-| **(B)** | `papers/24-1.pdf`, N-4(D) | DRI steel plant — specific energy consumption per tonne of finished product, base and assessment year, and coal reduction |
+| ~~**(B)**~~ | ~~`papers/24-1.pdf`, N-4(D)~~ | ⛔ **Withdrawn — this was Day 13's Block C and is now seen.** Choose (A) or (C). |
 | **(C)** | `papers/24-1.pdf`, N-4(C) | Cement plant WHRB — power output from preheater and cooler gas, and heat of formation of clinker |
 
-> **This choice is the experiment.** You judged that the sector chapters can be
-> handled from the book plus general concepts rather than from drilled practice.
-> Options B and C test exactly that. **Pick the one you would pick in the exam**,
-> and afterwards note in the log why — that reasoning is as useful as the marks.
+> **This choice is the experiment.** Option (C) is a sector question you have read
+> about but not worked; option (A) is HVAC, whose concepts you have drilled. **Pick
+> the one you would pick in the exam**, and afterwards note in the log why — that
+> reasoning is as useful as the marks.
+>
+> Option (B)'s answer key is kept below because its part 3 carries a correction to
+> BEE's model answer worth reading either way.
 
 ---
 

@@ -4,7 +4,7 @@ Updated daily. The Reviewer reads this before each assessment.
 
 ## Progress tracker
 
-*Last updated: 06 September 2026 (Mock 1 N-4 reported 20/20). **Update the bars whenever
+*Last updated: 06 September 2026 (Day 13 Block C reported 20/20). **Update the bars whenever
 the chapter table below changes** — they went stale between Day 3 and Day 10
 because only the table was being maintained.*
 
@@ -13,17 +13,17 @@ because only the table was being maintained.*
 | Curriculum | **19 sessions** (grew from 15 — see note) |
 | Started | 30 August 2026 |
 | **Exam** | **26 September 2026, 14:00–16:30** |
-| Sessions **reported back** | **16 / 19** |
+| Sessions **reported back** | **17 / 19** |
 | Sessions **issued** | **18 / 19** |
 | Book-4 chapters **taught** | **15 / 15** ✅ |
-| Book-4 chapters **assessed** | **12 / 15** |
+| Book-4 chapters **assessed** | **13 / 15** |
 | Days to exam | **21** |
 
 ```
-Reported    [█████████████████████████     ]  84%   16/19
+Reported    [███████████████████████████   ]  89%   17/19
 Issued      [████████████████████████████  ]  95%   18/19
 Ch. taught  [██████████████████████████████] 100%   15/15
-Ch. assessed[████████████████████████      ]  80%   12/15
+Ch. assessed[██████████████████████████    ]  87%   13/15
 ```
 
 **All fifteen Book-4 chapters now have a lesson behind them.** What remains is
@@ -62,10 +62,10 @@ Net +4. The buffer absorbed it; 21 days still remain.
 | 10 | Motors, VSD, cooling towers | ✅ |
 | 11 | HVAC, chillers, refrigeration | ✅ |
 | 12 | Power plants, heat rate, PAT | ✅ **28/30** |
-| 13 | Cement, steel, textile, sugar, financial | 📖 read (drills optional) |
+| 13 | Cement, steel, textile, sugar, financial | ✅ **20/20** on Block C |
 | 13B | Buildings & cooling load | 📖 skimmed (by agreement) |
 | — | ~~Sector & systems diagnostic~~ | ⛔ retired — folded into Mock 1 |
-| 14 | **Full Mock 1** — 100 marks, 2.5 hrs | 🟨 N-4 done **20/20**; rest outstanding |
+| 14 | **Full Mock 1** — 100 marks, 2.5 hrs | 🟨 issued — N-4(B) withdrawn, now seen |
 | 15 | Gap closure from Mock 1 | ⬜ |
 | 16 | **Full Mock 2** | ⬜ |
 | 17 | Gap closure + **Full Mock 3** if time | ⬜ |
@@ -89,7 +89,7 @@ Pace under exam conditions. Target is ~1.5 min per mark (150 min for 100 marks).
 | 12 | 23rd N-1 pet coke boiler | 20 | 28 min | 30 | ✅ inside budget |
 | 12 | 25th L-1 PAT | 5 | 4 min | 8 | ✅ well inside |
 | 12 | 19th L-1 plant comparison | 5 | 3 min | 8 | ✅ well inside |
-| 14 | Mock 1 N-4(B) DRI steel | 20 | 30 min | 25 | 🟨 1.2× budget |
+| 13 | Block C — 24th N-4(D) DRI steel | 20 | 30 min | 35 | ✅ inside budget |
 
 **Every measured question is at or inside budget — now eleven in a row.**
 
@@ -108,7 +108,7 @@ Pace under exam conditions. Target is ~1.5 min per mark (150 min for 100 marks).
 | 9 | HVAC | 11 | ✅ complete |
 | 10 | Financial analysis | 13 | 🟨 issued |
 | 11 | Power plants | 12 | ✅ complete |
-| 12 | Steel | 13 | 🟨 issued |
+| 12 | Steel | 13 | ✅ complete |
 | 13 | Cement | 13 | 🟨 issued |
 | 14 | Buildings | **13B** | 🟨 issued |
 | 15 | Textile | 13 | 🟨 issued |
@@ -1019,11 +1019,12 @@ model answers before issue — EUF 0.78, 8488.4 Gcal/yr, 3879.7 Sm³/day; η 68.
 
 ---
 
-### Mock 1, N-4(B) — DRI steel — **20 / 20** — 06 Sep, 08:44 → 09:14
+### Day 13 Block C — DRI steel — **20 / 20** — 06 Sep, 08:44 → 09:14
 
-**The experiment came back positive.** Mock 1's N-4 offered one drilled HVAC option
-against two undrilled sector options. **She picked a sector question and scored full
-marks on it in thirty minutes, from the guidebook.** The plan change is vindicated:
+**Day 13's own Block C, sat cold after a single reading of the lesson** — she did the
+timed question despite the drills having been demoted to optional. **Full marks in
+thirty minutes, from the guidebook.** The plan change is vindicated, and by stronger
+evidence than a menu choice under exam pressure would have been:
 the sector chapters needed the concepts underneath them — heat rate as a sourcing
 conversion, yield chains, specific energy denominators — and those were already in
 place from Days 6, 11 and 12.
@@ -1059,7 +1060,7 @@ key.**
 > `Δ(E)/k ≠ Δ(E/k)` whenever k differs between cases — the distributive law needs a
 > constant k. Added as `concept-distinctions.md` entry 14, cross-referenced from
 > `reciprocal-traps.md` as a cousin of the inversion family, and Day 14's answer key
-> now carries the correction plus the exam wording: give 58.55, then one
+> retains option (B) purely for this correction, and now carries it plus the exam wording: give 58.55, then one
 > parenthetical line containing the model answer's 41.5 and why they differ.
 >
 > **The trap generalises** — fuel saving when GCV changes, cost saving when tariffs
@@ -1071,6 +1072,9 @@ never drilled. Absorbable.
 
 **Assessment:** `assessments/mock-1-N4-review.md`
 
-**Outstanding:** Mock 1 Sections I and II, and N-1, N-2, N-3. **To be sat in one
-2-hour block** — the thing a full mock measures is whether the pace holds across a
-whole paper, and that cannot be measured a question at a time.
+**Chapter 12 (Steel) complete. Book-4 chapters done: 1–9, 11, 12.**
+
+**Consequence for Mock 1:** N-4 option (B) was this question, so it is withdrawn.
+Choose **(A) HVAC changeover or (C) cement WHRB**. Mock 1 outstanding in full, to be
+sat in one 2.5-hour block — the thing a full mock measures is whether the pace holds
+across a whole paper, and that cannot be measured a question at a time.
