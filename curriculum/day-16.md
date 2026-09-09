@@ -13,6 +13,23 @@
 > One question was excluded by that check: the **22nd N-4(D)** is the same DRI
 > steel problem as the 24th N-4(D), which was Day 13's Block C. It is not in this
 > paper. It is Day 15's Drill 76 instead.
+>
+> ### ⚠️ But the other check was not run — correction, 09 Sep
+>
+> **"Unseen" and "reachable" are two different checks, and only the first was
+> done.** N-3's A(v) asks for **air preheater leakage** and B(i) for **APH
+> effectiveness**, and the air preheater appears nowhere in the curriculum — Day 6
+> teaches a *furnace recuperator*, Day 5 teaches effectiveness generically, and the
+> leakage formula was never written down at all.
+>
+> **Six marks in this paper were unreachable.** That is the sixth prerequisite
+> breach, and the first one the student found by auditing the curriculum herself
+> rather than by failing a question.
+>
+> **Now fixed:** Day 17 Rungs 175–178B teach the air preheater from an oxygen
+> balance, and Rungs 179–182 close the three lighter gaps a full sweep then found
+> (screw compressors, condensate recovery, transformer losses). `framework.md` now
+> requires **both** checks in writing before any paper is issued.
 
 ## Structure
 

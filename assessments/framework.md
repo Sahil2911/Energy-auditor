@@ -47,6 +47,38 @@ The distribution is the signal. Mostly Concept after Day 7 means the curriculum
 is moving too fast. Mostly Arithmetic means it is working and the student needs
 composure, not more teaching.
 
+## Two checks before any paper is issued — they are not the same check
+
+**Mock 2 failed because only one of these was run.**
+
+| Check | Question it answers | How |
+|---|---|---|
+| **Ledger check** | Has this question been assigned before? | `python3 tools/ledger.py`, then look it up in `question-bank/used-ledger.md` |
+| **Prerequisite check** | Is every part reachable from what has been taught? | **Data-item level** — every quantity the question supplies must have a taught use, and every part must map to a rung |
+
+Mock 1 failed the first (four of eight questions had been assigned). Mock 2 passed
+the first and **was never given the second** — its N-3 asked for air preheater
+leakage and effectiveness, taught nowhere, costing six unreachable marks.
+
+**Every lesson from Day 11 onward carries a written prerequisite box. Neither mock
+did.** From here, a paper is not issued until **both** checks are written into it.
+
+### Prerequisite breaches to date
+
+| # | Where | What was unreachable |
+|---|---|---|
+| 1 | Day 1 | 18th N-1 needed the indirect method |
+| 2 | Day 4 | 18th N-2 was a gas turbine, taught as "same logic" |
+| 3 | Day 5 | 25th N-1 needed pump, fan and chiller |
+| 4 | Mock A | 17th N-2 (ii)(iii) needed chiller COP |
+| 5 | Day 10 | 17th N-1 needed L/G air flow |
+| 6 | **Mock 2** | **22nd N-3 A(v), B(i) needed the air preheater** |
+
+Breaches 1–5 were caught by the student reporting a question she could not do.
+**Breach 6 she caught by auditing the curriculum against the paper herself** — a
+better catch, and one that prompted a full sweep of every equipment noun in the ten
+papers (Day 17 Rungs 175–182 close the four gaps it found).
+
 ## Logger maintenance rule
 
 `log/study-log.md` carries the same state in three places — the summary table, the

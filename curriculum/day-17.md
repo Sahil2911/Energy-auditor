@@ -268,13 +268,305 @@ have been using the fact, in that minus sign, since Day 2A.
 
 ---
 
+# Part 2 — The air preheater (the part that was never taught)
+
+> **This section exists because she was right.** Mock 2's N-3 asked for **APH
+> leakage** and **APH effectiveness**, and neither appears anywhere in the
+> curriculum. Day 6 Rung 62 teaches *combustion air preheat on a furnace
+> recuperator* — a different device in a different context. Day 5 Rung 45 teaches
+> effectiveness generically but never applies it to an APH, and the **leakage
+> formula appears nowhere at all.**
+>
+> **Six of the eleven marks I called a triage loss were unreachable.** Rungs
+> 175–178 close that, and Drill 77 below is only fair once they are read.
+
+## Rung 175 — What an air preheater is, and why it is not a recuperator
+
+The last heat exchanger on a boiler's back end. Flue gas leaves the economiser at
+300–400 °C — still far too hot to send up a stack — so it passes through an **air
+preheater**, giving that heat to the incoming combustion air.
+
+```
+   furnace ─► superheater ─► economiser ─► AIR PREHEATER ─► ID fan ─► stack
+                                 │             ▲   │
+                            feedwater      cold air  hot air (250–300 °C)
+                                               │      └────► to the burners
+                                            FD fan
+```
+
+**It is the same idea as Day 6's recuperator** — Rung 62's `1% fuel saving per
+20 °C of air preheat` applies here unchanged — but the hardware differs, and the
+difference is the whole of Rung 176.
+
+| | **Recuperative** (tubular / plate) | **Regenerative** (Ljungström, rotary) |
+|---|---|---|
+| How | Gas and air on opposite sides of a fixed wall | A rotating matrix soaks up heat in the gas stream, gives it up in the air stream |
+| Size | Large — gas-to-gas U is poor | Compact for the same duty |
+| **Leakage** | **In principle none** — a solid wall separates them | **Unavoidable** — the seals slide |
+| Typical use | Small and medium boilers | Large utility boilers |
+
+**On a regenerative APH the air side is at fan discharge pressure and the gas side
+is under ID-fan draft.** A pressure difference across a sliding seal leaks, always.
+That leak is not a defect to be eliminated; it is a design parameter to be
+*measured*, and 5–15% is normal.
+
+---
+
+## Rung 176 — Why leakage matters, and the formula derived
+
+**Leaked air short-circuits the furnace.** It crosses from the air side straight
+into the gas side without ever reaching a burner. So it:
+
+- **does nothing for combustion** — it never sees fuel;
+- **loads the ID fan** with mass it did not need to move;
+- **loads the FD fan too**, which must supply the leak on top of the real air;
+- **cools the flue gas**, which makes the exit temperature *look* better than the
+  boiler deserves — a false economy that hides a real loss.
+
+### The measurement, and where the formula comes from
+
+You cannot weigh the leak. But leaked air is 21% O₂, and flue gas is not — so
+**the leak announces itself as a rise in %O₂ across the preheater.**
+
+Take **100 moles of flue gas entering** the APH at `O₂_in`, and let **L moles of
+air** leak in. Oxygen is conserved:
+
+```
+     oxygen in the gas    +    oxygen in the leaked air   =  oxygen in the gas out
+
+        100 × O₂_in       +          L × 21              =  (100 + L) × O₂_out
+```
+
+Expand and collect the L terms:
+
+```
+        100·O₂_in + 21L = 100·O₂_out + L·O₂_out
+        L(21 − O₂_out)  = 100(O₂_out − O₂_in)
+```
+
+```
+                       O₂_out − O₂_in
+        AL %  =  100 × ────────────────
+                        21 − O₂_out
+```
+
+**That is it — a single oxygen balance.** Note the family resemblance to the excess
+air formula: both are "how much 21% air got added", and both put the *unknown* air
+over `21 minus the measured O₂`.
+
+**Worked, 22nd sitting N-3 A(v).** The question gives *excess air*, not O₂, so
+invert the excess-air formula first:
+
+```
+        EA = O₂/(21 − O₂)        ⟹        O₂ = 21 × EA/(1 + EA)
+
+        25.0 % EA  →  21 × 0.250/1.250  =  4.2 % O₂    (APH inlet)
+        44.8 % EA  →  21 × 0.448/1.448  =  6.5 % O₂    (APH outlet)
+
+        AL = 100 × (6.5 − 4.2)/(21 − 6.5)  =  230/14.5  =  15.86 %
+```
+
+**Check it forwards:** 100 mol at 4.2% O₂ plus 15.86 mol of air at 21% gives
+`(4.2 + 15.86 × 0.21)/1.1586 = 6.50%` ✓.
+
+> **15.86% is high.** Above ~12% an auditor calls for seal adjustment. The cost is
+> not subtle: that leaked air is pumped twice, by the FD fan and again by the ID
+> fan, and it is 15% extra mass through a fan whose power goes as flow.
+
+---
+
+## Rung 177 — APH effectiveness, and why it is measured on the air side
+
+This is **Day 5 Rung 45's effectiveness**, unchanged — actual heat transferred over
+the maximum thermodynamically possible — applied to the air:
+
+```
+                    actual air temperature RISE
+        ε  =  ──────────────────────────────────────────
+              maximum possible rise (air in → gas in)
+
+                 T_air,out − T_air,in
+           =  ─────────────────────────
+                 T_gas,in − T_air,in
+```
+
+The air can never leave hotter than the gas entered, so ε ≤ 1 — the same bound as
+every effectiveness on Day 5.
+
+**Worked, 22nd N-3 B(i):**
+
+```
+        design     (316 − 36)/(356 − 36)  = 280/320  = 87.5 %
+        operating  (294 − 40)/(315 − 40)  = 254/275  = 92.4 %
+```
+
+### Why the air side and not the gas side
+
+You could write the same ratio on the gas side — `(T_gas,in − T_gas,out)/(T_gas,in
+− T_air,in)`. **Do not.** Rung 176 is the reason: **leakage cools the gas**. Cold
+air dumped into the gas stream drops the measured gas outlet temperature without a
+single extra joule reaching the air. Gas-side effectiveness therefore *rises* when
+the seals get worse, which is exactly backwards.
+
+**The air side cannot be faked.** Air that leaked across never reached the burners,
+so it never appears in the air outlet measurement.
+
+> **Read the 22nd's numbers with that in mind.** Effectiveness *rose* from 87.5% to
+> 92.4% while leakage was 15.86% and the gas exit temperature *rose* from 145 °C to
+> 165 °C. A "better" preheater on a boiler burning more coal. The three numbers only
+> reconcile once you know what leakage does.
+
+---
+
+## Rung 178 — The cold end, and why exit gas temperature has a floor
+
+If the APH is free money, why not cool the flue gas to 60 °C?
+
+**Because of sulphur.** Fuel sulphur burns to SO₂, a little of it oxidises further
+to SO₃, and SO₃ plus water vapour is sulphuric acid. That acid has a **dew point of
+120–150 °C** — far above the water dew point — and below it, it condenses on the
+coldest metal in the plant, which is the APH's cold end.
+
+```
+        acid dew point ≈ 120–150 °C   on sulphur-bearing fuel
+                        ≈  50–60 °C   on natural gas (no sulphur)
+```
+
+So the exit gas temperature is not an efficiency target to be minimised. **It is a
+floor set by the fuel**, and the standard rules follow from it:
+
+- Coal and furnace oil: hold exit gas at **~150–170 °C**.
+- Natural gas: can go far lower — which is why condensing economisers exist on gas.
+- A cold-end that keeps corroding means the fuel's sulphur, not the design.
+
+**This is the same fact as Day 6's "exhaust of furnace-oil systems is limited to
+about 170 °C"** — the 16th sitting asks it directly as a short question. One cause,
+two chapters.
+
+---
+
+## Rung 178B — What an auditor checks on an APH
+
+1. **O₂ before and after** — leakage, by Rung 176. Rising over months means seals.
+2. **Air in/out and gas in/out temperatures** — effectiveness, by Rung 177.
+3. **Gas exit temperature against the acid dew point** — too low is corrosion, too
+   high is loss.
+4. **Draft loss across the APH** — rising means fouling or ash plugging.
+5. **FD and ID fan powers** — a leaking APH shows up in both.
+
+---
+
+# Part 3 — The rest of the coverage audit
+
+**Her question prompted a full sweep of every equipment noun in the ten papers
+against the curriculum.** The air preheater was the serious gap. Three more turned
+up, all lighter, and all closed here rather than left to be discovered in an exam.
+
+## Rung 179 — Screw compressors (in 6 of 10 papers; Day 9 taught reciprocating only)
+
+**The assessment arithmetic is identical** — FAD, specific power, isothermal
+efficiency, leakage test — so nothing you learned on Day 9 is wasted. What differs
+is **part-load behaviour**, and that is where the audit findings are.
+
+| | **Reciprocating** | **Screw** |
+|---|---|---|
+| Mechanism | Piston, positive displacement in pulses | Two meshing helical rotors, continuous |
+| Delivery | Pulsating — needs a receiver | Smooth |
+| Typical size | Up to ~100 kW | 20 kW to several MW — **the industrial default** |
+| Specific power at 7 bar | 6–7 kW/100 CFM | 5.5–6.5 kW/100 CFM |
+| Part load | **Load/unload only** (Day 9 Rung 91) | Load/unload, **slide valve**, or **VFD** |
+| Unloaded power | ~25–35 % of full load | **~25–40 %** of full load |
+| Maintenance | Valves, rings — frequent | Bearings, oil — infrequent |
+
+**The part-load story is the exam story.** A screw compressor's slide valve
+modulates capacity by shortening the effective rotor length — but its power does
+**not** fall proportionally:
+
+```
+    100 % capacity → 100 % power
+     70 % capacity →  ~82 % power        ← the penalty
+     50 % capacity →  ~70 % power
+      0 % capacity (unloaded) → 25–40 %
+```
+
+**So a screw running at 50% on the slide valve is worse than one cycling load/
+unload**, and much worse than a VFD, which follows capacity nearly linearly. The
+standard finding — *"replace slide-valve modulation with a VFD, or with proper
+sequencing of multiple machines"* — comes straight from that table.
+
+> Day 9 Rung 91's load/unload arithmetic transfers unchanged. The only new fact is
+> that **a screw has a third option and its middle setting is a trap.**
+
+## Rung 180 — Condensate recovery (asked in the 25th; taught nowhere)
+
+Steam condenses at the process and leaves as **saturated water at the steam
+pressure**. Throwing it away wastes four things at once, and candidates usually
+name only one:
+
+```
+   1. HEAT      condensate at 8 bar is ~175 °C carrying ~176 kCal/kg
+                against 30 °C makeup — about 20–25 % of the steam's total heat
+   2. WATER     the mass itself, which must be replaced
+   3. TREATMENT demineralised water costs money to make
+   4. BLOWDOWN  makeup carries dissolved solids; more makeup raises boiler TDS,
+                which forces more blowdown, which wastes more heat again
+```
+
+**The 25th sitting's True/False — "the only reason for installing condensate
+recovery is to reduce makeup water" — is False**, and item 1 is why: the heat is
+the larger prize, and item 4 is the one almost nobody says.
+
+```
+    fuel saving %  ≈  (condensate returned, kg) × (h_cond − h_makeup)
+                      ────────────────────────────────────────────────
+                        (steam raised, kg) × (h_steam − h_makeup)
+```
+
+Every degree of feedwater temperature is worth roughly **1% of fuel per 6 °C** —
+the same order as Day 6's air preheat rule, from the same arithmetic.
+
+> **Where you have already used this:** Mock 2's N-1 turned on it. The process
+> returned **NIL CONDENSATE**, so its share of the feedwater arrived as 30 °C
+> makeup instead of 100 °C return, and the mixed temperature fell to 89.2 °C. You
+> got that right. This rung is the general case of the thing you already did.
+
+## Rung 181 — Transformer losses (Section I fodder, two sittings)
+
+Two losses, and the exam swaps their names:
+
+```
+   IRON (core, no-load)  — hysteresis + eddy currents in the core
+                           CONSTANT whenever energised, load or no load
+   COPPER (I²R, load)    — resistance of the windings
+                           varies with the SQUARE of load
+```
+
+**The 21st sitting states "copper loss is the power consumed to sustain the
+magnetic field" → False.** That is the iron loss. *(You got this one right.)*
+
+**Maximum efficiency occurs where copper loss = iron loss**, which is typically
+40–60% of rating — so a transformer loaded at 25% is running badly, and the fix is
+to consolidate loads onto fewer transformers and switch the rest off.
+
+## Rung 182 — Naming, not concepts
+
+- A **jigger** is the dyeing machine in Day 13 Rung 146's liquor-ratio question —
+  fabric passes back and forth through a bath. The 23rd sitting names it; the
+  curriculum did not. **Same question, same arithmetic.**
+- A **stenter** (Day 13 Rung 148) is sometimes written **"stenter frame"** or
+  **"tenter"**. Same machine.
+- **Thermopack** = thermic fluid heater (Day 13 Rung 147). The 21st N-4(D) uses the
+  trade name without explanation.
+
+---
+
 # Practice — 50 minutes
 
 **Two of these are the parts you did not reach. Do them first.**
 
 | # | Question | Marks | Budget |
 |---|---|---|---|
-| 77 | **22nd N-3, parts A(iv), A(v), B(i), B(ii) only** | 11 | 12 min |
+| 77 | **22nd N-3, parts A(iv), A(v), B(i), B(ii) only** — now reachable, after Rungs 175–178 | 11 | 12 min |
 | 78 | **21st N-4(B) part (d) only**, from the 42.8 kW | 6 | 6 min |
 | 79 | 22nd L-1 — thermic fluid, **from scratch, watching the Cp** | 5 | 8 min |
 | 80 | 21st L-2 — EPI, **from scratch, watching the denominator** | 5 | 6 min |
@@ -306,6 +598,17 @@ cogen electricity ₹6.15/kWh.
 
 ## Day 17 checklist
 
+**Air preheater** *(new — this was missing from the curriculum)*
+- [ ] Know an APH from a furnace recuperator, and recuperative from regenerative
+- [ ] Know **why a regenerative APH must leak** — a sliding seal between a
+      pressurised air side and a drafted gas side
+- [ ] Know leaked air **short-circuits the furnace**: no combustion benefit, both
+      fans loaded, gas artificially cooled
+- [ ] **Can derive `AL% = 100(O₂_out − O₂_in)/(21 − O₂_out)`** from an oxygen balance
+- [ ] Can invert the excess air formula: **`O₂ = 21 × EA/(1 + EA)`**
+- [ ] **Effectiveness is measured on the AIR side**, and why the gas side lies
+- [ ] Know the acid dew point sets a **floor** on exit gas temperature
+
 **Triage**
 - [ ] **25 minutes maximum on any long question**, then move on
 - [ ] Never a 26th minute while an untouched part sits at three marks
@@ -320,11 +623,22 @@ cogen electricity ₹6.15/kWh.
 - [ ] **1210 and 3010 need a flow AND a difference** before they are watts
 - [ ] A constant means the same thing on line 9 as on line 4
 
+**The rest of the coverage audit**
+- [ ] Screw vs reciprocating: **same assessment maths, different part-load options**
+- [ ] Know a screw's slide valve at 50 % capacity still draws ~70 % power
+- [ ] **Condensate recovery saves four things**, and heat is the biggest
+- [ ] Iron loss is constant and magnetic; **copper loss is I²R and varies as load²**
+- [ ] Jigger, thermopack, stenter frame — names for machines already taught
+
 **Directions**
 - [ ] Dew point and moisture move **together**
 - [ ] **The ID fan is always bigger** — mass, leakage and temperature all stack
 - [ ] Small approach / TTD / DCA = **good**, in every context
 - [ ] Only **C, H and S** burn; fuel oxygen is subtracted in `A_th`
+
+**Coverage note.** With Rungs 175–182, every equipment noun appearing in the ten
+papers now has curriculum behind it. That sweep should have happened before Mock 2,
+not after it.
 
 **Next: Full Mock 3.** From the remaining unseen questions in the 21st and 22nd,
 plus the two the question bank reclassified on 06 Sep. **The score is not the

@@ -4,6 +4,39 @@
 
 ## Score: **≈ 73 / 100.** Pass is 50.
 
+> ### ⚠️ Correction, 09 Sep — six of N-3's marks were unreachable
+>
+> She pointed out that **the air preheater was never covered in the curriculum**.
+> Checked, and she is right. Day 6 Rung 62 teaches *combustion air preheat on a
+> furnace recuperator*; Day 5 Rung 45 teaches effectiveness generically. **Neither
+> names an air preheater, and the leakage formula appears nowhere.**
+>
+> | N-3 part | Marks | Reachable? |
+> |---|---|---|
+> | A(i) (ii) (iii) | 9 | ✅ Day 3 |
+> | A(iv) | 3 | ✅ one multiplication — genuinely unattempted |
+> | **A(v) APH leakage** | **3** | ❌ **never taught** |
+> | **B(i) APH effectiveness** | **3** | ❌ never stated for an APH |
+> | B(ii) actual air from O₂ | 2 | ✅ Day 2A |
+>
+> **This is the sixth prerequisite breach** (after Days 1, 4, 5, Mock A and Day 10)
+> and the first in a mock since Mock A. It happened because **Mock 2 was checked
+> against the used-question ledger for *seen/unseen* and never given a data-item
+> prerequisite check at all.** Days 11–13B each carry an explicit prerequisite box;
+> neither mock does. Two different checks, and I ran only one.
+>
+> **Corrected reading:** N-3 is **9/14 on reachable material**, and the paper is
+> **73/94 = 78% of what was actually answerable** — slightly *above* Mock 1's
+> honest 83%… no: below it, but by four points rather than ten.
+>
+> **Corrected attribution:** of the eleven unattempted marks, **five were triage
+> (A(iv) and B(ii)) and six were mine.** The triage lesson stands — A(iv) really was
+> one multiplication on a number already on the page — but it is a five-mark lesson,
+> not an eleven-mark one. The "129 minutes against 100" finding is unaffected.
+>
+> **Fixed:** Day 17 now carries **Rungs 175–178B** on the air preheater, derived
+> rather than quoted, and Drill 77 is only set after them.
+
 | Section | Score | What happened |
 |---|---|---|
 | I — True/False | **6 / 10** | Q1, Q4, Q6, Q9 |
@@ -60,7 +93,10 @@ term with Δh = 24 − 9.3 = 14.7 g/kg, which is the term most candidates drop.
 
 ---
 
-## The eleven marks: N-3 stopped after part (iii)
+## The unattempted marks: N-3 stopped after part (iii)
+
+*(Read with the correction above: five of these were yours to take, six were mine
+to teach.)*
 
 You did A(i), A(ii), A(iii) — all correct — and then wrote "N-4" and moved on.
 Unattempted:
@@ -78,9 +114,11 @@ Unattempted:
 ```
 
 **A(iv) is three marks for one multiplication.** You had 0.870 TPH on the page; the
-question gives 7000 hours and ₹9500/tonne. **B(i) is three marks for one
-subtraction over another.** Between them, six marks were available in under three
-minutes of work.
+question gives 7000 hours and ₹9500/tonne. **B(ii) is two marks** from Day 2A.
+Between them, five marks were available in about three minutes of work.
+
+**A(v) and B(i) were not yours to lose** — the air preheater was never taught. They
+are now Rungs 175–178.
 
 ### Where the time went
 
@@ -313,7 +351,8 @@ after the slip is arithmetically clean. Only the load entering it was wrong.
 
 | # | Error | Type | Marks |
 |---|---|---|---|
-| 1 | **N-3 A(iv), A(v), B(i), B(ii) unattempted** | **Time / triage** | **~11** |
+| 1 | **N-3 A(iv), B(ii) unattempted** | **Time / triage** | **~5** |
+| 1b | **N-3 A(v), B(i)** — air preheater never taught | **Curriculum — mine** | **~6** |
 | 2 | L-2 denominator included parking and basement | Reading | 3 |
 | 3 | L-1 kJ→kCal multiplied instead of divided | **Units — reciprocal** | 2 |
 | 4 | N-4(d) constants used without their flow and ΔT | Units — dimensional | ~4 |
@@ -322,7 +361,8 @@ after the slip is arithmetically clean. Only the load entering it was wrong.
 | ? | N-1(v) possibly stopped at the rejection figure | Completion | 0–3 |
 
 **Only four marks are concept losses, and they are all Section I one-liners.**
-Eleven are unattempted work. Nine are units and reading.
+Five are unattempted work that was yours to take, six were a gap in my curriculum,
+and nine are units and reading.
 
 ---
 
@@ -332,9 +372,11 @@ Eleven are unattempted work. Nine are units and reading.
 |---|---|---|
 | Headline | 84 | **73** |
 | On genuinely unseen material | **83 %** | **73 %** |
+| On material actually **taught** | 83 % | **78 %** |
 | Time | 149 min, one question abandoned | 150 min, one question unfinished |
 | Concept losses | ~12 marks | **~4 marks** |
-| Unattempted | 0 | **~11 marks** |
+| Unattempted (student's) | 0 | **~5 marks** |
+| Unreachable (tutor's) | 0 | **~6 marks** |
 
 **Mock 1's 84 included two questions you had already been given** — Day 1's Block B3
 and Day 13's Drill 68, whose answer was printed. Mock 2 is the first paper where
@@ -348,12 +390,13 @@ and only one of those takes weeks to fix.
 
 ## Verdict
 
-**73/100 with eleven marks never attempted, on a paper where nothing had been seen
-before.** Pass is 50.
+**73/100 — and 78% of what the curriculum had actually taught — on a paper where
+nothing had been seen before.** Pass is 50.
 
 The confidence you are missing is not warranted by the paper. **The chiller
 rejection concept that cost you ten marks three days ago came back correct.** The
 building load chapter you read once and never drilled came back exact. What went
 wrong was a clock and four conversions.
 
-**Day 17 is triage and units. Nothing else.**
+**Day 17 is triage, units, and the air preheater** — the last of which is there
+because she checked the curriculum against the paper and I had not.

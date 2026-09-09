@@ -10,7 +10,7 @@ because only the table was being maintained.*
 
 | | |
 |---|---|
-| Curriculum | **20 sessions** (grew from 15 — see note) |
+| Curriculum | **21 sessions** (grew from 15 — see note) |
 | Started | 30 August 2026 |
 | **Exam** | **26 September 2026, 14:00–16:30** |
 | Sessions **reported back** | **19 / 21** |
@@ -138,12 +138,12 @@ Running count by error type. This is what tells the tutor what to change.
 
 | Type | Count | Note |
 |---|---|---|
-| Concept | **2** | Did not know the method — +1: heat rate read as "higher is better" (Day 12) |
+| Concept | **6** | +4 from Mock 2 Section I: dew point, FD vs ID fan, TTD direction, fuel O₂/N₂ |
 | Method | 2 | Knew it, applied it wrongly — *plus 1 caught on the page, not counted* |
 | Arithmetic | 0 | Right method, wrong number — *plus 1 caught on the page, not counted* |
 | Units | 0 | kCal/kJ, TPH/kg-hr mix-ups |
 | Lookup speed | 0 | Over 60 s to find something in the books |
-| Curriculum | 18 + | Marks lost to material not yet taught, or data omitted from a question — a planning fault, not a gap |
+| Curriculum | **24 +** | Marks lost to material not yet taught — a planning fault, not a gap. **+6 from Mock 2's air preheater**, the sixth breach |
 
 ---
 
@@ -1382,3 +1382,80 @@ unit-system member); `concept-distinctions.md` entries 17 (the four directions) 
 Block B3 and Day 13's Drill 68, whose answer was printed in the curriculum. Mock 2's
 73 is on wholly new material with eleven marks never attempted. **On concepts the
 trend is up; on the clock it is not.** 17 days to the exam.
+
+---
+
+### Air preheater — the sixth prerequisite breach, found by the student — 09 Sep
+
+**She said: "Air preheater wasn't covered in curriculum." She is right, and the
+check confirms it.**
+
+Day 6 Rung 62 teaches *combustion air preheat on a furnace recuperator* — a
+different device in a different context. Day 5 Rung 45 teaches effectiveness
+generically but never applies it to an APH. **The leakage formula appears nowhere
+in the repository.**
+
+| Mock 2 N-3 part | Marks | Reachable? |
+|---|---|---|
+| A(i) (ii) (iii) | 9 | ✅ Day 3 |
+| A(iv) | 3 | ✅ one multiplication — genuinely unattempted |
+| **A(v) APH leakage** | **3** | ❌ **never taught** |
+| **B(i) APH effectiveness** | **3** | ❌ never stated for an APH |
+| B(ii) actual air from O₂ | 2 | ✅ Day 2A |
+
+> **Note to the Tutor — why this happened, and it is not a volume excuse.**
+> Mock 2 was checked against `used-ledger.md` for **seen/unseen** and never given a
+> **data-item prerequisite check** at all. Those are two different checks. Every
+> lesson from Day 11 onward carries a written prerequisite box; **neither mock
+> does.** Mock 1 failed the ledger check; Mock 2 passed it and failed the one I did
+> not run.
+>
+> `framework.md` now requires **both, in writing, before any paper is issued**, with
+> the full breach register beside them.
+
+**Corrections applied to the Mock 2 review:**
+
+- N-3 is **9/14 on reachable material**, not 9/20.
+- The paper is **73/94 = 78 % of what was actually answerable**.
+- Of the eleven unattempted marks, **five were triage and six were mine**. The
+  triage finding stands — A(iv) really was one multiplication on a number already
+  on her page — but it is a five-mark lesson, not an eleven-mark one. The
+  "129 minutes against a 100-minute budget" finding is unaffected.
+
+**This is the first breach she found by auditing the curriculum against the paper**,
+rather than by attempting a question and failing it. That is a better catch and it
+prompted a wider sweep.
+
+**Day 17 Part 2 — Rungs 175–178B, the air preheater**, taught properly rather than
+patched:
+
+- **175** — what an APH is, and recuperative vs regenerative. A rotary APH has a
+  sliding seal between a pressurised air side and a drafted gas side, so **it must
+  leak**; 5–15 % is normal.
+- **176** — why leakage matters (short-circuits the furnace, loads both fans,
+  artificially cools the gas) and the formula **derived from an oxygen balance**:
+  `100·O₂_in + 21L = (100+L)·O₂_out` ⟹ `AL% = 100(O₂_out − O₂_in)/(21 − O₂_out)`.
+  Same family as the excess air formula. Includes the inversion the question needs,
+  `O₂ = 21 × EA/(1 + EA)`, and a forward check.
+- **177** — effectiveness is Day 5's definition on the **air side**, and *why the
+  gas side lies*: leakage cools the gas, so gas-side effectiveness **rises as the
+  seals get worse**. The 22nd's numbers only reconcile once that is understood —
+  effectiveness up 87.5 → 92.4 % while leakage was 15.86 % and exit gas rose
+  145 → 165 °C.
+- **178** — the acid dew point (120–150 °C on sulphur fuels) sets a **floor** on
+  exit gas temperature. Same fact as Day 6's "furnace oil exhaust limited to
+  ~170 °C", asked directly in the 16th.
+- **178B** — the five things an auditor measures on an APH.
+
+**A full sweep followed**, comparing every equipment noun in the ten papers against
+the curriculum. Three lighter gaps found and closed as Rungs 179–182:
+
+| Gap | In | Closed as |
+|---|---|---|
+| **Screw compressors** | 6 papers — Day 9 taught reciprocating only | 179 — same assessment maths; the new fact is that a slide valve at 50 % capacity still draws ~70 % power |
+| **Condensate recovery** | 4 papers, a 25th T/F | 180 — saves heat, water, treatment **and blowdown**; heat is the biggest and blowdown the one nobody says |
+| **Transformer losses** | 2 papers, Section I | 181 — iron constant and magnetic, copper I²R as load² |
+| Jigger / thermopack / stenter frame | naming only | 182 — machines already taught under other names |
+
+**With 175–182, every equipment noun in the ten papers now has curriculum behind
+it.** That sweep should have run before Mock 2, not after.
