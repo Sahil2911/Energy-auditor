@@ -13,15 +13,15 @@ because only the table was being maintained.*
 | Curriculum | **20 sessions** (grew from 15 — see note) |
 | Started | 30 August 2026 |
 | **Exam** | **26 September 2026, 14:00–16:30** |
-| Sessions **reported back** | **18 / 20** |
-| Sessions **issued** | **19 / 20** |
+| Sessions **reported back** | **19 / 21** |
+| Sessions **issued** | **21 / 21** |
 | Book-4 chapters **taught** | **15 / 15** ✅ |
 | Book-4 chapters **assessed** | **13 / 15** |
-| Days to exam | **21** |
+| Days to exam | **17** |
 
 ```
-Reported    [███████████████████████████   ]  90%   18/20
-Issued      [████████████████████████████  ]  95%   19/20
+Reported    [███████████████████████████   ]  90%   19/21
+Issued      [██████████████████████████████] 100%   21/21
 Ch. taught  [██████████████████████████████] 100%   15/15
 Ch. assessed[██████████████████████████    ]  87%   13/15
 ```
@@ -67,8 +67,9 @@ Net +4. The buffer absorbed it; 21 days still remain.
 | — | ~~Sector & systems diagnostic~~ | ⛔ retired — folded into Mock 1 |
 | 14 | **Full Mock 1** — 100 marks, 2.5 hrs | ✅ **84/100** in 149 min |
 | 15 | Gap closure from Mock 1 | 🟨 issued |
-| 16 | **Full Mock 2** — 21st + 22nd, genuinely unseen | 🟨 issued |
-| 17 | Gap closure + **Full Mock 3** if time | ⬜ |
+| 16 | **Full Mock 2** — 21st + 22nd, genuinely unseen | ✅ **73/100** |
+| 17 | Gap closure — triage and units | 🟨 issued |
+| 18 | **Full Mock 3** | ⬜ |
 
 ## Timing record
 
@@ -90,7 +91,8 @@ Pace under exam conditions. Target is ~1.5 min per mark (150 min for 100 marks).
 | 12 | 25th L-1 PAT | 5 | 4 min | 8 | ✅ well inside |
 | 12 | 19th L-1 plant comparison | 5 | 3 min | 8 | ✅ well inside |
 | 13 | Block C — 24th N-4(D) DRI steel | 20 | 30 min | 35 | ✅ inside budget |
-| 14 | **Mock 1 — whole paper** | 100 | **149 min** | 150 | ✅ **inside, with a 25-min false start** |
+| 14 | **Mock 1 — whole paper** | 100 | **149 min** | 150 | ✅ inside, with a 25-min false start |
+| 16 | **Mock 2 — whole paper** | 100 | **150 min** | 150 | 🟨 **on the bell, one question 11 marks short** |
 
 **Every measured question is at or inside budget — now eleven in a row.**
 
@@ -123,7 +125,8 @@ that chapter marked. 🟨 issued = lesson written, work not yet reported back.
 |---|---|---|---|---|
 | 3 | Boiler & combustion diagnostic | 20 | **18** | 30 Aug |
 | 7 | Mock A — thermal | 60 | **29** | 03 Sep |
-| 14 | **Full Mock 1** | 100 | **≈84** | 06 Sep |
+| 14 | **Full Mock 1** | 100 | **≈84** *(4 of 8 questions seen)* | 06 Sep |
+| 16 | **Full Mock 2** — all unseen | 100 | **≈73** | 09 Sep |
 | 10 | Electrical & fluids diagnostic | 30 | **28** | 04 Sep |
 | 13B | Sector & systems diagnostic | 40 | — | — |
 | 14 | Full Mock 1 | 100 | — | — |
@@ -1292,3 +1295,90 @@ what forces the 30 °C makeup into the mixing temperature.
 2.46 TPH, 1917.6 Sm³/h, 265.8 kW; N-2 130.5 kW, 123.2 TR, COP 5.4, 1.059 → 0.984
 kW/TR, ₹3,77,460; N-3 72,01,107 → 95,38,560 kCal/h, 15.86% APH leakage; N-4(A)
 ₹886.41 lakh, (B) 83.84 kW, (C) 1.686 Nm³/kg clinker.
+
+---
+
+### Full Mock 2 — **≈ 73 / 100** — 09 Sep, 20:14 → 22:44
+
+**Exactly 150 minutes, and the first paper in which every question was genuinely
+unseen** — all from the 21st and 22nd, verified against the ledger before issue.
+
+| Section | Score |
+|---|---|
+| I — True/False | 6/10 |
+| II — L-1 thermic fluid | 3/5 |
+| II — L-2 EPI | 2/5 |
+| N-1 biogas cogeneration | ≈17/20 |
+| N-2 mall chiller plant | **20/20** |
+| N-3 boiler & air preheater | **9/20** — stopped after part (iii) |
+| N-4(B) building cooling load | ≈16/20 |
+
+**She wrote: "I wasn't confident about many of the concepts." The paper does not
+support that, and the review says so with evidence.**
+
+**The Mock 1 gap is closed.** N-1 part (v), unprompted:
+`Heat rejected = (2000 × 3024) + 13 500 × (660 − 100)` — cooling load **plus the
+steam heat that drove it**, on a COP-0.8 machine where the driving heat (75.6 lakh)
+exceeds the cooling load (60.5 lakh). Three days after Rung 163. She also
+self-corrected part (ii) on the page — first wrote `m(350 − 100)` using the steam
+*temperature*, struck it, replaced with the enthalpy difference — and caught the
+"NIL CONDENSATE" trap, giving T_fw = 89.21 °C from a 30 °C makeup share.
+
+**N-2 is 20/20 and better than the mark suggests.** She used **367** (= 3600/9.81)
+to go straight to hydraulic kW, and at part 4 gave **both** kW/TR bases — 0.651 on
+the compressor, 1.058 on the plant — because the question is ambiguous. An examiner
+cannot mark that wrong.
+
+**N-4(B) parts (a)(b)(c) exact** — 29.595 / 54.241 / 83.836 kW, including the latent
+infiltration at Δh = 14.7. Day 13B was read once and never drilled.
+
+> **Note to the Tutor — the tally is lopsided and the diagnosis is not "concepts".**
+>
+> | Loss | Type | Marks |
+> |---|---|---|
+> | N-3 A(iv), A(v), B(i), B(ii) **unattempted** | **Time / triage** | **~11** |
+> | L-2 divided by 18 000 not 10 000 | Reading | 3 |
+> | L-1 `× 4.18` where it needed `÷ 4.186` | Units — reciprocal | 2 |
+> | N-4(d) used 1210 and 3010 without a flow or ΔT | Units — dimensional | ~4 |
+> | Section I Q1, Q4, Q6, Q9 | Concept | 4 |
+>
+> **Concept losses fell from ~12 in Mock 1 to ~4.** What replaced them is a clock
+> and four conversions — a better problem, and a faster one to fix.
+
+**The eleven marks are the story.** Section III ran 129 minutes against 100 and
+still finished a question short — ~32 min per long question against a 25-min
+budget. N-3's A(iv) was *one multiplication* on a number already on her page
+(3 marks); B(i) was *one subtraction over another* straight off the table
+(3 marks). **Six marks in about three minutes, against ~0.5 marks/min for the 26th
+minute of a question already 25 minutes deep.**
+
+**Day 17 issued** — Rungs 170–174, triage and units, no new engineering:
+
+- **Rung 170:** the 25-minute ceiling, argued from marks per minute.
+- **Rung 171:** read every sub-part before calculating; **star the one-liners and
+  mark which parts are independent.** N-3's A(v), B(i) and B(ii) needed nothing
+  from A(i)–(iv) — eight marks reachable in any order, first.
+- **Rung 172:** kJ ↔ kCal. **A kCal is the bigger unit, so there are fewer of
+  them.** Anchor: water is 1 kCal/kg°C = 4.186 kJ/kg°C, and **nothing in this paper
+  has a specific heat above water's** — so 2.223 kJ must give ~0.53, never 9.3.
+- **Rung 173:** say a constant's units before using it. 1210 is J/(m³·K) and 3010 is
+  J/(m³·(g/kg)); neither is watts until multiplied by a flow **and** a difference.
+  The same 1210 had appeared four lines earlier with both. **A constant means the
+  same thing on line 9 as on line 4.**
+- **Rung 174:** the four Section I directions — dew point and moisture move
+  *together*; the ID fan is always bigger (mass, leakage and temperature all stack);
+  small approach/TTD/DCA is good everywhere; only C, H and S burn, which is what the
+  `− O₂/8` in `A_th` has been saying since Day 2A.
+
+Drills 77–81. **Drill 81 is the 25-minute rule under test** — a timed 20-marker with
+a hard stop, recording what was left unfinished. That is the skill, not the score.
+
+**References updated:** `reciprocal-traps.md` entry 12 (kJ↔kCal, the first
+unit-system member); `concept-distinctions.md` entries 17 (the four directions) and
+18 (a constant is not a quantity, with a units table); `formula-sheet.md` section 20
+(conversions and the specific-heat anchor table).
+
+**Honest comparison.** Mock 1's 84 included two questions already assigned — Day 1's
+Block B3 and Day 13's Drill 68, whose answer was printed in the curriculum. Mock 2's
+73 is on wholly new material with eleven marks never attempted. **On concepts the
+trend is up; on the clock it is not.** 17 days to the exam.

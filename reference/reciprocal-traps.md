@@ -97,6 +97,7 @@ Every ratio in this paper that can be flipped, and the sentence that settles it.
 | 8 | **Day 13** | **Thermic fluid heater fuel after efficiency improvement** | Same heat duty, better efficiency → **less** fuel. So `new fuel = old × η_old/η_new`. If it went up, you inverted it. |
 | 9 | **Day 13** | **Textile liquor-ratio loss margin** | Do losses make the computed bath bigger or smaller? Smaller — so the margin divides. |
 | 10 | **Day 13** | **Cement-to-clinker factor** | Cement always weighs *more* than the clinker in it. If cement < clinker, flip it. |
+| 12 | **Mock 2** | **kJ ↔ kCal** ⚠️ *the first unit-system member* | A kCal is the **bigger** unit, so there are always **fewer** of them: kJ ÷ 4.186. Anchor: water is 1 kCal/kg°C = 4.186 kJ/kg°C — **nothing in this paper has a specific heat above water's**, so a kCal/kg°C above 1.0 is inverted. |
 | 11 | **Day 12** | **Heat rate — comparing two plants** ⚠️ *first uncaught inversion since Day 1* | Heat rate is input per unit output, so **lower is better**. Never answer on the inverse quantity: convert both to efficiency (`860/HR`) and compare those. |
 
 ## The general rule behind #5, #7 and #11

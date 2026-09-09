@@ -531,3 +531,85 @@ Two questions before writing any unit:
 | Stenter drying efficiency | 45–55 % |
 | Motor efficiency | 88–95 % |
 | Pump efficiency | 65–85 % |
+
+
+---
+
+## 17. Four "which way does it move?" questions
+
+All four were dropped in Mock 2's Section I. None needs a remembered sentence —
+each is settled by following the physics one step.
+
+### Dew point and moisture move **together**
+
+Dew point is the temperature at which air becomes saturated.
+
+```
+    more moisture → saturation reached sooner on cooling → HIGHER dew point
+    less moisture → must be cooled further to condense   → LOWER dew point
+```
+
+So *"lower dew point ⟹ higher moisture"* is **False**. Dew point can never exceed
+dry bulb, and equals it at 100 % RH.
+
+### The ID fan is always the bigger machine
+
+On balanced draft, follow the mass:
+
+```
+    FD fan → combustion AIR only, at ambient
+                ↓ + fuel mass, + casing air in-leakage, + heated to 150–200 °C
+    ID fan → all of the above, at a much larger volume
+```
+
+Three mechanisms stack the same way and none runs the other way. **FD flow capacity
+is lower.**
+
+### Small approach / TTD / DCA is always good
+
+| Quantity | Small means |
+|---|---|
+| Cooling tower **approach** | got close to the wet bulb |
+| Heat exchanger **approach** | used the surface well |
+| Condenser **TTD** | tight to the cooling water — **higher** heat transfer rate |
+| Feedwater heater **TTD / DCA** | less bled steam for the same duty |
+
+They all measure *how close you got to the theoretical limit*. Smaller is better
+everywhere; it just costs surface area.
+
+### Only C, H and S burn
+
+```
+    A_th = [11.6 C + 34.8 (H₂ − O₂/8) + 4.35 S]/100
+                            ↑ the fuel's own oxygen, SUBTRACTED
+```
+
+Fuel-bound oxygen is already oxidised — it releases nothing and *reduces* the air
+required, which is exactly what the minus sign encodes. Nitrogen passes through
+inert. So **"oxygen and nitrogen in the fuel do not contribute to calorific value"
+is True.**
+
+---
+
+## 18. A constant is not a quantity
+
+Before using any tabulated constant, **say its units out loud and check they cancel
+into what you want.**
+
+| Constant | Is really | Needs |
+|---|---|---|
+| **1210** | ρ·Cp of air, J/(m³·K) | a flow in m³/s **and** a ΔT |
+| **3010** | ρ·h_fg of water, J/(m³·(g/kg)) | a flow in m³/s **and** a Δ(g/kg) |
+| **367** | 3600/9.81 | m³/h **and** metres of head |
+| **102** | 1000/9.81 | m³/s **and** mmWC |
+| **860** | kCal per kWh | a kWh (or a kW and an hour) |
+| **3024** | kCal/hr per TR | a TR |
+| **4.186** | kJ per kCal | an energy in one of the two |
+
+```
+   want W = J/s :   1210 J/(m³·K) × V̇ m³/s × ΔT K   →  J/s      ✓
+                    1210 J/(m³·K) × 2               →  J/(m³·K)  ✗
+```
+
+**And a constant means the same thing on line 9 as it did on line 4.** If 1210
+needed a flow and a ΔT earlier in the question, it needs them later too.

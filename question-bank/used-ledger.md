@@ -33,8 +33,12 @@ anywhere in `curriculum/` or `assessments/`, with the files referencing it.**
 | 20th | N1 | `checkpoint-day-04`, `checkpoint-phase-2`, `day-03-review` |
 | 20th | N1(C) | `checkpoint-phase-2` |
 | 20th | N3 | `day-14`, `day-15`, `diagnostic-sector-systems` |
+| 21th | L2 | `day-17` |
 | 21th | N2 | `day-16` |
-| 21th | N4(B) | `day-16` |
+| 21th | N3 | `day-17` |
+| 21th | N4(B) | `day-16`, `day-17` |
+| 22th | L1 | `day-17` |
+| 22th | N3 | `day-17` |
 | 22th | N4(C) | `day-16` |
 | 22th | N4(D) | `day-15`, `day-16` |
 | 23th | N1 | `checkpoint-phase-2`, `day-09`, `day-09-review`, `day-12-review`, `day-13` |
@@ -56,4 +60,4 @@ anywhere in `curriculum/` or `assessments/`, with the files referencing it.**
 | 25th | N2 | `day-07b-review` |
 | 25th | N4(A) | `day-13` |
 
-**41 distinct questions used so far.**
+**45 distinct questions used so far.**

@@ -427,3 +427,27 @@ infiltration** (and wet processes).
     v  = C_p × √(2 g Δp_dynamic / ρ_duct)        C_p ≈ 0.85
     ṁ  = v × A × ρ_duct
     Q  = (ṁ / production rate) × Cp × (t_gas − t_reference)   per kg of product
+
+
+---
+
+## 20. Unit conversions — which way the number runs
+
+**Ask which unit is bigger; the count then runs opposite.**
+
+    1 kCal   = 4.186 kJ      kJ → kCal : ÷ 4.186    kCal → kJ : × 4.186
+    1 kWh    = 860 kCal      kWh → kCal: × 860      kCal → kWh: ÷ 860
+    1 TR     = 3024 kCal/hr = 3.517 kW = 12 000 Btu/hr
+    1 kg/cm² = 10 000 mmWC  = 0.981 bar
+    1 bar    = 10.2 m of water column
+    1 TOE    = 10⁷ kCal      1 MU = 10⁶ kWh
+
+**Specific heat anchor — nothing in this paper exceeds water:**
+
+    water 4.186 kJ/kg°C = 1.00 kCal/kg°C        ← the definition
+    thermic fluid  2.223 → 0.531
+    flue gas       0.96  → 0.23
+    air            1.005 → 0.24
+    steel          0.50  → 0.12
+
+**A specific heat above 1.0 kCal/kg°C means the conversion is inverted.**
