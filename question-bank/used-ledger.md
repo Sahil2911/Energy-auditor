@@ -25,6 +25,7 @@ anywhere in `curriculum/` or `assessments/`, with the files referencing it.**
 | 17th | L2 | `checkpoint-phase-2`, `day-08`, `day-08-review` |
 | 17th | N1 | `checkpoint-phase-2`, `day-01-review`, `day-10`, `day-10-review`, `framework` |
 | 17th | N2 | `checkpoint-phase-2`, `day-07`, `day-10-review`, `day-11`, `day-11-review`, `framework`, `mock-a-review` |
+| 17th | N3 | `mon-cogeneration` |
 | 18th | L1 | `checkpoint-phase-2`, `day-01-blockC-review`, `day-01-review` |
 | 18th | L2 | `checkpoint-phase-2`, `day-05`, `day-05-review` |
 | 18th | N1 | `checkpoint-day-04`, `checkpoint-phase-2`, `day-01`, `day-02b`, `day-03`, `day-03-review`, `day-10-review`, `framework`, `master-plan`, `mock-a-review` |
@@ -34,25 +35,27 @@ anywhere in `curriculum/` or `assessments/`, with the files referencing it.**
 | 19th | N1 | `checkpoint-day-04`, `checkpoint-phase-2`, `day-04`, `day-04-review`, `day-04b` |
 | 19th | N2 | `checkpoint-phase-2`, `day-05`, `day-09`, `day-09-review` |
 | 19th | N3 | `day-14` |
+| 19th | N4(A) | `mon-cogeneration` |
 | 20th | N1 | `checkpoint-day-04`, `checkpoint-phase-2`, `day-03-review` |
 | 20th | N1(C) | `checkpoint-phase-2` |
-| 20th | N2 | `day-18` |
+| 20th | N2 | `day-18`, `framework` |
 | 20th | N3 | `day-14`, `day-15`, `diagnostic-sector-systems` |
+| 20th | N4(C) | `mon-cogeneration` |
 | 21th | L1 | `day-18` |
 | 21th | L2 | `day-16`, `day-17` |
 | 21th | N1 | `day-16`, `day-18` |
 | 21th | N2 | `day-16` |
 | 21th | N3 | `day-17` |
-| 21th | N4(A) | `day-18` |
+| 21th | N4(A) | `day-18`, `framework` |
 | 21th | N4(B) | `day-16`, `day-17` |
-| 21th | N4(C) | `day-18` |
+| 21th | N4(C) | `day-18`, `framework`, `mon-cogeneration` |
 | 21th | N4(D) | `day-17` |
 | 22th | L1 | `day-16`, `day-17` |
 | 22th | L2 | `day-18` |
 | 22th | N1 | `day-16` |
 | 22th | N2 | `day-18` |
 | 22th | N3 | `day-16`, `day-17`, `framework` |
-| 22th | N4(A) | `day-18` |
+| 22th | N4(A) | `day-18`, `mon-cogeneration` |
 | 22th | N4(C) | `day-16` |
 | 22th | N4(D) | `day-15`, `day-16` |
 | 23th | N1 | `checkpoint-phase-2`, `day-09`, `day-09-review`, `day-12-review`, `day-13` |
@@ -76,4 +79,4 @@ anywhere in `curriculum/` or `assessments/`, with the files referencing it.**
 | 25th | N4(B) | `day-18` |
 | 25th | N4(D) | `day-18` |
 
-**57 distinct questions used so far.**
+**60 distinct questions used so far.**

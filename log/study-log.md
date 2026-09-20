@@ -4,7 +4,7 @@ Updated daily. The Reviewer reads this before each assessment.
 
 ## Progress tracker
 
-*Last updated: 06 September 2026 (**Mock 1: 84/100**, inside time). **Update the bars whenever
+*Last updated: 20 September 2026 (**Monday's session issued**; last mock **58/100**). **Update the bars whenever
 the chapter table below changes** — they went stale between Day 3 and Day 10
 because only the table was being maintained.*
 
@@ -72,6 +72,7 @@ Net +4. The buffer absorbed it; 21 days still remain.
 | 18 | **Full Mock 3** — both checks run | ✅ **58/100** |
 | 19 | **The final week** — 3 missing bridges, then the clock | 🟨 issued (rewritten) |
 | — | **Topic-wise revision plan** — her structure, Mon–Fri | 🟨 issued |
+| **M** | **Monday — cogeneration & the heat rate ladder** | 🟨 issued |
 
 ## Timing record
 
@@ -1781,3 +1782,57 @@ exam card from memory three times, read the formula sheet, pack, **stop by 20:00
 and their first questions come before everything else. **Never drop a bridge** — if
 a day collapses, read it and do its first question, twenty minutes for most of the
 value.
+
+---
+
+### Monday's session issued — cogeneration and the heat rate ladder — 20 Sep
+
+**`curriculum/mon-cogeneration.md`** — Part A teaches the ladder, Part B sets five
+questions on a 25-minute timer each. First of the five topic days.
+
+**The ladder is taught as one plant with three boundaries drawn round it**, not as
+three formulas:
+
+```
+┌──── 3. NET HEAT RATE ─────────────────────────────┤
+├──── 2. GROSS HEAT RATE ───────────────┤
+         ├──── 1. TURBINE HEAT RATE ────┤
+```
+
+Each move outward admits a new loss, so **each number is bigger than the last** —
+turbine < gross < net, always, and that ordering is the sanity check. `Gross =
+turbine ÷ η_boiler`; `net = gross ÷ (1 − APC)`. **`η_plant = 860 / gross`, never
+`860 / turbine`** — the error that cost her the 21st N-4(C).
+
+**B1 is the reason the session exists.** The 19th N-4(A) gives coal flow *and*
+steam conditions, so the gross heat rate can be reached twice by independent
+routes: `231000(793 − 130)/60000 = 2553` turbine, `÷ 0.865 = 2951`; and from coal,
+`41758 × 4250 / 60000 = 2951`. **The same number.** A ladder that closes on itself
+is one she owns rather than remembers — the file says to do this reconciliation
+first if nothing else gets done.
+
+**Question selection, against the ledger:**
+
+| | Question | Status |
+|---|---|---|
+| B1 | 19th N-4(A), 60 MW captive plant | **unseen** |
+| B2 | 21st N-4(C), two-unit station | **re-do** — she ran out of time in Mock 3 |
+| B3 | 22nd N-4(A), reheat unit | **re-do** — same |
+| B4 | 17th N-3 (cogen + VAM) *or* 20th N-4(C) (biomass) | **unseen**, choose one |
+
+B2 and B3 are deliberate repeats and the plan says so — they are the two she could
+not finish, and the ladder is what finishes them. Ledger now 60 questions.
+
+**Three fixes carried into B3**, all from Mock 3: a reheat unit has **two** heat
+inputs (main steam *and* cold-to-hot reheat), the denominator is **generator
+output** not turbine shaft, and where boiler efficiency is not given the station
+gross heat rate **cannot be calculated** — the honest answer, and worth marks.
+
+**Every number in Part B verified in Python before issue**, including the two
+awkward ones: LP exhaust enthalpy `49 + 0.98(610 − 49) = 599` from the given
+dryness, and the 22nd's generator output 209.8 MW against a 210 MW nameplate — the
+agreement is the check that the three cylinder outputs are right.
+
+**Part A closes on where the ladder does not apply:** a back-pressure cogeneration
+set has no condenser to reject to, so **EUF, not heat rate**, and the whole ladder
+is the wrong tool. Tuesday's absorption chillers will need the same instinct.
