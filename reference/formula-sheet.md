@@ -451,3 +451,44 @@ infiltration** (and wet processes).
     steel          0.50  → 0.12
 
 **A specific heat above 1.0 kCal/kg°C means the conversion is inverted.**
+
+
+---
+
+## 21. Mock 3's six substitutions — the ones that cost marks
+
+**Pipe volume**
+
+    V = π r² L  with r = D/2   =   (π/4) D² L        NOT π D² L  (4× too big)
+    100 mm × 2 km = 15.7 m³
+
+**Heating a circuit heats its metal**
+
+    start-up load = m_water·Cp_water·ΔT  +  m_metal·Cp_metal·ΔT
+    a 100/108 mm steel line holds MORE steel mass than water (20 910 vs 15 708 kg)
+
+**Dry flue gas mass for solid fuels**
+
+    m_dfg = (AAS + 1) + N₂_fuel − 9·H₂ − M − ASH      ← ash leaves at the bottom
+
+**CO loss — same units both sides of the ratio**
+
+    L₅ = [%CO/(%CO + %CO₂)] × C × 5654/GCV × 100
+    150 ppm = 0.015 %  ·  CO₂ = 7 (not 0.07)  ·  the constant is 5654 (not 565)
+
+**Wet steam enthalpy**
+
+    h = h_f + x(h_g − h_f)        condenser: 49 + 0.98(610 − 49) = 599
+    a given dryness fraction is given to be USED
+
+**Turbine heat rate on a reheat unit**
+
+                 MS(h_MS − h_fw) + RH(h_HRH − h_CRH)
+    Turbine HR = ────────────────────────────────────    denominator is the
+                        GENERATOR output (kW)            GENERATOR, not the shaft
+
+**Moisture content vs regain**
+
+    content = water/WET mass  →  wet = bone dry / (1 − m)     ← DIVIDE
+    regain  = water/DRY mass  →  water = dry × m
+    BEE always means CONTENT.

@@ -69,8 +69,8 @@ Net +4. The buffer absorbed it; 21 days still remain.
 | 15 | Gap closure from Mock 1 | 🟨 issued |
 | 16 | **Full Mock 2** — 21st + 22nd, genuinely unseen | ✅ **73/100** |
 | 17 | Gap closure — triage and units | 🟨 issued |
-| 18 | **Full Mock 3** — both checks run | 🟨 issued |
-| 19 | Final revision — guidebook index, formula sheet, distinctions | ⬜ |
+| 18 | **Full Mock 3** — both checks run | ✅ **58/100** |
+| 19 | **The final week** — clock, six slips, exam card | 🟨 issued |
 
 ## Timing record
 
@@ -93,7 +93,8 @@ Pace under exam conditions. Target is ~1.5 min per mark (150 min for 100 marks).
 | 12 | 19th L-1 plant comparison | 5 | 3 min | 8 | ✅ well inside |
 | 13 | Block C — 24th N-4(D) DRI steel | 20 | 30 min | 35 | ✅ inside budget |
 | 14 | **Mock 1 — whole paper** | 100 | **149 min** | 150 | ✅ inside, with a 25-min false start |
-| 16 | **Mock 2 — whole paper** | 100 | **150 min** | 150 | 🟨 **on the bell, one question 11 marks short** |
+| 16 | **Mock 2 — whole paper** | 100 | **150 min** | 150 | 🟨 on the bell, one question 11 marks short |
+| 18 | **Mock 3 — whole paper** | 100 | **162 min** | 150 | ✗ **12 over, and 31 min answering N-4 three times** |
 
 **Every measured question is at or inside budget — now eleven in a row.**
 
@@ -127,7 +128,8 @@ that chapter marked. 🟨 issued = lesson written, work not yet reported back.
 | 3 | Boiler & combustion diagnostic | 20 | **18** | 30 Aug |
 | 7 | Mock A — thermal | 60 | **29** | 03 Sep |
 | 14 | **Full Mock 1** | 100 | **≈84** *(4 of 8 questions seen)* | 06 Sep |
-| 16 | **Full Mock 2** — all unseen | 100 | **≈73** | 09 Sep |
+| 16 | **Full Mock 2** — all unseen | 100 | **≈73** *(6 marks unreachable)* | 09 Sep |
+| 18 | **Full Mock 3** — clean paper | 100 | **≈58** | 20 Sep |
 | 10 | Electrical & fluids diagnostic | 30 | **28** | 04 Sep |
 | 13B | Sector & systems diagnostic | 40 | — | — |
 | 14 | Full Mock 1 | 100 | — | — |
@@ -139,7 +141,7 @@ Running count by error type. This is what tells the tutor what to change.
 
 | Type | Count | Note |
 |---|---|---|
-| Concept | **6** | +4 from Mock 2 Section I: dew point, FD vs ID fan, TTD direction, fuel O₂/N₂ |
+| Concept | **8** | +2 from Mock 3: reheat vs regenerative, extraction and EUF |
 | Method | 2 | Knew it, applied it wrongly — *plus 1 caught on the page, not counted* |
 | Arithmetic | 0 | Right method, wrong number — *plus 1 caught on the page, not counted* |
 | Units | 0 | kCal/kJ, TPH/kg-hr mix-ups |
@@ -1521,3 +1523,97 @@ first clean measurement of where she actually is.**
 **After it, five days.** The remaining plan is revision only — guidebook index,
 formula sheet, concept distinctions. Every Book-4 chapter has a lesson and every
 equipment noun in the ten papers now has a rung behind it.
+
+---
+
+### Full Mock 3 — **≈ 58 / 100** — 20 Sep, 16:35 → 19:17
+
+**162 minutes against 150.** The first genuinely clean paper — both checks run, no
+seen questions, no unreachable marks. Pass is 50.
+
+| Section | Score | Time |
+|---|---|---|
+| I | 8/10 | 5 min |
+| II — L-1 aluminium | **5/5** | |
+| II — L-2 BP turbine | **5/5** | 25 min total |
+| N-1 compressor + chiller | 12/20 | 29 min |
+| N-2 hot water start-up | ≈9/20 | **16 min** |
+| N-3 two-unit power plant | ≈8/20 | **45 min** |
+| N-4 — **three attempted** | ≈11/20 (best, C) | 42 min |
+
+> **Note to the Tutor — the diagnosis is the clock, and it is now unambiguous.**
+>
+> Concept losses across the three mocks: **12 → 4 → 2 marks.** Time losses:
+> **0 → 5 → 24.** The knowledge line and the clock line have crossed.
+>
+> **She allocated backwards.** N-2 was the cheapest twenty marks on the paper — two
+> `m·Cp·ΔT` and a division — and got 16 minutes and two errors. N-3 was the most
+> expensive — eight loss terms from an ultimate analysis — and got 45 minutes and
+> stopped at part 2 of 4.
+>
+> **And she answered N-4 three times** (textile 18:35–18:56, cement 18:56–19:06,
+> turbine 19:06–19:17). Only one is submissible. **31 minutes, zero marks.** Spent
+> instead on N-1(b) parts iii–iv (8), N-3 parts 2–4 (10) and a proper 25 minutes on
+> N-2 (~6), that is **24 marks — a high-seventies paper from the same knowledge on
+> the same day.**
+>
+> Rung 170 held on N-1 (left at 29 min and moved) and failed on N-3. **An intention
+> is not a mechanism**, which is what Rung 183 now fixes.
+
+**What was strong**
+
+- **Section II 10/10.** L-1 worked on a 40-tonne batch basis and **divided the 40
+  back out** at the end — the step that usually goes wrong. L-2: she wrote
+  `20 × 3500 = ₹70,000`, **struck it out**, and wrote *"However, 25 TPH is already
+  available."* The decoy I planted was caught with its reason written beside it.
+- **N-1(a) 8/8**, including `kW ∝ ln(r)` to get part (iii) in one line instead of
+  recomputing the whole chain.
+- **Section I Q10 — the air preheater item — correct.** Rungs 175–178, taught
+  eleven days ago after she found the gap herself. Closed.
+- **N-3's ash treatment is better than my own answer key.** She split fly and
+  bottom ash and costed each at its own GCV (1.400% + 0.875%); my key used a single
+  weighted 260 kCal/kg. Identical totals, and hers *uses* the 1:4 ratio rather than
+  averaging it away. **Key updated to show both.**
+
+**Six substitution slips, worth ~19 marks, now Rung 186**
+
+| Slip | Where |
+|---|---|
+| `πD²L` for `πr²L` — 4× volume | N-2 |
+| Steel pipe omitted (20.9 t, **more mass than the water**); 90% capacity not applied | N-2 |
+| `m_dfg` without the ash deduction — Rung 168, worth 5× more at 35% ash than at 8% | N-3 |
+| L₅ with CO₂ as 0.07 and the constant as 565 — two errors partly cancelling, which is worse than one | N-3 |
+| `h_g` used where `h_f + x·h_fg` was required — the 0.98 was printed to be used | N-4(C) |
+| Turbine heat rate: reheat term omitted, turbine power used for generator output | N-4(C) |
+
+**Day 19 issued — the final week.** No new material; every chapter and every
+equipment noun already has a rung.
+
+- **Rung 183** — the four deadlines written as **clock times, not durations**, in
+  the first sixty seconds. A glance, not arithmetic under pressure.
+- **Rung 184** — choose N-4 **once, in ninety seconds**, circle it, never revisit.
+  Argued from the mark distribution: one question half-done scores 10–13; two
+  questions a third done score 6–8 *combined*.
+- **Rung 185** — rank the four long questions by **how fast the marks come** and do
+  the cheap ones first. An indirect-method boiler question is always 35–45 minutes;
+  if compulsory, do it **last** and cap it.
+- **Rung 186** — the six slips, drilled.
+- **Rung 187** — reheat vs regenerative, and why extraction *raises* EUF.
+- **Rung 188** — the exam-day card: deadlines, the N-4 choice, eight constants,
+  seven directions, two questions to ask before comparing or differencing.
+- **Rung 189** — the ten-item checking pass. **Item 8 is new — "any data item I
+  never used?"** — and it alone would have caught three of Mock 3's six slips: the
+  dryness fraction, the ash, and the steel pipe.
+
+**Six-day schedule set**, ending with **nothing on Friday** and a hard stop at
+20:00 Thursday. Three full papers in three weeks is enough; a fourth on the eve has
+negative value.
+
+**References updated:** `formula-sheet.md` section 21 (the six substitutions);
+`concept-distinctions.md` entries 19 (reheat vs regenerative) and 20 (extraction
+and EUF).
+
+**Standing record going into the exam:** 15/15 chapters taught · three full mocks
+all passed (84 · 73 · 58 against a pass of 50) · concept losses 12 → 4 → 2 · eight
+errors found in BEE's own keys · one prerequisite gap found by the student auditing
+the curriculum against a paper.

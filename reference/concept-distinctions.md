@@ -613,3 +613,48 @@ into what you want.**
 
 **And a constant means the same thing on line 9 as it did on line 4.** If 1210
 needed a flow and a ΔT earlier in the question, it needs them later too.
+
+
+---
+
+## 19. Reheat vs regenerative — both are on the same unit
+
+```
+   REHEAT        turbine → BOILER → turbine
+                 Steam is returned to the boiler and re-superheated between
+                 stages. Raises the mean temperature of heat addition and keeps
+                 the LP exhaust dry (less blade erosion).
+
+   REGENERATIVE  turbine → FEEDWATER HEATERS
+                 Steam is bled at several points to preheat the feedwater on its
+                 way back. Less fuel per kg of steam raised.
+```
+
+**A large unit has both**, which is why the papers swap their names. **The word
+"heaters" in a statement means regenerative**, whatever the sentence calls itself.
+The 21st sitting states the regenerative description and labels it "reheat cycle" →
+**False**.
+
+Their performance measures differ too: reheat shows up in the **turbine heat rate**
+(two heat inputs to the boiler), regenerative in **TTD and DCA** on each heater.
+
+---
+
+## 20. Extraction raises EUF — it does not lower it
+
+```
+    EUF = (power + useful process heat) / fuel energy
+```
+
+Send more steam through the extractions of a back-pressure set and:
+
+- **process heat rises** — that steam is now doing useful work in the plant;
+- **power falls a little** — it expanded through fewer stages;
+- **fuel is unchanged.**
+
+**EUF counts power and heat equally**, so the larger rise wins and EUF **increases**.
+The 22nd sitting's "higher extraction flow ⟹ lower EUF" is **False**.
+
+> This is the same fact as *"a back-pressure set's heat rate looks terrible and its
+> EUF looks excellent"* (entry 4). **Heat rate ignores the heat; EUF does not.**
+> Judge cogeneration on EUF or heat-to-power ratio, never on heat rate.
