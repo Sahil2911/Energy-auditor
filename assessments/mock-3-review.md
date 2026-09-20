@@ -4,6 +4,32 @@
 
 ## Score: **≈ 58 / 100.** Pass is 50.
 
+> ### ⚠️ Correction, 20 Sep — the diagnosis below was wrong
+>
+> This review opened by calling the unclaimed marks a time-management failure.
+> **She said the skipped questions were concept gaps. She was right, and the
+> repository confirms it.**
+>
+> | What she stopped on | Marks | In the curriculum? |
+> |---|---|---|
+> | `gross HR = turbine HR ÷ boiler efficiency` — N-3 part 2 | 10 | **Nowhere.** Day 12 names three heat rates, never joins them |
+> | Thermal mass of the pipework — N-2 | ~5 | **Nowhere** in eighteen sessions |
+> | Pitot → flow → fan efficiency as one chain — N-4(A)(c) | 10 | Both halves taught, **never joined** |
+> | N-4(C) (iv)(v) | 5 | Blocked by the same heat-rate ladder |
+>
+> **About 20 of the ~24 unclaimed marks were walls, not the clock.** And the three
+> N-4 attempts were not indiscipline — they were a rational search for one she
+> could finish after the first two hit untaught material.
+>
+> **Seventh prerequisite breach, and a new kind.** Mock 3 passed both checks. The
+> data-item check asked *"does this topic have a rung?"*; it never asked whether
+> the **transitions between taught topics** had bridges. New rule: **check the
+> joins, not just the pieces.**
+>
+> The timing observations below still stand as facts — 45 minutes on N-3, 162 in
+> total. But they are consequences, not the cause. **Day 19 Part 0 teaches the
+> three bridges**, and the clock material is demoted to Part 2.
+
 | Section | Score | Time | Note |
 |---|---|---|---|
 | I — Brief questions | **8 / 10** | 5 min | Q4, Q8 |
@@ -27,10 +53,10 @@
    N-4 × three     42 min   (budget 25)   ✗ you answered a question three times
 ```
 
-**You allocated backwards.** N-2 was the simplest twenty marks on the paper — two
-`m·Cp·ΔT` calculations and a division. It got **16 minutes** and came back with two
-errors. N-3 was the most expensive — eight loss terms built from an ultimate
-analysis — and it got **45 minutes** and still stopped at part 2 of 4.
+**The time went where the walls were.** N-3 got 45 minutes and stopped at part 2 of
+4 — at the line `Unit-1 Unit Heat rate =`, which needed a relationship the
+curriculum never gave. N-2 got 16 minutes because it *looked* simple and its second
+mass (the steel pipe) had never been taught as a thing to look for.
 
 ### What that cost, arithmetically
 
@@ -370,17 +396,21 @@ and the same shape as Day 13B's "outlet cloth = bone dry / 0.95".
 
 | # | Error | Type | Marks |
 |---|---|---|---|
-| 1 | **45 min on N-3, 42 min on three N-4s** | **Time / selection** | **~24** |
+| 1a | **N-3 parts 2–4, N-4(C)(iv)(v)** — the heat rate ladder | **Curriculum — mine** | **~15** |
+| 1b | **N-2 steel pipe** — thermal mass of the container | **Curriculum — mine** | **~5** |
+| 1c | **N-4(A)(c)** — the pitot-to-fan-efficiency chain | **Curriculum — mine** | ~10 *(only one N-4 submittable)* |
+| 1d | Remaining time loss after the walls are removed | Time | ~4 |
 | 2 | N-2: πD²L for πr²L | Geometry | ~4 |
-| 3 | N-2: steel pipe omitted; 90% capacity not applied | **Reading** | ~5 |
+| 3 | N-2: 90% capacity not applied | Reading | ~1 |
 | 4 | N-3: m_dfg without the ash — Rung 168 | Method | ~2 |
 | 5 | N-3: L₅ with CO₂ as 0.07 and 5654 as 565 | Units | ~1 |
 | 6 | N-4(C): h_g used where x·h_fg was required | Method | ~5 |
 | 7 | N-4(C): reheat term omitted; turbine power for generator | Method | ~2 |
 | 8 | Section I Q4, Q8 | Concept | 2 |
 
-**Two marks of concept loss on a hundred-mark paper.** Everything else is a clock,
-a reading, or a substitution.
+**Two marks of concept loss in Section I.** But roughly **20 marks of Section III
+were behind gaps in my curriculum**, which is a different and more serious number.
+The substitution slips (2, 4–7) remain hers and are worth ~14.
 
 ---
 
@@ -392,14 +422,13 @@ a reading, or a substitution.
 | Mock 2 | 73 | **Six marks were unreachable** — 78% of what was answerable |
 | Mock 3 | **58** | Clean paper. **31 minutes spent answering N-4 three times.** |
 
-**The trend is down and it deserves to be taken seriously — but it is not a
-knowledge trend.** Concept losses have gone 12 → 4 → 2 across the three papers.
-What has grown is time mismanagement, and Mock 3 is the extreme case: a paper where
-roughly 24 reachable marks were left on the table while 31 minutes went into work
-that could never be submitted.
+**The trend is down and deserves to be taken seriously.** But Mock 3's drop is
+mostly *curriculum*, not capability: about 20 marks sat behind three bridges that
+were never built. Taught-material performance is not what the raw 58 suggests.
 
-**Fix the clock and this is a high-seventies paper.** Six days is enough for that,
-because it is a habit and not a syllabus.
+**Close the three bridges and the clock material becomes usable** — because a
+stopwatch only helps when there is somewhere to run to. Six days is enough for
+both, in that order.
 
 ---
 
@@ -409,4 +438,8 @@ because it is a habit and not a syllabus.
 correct, the ash split better than my own key, the PRDS decoy caught and struck out
 with a reason.
 
-**Day 19 is the clock, six specific slips, and the exam-day card. Nothing else.**
+**Day 19 Part 0 is the three missing bridges — the heat rate ladder, thermal mass
+of the container, and the pitot-to-fan-efficiency chain. Then the clock.**
+
+> She has now contradicted my diagnosis three times — the "all unseen" claim, the
+> air preheater, and this. **Right all three times.**

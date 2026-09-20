@@ -63,6 +63,28 @@ leakage and effectiveness, taught nowhere, costing six unreachable marks.
 **Every lesson from Day 11 onward carries a written prerequisite box. Neither mock
 did.** From here, a paper is not issued until **both** checks are written into it.
 
+### ⚠️ Check 2 has a second level: the JOINS
+
+**Mock 3 passed both checks and still contained three untaught steps.** The
+data-item check asked *"does this topic have a rung?"* — heat rate did, fan
+efficiency did, `m·Cp·ΔT` did. **It never asked whether the transitions between
+them had bridges.**
+
+| Topic A | Topic B | The join that was missing |
+|---|---|---|
+| Turbine heat rate | Gross heat rate | `÷ η_boiler` |
+| `m·Cp·ΔT` | A piping system | the metal is also a mass |
+| Pitot traverse | Fan efficiency | flow from the traverse feeds the efficiency |
+
+**A curriculum can teach every noun in a question and still leave it
+unanswerable.** So the check runs at two levels:
+
+1. **Pieces** — does every data item map to a taught rung?
+2. **Joins** — does every *step between* two taught things have a written bridge?
+
+Trace the solution line by line. **Any line whose justification is "obvious from
+both" is a join that was never taught.**
+
 ### Prerequisite breaches to date
 
 | # | Where | What was unreachable |
@@ -73,6 +95,7 @@ did.** From here, a paper is not issued until **both** checks are written into i
 | 4 | Mock A | 17th N-2 (ii)(iii) needed chiller COP |
 | 5 | Day 10 | 17th N-1 needed L/G air flow |
 | 6 | **Mock 2** | **22nd N-3 A(v), B(i) needed the air preheater** |
+| 7 | **Mock 3** | **21st N-4(C) needed `gross HR = turbine HR/η_boiler`; 20th N-2 needed the pipework's thermal mass; 21st N-4(A) needed the pitot-to-fan-efficiency chain** |
 
 Breaches 1–5 were caught by the student reporting a question she could not do.
 **Breach 6 she caught by auditing the curriculum against the paper herself** — a

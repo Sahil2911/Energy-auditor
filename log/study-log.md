@@ -70,7 +70,7 @@ Net +4. The buffer absorbed it; 21 days still remain.
 | 16 | **Full Mock 2** — 21st + 22nd, genuinely unseen | ✅ **73/100** |
 | 17 | Gap closure — triage and units | 🟨 issued |
 | 18 | **Full Mock 3** — both checks run | ✅ **58/100** |
-| 19 | **The final week** — clock, six slips, exam card | 🟨 issued |
+| 19 | **The final week** — 3 missing bridges, then the clock | 🟨 issued (rewritten) |
 
 ## Timing record
 
@@ -141,12 +141,12 @@ Running count by error type. This is what tells the tutor what to change.
 
 | Type | Count | Note |
 |---|---|---|
-| Concept | **8** | +2 from Mock 3: reheat vs regenerative, extraction and EUF |
+| Concept | **8** | +2 from Mock 3 Section I: reheat vs regenerative, extraction and EUF |
 | Method | 2 | Knew it, applied it wrongly — *plus 1 caught on the page, not counted* |
 | Arithmetic | 0 | Right method, wrong number — *plus 1 caught on the page, not counted* |
 | Units | 0 | kCal/kJ, TPH/kg-hr mix-ups |
 | Lookup speed | 0 | Over 60 s to find something in the books |
-| Curriculum | **24 +** | Marks lost to material not yet taught — a planning fault, not a gap. **+6 from Mock 2's air preheater**, the sixth breach |
+| Curriculum | **44 +** | Marks lost to material not yet taught — a planning fault, not a gap. **+20 from Mock 3's three missing joins**, the seventh breach |
 
 ---
 
@@ -1617,3 +1617,80 @@ and EUF).
 all passed (84 · 73 · 58 against a pass of 50) · concept losses 12 → 4 → 2 · eight
 errors found in BEE's own keys · one prerequisite gap found by the student auditing
 the curriculum against a paper.
+
+---
+
+### The seventh prerequisite breach — three missing *joins* — 20 Sep
+
+**She said: "The skipped questions are due to lack of conceptual knowledge." I had
+just told her the opposite. She was right.**
+
+I checked the repository rather than defending the reading. Three things Mock 3
+asked for are not in this curriculum anywhere:
+
+| What she stopped on | Marks | Status |
+|---|---|---|
+| `gross HR = turbine HR ÷ η_boiler` — N-3 part 2 | 10 | **Nowhere.** Day 12 Rung 123 names all three heat rates in a table and **never relates them** |
+| Thermal mass of the pipework — N-2 | ~5 | **Nowhere.** Zero mentions of a container's own mass in eighteen sessions |
+| Pitot → flow → fan efficiency as one chain — N-4(A)(c) | 10 | Both halves taught; **Day 9's drill hands you the flow**, so the traverse never feeds the efficiency |
+| N-4(C) (iv)(v) | 5 | Blocked by the same heat-rate ladder |
+
+**About 20 of the ~24 marks I called a clock problem were walls.**
+
+She stopped at the literal line `Unit-1 Unit Heat rate =`. She had computed
+`860/2450 = 35.1%` trying to route through efficiency — which is a dead end,
+because 2450 is a *turbine* heat rate and that ratio is the cycle's efficiency, not
+the unit's. **There was no way onward, and the curriculum was why.**
+
+**And the three N-4 attempts were not indiscipline.** They were a rational search
+for one she could finish after the first two hit untaught material. My review called
+that "31 minutes, zero marks" and used it as the centrepiece of a time-management
+argument. Wrong framing.
+
+> **Note to the Tutor — this breach is a new kind, and the rule has to change.**
+>
+> **Mock 3 passed both checks.** The ledger check was clean. The data-item
+> prerequisite check was written into the paper part by part — and it asked *"does
+> this topic have a rung?"* Heat rate does. Fan efficiency does. `m·Cp·ΔT` does.
+>
+> **It never asked whether the transitions between taught topics had bridges.**
+>
+> | Topic A | Topic B | Missing join |
+> |---|---|---|
+> | Turbine heat rate | Gross heat rate | `÷ η_boiler` |
+> | `m·Cp·ΔT` | A piping system | the metal is also a mass |
+> | Pitot traverse | Fan efficiency | the traverse's flow feeds the efficiency |
+>
+> **New rule, in `framework.md`: check the joins, not just the pieces.** Trace the
+> model solution line by line; **any line whose justification is "obvious from
+> both" is a join that was never taught.** A curriculum can teach every noun in a
+> question and still leave it unanswerable.
+
+**Day 19 rewritten.** The old opening — *"You are not short of knowledge, you are
+short of a stopwatch"* — is quoted and retracted at the top. New structure:
+
+- **Part 0 (Rungs 190–192), the three bridges:**
+  - **190 The heat rate ladder** — drawn as a ladder where each rung divides by one
+    more loss, so turbine < gross < net always, with the sanity check that gross
+    below turbine means you multiplied. Finishes Mock 3's N-3 (2855 vs 2790 → Unit
+    2 wins; station net 3136) and unblocks N-4(C)(iv).
+  - **191 Heating a system heats its container** — one sentence, then the arithmetic
+    showing 20 910 kg of steel against 15 708 kg of water, 14% of the load at
+    Cp 0.12, the annulus formula, and the cue words that signal a second mass.
+  - **192 Pitot → fan efficiency in one chain** — the six steps, and the collision
+    that caused her stall: **two different pressures both written "Δp"**, dynamic
+    for velocity and static for power, 14.5 against 880 mmWC in that question.
+- **Part 2** is the clock material, demoted. The timing facts stand; they were
+  consequences, not the cause.
+- **Schedule revised: Saturday and Sunday are concepts. The clock is not tested
+  until Wednesday**, by which time there should be nothing left to stall on.
+
+**References:** `formula-sheet.md` sections 22–24 (the ladder, the container, the
+fan chain). `framework.md` gains the two-level check and the seventh breach.
+
+> **On her pushing back.** She has now contradicted my diagnosis three times — the
+> mock's "all unseen" claim, the air preheater, and this. **Right all three times**,
+> and each time by auditing the record rather than arguing. The one thing the
+> Reviewer should record for the exam: when a question seems to need something she
+> was never given, **naming the missing bridge on the page earns method marks even
+> when the number never comes**.

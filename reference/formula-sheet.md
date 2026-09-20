@@ -492,3 +492,65 @@ infiltration** (and wet processes).
     content = water/WET mass  →  wet = bone dry / (1 − m)     ← DIVIDE
     regain  = water/DRY mass  →  water = dry × m
     BEE always means CONTENT.
+
+
+---
+
+## 22. The heat rate ladder — the join that was missing
+
+```
+     TURBINE HEAT RATE      heat in the STEAM per kWh generated
+             │                  [MS(h_MS − h_fw) + RH(h_HRH − h_CRH)] / kWh
+             │  ÷ η_boiler                    ← the boiler's losses enter here
+             ▼
+     GROSS (UNIT) HEAT RATE  FUEL energy per kWh generated
+             │
+             │  ÷ (1 − APC)                   ← the station's own consumption
+             ▼
+     NET (STATION) HEAT RATE FUEL energy per kWh EXPORTED
+```
+
+    Gross HR = Turbine HR / η_boiler
+    Net HR   = Gross HR   / (1 − APC)
+
+**Each step divides by a number below 1, so turbine < gross < net, always.**
+If gross comes out below turbine, you multiplied.
+
+    η_plant = 860 / GROSS heat rate      ← never 860/turbine heat rate
+
+⚠️ **Read the label before comparing two units.** A "turbine heat rate" of 2450 and
+a "unit heat rate" of 2790 are not comparable until the first is divided by the
+boiler efficiency (→ 2855, so the 2790 machine wins).
+
+## 23. Heating a system heats its container
+
+    Q = Σ (m · Cp · ΔT)  over EVERY material present
+
+    fluid volume = (π/4) D_inner² L          ← (π/4)D², never πD²
+    metal volume = (π/4)(D_outer² − D_inner²) L
+
+A 100/108 mm steel line, 2 km long, holds **20 910 kg of steel against 15 708 kg of
+water** — 33% more metal than fluid. At Cp 0.12 that is still **14%** of the
+start-up load.
+
+**Cue words:** "the system also gets heated", "from cold", "after a shutdown",
+"during start-up". Applies to piping, refractory linings, vessel walls, boiler
+drums.
+
+## 24. Pitot traverse → fan efficiency, in one chain
+
+    1. ρ = ρ_NTP × (P_bar + P_static)/10334 × 273/(273 + t)   P_static SIGNED
+    2. v = C_p √(2g · Δp_DYNAMIC / ρ)                         dynamic tapping
+    3. A = π D²/4
+    4. Q = v × A                                              m³/s
+    5. Δp_STATIC = p_outlet − p_inlet                         mind the signs
+    6. η = Q × Δp_static /(102 × motor kW × η_motor) × 100    denominator = SHAFT
+
+⚠️ **Two different pressures both written "Δp":** the *dynamic* one gives velocity,
+the *static* one gives fan power. In the 21st N-4(A) they are 14.5 and 880 mmWC —
+a factor of 60.
+
+*(`v = 4.04√Δp` is step 2 pre-solved for standard air at ρ = 1.2. In a hot duct
+ρ ≠ 1.2, so use the full form.)*
+
+**Anchors:** large process fans 75–88% static efficiency; duct velocity 10–20 m/s.

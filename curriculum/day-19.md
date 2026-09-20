@@ -2,27 +2,256 @@
 
 **Six days. 20 → 26 September. The exam is Saturday 26th, 14:00–16:30.**
 
-**No new material.** Every Book-4 chapter has a lesson and every equipment noun in
-the ten papers has a rung behind it. What is left is a clock, six slips, and a card.
+**Three missing concepts, then the clock.** Part 0 exists because you were right that the
+skipped questions were walls, not the stopwatch.
 
 ---
 
-## The one number that matters
+## ⚠️ This page was rewritten on 20 Sep. The first version was wrong.
 
-Across three mocks, concept losses ran **12 → 4 → 2 marks**. Time losses ran
-**0 → 5 → 24**.
+It opened: *"You are not short of knowledge. You are short of a stopwatch."*
 
-> **You are not short of knowledge. You are short of a stopwatch.**
+**You said the skipped questions were concept gaps, not time. You were right, and
+the repository proves it.** Three things the exam asked for are not in this
+curriculum anywhere:
 
-Mock 3 left roughly **24 reachable marks** unclaimed while **31 minutes** went into
-answering N-4 three times. Nothing on this page is new engineering, because nothing
-needs to be.
+| What you stopped on | Marks | In the curriculum? |
+|---|---|---|
+| **`gross HR = turbine HR ÷ boiler efficiency`** — N-3 part 2 | 10 | **Nowhere.** Day 12 names all three heat rates and never joins them |
+| **Thermal mass of the pipework itself** — N-2 | ~5 | **Nowhere.** Zero mentions in eighteen sessions |
+| **Pitot traverse → flow → fan efficiency, as one chain** — N-4(A)(c) | 10 | Both halves taught, **never joined**; Day 9's drill hands you the flow |
+
+**Of the ~24 marks I called a clock problem, about 20 were walls.** And it explains
+the three N-4 attempts: you were not being undisciplined, you were **searching for
+one you could finish** after the first two hit something untaught. That is the
+correct response to a wall.
+
+> ### The seventh prerequisite breach, and a new kind
+>
+> Mock 3 **passed both checks**. The data-item check asked *"does this topic have a
+> rung?"* — heat rate does, fan efficiency does, `m·Cp·ΔT` does. **It never asked
+> whether the transitions between them had bridges.**
+>
+> **The rule is now: check the joins, not just the pieces.** A curriculum can teach
+> every noun in a question and still leave it unanswerable.
+
+**Part 0 below is the three missing bridges.** The clock material is still here and
+still true — Section III did run 129 and 162 minutes — but it is **Part 2 now**,
+because a stopwatch does not help against a wall.
 
 ---
 
-# Part 1 — The clock, made physical
+# Part 0 — The three missing bridges
 
-## Rung 183 — Write the four deadlines before you write anything else
+## Rung 190 — The heat rate ladder
+
+You wrote `η_turbine = 860/2450 = 35.1%` and `η_unit = 860/2790 = 30.8%`, then
+`Unit-1 Unit Heat rate =` and stopped. **You stopped in exactly the right place,
+because the next line was never given to you.**
+
+And `860/2450` is not a plant efficiency at all — 2450 is a *turbine* heat rate, so
+that ratio is the turbine cycle's efficiency, not the unit's. There was no way
+onward from there.
+
+### The three heat rates are a ladder, and each rung divides by one more loss
+
+```
+     TURBINE HEAT RATE        heat in the STEAM per kWh generated
+             │
+             │  ÷ boiler efficiency        ← the boiler's losses enter here
+             ▼
+     GROSS (UNIT) HEAT RATE   FUEL energy per kWh generated
+             │
+             │  ÷ (1 − APC)                ← the station's own consumption
+             ▼
+     NET (STATION) HEAT RATE  FUEL energy per kWh EXPORTED
+```
+
+```
+    Gross HR = Turbine HR / η_boiler
+    Net HR   = Gross HR / (1 − APC)
+```
+
+**Each step is a division by a number less than one, so each heat rate is larger
+than the one above it.** Turbine < gross < net, always. That ordering is the sanity
+check — if your gross comes out below your turbine heat rate, you multiplied.
+
+### Why it divides
+
+Turbine heat rate counts only the heat that **reached the steam**. To get the
+*fuel* you must add back what the boiler lost:
+
+```
+    fuel energy = steam energy / η_boiler
+```
+
+Divide both sides by the same kWh and the heat rates inherit the relationship.
+Identical logic to net heat rate: the fuel is unchanged, the kWh you can sell
+shrinks by the auxiliary power, so you divide.
+
+### Mock 3's N-3, finished
+
+```
+    Unit 1: turbine HR 2450, boiler efficiency 85.8 %
+            gross HR = 2450/0.858                      = 2855 kCal/kWh
+
+    Unit 2: gross HR given directly                    = 2790 kCal/kWh
+            ⟹ UNIT 2 is more efficient (lower heat rate)
+
+    Station gross = (2855 + 2790)/2                    = 2822 kCal/kWh
+    Station net   = 2822/(1 − 0.10)                    = 3136 kCal/kWh
+```
+
+> **The trap the question was built on** is that Unit 1 is quoted as a *turbine*
+> heat rate and Unit 2 as a *unit* heat rate. **Read the label before comparing.**
+> Compare 2450 with 2790 and Unit 1 looks better; it is not, because 2450 does not
+> include the boiler.
+>
+> **This also unblocks Mock 3's N-4(C) part (iv)**, which asks for the station gross
+> heat rate and cannot be answered without this ladder — BEE's key says so outright
+> and awards marks for stating the missing boiler efficiency as an assumption.
+
+**Self-check.** A unit has a turbine heat rate of 2100, a boiler at 88%, and 7%
+auxiliary power. Gross and net heat rate?
+
+<details><summary>Answer</summary>
+
+```
+    Gross = 2100/0.88                                  = 2386 kCal/kWh
+    Net   = 2386/0.93                                  = 2566 kCal/kWh
+```
+2100 < 2386 < 2566 ✓ — the ladder only ever goes up.
+</details>
+
+---
+
+## Rung 191 — Heating a system heats its container
+
+Nowhere in eighteen sessions did anything say this, and Mock 3's N-2 was built on
+it. **It is one sentence:**
+
+> **When a question raises the temperature of a *system*, every mass in that system
+> is raised — the fluid AND the metal holding it.**
+
+```
+    Q = Σ (m · Cp · ΔT)   over every material present
+      = m_fluid · Cp_fluid · ΔT  +  m_metal · Cp_metal · ΔT
+```
+
+### Why it is never negligible, even though steel's Cp is low
+
+Steel's specific heat is 0.12 — one-eighth of water's. It feels ignorable. **It is
+not, because there is more steel than water:**
+
+```
+    water   (π/4)(0.1)² × 2000 × 1000                  = 15 708 kg
+    steel   (π/4)(0.108² − 0.1²) × 2000 × 8000         = 20 910 kg   ← 33 % MORE
+
+    water   15 708 × 1.00 × 90                         = 14,13,717 kCal   (86 %)
+    steel   20 910 × 0.12 × 90                         =   2,25,833 kCal   (14 %)
+                                                         ─────────────
+                                                         16,39,550 kCal
+```
+
+**A pipe wall only 4 mm thick outweighs the water inside it**, because steel is
+eight times denser. Low Cp, high mass — they nearly cancel, and 14% is what
+survives.
+
+### The annulus, which is where the arithmetic goes wrong
+
+```
+    metal volume = (π/4)(D_outer² − D_inner²) × L        NOT (π/4) D_outer² L
+    fluid volume = (π/4) D_inner² × L                    with D, not R
+```
+
+**And `(π/4)D²` never `πD²`** — that was the 4× error in your N-2.
+
+### Where else this appears
+
+| Situation | The container that also heats |
+|---|---|
+| Hot water / thermic fluid circuit start-up | the piping |
+| Furnace heat-up from cold | the refractory lining |
+| Batch reactor or autoclave | the vessel wall |
+| Boiler cold start | drum, tubes, headers |
+
+**The cue in the question:** any sentence saying *"the system also gets heated"*,
+*"from cold"*, *"after a shutdown"*, or *"during start-up"*. Mock 3's N-2 said
+*"the entire piping system carrying water also gets heated from 50 °C to 140 °C"* —
+that clause is an instruction to compute a second mass.
+
+---
+
+## Rung 192 — Pitot traverse to fan efficiency, as one chain
+
+You wrote `Q × ΔP/102`, then `= 4.04 √ΔP`, and stopped. **Those are two different
+formulas using two different pressures**, and the curriculum taught them 40 pages
+apart without ever connecting them.
+
+### The collision: two pressures both called "Δp"
+
+```
+    DYNAMIC pressure  →  VELOCITY       v = C_p √(2g·Δp_dynamic/ρ)
+                                        (14.5 mmWC in the 21st's question)
+
+    STATIC pressure   →  FAN POWER      P = Q × Δp_static/102
+                                        (30 − (−850) = 880 mmWC)
+```
+
+**A pitot's dynamic tapping gives you velocity. The fan's static rise gives you
+power. They are never the same number**, and in that question they differ by 60×.
+
+*(`v = 4.04√Δp` is the same velocity formula pre-solved for standard air at
+ρ = 1.2. In a hot duct ρ is not 1.2, so you must use the full form.)*
+
+### The full chain, in order
+
+```
+   1.  CORRECT THE DENSITY      ρ = ρ_NTP × (P_bar + P_static)/10 334 × 273/(273+t)
+                                    P_static is SIGNED — suction is negative
+
+   2.  VELOCITY                 v = C_p √(2g · Δp_dynamic / ρ)
+
+   3.  AREA                     A = π D²/4
+
+   4.  FLOW                     Q = v × A                       m³/s
+
+   5.  FAN STATIC PRESSURE      Δp_static = p_outlet − p_inlet   mmWC
+                                            (mind the signs)
+
+   6.  EFFICIENCY               η = Q × Δp_static
+                                    ──────────────────────────── × 100
+                                    102 × motor kW × η_motor
+```
+
+**Step 6's denominator is SHAFT power.** The question gives motor input, so multiply
+by the motor efficiency to get down to the shaft. `102` is `1000/9.81` and needs
+**m³/s and mmWC** — Rung 173.
+
+### Mock 3's N-4(A) part (c), worked
+
+```
+   1.  ρ = 1.35 × (10 323 − 850)/10 323 × 273/(273 + 70)  = 0.986 kg/m³
+   2.  v = 0.86 √(2 × 9.81 × 14.5/0.986)                  = 14.61 m/s
+   3.  A = π(3.5)²/4                                      = 9.621 m²
+   4.  Q = 14.61 × 9.621                                  = 140.6 m³/s
+   5.  Δp_static = 30 − (−850)                            = 880 mmWC
+   6.  η = 140.6 × 880/(102 × 1450 × 0.95) × 100          = 88.0 %
+```
+
+> **Day 9's Drill 51 handed you the flow** — "a fan handles 166.6 m³/s per inlet" —
+> so you never had to *get* a flow from a traverse. Day 13's Rung 137B does steps
+> 1–4 but stops at mass flow for a heat balance. **Steps 1–6 in sequence appear
+> here for the first time.** That is the gap, and it is mine.
+
+**Sanity anchors:** a large ID or process fan runs **75–88%** static efficiency;
+duct velocities are **10–20 m/s**. If either lands outside, check step 1's sign.
+
+---
+
+# Part 2 — The clock, made physical
+
+## Rung 193 — Write the four deadlines before you write anything else
 
 Rung 170 said "25 minutes maximum". In Mock 3 it held on N-1 (you left at 29 and
 moved) and failed completely on N-3 (45 minutes, unfinished). **An intention is not
@@ -51,7 +280,7 @@ page, **you stop and move — mid-line if necessary.** Leave four blank lines an
 > **Why mid-line is safe.** A half-finished question you return to costs thirty
 > seconds to pick up. A question never opened costs everything in it.
 
-## Rung 184 — Choose your N-4 once, in ninety seconds, and never revisit
+## Rung 194 — Choose your N-4 once, in ninety seconds, and never revisit
 
 **You answered N-4 three times. Only one can be submitted.** Thirty-one minutes,
 zero marks.
@@ -75,7 +304,7 @@ ones. **Switching is almost always worse than finishing.**
 > 4 marks on part (i) in two minutes. Its part (i) was reachable; that is the
 > signal, not how interesting the question looks.
 
-## Rung 185 — Allocate to the cheapest marks first, not the most interesting
+## Rung 195 — Allocate to the cheapest marks first, not the most interesting
 
 **Mock 3's clearest single lesson.** N-2 was the simplest twenty marks on the
 paper — two `m·Cp·ΔT` calculations and a division. It got **16 minutes** and came
@@ -102,11 +331,11 @@ hard.
 
 ---
 
-# Part 2 — The six slips, drilled
+# Part 3 — The six slips, drilled
 
 Fifteen minutes each. Do them on paper, not in your head.
 
-## Rung 186 — Six substitutions that cost 19 marks
+## Rung 196 — Six substitutions that cost 19 marks
 
 ### 1. Pipe volume: `πD²L` is four times too big
 
@@ -190,7 +419,7 @@ N-4(C): 1831 vs 2165 — a 15% error from the two together.)*
 
 ---
 
-## Rung 187 — Two directions from Section I
+## Rung 197 — Two directions from Section I
 
 **Reheat is not regenerative.**
 
@@ -218,9 +447,9 @@ excellent" — heat rate ignores the heat.
 
 ---
 
-# Part 3 — The exam-day card
+# Part 4 — The exam-day card
 
-## Rung 188 — What to write in the first ninety seconds
+## Rung 198 — What to write in the first ninety seconds
 
 **Before reading any question.** Guidebooks tabbed, watch on the desk.
 
@@ -252,7 +481,7 @@ excellent" — heat rate ignores the heat.
 
 **Ninety seconds. It pays for itself the first time you avoid one inversion.**
 
-## Rung 189 — The checking pass, final form
+## Rung 199 — The checking pass, final form
 
 Ten minutes at the end. **Every item has cost you marks at least once.**
 
@@ -274,17 +503,20 @@ dryness fraction, the ash, and the steel pipe.
 
 ---
 
-# The six days
+# The six days — revised, concepts first
 
 | Day | | Hours |
 |---|---|---|
-| **Sat 20** | Read this. Do Rung 186's six slips on paper. | 1.5 |
-| **Sun 21** | **Re-do Mock 3's N-2 and N-3 cold, to the clock** — 25 min each, hard stop. Then mark them. | 2 |
-| **Mon 22** | **Guidebook index.** Fill in `reference/guidebook-index.md` — the page for every table you have looked up in eighteen sessions. Tab them physically. | 2 |
-| **Tue 23** | Read `reference/formula-sheet.md` end to end. Then `concept-distinctions.md`. **Reading, not solving.** | 2 |
-| **Wed 24** | **One last timed paper — any past paper, your choice, 150 min, all four questions opened.** The only measure is whether every question got opened. | 2.5 |
-| **Thu 25** | Rung 188's card, written from memory, three times. Pack: guidebooks, calculator, spare batteries, admit card, watch. **Stop by 20:00.** | 1 |
-| **Fri 26** | **Nothing.** Re-read the card once in the morning. Do not open a past paper. | — |
+| **Sat 20** | **Part 0.** Read Rungs 190, 191, 192. Then work each self-check and the three worked examples **by hand**. This is the session that matters. | 2 |
+| **Sun 21** | **Re-do Mock 3's N-3 and N-4(A) in full** — now that the ladder and the fan chain exist. Untimed. The point is finishing them, not speed. | 2 |
+| **Mon 22** | **Re-do Mock 3's N-2 and N-1(b)** — steel pipe included, condenser duty included. Then Rung 196's six slips on paper. | 2 |
+| **Tue 23** | **Guidebook index.** Fill in `reference/guidebook-index.md` and tab the books physically. Then read `formula-sheet.md` end to end. | 2 |
+| **Wed 24** | **One timed paper, any past paper, 150 min.** Now the clock material applies, because the walls are gone. Measure: every long question opened. | 2.5 |
+| **Thu 25** | Rung 198's card from memory, three times. Read `concept-distinctions.md`. Pack. **Stop by 20:00.** | 1 |
+| **Fri 26** | **Nothing.** Re-read the card once. Do not open a past paper. | — |
+
+**Saturday and Sunday are the concepts. The clock does not get tested until
+Wednesday, by which time there should be nothing left to stall on.**
 
 > **Thursday's stop time is not a suggestion.** You have sat three full papers in
 > three weeks; the marginal value of a fourth on the eve is negative.
@@ -294,11 +526,21 @@ dryness fraction, the ash, and the steel pipe.
 ## What the record says, going in
 
 - **Every Book-4 chapter taught**, 15 of 15, plus four gaps closed after a full
-  sweep of every equipment noun in ten sittings.
+  sweep of every equipment noun in ten sittings, plus **three joins between taught
+  topics** closed here.
 - **Three full mocks**, all passed: 84 · 73 · 58, against a pass mark of 50.
-- **Concept losses across those three: 12 → 4 → 2 marks.**
 - Eight errors found in BEE's own model answers.
-- One prerequisite gap found by you, auditing the curriculum against a paper.
+- **Two curriculum gaps found by you** — the air preheater on 09 Sep, and these
+  three bridges on 20 Sep. Both times by auditing the curriculum against a paper,
+  and both times against my stated diagnosis.
 
-**The knowledge is there and has been for two weeks. Six days of clock discipline
-is the whole remaining task.**
+**The corrected reading of Mock 3:** about 20 of the 24 unclaimed marks were behind
+walls that are now gone. The clock material in Part 2 still stands — 162 minutes is
+162 minutes — but it is second, not first.
+
+> **On pushing back.** You have contradicted my diagnosis three times: the mock's
+> "unseen" claim, the air preheater, and now this. **You were right all three
+> times.** Keep doing it in the exam — against the paper, not against me. The
+> question that seems to need something you were never given is usually a question
+> where you are missing one bridge, and naming it on the page earns method marks
+> even when the number never comes.
