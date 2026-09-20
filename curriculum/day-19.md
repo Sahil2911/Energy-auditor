@@ -1,6 +1,6 @@
 # Day 19 — The Final Week
 
-**Six days. 20 → 26 September. The exam is Saturday 26th, 14:00–16:30.**
+**Five working days: Mon 21 → Fri 25 September. Exam Saturday 26th, 14:00–16:30.**
 
 **Three missing concepts, then the clock.** Part 0 exists because you were right that the
 skipped questions were walls, not the stopwatch.
@@ -503,22 +503,40 @@ dryness fraction, the ash, and the steel pipe.
 
 ---
 
-# The six days — revised, concepts first
+# The five days — corrected 20 Sep
 
-| Day | | Hours |
+> **Two corrections.** The first version of this table labelled 20 Sep as
+> "Saturday". **20 September 2026 is a Sunday**, so every label was off by one —
+> and Sunday is now almost gone, spent on Mock 3. And `exam-brief.md` said the
+> exam was a *Friday*; **26 September 2026 is a Saturday.** Date right, weekday
+> wrong. **Check your admit card.**
+
+**Five working days remain: Monday 21 to Friday 25. The exam is Saturday 26,
+14:00–16:30.**
+
+| Day | What | Hours |
 |---|---|---|
-| **Sat 20** | **Part 0.** Read Rungs 190, 191, 192. Then work each self-check and the three worked examples **by hand**. This is the session that matters. | 2 |
-| **Sun 21** | **Re-do Mock 3's N-3 and N-4(A) in full** — now that the ladder and the fan chain exist. Untimed. The point is finishing them, not speed. | 2 |
-| **Mon 22** | **Re-do Mock 3's N-2 and N-1(b)** — steel pipe included, condenser duty included. Then Rung 196's six slips on paper. | 2 |
-| **Tue 23** | **Guidebook index.** Fill in `reference/guidebook-index.md` and tab the books physically. Then read `formula-sheet.md` end to end. | 2 |
-| **Wed 24** | **One timed paper, any past paper, 150 min.** Now the clock material applies, because the walls are gone. Measure: every long question opened. | 2.5 |
-| **Thu 25** | Rung 198's card from memory, three times. Read `concept-distinctions.md`. Pack. **Stop by 20:00.** | 1 |
-| **Fri 26** | **Nothing.** Re-read the card once. Do not open a past paper. | — |
+| **Sun 20 — tonight** | **Nothing.** You sat 162 minutes this afternoon. Close the book. | — |
+| **Mon 21** | **Part 0 — the three bridges.** Rungs 190, 191, 192. Read them, then work all three self-checks and all three worked examples **by hand**. **This is the session that decides the exam.** | 2–2.5 |
+| **Tue 22** | **Re-do Mock 3's N-3 and N-4(A) in full**, now that the ladder and the fan chain exist. **Untimed.** The measure is finishing them, not speed. | 2 |
+| **Wed 23** | **Re-do Mock 3's N-2 and N-1(b)** — steel pipe included, condenser duty included. Then Rung 196's six slips on paper. | 2 |
+| **Thu 24** | **One timed paper, 150 minutes, any unseen past paper.** Now the clock material in Part 2 applies, because the walls are gone. Measure: **every long question opened.** Then mark it. | 3 |
+| **Fri 25** | Tab the guidebooks against `reference/guidebook-index.md`. Rung 198's card from memory, three times. Read `formula-sheet.md`. Pack. **Stop by 20:00.** | 1.5 |
+| **Sat 26** | **EXAM, 14:00.** Re-read the card once in the morning. **Do not open a past paper.** | — |
 
-**Saturday and Sunday are the concepts. The clock does not get tested until
-Wednesday, by which time there should be nothing left to stall on.**
+## If a day gets lost, this is the order to protect
 
-> **Thursday's stop time is not a suggestion.** You have sat three full papers in
+1. **Monday's three bridges** — worth ~20 marks and nothing else comes close.
+2. **Tuesday's N-3 and N-4(A)** — the bridges are only real once used.
+3. **Thursday's timed paper** — the only rehearsal left.
+4. Wednesday's re-dos.
+5. Friday's tabbing. *(Drop first — you have used these books for nineteen
+   sessions.)*
+
+**Never drop Monday.** If Monday is impossible, move it to Tuesday and lose the
+Tuesday re-dos instead.
+
+> **Friday's stop time is not a suggestion.** You have sat three full papers in
 > three weeks; the marginal value of a fourth on the eve is negative.
 
 ---

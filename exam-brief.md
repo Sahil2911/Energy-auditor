@@ -3,12 +3,16 @@
 All facts below are taken from the official 26th NCE Prospectus (BEE / NPC,
 June 2026) and from the ten past papers in `papers/`.
 
+> **Corrected 20 Sep:** this brief said *"Friday 26 September"*. **26 September
+> 2026 is a Saturday.** The date was right, the weekday was mine and wrong.
+> **Confirm against your admit card**, which is the only authority that matters.
+
 ## The paper
 
 | | |
 |---|---|
 | Paper | 4 — Energy Performance Assessment for Equipment and Utility Systems |
-| Date | **Friday 26 September 2026** |
+| Date | **Saturday 26 September 2026** |
 | Time | **14:00 – 16:30 IST** |
 | Duration | **2.5 hours** |
 | Max marks | 100 |

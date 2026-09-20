@@ -17,7 +17,7 @@ because only the table was being maintained.*
 | Sessions **issued** | **22 / 22** |
 | Book-4 chapters **taught** | **15 / 15** ✅ |
 | Book-4 chapters **assessed** | **13 / 15** |
-| Days to exam | **6** |
+| Days to exam | **6** — five working days, Mon 21 to Fri 25 |
 
 ```
 Reported    [██████████████████████████    ]  86%   19/22
@@ -1694,3 +1694,36 @@ fan chain). `framework.md` gains the two-level check and the seventh breach.
 > Reviewer should record for the exam: when a question seems to need something she
 > was never given, **naming the missing bridge on the page earns method marks even
 > when the number never comes**.
+
+---
+
+### Two date errors, both mine — 20 Sep
+
+She asked for the revised schedule and said *"Sunday has gone almost."* Checking
+the calendar rather than repeating the table found two errors.
+
+**1. Day 19's schedule had every weekday label wrong.** It read "Sat 20 / Sun 21 /
+Mon 22 …". **20 September 2026 is a Sunday.** The whole table was shifted a day,
+which would have had her doing Friday's wind-down on Thursday and Thursday's timed
+paper on Wednesday.
+
+**2. `exam-brief.md` said "Friday 26 September 2026". It is a Saturday.** The date
+was right and has been right since Day 1; the weekday was added by me and never
+checked. Corrected, with a line telling her the admit card is the only authority.
+
+**Schedule rebuilt on the real calendar — five working days, not six:**
+
+| Day | What |
+|---|---|
+| Sun 20 tonight | **Nothing.** 162 minutes of mock already sat today. |
+| **Mon 21** | **Part 0 — Rungs 190–192, the three bridges.** By hand. The session that decides the exam. |
+| Tue 22 | Re-do Mock 3's N-3 and N-4(A), untimed, now unblocked |
+| Wed 23 | Re-do N-2 and N-1(b); Rung 196's six slips |
+| Thu 24 | **One timed paper, 150 min.** Measure: every long question opened |
+| Fri 25 | Tab the guidebooks, card from memory, read the formula sheet. **Stop 20:00.** |
+| **Sat 26** | **EXAM 14:00–16:30** |
+
+**A drop-order is written into the plan** so a lost day does not cost the wrong
+thing: bridges > Tuesday's re-dos > Thursday's timed paper > Wednesday > Friday's
+tabbing. **Monday is never dropped**; if it must move, it moves to Tuesday and the
+Tuesday re-dos go instead.
