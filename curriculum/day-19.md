@@ -503,41 +503,40 @@ dryness fraction, the ash, and the steel pipe.
 
 ---
 
-# The five days — corrected 20 Sep
+# The five days — superseded 20 Sep
 
-> **Two corrections.** The first version of this table labelled 20 Sep as
-> "Saturday". **20 September 2026 is a Sunday**, so every label was off by one —
-> and Sunday is now almost gone, spent on Mock 3. And `exam-brief.md` said the
-> exam was a *Friday*; **26 September 2026 is a Saturday.** Date right, weekday
-> wrong. **Check your admit card.**
+> **The day-by-day plan now lives in `curriculum/revision-plan.md`.**
+>
+> She proposed a **topic-wise** week instead of re-doing Mock 3 question by
+> question: Monday cogeneration, Tuesday HVAC and cooling towers, Wednesday pumps
+> and fans and compressed air, Thursday boilers, Friday miscellaneous.
+>
+> **Accepted, and it is the better plan.** The Mock 3 stalls were topic-shaped, not
+> paper-shaped — a heat-rate join, a thermal-mass idea, a fan chain. Drilling one
+> topic across ten sittings builds pattern recognition a fourth full paper would
+> not.
+>
+> **The three bridges fit her days without being moved:** the heat rate ladder is
+> Monday's (it *is* cogeneration and power plant), the pitot chain is Wednesday's
+> (it is a fan question), the container's thermal mass is Thursday's (a hot-water
+> boiler start-up is a boiler question).
+>
+> **The one trade, named:** it drops the last full-length timed paper. So every
+> 20-marker in the revision plan is worked **on a timer at 25 minutes, hard stop** —
+> the clock discipline goes inside the topic work rather than needing its own day.
+>
+> **Two date errors corrected at the same time.** This table had labelled 20 Sep
+> "Saturday"; it is a **Sunday**, so every label was off by one. And
+> `exam-brief.md` said the exam was a *Friday*; **26 September 2026 is a
+> Saturday**. Date right, weekday wrong — check your admit card.
 
-**Five working days remain: Monday 21 to Friday 25. The exam is Saturday 26,
-14:00–16:30.**
-
-| Day | What | Hours |
-|---|---|---|
-| **Sun 20 — tonight** | **Nothing.** You sat 162 minutes this afternoon. Close the book. | — |
-| **Mon 21** | **Part 0 — the three bridges.** Rungs 190, 191, 192. Read them, then work all three self-checks and all three worked examples **by hand**. **This is the session that decides the exam.** | 2–2.5 |
-| **Tue 22** | **Re-do Mock 3's N-3 and N-4(A) in full**, now that the ladder and the fan chain exist. **Untimed.** The measure is finishing them, not speed. | 2 |
-| **Wed 23** | **Re-do Mock 3's N-2 and N-1(b)** — steel pipe included, condenser duty included. Then Rung 196's six slips on paper. | 2 |
-| **Thu 24** | **One timed paper, 150 minutes, any unseen past paper.** Now the clock material in Part 2 applies, because the walls are gone. Measure: **every long question opened.** Then mark it. | 3 |
-| **Fri 25** | Tab the guidebooks against `reference/guidebook-index.md`. Rung 198's card from memory, three times. Read `formula-sheet.md`. Pack. **Stop by 20:00.** | 1.5 |
-| **Sat 26** | **EXAM, 14:00.** Re-read the card once in the morning. **Do not open a past paper.** | — |
-
-## If a day gets lost, this is the order to protect
-
-1. **Monday's three bridges** — worth ~20 marks and nothing else comes close.
-2. **Tuesday's N-3 and N-4(A)** — the bridges are only real once used.
-3. **Thursday's timed paper** — the only rehearsal left.
-4. Wednesday's re-dos.
-5. Friday's tabbing. *(Drop first — you have used these books for nineteen
-   sessions.)*
-
-**Never drop Monday.** If Monday is impossible, move it to Tuesday and lose the
-Tuesday re-dos instead.
+**Rungs 190–199 below all stand.** Part 0's three bridges are the priority; Parts
+2–4 (the clock, the six slips, the exam card) are unchanged.
 
 > **Friday's stop time is not a suggestion.** You have sat three full papers in
 > three weeks; the marginal value of a fourth on the eve is negative.
+>
+> **See `curriculum/revision-plan.md` for the day-by-day question lists.**
 
 ---
 

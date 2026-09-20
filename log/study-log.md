@@ -71,6 +71,7 @@ Net +4. The buffer absorbed it; 21 days still remain.
 | 17 | Gap closure — triage and units | 🟨 issued |
 | 18 | **Full Mock 3** — both checks run | ✅ **58/100** |
 | 19 | **The final week** — 3 missing bridges, then the clock | 🟨 issued (rewritten) |
+| — | **Topic-wise revision plan** — her structure, Mon–Fri | 🟨 issued |
 
 ## Timing record
 
@@ -1727,3 +1728,56 @@ checked. Corrected, with a line telling her the admit card is the only authority
 thing: bridges > Tuesday's re-dos > Thursday's timed paper > Wednesday > Friday's
 tabbing. **Monday is never dropped**; if it must move, it moves to Tuesday and the
 Tuesday re-dos go instead.
+
+---
+
+### Final week restructured on her plan — topic-wise — 20 Sep
+
+**She proposed the week herself:** Monday cogeneration · Tuesday HVAC and cooling
+towers · Wednesday pumps, compressors, fans and compressed air · Thursday boilers ·
+Friday miscellaneous.
+
+**Accepted, and it is the better plan.** My version was "re-do Mock 3 question by
+question". Hers is right because **the Mock 3 stalls were topic-shaped, not
+paper-shaped** — a heat-rate join, a thermal-mass idea, a fan chain. Drilling one
+topic across ten sittings builds the pattern recognition a fourth full paper would
+not, and she has already sat three.
+
+**`curriculum/revision-plan.md` issued** — her five days, each with a ranked
+question list pulled from `question-bank/index.md` and cross-checked against
+`used-ledger.md`, every question identified **by its opening line** rather than its
+label.
+
+> **Why the opening line and not the label.** Set A and Set B use the same labels
+> for different questions — the 25th's "N-2" is reverse combustion in Set A and a
+> topping-cycle gas turbine in Set B. The ledger keys on (sitting, label) and so
+> cannot tell them apart. **A limitation worth recording**; the revision plan works
+> round it by quoting each question's first words.
+
+**The three bridges fit her days without being moved**, which is a point in the
+plan's favour:
+
+| Bridge | Day | Why it belongs there |
+|---|---|---|
+| Rung 190 heat rate ladder | **Monday** | Turbine/gross/net heat rate *is* cogeneration and power plant |
+| Rung 192 pitot → fan efficiency | **Wednesday** | It is a fan question |
+| Rung 191 container's thermal mass | **Thursday** | A hot-water boiler start-up is a boiler question |
+
+**One trade named once, then built round rather than argued:** her plan drops the
+last full-length timed paper. So **every 20-marker in the revision plan is worked
+on a timer at 25 minutes, hard stop** — the clock discipline goes inside the topic
+work instead of needing its own day. Mock 3 ran 162 minutes; this keeps the
+pressure on without spending a day on it.
+
+**Each day leads with the questions she could not finish** — the 21st N-4(C) and
+22nd N-4(A) on Monday, the 22nd N-2(b) on Tuesday, the 21st N-4(A) part (c) on
+Wednesday, the 20th N-2 on Thursday, the 25th N-4(D) on Friday. Those five are
+where the bridges pay for themselves.
+
+**Friday's checklist outranks Friday's questions:** tab the guidebooks, write the
+exam card from memory three times, read the formula sheet, pack, **stop by 20:00**.
+
+**A drop order is written in**, so a lost day costs the right thing: the bridges
+and their first questions come before everything else. **Never drop a bridge** — if
+a day collapses, read it and do its first question, twenty minutes for most of the
+value.
