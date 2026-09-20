@@ -4,13 +4,17 @@
 anywhere in `curriculum/` or `assessments/`, with the files referencing it.**
 
 > **Why this exists.** Mock 1 was issued with the line *"Every question here is
-> unseen"*. Four of its eight questions had already been assigned — Day 1's Block
-> B3, Day 13's Block C, Day 13 Drill 68 and the sector diagnostic's Q2. Two of
-> those had been written days earlier by the same hand that called them unseen.
-> The claim was made from memory instead of from a check.
+> unseen"*. Four of its eight questions had already been assigned. The claim was
+> made from memory instead of from a check.
 >
-> **Rule: no question enters a mock until it has been looked up here.**
-> Regenerate with `python3 tools/ledger.py` before building any paper.
+> **And the first version of this script was itself incomplete** — it matched
+> only "21st N-1" and missed "`papers/21-1.pdf`, question N-1", which is the
+> form both mocks use. Fixed 20 Sep. A guard that does not cover the files it
+> exists to guard is worse than none, because it is trusted.
+>
+> **Rule: no question enters a paper until it has been looked up here, AND
+> given a data-item prerequisite check.** Those are two different checks —
+> see `assessments/framework.md`.
 
 | Sitting | Q | Referenced in |
 |---|---|---|
@@ -19,8 +23,8 @@ anywhere in `curriculum/` or `assessments/`, with the files referencing it.**
 | 16th | N2 | `day-14`, `day-15` |
 | 16th | N4(D) | `day-13`, `diagnostic-sector-systems` |
 | 17th | L2 | `checkpoint-phase-2`, `day-08`, `day-08-review` |
-| 17th | N1 | `checkpoint-phase-2`, `day-01-review`, `day-10`, `day-10-review` |
-| 17th | N2 | `checkpoint-phase-2`, `day-10-review`, `day-11`, `day-11-review`, `framework`, `mock-a-review` |
+| 17th | N1 | `checkpoint-phase-2`, `day-01-review`, `day-10`, `day-10-review`, `framework` |
+| 17th | N2 | `checkpoint-phase-2`, `day-07`, `day-10-review`, `day-11`, `day-11-review`, `framework`, `mock-a-review` |
 | 18th | L1 | `checkpoint-phase-2`, `day-01-blockC-review`, `day-01-review` |
 | 18th | L2 | `checkpoint-phase-2`, `day-05`, `day-05-review` |
 | 18th | N1 | `checkpoint-day-04`, `checkpoint-phase-2`, `day-01`, `day-02b`, `day-03`, `day-03-review`, `day-10-review`, `framework`, `master-plan`, `mock-a-review` |
@@ -32,13 +36,23 @@ anywhere in `curriculum/` or `assessments/`, with the files referencing it.**
 | 19th | N3 | `day-14` |
 | 20th | N1 | `checkpoint-day-04`, `checkpoint-phase-2`, `day-03-review` |
 | 20th | N1(C) | `checkpoint-phase-2` |
+| 20th | N2 | `day-18` |
 | 20th | N3 | `day-14`, `day-15`, `diagnostic-sector-systems` |
-| 21th | L2 | `day-17` |
+| 21th | L1 | `day-18` |
+| 21th | L2 | `day-16`, `day-17` |
+| 21th | N1 | `day-16`, `day-18` |
 | 21th | N2 | `day-16` |
 | 21th | N3 | `day-17` |
+| 21th | N4(A) | `day-18` |
 | 21th | N4(B) | `day-16`, `day-17` |
-| 22th | L1 | `day-17` |
-| 22th | N3 | `day-17` |
+| 21th | N4(C) | `day-18` |
+| 21th | N4(D) | `day-17` |
+| 22th | L1 | `day-16`, `day-17` |
+| 22th | L2 | `day-18` |
+| 22th | N1 | `day-16` |
+| 22th | N2 | `day-18` |
+| 22th | N3 | `day-16`, `day-17`, `framework` |
+| 22th | N4(A) | `day-18` |
 | 22th | N4(C) | `day-16` |
 | 22th | N4(D) | `day-15`, `day-16` |
 | 23th | N1 | `checkpoint-phase-2`, `day-09`, `day-09-review`, `day-12-review`, `day-13` |
@@ -47,17 +61,19 @@ anywhere in `curriculum/` or `assessments/`, with the files referencing it.**
 | 23th | N4(A) | `day-13b` |
 | 23th | N4(C) | `day-13` |
 | 23th | N4(D) | `day-13` |
-| 24th | L2 | `checkpoint-phase-2`, `day-06`, `day-06-review`, `day-08-review`, `day-10-review` |
+| 24th | L2 | `checkpoint-phase-2`, `day-06`, `day-06-review`, `day-08`, `day-08-review`, `day-10-review` |
 | 24th | N1 | `checkpoint-phase-2`, `day-02b`, `day-02b-review` |
 | 24th | N1(C) | `day-03` |
 | 24th | N2 | `day-13` |
 | 24th | N3 | `day-14`, `diagnostic-electrical-fluids` |
 | 24th | N4(C) | `day-13`, `day-14` |
 | 24th | N4(D) | `day-13`, `day-13-review`, `day-14`, `day-16` |
-| 25th | L1 | `day-12-review`, `day-14` |
+| 25th | L1 | `day-12`, `day-12-review`, `day-14` |
 | 25th | L2 | `day-12`, `day-12-review` |
 | 25th | N1 | `checkpoint-phase-2`, `day-05-review`, `day-10-review`, `day-11`, `day-11-review`, `framework`, `mock-a-review` |
-| 25th | N2 | `day-07b-review` |
+| 25th | N2 | `day-07`, `day-07b`, `day-07b-review` |
 | 25th | N4(A) | `day-13` |
+| 25th | N4(B) | `day-18` |
+| 25th | N4(D) | `day-18` |
 
-**45 distinct questions used so far.**
+**57 distinct questions used so far.**
