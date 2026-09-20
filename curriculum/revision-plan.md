@@ -34,26 +34,47 @@ would not.
 
 # MONDAY 21 — Cogeneration, turbines and heat rate
 
-**Read first: Rung 190, the heat rate ladder** (Day 19 Part 0). ~20 min.
+> **Superseded in scope — see `curriculum/mon-cogeneration.md`.** This page
+> originally listed **five** questions. That was a selection, and the instruction
+> was *all* the questions from the topic. **There are 24, worth about 419 marks.**
+> The full session file carries every one of them, grouped and in run order, with a
+> cut line at 3 h 57 min and a named slot for everything below it.
+
+**Read first: Part A of the session file — the heat rate ladder.** ~45 min.
 
 ```
      TURBINE HR  ──÷ η_boiler──▶  GROSS HR  ──÷ (1 − APC)──▶  NET HR
      turbine < gross < net, always
+     η = 860/HR (kCal)   or   3600/HR (kJ)   — check the currency
 ```
 
-| # | Paper | Question | Marks | Why this one |
-|---|---|---|---|---|
-| 1 | `21-1.pdf` | **N-4(C)** — *"A coal-based power plant has two units each of 200 MW"* | 20 | **Finish it.** You stopped at `Unit-1 Unit Heat rate =`. This is the ladder's home question |
-| 2 | `22-1.pdf` | **N-4(A)** — *"A thermal power plant is equipped with boiler and reheat steam turbine"* | 20 | **Finish parts (iv) and (v).** Also fix the LP exhaust: `49 + 0.98(610−49) = 599`, and the reheat term in the heat rate |
-| 3 | `17.pdf` | **N-3** — *"In a continuous process industry Steam and Power are supplied…"* | 20 | Unseen. Classic cogen balance |
-| 4 | `20-1.pdf` | **N-4(C)** — *"In a particular biomass power plant, 33.6 TPH of steam at 6…"* | 20 | Unseen. Biomass cogen |
-| 5 | `19-1.pdf` | **N-4(A)** — *"A 60 MW captive power plant of a chemical plant…"* | 20 | Unseen. Condensing CPP, heat rate |
+| Group | What | Questions | Time |
+|---|---|---|---|
+| **1** | The ladder at station level | 16th S-3 · 19th L-1 · 25th L-2 · **19th N-4(A)** ⭐ · **21st N-4(C)** ⚠️ · 24th N-4(A) · 17th N-4(A) | 117 min |
+| **2** | Turbine heat rate from steam | **16th N-4(A) ⇄ 18th N-4(C)** ⭐ · **22nd N-4(A)** ⚠️ · 23rd N-4(B) ⇄ 25th N-4(B) | 75 min |
+| ✂️ | *cut line* | | |
+| **3** | Cogeneration proper — EUF, H:P, steam rate | 22nd L-2 · 19th N-1 ⭐ · 24th N-2 ⭐ · 17th N-3 · 22nd N-1 | 112 min |
+| **4** | Gas turbine & engine cogen, trigeneration | 18th N-3 · 21st N-3 · 25th N-3(i) · 16th N-2 · 20th N-4(D) · 22nd N-4(B) | → **Tuesday** |
+| **5** | One condensing-turbine question | 20th N-4(C) | 25 min |
+| **6** | True/False, all sittings | twelve statements | 15 min |
 
-**Do 1 and 2 first — they are the ones you could not finish.** Then as many of
-3–5 as the time allows.
+**⚠️ marks the two you ran out of time on in Mock 3** — 21st N-4(C) and
+22nd N-4(A). They come early, and the ladder is what finishes them.
 
-**Checkpoint before you stop:** can you write the ladder from memory, and say why
-each step *divides*?
+**⭐ 19th N-4(A) first among equals:** it gives coal *and* steam, so the gross heat
+rate can be computed twice by independent routes and both give 2951. **That
+reconciliation is the session.**
+
+**⇄ marks a question that appears in two sittings.** Solve one, read both keys —
+and for 16th ⇄ 18th, read both keys carefully: **BEE's 16th answer is wrong and
+the 18th's is right, on the same data.** The difference is 860 against 3600.
+
+**Group 4 moves to Tuesday because five of its six questions contain an absorption
+chiller** — Tuesday gets them nearly free once the VAM is on the table. They are
+not dropped, only re-slotted.
+
+**Checkpoint before you stop:** write the ladder from memory, say why each step
+*divides*, and name which constant goes with kJ.
 
 ---
 

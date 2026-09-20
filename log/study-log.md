@@ -4,7 +4,7 @@ Updated daily. The Reviewer reads this before each assessment.
 
 ## Progress tracker
 
-*Last updated: 20 September 2026 (**Monday's session issued**; last mock **58/100**). **Update the bars whenever
+*Last updated: 20 September 2026 (**Monday rebuilt to the full 24-question inventory**; last mock **58/100**). **Update the bars whenever
 the chapter table below changes** — they went stale between Day 3 and Day 10
 because only the table was being maintained.*
 
@@ -72,7 +72,7 @@ Net +4. The buffer absorbed it; 21 days still remain.
 | 18 | **Full Mock 3** — both checks run | ✅ **58/100** |
 | 19 | **The final week** — 3 missing bridges, then the clock | 🟨 issued (rewritten) |
 | — | **Topic-wise revision plan** — her structure, Mon–Fri | 🟨 issued |
-| **M** | **Monday — cogeneration & the heat rate ladder** | 🟨 issued |
+| **M** | **Monday — cogeneration & the heat rate ladder** — all 24 questions | 🟨 issued (rebuilt) |
 
 ## Timing record
 
@@ -1836,3 +1836,84 @@ agreement is the check that the three cylinder outputs are right.
 **Part A closes on where the ladder does not apply:** a back-pressure cogeneration
 set has no condenser to reject to, so **EUF, not heat rate**, and the whole ladder
 is the wrong tool. Tuesday's absorption chillers will need the same instinct.
+
+---
+
+### Monday rebuilt — "all the questions" meant all of them — 20 Sep
+
+**She was clear and I was not listening.** Her plan said *"Monday — **all** questions
+from cogeneration"*. I issued **five**, picked by me, and called the file complete.
+
+> **She corrected it in one line:** *"I hope I am clear when I say all the questions
+> from paper."*
+
+**She is right, and the gap was not small.** A sweep of all ten sittings for
+cogeneration, turbines and heat rate finds:
+
+| | Count | Marks |
+|---|---|---|
+| Twenty-mark questions | **19** | 380 |
+| Five-mark short questions | 3 | 15 |
+| Gas-turbine cogen part (25th N-3 i) | 1 | 12 |
+| True/False statements | 12 | 12 |
+| | | **419 marks** |
+
+**I had issued five of twenty-four.** `curriculum/mon-cogeneration.md` rewritten to
+1,077 lines carrying every one, in six groups, in run order.
+
+**Why the index did not show them.** `question-bank/index.md` files by *primary*
+topic, so the topic was split across four headings — "Cogeneration & turbines" (10),
+"Power plant heat rate / PAT" (16), and single questions filed under **HVAC**
+(16th N-2 trigeneration, 20th N-4(D) hospital) and **Cement** (25th N-4(A), CPP heat
+rate). **A one-topic day cannot be built from a one-topic index heading.** The sweep
+has to go back to the papers. Ledger 60 → **69 questions**.
+
+**The honest arithmetic, given to her rather than hidden:** 419 marks worked once
+each at exam pace is **close to eight hours**, not the 3½ she has. So instead of
+quietly trimming:
+
+- **Two pairs are the same question twice** — 16th N-4(A) ⇄ 18th N-4(C), and
+  23rd N-4(B) ⇄ 25th N-4(B). Solve one, read both keys.
+- **Five of the six gas-engine questions also contain an absorption chiller**, so
+  **Tuesday absorbs them at no extra cost**. Re-slotted, not dropped.
+- **A cut line is printed at 3 h 57 min** and she decides where to stop.
+
+## ⭐ The find of the day — BEE worked the same question twice and got it wrong once
+
+**The 16th N-4(A) and the 18th N-4(C) are the same question**: 150 bar/550 °C reheat
+unit, identical enthalpies, identical 228 TPH. Only the generator efficiency differs
+(95% vs 96%).
+
+```
+    18th (correct):  228(3450−3090) + 228(3560−2426)/3600  = 94.62 MW  ✓
+    16th (printed):  ...same line with 860...              = 75.73 MW  ✗
+```
+
+**Verified independently:** `228000 × 1494/3600 = 94,620 kW`. The 18th's whole chain
+follows — 90.83 MW, 7354 kJ/kWh, 48.95%. The 16th's inherits the error all the way
+down to a cycle efficiency of 38.5%.
+
+**And the 16th's last line convicts itself.** It reads `860/9342 = 38.5%`. But
+`860/9342` is **9.2%**; the printed 38.5% is `3600/9342` — the right constant
+written as the wrong one. The 18th does it properly: `860/(7354/4.18) = 48.95%`.
+
+**This is now the centrepiece of Part A**, because it is the cleanest possible proof
+of Rung 172 (kJ ↔ kCal) and it comes from BEE's own paper. **Nine BEE model-answer
+errors found so far.**
+
+**Three further nuances added to Part A and Group 6, all from the sweep:**
+
+- **`heat rate = 860/η`** — the ladder's rung 1 read backwards, used to *open* a
+  question in the 18th, 20th and 21st when an engine or gas turbine is given by its
+  efficiency rather than its fuel flow.
+- **20th T/F #10 — "the gross heat rate does not include auxiliary consumption" is
+  FALSE**, and the instinct is to say true. Gross *generation* is what feeds the
+  auxiliaries, so their kWh are inside the gross figure; it is the **net** heat rate
+  that has taken them out. Written into Group 6 with the fraction drawn out.
+- **24th T/F #8 — a back-pressure set's steam rate is HIGHER**, not lower, than an
+  extraction-condensing set's: less enthalpy drop per kg, so more kg per kWh. The
+  24th N-2 sugar plant supplies the real figure, 7.32 kg/kWh.
+
+**Curriculum rule added, from this miss:** *when a day is defined by a topic, sweep
+the papers for the topic — never the index for the heading.* The index is filed by
+primary topic and will always under-report a day built round a concept.
