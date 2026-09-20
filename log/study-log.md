@@ -10,18 +10,18 @@ because only the table was being maintained.*
 
 | | |
 |---|---|
-| Curriculum | **21 sessions** (grew from 15 — see note) |
+| Curriculum | **22 sessions** (grew from 15 — see note) |
 | Started | 30 August 2026 |
 | **Exam** | **26 September 2026, 14:00–16:30** |
 | Sessions **reported back** | **19 / 21** |
-| Sessions **issued** | **21 / 21** |
+| Sessions **issued** | **22 / 22** |
 | Book-4 chapters **taught** | **15 / 15** ✅ |
 | Book-4 chapters **assessed** | **13 / 15** |
-| Days to exam | **17** |
+| Days to exam | **6** |
 
 ```
-Reported    [███████████████████████████   ]  90%   19/21
-Issued      [██████████████████████████████] 100%   21/21
+Reported    [██████████████████████████    ]  86%   19/22
+Issued      [██████████████████████████████] 100%   22/22
 Ch. taught  [██████████████████████████████] 100%   15/15
 Ch. assessed[██████████████████████████    ]  87%   13/15
 ```
@@ -69,7 +69,8 @@ Net +4. The buffer absorbed it; 21 days still remain.
 | 15 | Gap closure from Mock 1 | 🟨 issued |
 | 16 | **Full Mock 2** — 21st + 22nd, genuinely unseen | ✅ **73/100** |
 | 17 | Gap closure — triage and units | 🟨 issued |
-| 18 | **Full Mock 3** | ⬜ |
+| 18 | **Full Mock 3** — both checks run | 🟨 issued |
+| 19 | Final revision — guidebook index, formula sheet, distinctions | ⬜ |
 
 ## Timing record
 
@@ -1459,3 +1460,64 @@ the curriculum. Three lighter gaps found and closed as Rungs 179–182:
 
 **With 175–182, every equipment noun in the ten papers now has curriculum behind
 it.** That sweep should have run before Mock 2, not after.
+
+---
+
+### Full Mock 3 issued — 20 Sep, six days to the exam
+
+`curriculum/day-18.md`. The dress rehearsal, and **the first paper with both
+required checks written into it.**
+
+**The ledger had its own blind spot, and it mattered.** `tools/ledger.py` matched
+`21st N-1` but not `` `papers/21-1.pdf`, question N-1`` — which is the form *both
+mocks use*. So the guard was blind to precisely the files it existed to guard, and
+the "verified against the ledger" claim made for Mock 2 was thinner than stated.
+Pattern fixed; the ledger went from 46 to 57 tracked questions on the same corpus.
+
+> **Note to the Tutor.** A guard that does not cover the files it exists to guard
+> is worse than no guard, because it is trusted. That line is now in the ledger
+> header.
+
+**Check 2 — data-item prerequisites — is written into the paper part by part**, the
+check whose omission cost six unreachable marks in Mock 2. Every question mapped to
+the rungs it needs. **The 25th N-4(B) was deliberately excluded**: it turns on
+feedwater-heater TTD and DCA, which exist in `concept-distinctions.md` and Day 17's
+Rung 174 table but never as a rung with worked numbers. Under the new rule that is
+not enough for 20 marks.
+
+**The paper**
+
+| | Question | Tests |
+|---|---|---|
+| L-1 | 21st L-1 aluminium furnace | **Rung 164** — the invariant is heat *in the metal* |
+| L-2 | 22nd L-2 BP turbine vs PRDS | Day 4, and a ₹3500/MT decoy |
+| N-1 | 22nd N-2 compressor + chiller re-scheme | Day 9 isothermal · **Rung 163** (third paper running) · **Rung 173** (the 102) |
+| N-2 | 20th N-2 hot water start-up | **Rung 165** — 20.9 t of steel pipe must be summed with 15.7 t of water |
+| N-3 | 21st N-4(C) two-unit power plant | All seven losses incl. weighted ash GCV · **two heat rates on different bases** |
+| N-4 | (A) cement raw mill fan · (B) textile coal vs biomass · (C) 500 MW reheat turbine | Rung 137B · Rungs 148+164 · Day 4+12 |
+
+**It is built to test Day 17, not to be hard.** The 25-minute rule is under
+examination — four start times go on the answer sheet — and the measure stated in
+the paper is *"did every long question get opened?"*, not the score.
+
+**Three things worth flagging for the review:**
+
+- **N-1(b)(iii) is the chiller condenser duty for the third paper in a row**, and
+  BEE writes the general form outright: `condenser duty = TR × (1 + 1/COP)`.
+- **N-3 quotes Unit 1 as a *turbine* heat rate and Unit 2 as a *unit* heat rate.**
+  Day 12's basis trap, unannounced.
+- **N-4(C) part (iv) asks for a quantity that cannot be calculated.** BEE's key says
+  so and awards full marks for stating it with an assumption. Saying what is missing
+  beats inventing it — the most useful single answer in the ten papers.
+
+**All answers verified before issue**, including three arithmetic slips in BEE's own
+keys: the 21st's fan SPC printed 5.77 where 1450/260 = 5.58; the 25th N-4(D)'s
+25,72,296 becoming 25,67,490 one line later; and the 22nd N-2's rounding.
+
+**Honest scoreboard going in.** Mock 1 was 84 with four questions already seen.
+Mock 2 was 73 with eleven marks unattempted, six of them my gap. **Mock 3 is the
+first clean measurement of where she actually is.**
+
+**After it, five days.** The remaining plan is revision only — guidebook index,
+formula sheet, concept distinctions. Every Book-4 chapter has a lesson and every
+equipment noun in the ten papers now has a rung behind it.
