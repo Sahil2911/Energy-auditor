@@ -4,7 +4,7 @@ Updated daily. The Reviewer reads this before each assessment.
 
 ## Progress tracker
 
-*Last updated: 20 September 2026 (**Monday rebuilt to the full 24-question inventory**; last mock **58/100**). **Update the bars whenever
+*Last updated: 21 September 2026 (**Monday 1.3 worked: 13/20**; the finding is discipline, not concepts). **Update the bars whenever
 the chapter table below changes** — they went stale between Day 3 and Day 10
 because only the table was being maintained.*
 
@@ -1917,3 +1917,108 @@ errors found so far.**
 **Curriculum rule added, from this miss:** *when a day is defined by a topic, sweep
 the papers for the topic — never the index for the heading.* The index is filed by
 primary topic and will always under-report a day built round a concept.
+
+---
+
+### Monday 1.3 worked — 19th N-4(A) — **13/20** — 21 Sep
+
+Started 21:22 (20 Sep). **No finish time written** — flagged; the clock is half the
+assessment.
+
+| Part | Marks | Result |
+|---|---|---|
+| a · Gross heat rate | 8 | **2950.899** ✅ |
+| b · Net heat rate | 3 | **3278.777** ✅ |
+| c · Dryness fraction | 2 | 38.681 % ❌ |
+| d · Condenser heat load | 3 | *skipped* ❌ |
+| e · Specific coal | 2 | **0.696 kg/kWh** ✅ |
+| f · Overall efficiency | 2 | 26.229 % ❌ |
+
+**Review:** `assessments/mon-13-review.md`.
+
+## ⚠️ The finding that outranks every concept on the list
+
+**Her own sanity checks fired three times and she wrote the wrong answer down
+anyway.** In her hand, on the page:
+
+> *"This is **too high**"* · *"**Too low**"* · *"**Too low**"*
+
+She correctly judged 21,20,571 kCal/kWh absurd, 38.7% dryness absurd, 26.2% low.
+**All three wrong answers stayed.**
+
+**The ladder is working. The missing instruction is what to do when it rings.**
+Part (a) proves she can: that alarm *did* make her restart, and the restart was
+completely correct and worth the full 8 marks. On (c) and (f) she rang the bell and
+kept walking. **~7 marks.**
+
+> **New rule written into the review and the exam card:**
+> `alarm fires → STOP → back one line → find it → rewrite.` **Two minutes budgeted
+> the moment "too high" gets written.** Not a concept gap — a discipline gap, and
+> the cheapest fix available with five days left.
+
+## Three real errors, all now in the reference
+
+**1 · The 860 in a thermal numerator** *(concept-distinctions 23, new)*
+
+```
+    She wrote:  HR = 860 × 554 × 231000/60000  = 18,34,294
+```
+`kg/hr × kCal/kg` is **already kCal/hr**. 860 converts kW ↔ kCal/h and nothing else,
+so it has no business in a heat rate's numerator. **The failure is silent and 860×
+large** — it reads like a different species of error rather than one stray constant.
+**The audit is now a table in Part A:** what unit is the numerator in *before* the
+constant goes in?
+
+**2 · `h = h_g + x·h_fg`** *(concept-distinctions 21, new)*
+
+It is **h_f**, never h_g — *wet steam is water plus the fraction of it boiled*.
+Starting from h_g leaves nothing to add and collapses to `554 = 554 + x(…)`, which
+is exactly what she wrote.
+
+> **And the data table is built to cause it.** The 19th prints *condenser
+> temperature 45.5 °C* and *enthalpy of water 45.5 kCal/kg* in adjacent rows — **the
+> same figure, two quantities** — with `h_fg = 571.6` beside them. She put 45.5 in
+> the h_fg slot. Below 100 °C water's enthalpy in kCal/kg **is** its temperature in
+> °C, so this collision will recur. **Rule: label every enthalpy before using it.**
+
+**3 · `860/NHR` for overall efficiency** *(concept-distinctions 22, new)*
+
+**The Mock 3 error in mirror image.** Mock 3: `860/turbine` — one rung too low.
+Here: `860/net` — one rung too high. So the rule needed sharpening from *"860 over a
+heat rate"* to:
+
+```
+    "overall" or "plant" efficiency  =  860 / GROSS      ← always
+```
+
+**Because overall efficiency is fuel-in against what the plant *made*.** The 6 MW
+the auxiliaries ate was still generated; a plant does not become less efficient for
+consuming its own output. **And the route with no rung to pick:**
+`η = (kW × 860)/(fuel × GCV)` — output over input, two lines, cannot be got wrong.
+
+## One more mark-recovery habit
+
+**Part (d) was skipped because (c) failed — but (d) never needed (c).**
+
+```
+    Condenser load = 231000 × (554 − 45.5) = 1,17,46,350 kCal/hr
+```
+Two numbers straight off the table. `x·h_fg` **is** `(554 − 45.5)` by definition, so
+BEE's dryness route is optional. **Three marks sat in plain sight behind a two-mark
+error. Before abandoning a part, check whether it truly depends on the broken one.**
+
+## ⭐ And the reconciliation was one line away
+
+Fix the two errors in her first attempt and it lands on her second:
+
+```
+    231000 × (793 − 130)/60000 = 2553  →  ÷ 0.865 = 2951
+    her own part (a) from coal          =          2950.899
+```
+
+**She had both halves on the page and did not join them.** Had she run it, the
+18,34,294 could not have survived thirty seconds. **This is the check the session
+was built around** — now on the exam card as: *when a question gives both fuel and
+steam, get the gross heat rate twice and make them agree.*
+
+**Three of six parts fully right, including the 8-mark one. The method is there.**

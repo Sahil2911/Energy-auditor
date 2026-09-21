@@ -658,3 +658,103 @@ The 22nd sitting's "higher extraction flow ⟹ lower EUF" is **False**.
 > This is the same fact as *"a back-pressure set's heat rate looks terrible and its
 > EUF looks excellent"* (entry 4). **Heat rate ignores the heat; EUF does not.**
 > Judge cogeneration on EUF or heat-to-power ratio, never on heat rate.
+
+---
+
+## 21. `h = h_f + x·h_fg` — h_f, never h_g
+
+**Wet steam is water, plus the fraction of it that has been boiled.**
+
+```
+    h  =  h_f    +    x · h_fg
+          ▲                ▲
+    start from SATURATED    add back the latent heat,
+    WATER — the bottom      but only the fraction x of it
+```
+
+**Starting from `h_g` leaves nothing to add**, and the equation collapses:
+`554 = 554 + x(…)` forces x toward zero. If your dryness comes out near 0 or above
+1, this is the swap that did it.
+
+### ⚠️ The number collision the papers exploit
+
+```
+    Condenser temperature                      : 45.5 °C
+    Enthalpy of water at that condition        : 45.5 kCal/kg
+```
+
+**The same figure, twice, meaning different things.** Below 100 °C, water's enthalpy
+in kCal/kg equals its temperature in °C, because `Cp = 1`. The 19th sitting prints
+both in adjacent rows, next to `h_fg = 571.6`, and the near-miss invites 45.5 into
+the h_fg slot.
+
+**Label every enthalpy before you use it.** Three lines, fifteen seconds:
+`h_f = 45.5 · h_fg = 571.6 · h_exhaust = 554`.
+
+**Sanity range:** a condensing turbine exhausts at **0.86–0.93** dry. Below ~0.85
+the last-stage blades erode, so no operating plant reports it. **Anything under 0.8
+is not "low", it is impossible.**
+
+---
+
+## 22. "Overall efficiency" always means 860 / GROSS heat rate
+
+Three rungs, three efficiencies, and only one of them answers the question as
+usually asked:
+
+```
+    860 / turbine HR  =  turbine CYCLE efficiency      ← a different question
+    860 / GROSS HR    =  OVERALL / PLANT efficiency    ← this one
+    860 / net HR      =  efficiency of EXPORTED power  ← a different question
+```
+
+**Why gross.** Overall efficiency is fuel-in against **what the plant made**. A
+60 MW set made 60 MW; the 6 MW its auxiliaries ate was still generated. **A plant
+does not become less efficient for consuming some of its own output** — that is a
+commercial fact, not a thermodynamic one.
+
+**BEE names the other two when it wants them** — *"turbine cycle efficiency"*,
+*"efficiency of power exported"*, *"net efficiency"*. **Unqualified "overall" or
+"plant" means gross, every time.**
+
+> ### The route with no rung to pick
+>
+> ```
+>     η = (generator kW × 860) / (fuel kg/hr × GCV)
+>         ─────────────────────   ─────────────────
+>            what came out           what went in
+> ```
+> **Output over input, no heat rate involved.** Two lines, and it cannot be got
+> wrong. Use it whenever you are unsure which rung the question means.
+
+---
+
+## 23. When 860 belongs in a calculation — the audit
+
+**860 converts between kW and kCal/h. It does nothing else, ever.**
+
+```
+    kW  ──× 860──▶  kCal/h          kCal/h  ──÷ 860──▶  kW
+```
+
+**So before writing 860, ask what unit the expression is already in:**
+
+| Expression | Already | 860? |
+|---|---|---|
+| `steam kg/hr × Δh kCal/kg` | kCal/hr | **no** |
+| `fuel kg/hr × GCV kCal/kg` | kCal/hr | **no** |
+| `generator output kW` | kW | **× 860** |
+| `TR × 3024` | kCal/hr | **no** |
+
+**A heat rate's numerator is a heat flow, never a power** — so in a heat rate built
+from steam or from fuel, **860 never appears in the numerator.** It appears only in
+the efficiency at the end, and there it sits on the *kWh*.
+
+**Where it legitimately appears mid-calculation:** an EUF, where power (kW) and
+process heat (kCal/h) must be brought to one currency —
+`EUF = (kW × 860 + steam kCal/h) / fuel kCal/h`. **The 860 is on the power, not on
+the steam.** *(19th N-1.)*
+
+**The failure mode is silent and large:** multiplying an already-thermal numerator
+by 860 gives an answer 860× too big, which looks like a different kind of mistake
+entirely. `2133 → 18,34,294`.

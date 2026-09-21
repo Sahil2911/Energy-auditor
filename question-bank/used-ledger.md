@@ -27,7 +27,7 @@ anywhere in `curriculum/` or `assessments/`, with the files referencing it.**
 | 17th | N1 | `checkpoint-phase-2`, `day-01-review`, `day-10`, `day-10-review`, `framework` |
 | 17th | N2 | `checkpoint-phase-2`, `day-07`, `day-10-review`, `day-11`, `day-11-review`, `framework`, `mock-a-review` |
 | 17th | N3 | `mon-cogeneration`, `revision-plan` |
-| 17th | N4(A) | `mon-cogeneration`, `revision-plan` |
+| 17th | N4(A) | `mon-13-review`, `mon-cogeneration`, `revision-plan` |
 | 18th | L1 | `checkpoint-phase-2`, `day-01-blockC-review`, `day-01-review` |
 | 18th | L2 | `checkpoint-phase-2`, `day-05`, `day-05-review` |
 | 18th | N1 | `checkpoint-day-04`, `checkpoint-phase-2`, `day-01`, `day-02b`, `day-03`, `day-03-review`, `day-10-review`, `framework`, `master-plan`, `mock-a-review` |
@@ -36,10 +36,10 @@ anywhere in `curriculum/` or `assessments/`, with the files referencing it.**
 | 18th | N3 | `mon-cogeneration`, `revision-plan` |
 | 18th | N4(C) | `mon-cogeneration`, `revision-plan` |
 | 19th | L1 | `day-12`, `day-12-review`, `mon-cogeneration`, `revision-plan` |
-| 19th | N1 | `checkpoint-day-04`, `checkpoint-phase-2`, `day-04`, `day-04-review`, `day-04b`, `mon-cogeneration`, `revision-plan` |
+| 19th | N1 | `checkpoint-day-04`, `checkpoint-phase-2`, `day-04`, `day-04-review`, `day-04b`, `mon-13-review`, `mon-cogeneration`, `revision-plan` |
 | 19th | N2 | `checkpoint-phase-2`, `day-05`, `day-09`, `day-09-review` |
 | 19th | N3 | `day-14` |
-| 19th | N4(A) | `mon-cogeneration`, `revision-plan` |
+| 19th | N4(A) | `mon-13-review`, `mon-cogeneration`, `revision-plan` |
 | 20th | N1 | `checkpoint-day-04`, `checkpoint-phase-2`, `day-03-review` |
 | 20th | N1(C) | `checkpoint-phase-2` |
 | 20th | N2 | `day-18`, `framework` |
@@ -53,7 +53,7 @@ anywhere in `curriculum/` or `assessments/`, with the files referencing it.**
 | 21th | N3 | `day-17`, `mon-cogeneration`, `revision-plan` |
 | 21th | N4(A) | `day-18`, `framework` |
 | 21th | N4(B) | `day-16`, `day-17` |
-| 21th | N4(C) | `day-18`, `framework`, `mon-cogeneration`, `revision-plan` |
+| 21th | N4(C) | `day-18`, `framework`, `mon-13-review`, `mon-cogeneration`, `revision-plan` |
 | 21th | N4(D) | `day-17` |
 | 22th | L1 | `day-16`, `day-17` |
 | 22th | L2 | `day-18`, `mon-cogeneration`, `revision-plan` |

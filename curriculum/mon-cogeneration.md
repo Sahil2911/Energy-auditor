@@ -248,6 +248,54 @@ The efficiency formula is **not** `860/HR`. It is:
 That is rung 1 climbed from the other end, and the 18th, 20th and 21st sittings all
 open a question with it.
 
+## ⚠️ The 860 audit — run it before you write the constant
+
+**860 converts between kW and kCal/h. It does nothing else.** So before writing it,
+ask what unit the expression is *already* in:
+
+| What you have written | Already in | 860? |
+|---|---|---|
+| `steam kg/hr × Δh kCal/kg` | kCal/hr | **no** |
+| `fuel kg/hr × GCV kCal/kg` | kCal/hr | **no** |
+| `generator output kW` | kW | **× 860** |
+| `TR × 3024` | kCal/hr | **no** |
+
+> **A heat rate's numerator is a heat flow, never a power.** So in a heat rate built
+> from steam or from fuel, **860 never appears in the numerator** — only in the
+> efficiency at the end, where it sits on the kWh.
+
+**Where it legitimately appears mid-calculation:** an EUF, where power and process
+heat must be brought to one currency —
+`EUF = (kW × 860 + steam kCal/h) / fuel kCal/h`. **The 860 goes on the power, not
+on the steam.**
+
+**The failure is silent and enormous.** An already-thermal numerator multiplied by
+860 comes out 860 times too big — `2133` becomes `18,34,294`, which looks like a
+different species of error rather than one stray constant.
+
+## ⚠️ Which efficiency does "overall" mean? — always gross
+
+```
+    860 / turbine HR  =  turbine CYCLE efficiency      ← a different question
+    860 / GROSS HR    =  OVERALL / PLANT efficiency    ← this one
+    860 / net HR      =  efficiency of EXPORTED power  ← a different question
+```
+
+**Overall efficiency is fuel-in against what the plant *made*.** A 60 MW set made
+60 MW; the 6 MW its auxiliaries ate was still generated. **A plant does not become
+less efficient for consuming some of its own output.**
+
+**BEE names the other two when it wants them.** Unqualified **"overall"** or
+**"plant"** means gross.
+
+> ### The route with no rung to pick
+> ```
+>     η = (generator kW × 860) / (fuel kg/hr × GCV)
+> ```
+> **Output over input, no heat rate involved.** Two lines, cannot be got wrong.
+> Use it whenever you are unsure which rung is meant — and note the 860 sits on the
+> kW, so the audit above passes.
+
 ## The two ways a heat rate can be built
 
 Every heat rate question in these ten papers builds the numerator one of two ways.
@@ -439,7 +487,7 @@ Both routes from Part A are open to you:
     Coal                = 41,758 kg/hr
     Gross heat rate     = 2951 kCal/kWh
     Net heat rate       = 2951/(1 − 0.10)          = 3279 kCal/kWh
-    Dryness of exhaust  = 0.890
+    Dryness of exhaust  = (554 − 45.5)/571.6        = 0.890
     Condenser load      = 1,17,46,350 kCal/hr
     Specific coal       = 0.696 kg/kWh
     Overall efficiency  = 860/2951                 = 29.1 %
