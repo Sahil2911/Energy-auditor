@@ -296,6 +296,109 @@ less efficient for consuming some of its own output.**
 > Use it whenever you are unsure which rung is meant — and note the 860 sits on the
 > kW, so the audit above passes.
 
+## Condenser heat load — what the turbine could not use
+
+**Start from the machine, not the formula.** Steam arrives at the condenser having
+already given the blades everything it could. The condenser's job is to turn it back
+into water so the feed pump can send it round again.
+
+```
+                 ┌──────────────────────────┐
+   exhaust steam │                          │  condensate
+   ─────────────►│        CONDENSER         ├──────────────►
+   h = 554       │                          │  h_f = 45.5
+                 └────────────┬─────────────┘
+                              │  heat thrown away
+                              ▼   to cooling water
+```
+
+**The load is simply what the steam still had, minus what the water leaves with:**
+
+```
+    Q_condenser  =  steam flow × (h_exhaust  −  h_condensate)
+                 =  231000 × (554 − 45.5)   =  11,74,63,500 kCal/hr
+```
+
+> **Two numbers off the table, and no dryness fraction anywhere.** This is the form
+> to use, and it is why part (d) of the 19th N-4(A) never depended on part (c).
+
+### The route through the dryness fraction — the same thing, spelt out
+
+BEE's key writes it as:
+
+```
+    Q = steam flow × h_fg × x  =  231000 × 571.6 × 0.889  =  11,73,83,200 kCal/hr
+```
+
+**These are not two methods. They are one identity.** By definition:
+
+```
+    h_exhaust = h_f + x·h_fg      ⟹      x·h_fg = h_exhaust − h_f
+                                                = 554 − 45.5 = 508.5
+```
+
+So `571.6 × 0.889 = 508.1 ≈ 508.5` — the tiny gap is only BEE rounding x to three
+places. **Use the subtraction; it is shorter and carries no rounding.**
+
+> **When you are forced through x:** if the question gives you the dryness fraction
+> and the latent heat but *not* the exhaust enthalpy, multiply. If it gives you the
+> exhaust enthalpy, subtract. **Never compute x just to multiply it back out.**
+
+### ⚠️ What the condensate enthalpy is — and is not
+
+**The steam leaves as saturated water at the condenser's own pressure**, not at
+feedwater temperature.
+
+```
+    h_condensate = h_f at condenser conditions   = 45.5 kCal/kg   ← use this
+    h_feedwater  = 130 kCal/kg                   ← NOT this
+```
+
+**130 is where the water gets to after the feed heaters**, downstream of the
+condenser. Using it would charge the condenser with heat that the *heaters* add,
+and understate the load by `231000 × 84.5 = 1,95,19,500` — about 17%.
+
+**The same trap in the other direction:** do not use `h_exhaust − h_feedwater` for
+the *boiler* either. Each box takes the enthalpies at its own two ports.
+
+### The three ways a paper asks for it
+
+| Given | Use |
+|---|---|
+| exhaust enthalpy + condensate enthalpy | `m (h_exh − h_f)` ← **default** |
+| dryness fraction + latent heat | `m · x · h_fg` |
+| cooling water flow and rise | `m_cw × Cp × ΔT` |
+
+**The third is the auditor's field method**, and papers use it to go the other way
+— from the load to the cooling water the plant must circulate:
+
+```
+    m_cw  =  Q / (Cp × ΔT)  =  11,74,63,500 / (1000 × 8)  =  14,683 m³/hr
+```
+
+*(ρCp for water = 1000 kCal per m³ per °C. A condenser's CW rise is typically
+**8–10 °C**; the 24th N-3 states it as 45 m³ of CW per tonne of steam, which is the
+same fact in different clothing.)*
+
+### Sanity: the condenser is the biggest heat flow in the plant
+
+**About half the fuel's heat leaves through the condenser.** Check it here:
+
+```
+    Fuel in     = 41758 × 4240        = 17,70,53,920 kCal/hr
+    Condenser   =                       11,74,63,500 kCal/hr   =  66 %
+    Electricity = 60000 × 860         =  5,16,00,000 kCal/hr   =  29 %
+```
+
+**Two thirds of the fuel goes to the cooling tower.** That is not a fault in the
+plant — it is the Rankine cycle, and it is why a back-pressure set that *uses* its
+exhaust reaches an EUF of 0.79 while this machine sits at 0.29.
+
+> **The order-of-magnitude check:** the condenser load should come out **roughly
+> twice the electrical output in heat terms**, and always larger than it. If yours
+> is smaller than `kW × 860`, you have lost a factor of ten or used the wrong
+> enthalpy.
+
 ## The two ways a heat rate can be built
 
 Every heat rate question in these ten papers builds the numerator one of two ways.
@@ -488,7 +591,7 @@ Both routes from Part A are open to you:
     Gross heat rate     = 2951 kCal/kWh
     Net heat rate       = 2951/(1 − 0.10)          = 3279 kCal/kWh
     Dryness of exhaust  = (554 − 45.5)/571.6        = 0.890
-    Condenser load      = 1,17,46,350 kCal/hr
+    Condenser load      = 11,74,63,500 kCal/hr
     Specific coal       = 0.696 kg/kWh
     Overall efficiency  = 860/2951                 = 29.1 %
 ```

@@ -4,7 +4,7 @@ Updated daily. The Reviewer reads this before each assessment.
 
 ## Progress tracker
 
-*Last updated: 21 September 2026 (**Monday 1.3 worked: 13/20**; the finding is discipline, not concepts). **Update the bars whenever
+*Last updated: 21 September 2026 (**condenser load taught**; a 10× error of mine corrected in three files). **Update the bars whenever
 the chapter table below changes** — they went stale between Day 3 and Day 10
 because only the table was being maintained.*
 
@@ -2001,7 +2001,7 @@ consuming its own output. **And the route with no rung to pick:**
 **Part (d) was skipped because (c) failed — but (d) never needed (c).**
 
 ```
-    Condenser load = 231000 × (554 − 45.5) = 1,17,46,350 kCal/hr
+    Condenser load = 231000 × (554 − 45.5) = 11,74,63,500 kCal/hr
 ```
 Two numbers straight off the table. `x·h_fg` **is** `(554 − 45.5)` by definition, so
 BEE's dryness route is optional. **Three marks sat in plain sight behind a two-mark
@@ -2022,3 +2022,55 @@ was built around** — now on the exam card as: *when a question gives both fuel
 steam, get the gross heat rate twice and make them agree.*
 
 **Three of six parts fully right, including the 8-mark one. The method is there.**
+
+---
+
+### Condenser heat load taught — and an order-of-magnitude error of mine corrected — 21 Sep
+
+**She asked how to calculate the condenser load** — part (d), the one she skipped.
+New Part A section in `curriculum/mon-cogeneration.md`, built from the machine
+rather than the formula.
+
+```
+    Q_condenser = steam flow × (h_exhaust − h_condensate)
+                = 231000 × (554 − 45.5)  =  11,74,63,500 kCal/hr
+```
+
+**The teaching point that matters:** BEE's `m · x · h_fg` and the direct subtraction
+are **not two methods, they are one identity** — `x·h_fg ≡ h_exhaust − h_f` by
+definition. So the dryness fraction is never *needed*; it is only the route BEE
+happens to print. **Never compute x just to multiply it back out.** This is what
+makes part (d) independent of part (c), which is the mark-recovery habit from
+yesterday's review.
+
+**The trap named:** the condensate leaves at **h_f of the condenser (45.5)**, not at
+feedwater enthalpy (130). Using 130 charges the condenser with heat the *feed
+heaters* add and understates the load by ~17%. **Each box takes the enthalpies at
+its own two ports.**
+
+**Also given:** the cooling-water route `m_cw = Q/(ρCp ΔT) = 14,683 m³/hr at 8 °C`,
+with the note that the 24th N-3's "45 m³ of CW per tonne of steam" is the same fact
+in different clothing.
+
+## ⚠️ My error, found while answering: the condenser load was printed 10× too small
+
+**`1,17,46,350` should be `11,74,63,500`.** `231000 × 508.5 = 117,463,500`, not
+11,746,350 — a misplaced digit group in Indian notation. It was wrong in **three
+files**: the session file's 1.3 answer block, yesterday's review, and the log entry
+that quoted it.
+
+**Corrected in all three.** She had not yet worked part (d), so it was caught before
+it could be copied into her book — but it would have been, today.
+
+**The guard now written into the lesson**, because a wrong magnitude here is
+invisible without one:
+
+> **The condenser load should be roughly twice the electrical output in heat terms,
+> and always larger than it.** Here: fuel in 17,70,53,920 · condenser 11,74,63,500
+> (**66%**) · electricity 5,16,00,000 (**29%**). **Two thirds of the fuel goes to
+> the cooling tower** — the Rankine cycle, not a fault. **If your condenser load
+> comes out smaller than `kW × 860`, you have lost a factor of ten.**
+
+**Ten BEE-or-mine numerical errors now on the register; this one is mine.** The
+lesson for the tutor side is the same one the reviewer keeps giving her: *the
+magnitude check is not optional, and I skipped my own.*

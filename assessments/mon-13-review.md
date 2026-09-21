@@ -175,9 +175,9 @@ it would mean the condenser is full of water with a little steam in it.
 
 ```
     Condenser heat load = steam flow × (h_exhaust − h_condensate)
-                        = 231000 × (554 − 45.5)       = 1,17,46,350 kCal/hr
+                        = 231000 × (554 − 45.5)       = 11,74,63,500 kCal/hr
 
-    BEE's route         = 231000 × 571.6 × 0.889      = 1,17,38,320 kCal/hr
+    BEE's route         = 231000 × 571.6 × 0.889      = 11,73,83,200 kCal/hr
 ```
 
 **They are the same calculation** — `x · h_fg` *is* `(554 − 45.5)` by definition.
