@@ -135,3 +135,56 @@ question this is worth 40% of the answer. See `concept-distinctions.md` entry 14
 
 **The pattern to watch is not how many you make** — it is whether the ratio you get
 wrong is one you have already met.
+
+---
+
+# ⚠️ A second cousin: intensive quantities do not add
+
+**Heat rate, kW/TR, SEC, evaporation ratio, kWh/tonne — all of them are ratios.**
+Two of anything measured in a "per" unit combine by **re-doing the division on the
+totals**, never by addition, and only by a plain average when the weights happen to
+be equal.
+
+```
+    WRONG      station HR  =  HR₁ + HR₂
+    WRONG      station HR  =  (HR₁ + HR₂)/2      ← unless the outputs are equal
+
+    RIGHT      station HR  =  total heat in / total kWh out
+
+                            HR₁·kWh₁  +  HR₂·kWh₂
+                          = ──────────────────────    ← weighted by GENERATION
+                               kWh₁  +  kWh₂
+```
+
+**The weights are always the denominator of the ratio**, so:
+
+| Ratio | Weight it averages by |
+|---|---|
+| heat rate, kCal/kWh | **kWh generated** |
+| kW/TR | **TR of cooling** |
+| SEC, kWh/tonne | **tonnes produced** |
+| evaporation ratio, kg steam/kg fuel | **kg of fuel** |
+| specific coal, kg/kWh | **kWh generated** |
+
+**The 21st sitting's N-4(C) is the exam case:** two 200 MW units at the same load,
+so the weights *are* equal and the plain average is right — `(2852.8 + 2790)/2 =
+2821.4`. **Adding them gives 6258 and an implied plant efficiency of 13.7%.**
+
+> ### The sanity band that catches it
+>
+> ```
+>     turbine heat rate        2000 – 2600 kCal/kWh
+>     gross / unit heat rate   2300 – 3000
+>     net / station heat rate  2600 – 3300
+>     above 4000               ⟹ wrong, unless a back-pressure
+>                                 cogeneration set (30,000+)
+> ```
+>
+> **And the free check on any heat rate: `860/answer`.** A condensing plant lands
+> between **25% and 40%**. Anything outside that, stop and look again. *(A
+> percentage that is obviously wrong gets caught by instinct; a four-digit
+> kCal/kWh does not — so give it a band and use it.)*
+
+**Why a car makes it obvious:** two cars each doing 15 km/litre do not make a
+garage that does 30. Fuel economy is per-litre; heat rate is per-kWh. **Put the two
+fuels over the two distances and divide once.**

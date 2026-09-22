@@ -4,7 +4,7 @@ Updated daily. The Reviewer reads this before each assessment.
 
 ## Progress tracker
 
-*Last updated: 21 September 2026 (**condenser load taught**; a 10× error of mine corrected in three files). **Update the bars whenever
+*Last updated: 22 September 2026 (**Monday 1.4: 10.5/20** — alarm now fires on percentages, not yet on heat rates). **Update the bars whenever
 the chapter table below changes** — they went stale between Day 3 and Day 10
 because only the table was being maintained.*
 
@@ -2074,3 +2074,113 @@ invisible without one:
 **Ten BEE-or-mine numerical errors now on the register; this one is mine.** The
 lesson for the tutor side is the same one the reviewer keeps giving her: *the
 magnitude check is not optional, and I skipped my own.*
+
+---
+
+### Monday 1.4 worked — 21st N-4(C) — **10.5/20** — 22 Sep
+
+**04:55 → 05:32 = 37 min** against 25. Both times written. The overrun is all in
+part 1, which is fair — a full indirect-method boiler efficiency is a 10-mark part
+and she worked all seven losses.
+
+| Part | Marks | Result | |
+|---|---|---|---|
+| 1 · Boiler efficiency, indirect | 10 | 86.176 % *(BEE 85.88)* | **8.5** |
+| 2 · Which unit is more efficient | 2 | "Unit 1" | **0** |
+| 3 · Coal difference per day | 5 | two TPH figures, no difference | **2** |
+| 4 · Station net heat rate | 3 | 6258.03 | **0** |
+
+**Review:** `assessments/mon-14-review.md`.
+
+## ✅ Yesterday's lesson applied, unprompted, twice
+
+**She wrote L2, saw 14.789, wrote "impossible", and rewrote it correctly. Then did
+the same for L3.** The bracket fix was right too — the mass of water multiplies the
+*whole* `[584 + CpΔT]`, because every kilogram must be both evaporated and
+superheated.
+
+> **The alarm fired twice and she acted twice.** That is precisely what the 1.3
+> review asked for, and it came back the next sitting without being prompted again.
+
+## ⚠️ And the one place it did not fire — part 4
+
+**She added the two units' heat rates:** `(2842.2 + 2790)/0.9 = 6258.03`.
+
+**Heat rates are ratios and do not add.** Station gross = total heat ÷ total kWh =
+a **generation-weighted average**; here the units are equal so it is the plain mean,
+2821.4, giving a net of 3135.
+
+**6258 kCal/kWh implies a plant efficiency of 13.7%.** As impossible as the 14.789
+she rejected twice — and it went down unchallenged.
+
+> ### Diagnosis, and it is useful
+>
+> **The two she caught were percentages; the one she missed was kCal/kWh.** She has
+> a strong instinct for a boiler loss — 14% is visibly wrong. She has **no instinct
+> for four-digit heat rates**; 2800 and 6258 look alike.
+>
+> **So the guard has to be an explicit band, not intuition.** Added to
+> `reference/reciprocal-traps.md` with a new section on intensive quantities:
+> turbine 2000–2600 · gross 2300–3000 · net 2600–3300 · **>4000 wrong unless
+> back-pressure cogen.** Plus the free check: **`860/answer` must land 25–40%.**
+
+## Part 2 — the rung climb is fixed, the verdict inverted
+
+```
+    Unit 1 gross = 2450/0.862 = 2842.2      ✓ the basis trap, seen through
+    "∴ Unit 1 HR > Unit 2 HR ∴ Unit 1 is more efficient"    ✗ backwards
+```
+
+**This is real progress and a real slip in the same two lines.** The rung climb is
+the step that stopped her in Mock 3; it no longer does. Then the inverse trap took
+the marks at the last line.
+
+**Fix prescribed: never conclude on a heat rate.** Convert both to efficiency —
+30.25% vs 30.82% — and the sentence runs in the direction her intuition already
+does. Two divisions.
+
+## Part 1's one error is a regression, and the reference already covers it
+
+**She used Cp = 0.24 for L1, L2, L3 and L4.** The data table gives *"specific heat
+of **flue gas** = 0.24"* — that is the gas. **L2/L3/L4 heat water vapour: 0.45.**
+
+| | Hers (0.24) | Correct (0.45) |
+|---|---|---|
+| L2 | 3.474 | 3.639 |
+| L3 | 2.054 | 2.151 |
+| L4 | 0.102 | 0.190 |
+| η | 86.176 % | 85.83 % |
+
+> **`reference/formula-sheet.md` already has this as an explicit table** — "Flue gas
+> 0.24 → L1 · Superheated steam/water vapour 0.45 → L2, L3, L4" — and the log's
+> very first concept error, 31 August, was *"Cp flue gas vs vapour confused"*, which
+> is why that table exists.
+>
+> **So this is not a knowledge gap. It is a not-consulting gap**, and the exam is
+> **open book**. Flagged as an open-book discipline item, not a teaching item: the
+> page she needs will be in front of her.
+
+**Propagation matters here:** the boiler efficiency is part 2's denominator and
+therefore part 3's and 4's. Her 86.176% gives Unit 1 a gross of 2843 where BEE gets
+2853, and the part-3 coal difference moves 56.5 → 47.7 TPD, a 16% swing from one
+constant.
+
+## Two smaller items
+
+**A digit transposition in part 3:** `142.111` written as `141.211`. Her own Unit 2
+line (139.5) makes 141 implausible — a unit 2% worse must land near 142.
+
+**And the marks that were simply not attempted:** part 3 asks for the **difference**
+of coal **per day**. She produced two hourly rates and stopped. `(106.58 − 104.63)
+× 24 = 47 TPD` is two arithmetic steps after all the hard work. **New habit:
+reread the question's last noun before moving on** — *difference*, *per day*, *per
+tonne*, *annual*. Cheapest fix on the list.
+
+## Curriculum corrected
+
+**`curriculum/mon-cogeneration.md` 1.4 check block was wrong** and is rewritten
+against the rendered paper: boiler efficiency **85.88** (not 85.8), Unit 1 gross
+**2852.8** (not 2855), and the coal difference **56.5 TPD at 75% load** — the load
+the question body actually specifies. BEE prints both 75% and 85% and notes that
+marks were awarded for either. The block now also carries the three traps with the
+marks attached.

@@ -601,23 +601,70 @@ would give 33.7% — a number that belongs to the turbine cycle and to nothing e
 
 ## 1.4 · 21st N-4(C) — `papers/21-1.pdf` — 20 marks — 25 min ⚠️
 
-Two units in one station. Unit 1 is quoted by **turbine** heat rate, Unit 2 by
-**unit** heat rate. Which is more efficient, the excess coal the worse one burns at
-85% load, and the station's net heat rate.
+Two 200 MW units on the same coal. **(1)** Unit 1's boiler efficiency by the
+indirect method, from a full ultimate analysis — **10 marks**. **(2)** Which unit is
+more efficient — **2**. **(3)** The difference in coal per day at 75% load — **5**.
+**(4)** Station net heat rate at 10% APC — **3**.
+
+**Unit 1 is quoted by *turbine* heat rate (2450), Unit 2 by *unit* heat rate
+(2790).** Different rungs; they cannot be compared as printed.
 
 <details><summary>Check</summary>
 
-**The basis trap, full size.** 2450 against 2790 flatters Unit 1; they are on
-different rungs.
+```
+1. TA = 11.6(0.40) + 34.8(0.025 − 0.075/8) + 4.35(0.005)  = 5.21 kg/kg
+   EA = 3/(21 − 3)                                        = 16.67 %
+   AAS = 5.21 × 1.1667                                    = 6.07 kg/kg
+   m_dfg = AAS + 1 − (M + 9H₂ + ash)                      = 6.37 kg/kg
+
+   L1 dry flue gas   5.35 · L2 H₂ 3.64 · L3 fuel moisture 2.15
+   L4 air moisture   0.19 · L5 CO 0.12 · L6 ash 2.28 · L7 radiation 0.45
+   η_boiler = 100 − 14.18                                 = 85.88 %
+
+2. Unit 1 gross = 2450/0.8588                             = 2852.8
+   Unit 2 gross                                           = 2790
+   2852.8 > 2790  ⟹  UNIT 2 is more efficient   (lower heat rate wins)
+
+3. At 75 % load:  coal = HR × (200000 × 0.75 × 24)/4000
+   Unit 1 2567.5 TPD · Unit 2 2511.0 TPD  ⟹  difference 56.5 TPD
+   (at 85 % load: 2909.9 − 2845.8 = 64.1 TPD — BEE prints both and
+    awards marks for either; the question body says 75 %)
+
+4. Station gross = (2852.8 + 2790)/2                      = 2821.4
+   Station net   = 2821.4/(1 − 0.10)                      = 3135 kCal/kWh
+```
+
+### ⚠️ Three traps, and they are the three most-failed steps
+
+**1 · The Cp switches substance partway down the loss list.** The data table gives
+*"specific heat of flue gas = 0.24"* — **that is the gas.** L2, L3 and L4 are about
+**water vapour**, which is **0.45**.
 
 ```
-    Unit 1 gross = 2450/0.858 = 2855
-    Unit 2 gross              = 2790      ⟹ Unit 2 is the better unit
-    Excess coal at 85 % load  ≈ 65.9 TPD          (BEE prints 64.08)
-    Station gross ≈ 2821   →  station net ≈ 3136  (BEE prints 3135)
+    L1  dry flue gas          →  Cp = 0.24
+    L2  H₂ burnt to water     →  Cp = 0.45   ← vapour
+    L3  moisture in fuel      →  Cp = 0.45   ← vapour
+    L4  moisture in air       →  Cp = 0.45   ← vapour
 ```
-**The small gaps are rounding in BEE's intermediate steps.** State your rounding in
-one line and the marks are yours either way.
+**Ask what is being heated in each term.** Using 0.24 throughout costs ~0.35
+points of boiler efficiency and then propagates into parts 3 and 4.
+
+**2 · Lower heat rate is BETTER.** Climbing the rung correctly and then naming the
+wrong winner throws the marks away at the last line. **Convert to efficiency before
+concluding** — 30.15% against 30.82% — and the inversion becomes impossible.
+
+**3 · ⚠️ HEAT RATES DO NOT ADD.** The station figure is **not** `HR₁ + HR₂`.
+
+```
+    Station gross HR  =  total heat in / total kWh out
+                      =  (HR₁·kWh₁ + HR₂·kWh₂)/(kWh₁ + kWh₂)
+```
+Two equal units at equal load ⟹ **the plain average, 2821.4.** Adding them gives
+6258 and an implied plant efficiency of **13.7%**, which no thermal station has ever
+achieved. *(`reference/reciprocal-traps.md`)*
+
+**4 · Read the last noun of part 3.** It asks for the **difference** in coal
+**per day**. Two TPH figures are not the answer; `(106.58 − 104.63) × 24` is.
 </details>
 
 ## 1.5 · 24th N-4(A) — `papers/24-1.pdf` — 20 marks — 25 min
