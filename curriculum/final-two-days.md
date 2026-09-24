@@ -179,6 +179,13 @@ RATIOS      heat rate, kW/TR, SEC, steam rate — LOWER IS BETTER
             never conclude on them: convert to efficiency or COP first
             they do NOT add — re-divide on the totals
 
+PHYSICS     dU = 0 round a cycle  =>  Q_rejected = Q_cooling + what you paid
+            COP_Carnot = T_e/(T_h - T_e)   in KELVIN; pay for the LIFT
+            real machines 40-60 % of Carnot; above Carnot = you erred
+            VAR: COP = (1 - T_h/T_g) x T_e/(T_h - T_e)  — Carnot twice
+                 its COP is set by the TEMPERATURE of the driving heat
+            exergy = Q(1 - T0/T): jacket 90C -> 16 % · exhaust 450C -> 58 %
+
 CHILLER     Q_rejected = Q_cooling + the energy spent doing it
             use SHAFT kW/TR (motor losses heat the room, not the gas)
             TR from heat = heat × COP/3024   (COP > 1 → MULTIPLY)

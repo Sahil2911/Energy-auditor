@@ -2436,3 +2436,84 @@ a term because it did not change is the commonest way to lose a comparison.
 
 **Four checks on the card**, ending with the one-line version: *follow the energy
 until it is all accounted for, then price each stream.*
+
+---
+
+### Lesson rejected and rewritten — the physics, not the formulas — 25 Sep
+
+> **Her verdict on the first version: "Very poor lesson. No physics to understand
+> the concepts. Teach in an easy to follow but technically strong manner."**
+
+**She is right, and the criticism is exact.** The first version gave four formulas
+under the slogan *"follow the energy"*. A slogan is not a derivation. She is an
+electrical engineer sitting a thermodynamics paper; **she asked for the physics from
+the start of this programme, and I gave her a mnemonic.**
+
+`curriculum/fri-skipped-concepts.md` rewritten, 487 lines, everything derived:
+
+**§1 `ΔU = 0` round a cyclic machine.** `Q_rejected = Q_cooling + what you paid` is
+not a rule — it is the first law for a box drawn round the plant. **Consequence she
+can use: the condenser is always the largest number in the question.**
+
+**§2 Entropy sets the price.** `Q_e/T_e = Q_c/T_h` with `Q_c = Q_e + P` gives
+`P = Q_e(T_h − T_e)/T_e`, hence `COP_Carnot = T_e/(T_h − T_e)`. **You pay for the
+lift.** Checked against the 18th's two machines: ice plant 46% of Carnot,
+pre-cooler 55%. **New check she did not have: an implied COP above its Carnot bound
+is an error.**
+
+**§3–4 Why a VAR's COP is ~1, derived rather than asserted.** Treat it as a heat
+engine driving a heat pump:
+
+```
+    COP_VAR = (1 − T_h/T_g) × T_e/(T_h − T_e)      ← the Carnot penalty TWICE
+```
+
+| Driving heat | Ideal | Real |
+|---|---|---|
+| jacket water 90 °C | 1.17 | 0.6–0.7 |
+| hot water 120 °C | 1.73 | ~0.7 single-effect |
+| steam 8.5 bar(g) ~175 °C | 2.56 | ~1.2 double-effect |
+
+> **The point that makes the topic click: a VAR's COP is set by the TEMPERATURE of
+> the heat you feed it, not by the machine.** That is why double-effect reaches 1.2
+> and jacket-water machines do not. It also validates the 21st's 1.2 and flags the
+> 20th's 1.65 as generous.
+
+**And the rejection reframed physically:** *a VCR is paid a small amount of
+high-quality work; a VAR is paid a large amount of low-quality heat, and all of it
+leaves through the same tower.* 16,49,455 against 60,48,000 kCal/h of payment for
+the identical 2400 TR.
+
+**The shaft-vs-motor point is now a control-volume argument**, not a convention:
+draw the boundary round the refrigerant and the motor's I²R falls outside it.
+
+**§5 Exergy — the section the first version most needed.** The engine's jacket and
+exhaust carry almost equal kilocalories and differ **5× in worth**:
+
+| Stream | kCal/h | `1 − T₀/T` | Work-equivalent |
+|---|---|---|---|
+| shaft | 5,37,501 | 100 % | 5,37,501 |
+| jacket 90 °C | 5,56,697 | **16.5 %** | 91,978 |
+| exhaust 450 °C | 8,25,448 | **58.1 %** | 4,79,414 |
+
+**That is why each stream gets the duty it is fit for** — jacket to hot water or a
+single-effect VAM, exhaust to steam or double-effect. She can now reconstruct the
+20th N-4(D) rather than recall it.
+
+**§6 Why cogeneration saves fuel, as a primary-energy comparison** — the separated
+system burns **22% more** for the identical three services (24,55,722 against
+19,19,646 kCal/h), because it also pays the power station's condenser loss. **This
+is the physical reason the ₹40.6 lakh appears**, and it replaces the previous
+version's hand-waving about services coming "free".
+
+**§7 The ice plant done properly:** latent heat is 70% of the duty; `Cp_ice = 0.5`;
+and pre-cooling wins because **the same heat crosses a smaller lift** — Carnot 5.02
+against 7.94 — which is §2 applied, not a separate trick.
+
+**§8 COP, kW/TR and EER as one number in three hats**, with `3.516 = 3024/860`
+derived, and the note that **BEE's "EER" in the 18th is numerically the COP**.
+
+**Tutor lesson recorded, and it is not a small one:** *when she asks for concepts,
+she means derivations from first principles — the same standard set on day one
+("never open a lesson with an unexplained equation"). A restructuring of formulas is
+not a concept lesson.* **The first version broke a rule this programme was built on.**
