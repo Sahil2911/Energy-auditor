@@ -2382,3 +2382,57 @@ the most marks.**
     3.413 Btu/Wh =  unrelated British-unit conversion
 ```
 **Derive it, don't remember it.** On the card.
+
+---
+
+### The skipped back-halves taught — one idea, four applications — 25 Sep
+
+**She asked for the concepts behind the parts she skipped or got wrong.**
+`curriculum/fri-skipped-concepts.md` issued.
+
+**All four back-halves are the same idea:** *whatever goes into a machine must come
+out of it, and the "waste" streams are the answer.* **Opening parts ask what the
+machine made; back halves ask where the rest of the energy went.** Framing it as one
+skill rather than four separate questions is the point of the file.
+
+**1 · Heat rejection** — `Q_rejected = Q_cooling + what you spent`, hence
+`TR × 3024 × (1 + 1/COP)`. 21st N-2 (d) worked in full: 89,07,055 against
+1,33,05,600, additional 43,98,545, CW 549.82 m³/h. **×1.227 at COP 4.4 and ×1.833 at
+COP 1.2.**
+
+> **A nuance found while writing, and BEE tests it:** the 18th N-2 uses **1.52
+> kW/TR**, the *shaft* figure, not the 1.728 the motor draws. **Motor losses heat the
+> room, not the refrigerant** — the condenser only sees what crossed into the gas.
+> Now in the file with the arithmetic.
+
+**Also 18th N-2 (f):** both terms of the condenser duty scale with TR, so the %
+reduction is just `1 − 21.83/25.92 = 15.8%` — **the kCal figures were never needed.**
+General rule added: when a question asks for a *% change* and every term is
+proportional to one quantity, take the ratio and stop.
+
+**2 · The engine heat split** — 20th N-4(D). The percentages must total 100 and
+**the stream the paper does not name is the one you subtract** (28 + 29 given,
+exhaust 43 inferred). Free check: `28% of 19,19,646 = 5,37,501` against
+`625 × 860 = 5,37,500`.
+
+**3 · Heat into output — one shape, two directions.** `output = heat ÷ what one unit
+of output costs`. TR from heat = `heat × COP/3024`; heat for a given TR =
+`TR × 3024/COP`. **She has now met both directions in two days** — the 21st divided,
+the 20th multiplies — so the file names the ambiguity explicitly rather than giving
+one formula.
+
+**4 · The economics frame — list the SERVICES first.** 20th N-4(D) part 4 in full:
+power ₹5781 + cooling ₹3418 + hot water ₹941 = ₹10,140/hr against the trigeneration
+plant's single gas bill of ₹9598 → **₹40.6 lakh/yr**.
+
+> **The structural point:** priced on electricity alone the gas engine looks like a
+> disaster — ₹9598 to replace ₹5781. **It pays only because the chilling and hot
+> water come free.** Miss one service and the answer inverts. Same frame from the
+> other side in 22nd N-2(b): count **every** added kW — chiller *and* fan *and*
+> cooling tower, 570.6 total — not just the obvious one.
+
+**And 18th N-2 (e):** the unchanged auxiliaries still belong in the total. Dropping
+a term because it did not change is the commonest way to lose a comparison.
+
+**Four checks on the card**, ending with the one-line version: *follow the energy
+until it is all accounted for, then price each stream.*

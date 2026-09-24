@@ -180,6 +180,9 @@ RATIOS      heat rate, kW/TR, SEC, steam rate — LOWER IS BETTER
             they do NOT add — re-divide on the totals
 
 CHILLER     Q_rejected = Q_cooling + the energy spent doing it
+            use SHAFT kW/TR (motor losses heat the room, not the gas)
+            TR from heat = heat × COP/3024   (COP > 1 → MULTIPLY)
+            heat for a TR = TR × 3024/COP    (opposite unknown)
             condenser duty = TR × 3024 × (1 + 1/COP)
             VCR COP 4.4 → ×1.227     VAM COP 1.2 → ×1.833
             a VAM rejects ~50 % MORE heat for the same cooling
@@ -195,6 +198,12 @@ BANDS       turbine HR 2000–2600 · gross 2300–3000 · net 2600–3300
             turbine CYCLE η 45–50 % · PLANT η 28–36 %
             boiler η 80–90 % · dryness 0.86–0.93
             condenser load > kW × 860, roughly twice it
+
+SERVICES    list what the new plant DELIVERS before costing anything
+            price every one in the old system, then compare
+            count EVERY added kW, not just the obvious one
+            an unchanged term still belongs in the total
+            fuel-heat percentages must total 100 — subtract the unnamed one
 
 HABITS      1. alarm fires → STOP → back one line → rewrite
             2. every number must have a parent in the data or a line above
