@@ -71,44 +71,85 @@ been worth marks in two sittings.**
 
 ---
 
-# FRIDAY 25 — Boilers, rotating equipment, then stop · ~3 hours + the checklist
+# FRIDAY 25 — the last day · revised after Thursday
 
-**Morning — boilers, 90 minutes.** You did a full indirect method on Monday and
-scored 8.5/10; the method is sound and the only error was a constant.
+> **Thursday ran 23:13 → 23:58.** Nine of ten sub-parts correct, but the openings
+> of four questions instead of the whole of one — and **every one stopped exactly
+> where the marks start.** See `assessments/thu-hvac-review.md`.
+>
+> **So Friday changes shape.** Fewer questions, finished. **Finish what you start**
+> is now the rule, above coverage.
 
-- **Rewrite the eight losses from memory**, once, with the Cp beside each:
-  ```
-     L1 dry flue gas   Cp 0.24      L5 CO           5654
-     L2 H₂             Cp 0.45      L6 fly ash      GCV of ash
-     L3 fuel moisture  Cp 0.45      L7 bottom ash   GCV of ash
-     L4 air moisture   Cp 0.45      L8 radiation    given
-  ```
-  **`0.24 gas · 0.45 vapour`. Wherever 584 appears, the Cp beside it is 0.45.**
-- **One question: 20th N-2**, pressurised hot water circulation — the same shape as
-  the 19th N-3 you scored 20/20 on, and never yet worked cold.
+## 1 · FIRST — 21st N-2 part (d) · 25 minutes · do this before anything
 
-**Midday — rotating equipment, 60 minutes. Read, do not work.**
+**The part you stopped one line short of, and the reason that question was ranked
+first.** Chiller heat rejection has cost you marks twice.
 
-- **The pitot chain** (`curriculum/day-17.md`, Rung 192 and Day 13 Rung 137B):
-  ```
-     ρ = 1.293 × (P_bar ± P_static)/10334 × 273/(273 + t)      static SIGNED
-     v = C√(2gh/ρ) → Q = vA → fan η = Q Δp/(102 × motor kW)
-  ```
-  **Negative static in three sittings** — the 21st at −850, the 22nd at −440 and
-  −28, the 16th's N-4(D). **Suction ducts carry a minus sign.**
-- **Skim the 21st N-4(A)** (cement raw mill fan) and the **22nd N-4(C)** keys. Read
-  the chains; do not compute.
+```
+    Q_rejected = Q_cooling + the energy you spent doing it
 
-## Afternoon — the checklist outranks the questions
+    condenser duty = TR × 3024 × (1 + 1/COP)
 
-1. **Tab the four guidebooks.** Steam tables · the eight boiler losses · psychrometric
-   chart · the constants page. **You may only carry the supplied 4th edition.**
-2. **Write the exam card from memory, three times.** Not reading it — writing it.
-3. **Read `reference/formula-sheet.md` once**, end to end. It already contains every
-   constant you have got wrong this week.
-4. **Pack.** Admit card, ID, calculator *and a spare*, pens, the guidebooks.
-5. **Stop at 20:00.** No new material after that. Nothing learnt on the last night
-   has ever been worth the sleep it cost.
+    centrifugal COP 4.4 → × 1.227      absorption COP 1.2 → × 1.833
+    2400 TR:  89,07,055  vs  1,33,05,600  ⟹ additional 43,98,545 kCal/h
+    CW = 43,98,545/(1000 × 8) = 549.82 m³/hr
+```
+
+**A VAM rejects ~50% more heat for the same cooling.** Write that line on the card.
+
+## 2 · Finish ONE HVAC question end to end · 25 minutes
+
+**20th N-4(D)**, the hospital trigeneration — you did part 1 and have three parts
+left, worth 18 of 20 marks. **It is also the whole of Group 4 in one question:**
+`HR = 860/η`, then the engine's heat split three ways.
+
+```
+    heat rate = 860/0.28 = 3071   gas = 625 × 3071/9000 = 213.3 Sm³/h  ✓ done
+    jacket heat = 29 % of engine heat input  →  TR = jacket × COP 1.65/3024
+    hot water   = 20 % of exhaust heat/(60 − 30)
+    savings     = grid cost − gas cost, 7500 h/yr
+```
+
+**Tabulate the engine's heat balance before answering any part** — shaft, jacket,
+exhaust, each with its percentage. **Then answer all four parts.**
+
+## 3 · Boilers from memory · 45 minutes, writing not reading
+
+**Rewrite the eight losses from memory, once, with the Cp beside each:**
+```
+   L1 dry flue gas   Cp 0.24      L5 CO           5654
+   L2 H₂             Cp 0.45      L6 fly ash      GCV of ash
+   L3 fuel moisture  Cp 0.45      L7 bottom ash   GCV of ash
+   L4 air moisture   Cp 0.45      L8 radiation    given
+
+   TA = 11.6C + 34.8(H₂ − O₂/8) + 4.35S      EA = O₂/(21 − O₂)
+   AAS = TA(1 + EA)      m_dfg = AAS + 1 − (M + 9H₂ + ash)
+```
+**`0.24 gas · 0.45 vapour`. Wherever 584 appears, the Cp beside it is 0.45.** You
+scored 8.5/10 on this in 1.4 and the only error was that constant.
+
+## 4 · Read-only, 30 minutes — the pitot chain
+
+```
+   ρ = 1.293 × (P_bar ± P_static)/10334 × 273/(273 + t)      static SIGNED
+   v = C√(2gh/ρ)   →   Q = vA   →   fan η = Q Δp/(102 × motor kW)
+```
+**Negative static in three sittings** — 21st −850, 22nd −440 and −28, 16th N-4(D).
+**Suction ducts carry a minus sign.** Skim the 21st N-4(A) key. Do not compute.
+
+## 5 · The checklist — this outranks everything above
+
+1. **Tab the four guidebooks** — steam tables · the eight losses · psychrometric
+   chart · the constants page. **Supplied 4th edition only.**
+2. **Write the exam card from memory, three times.** Writing, not reading.
+3. **Pack:** admit card, ID, calculator **and a spare**, pens, guidebooks.
+4. **Stop at 20:00.** Nothing learnt on the last night has ever been worth the sleep
+   it cost — and Thursday is the proof: the work was fine, the hour was not.
+
+> ### If the day compresses again, do these three and nothing else
+> **21st N-2 (d) · the eight losses from memory · the exam card three times.**
+> Forty-five minutes, and it covers the two concepts that have cost you the most
+> marks plus everything you need to carry in.
 
 ---
 
@@ -138,8 +179,11 @@ RATIOS      heat rate, kW/TR, SEC, steam rate — LOWER IS BETTER
             never conclude on them: convert to efficiency or COP first
             they do NOT add — re-divide on the totals
 
-CHILLER     Q_rejected = TR × 3024 × (1 + 1/COP)
+CHILLER     Q_rejected = Q_cooling + the energy spent doing it
+            condenser duty = TR × 3024 × (1 + 1/COP)
             VCR COP 4.4 → ×1.227     VAM COP 1.2 → ×1.833
+            a VAM rejects ~50 % MORE heat for the same cooling
+            3.516 kW/TR = 3024/860   (NOT 3.413, which is Btu/Wh)
 
 BOILER      0.24 dry flue gas (L1) · 0.45 water vapour (L2, L3, L4)
             m_dfg = AAS + 1 − (M + 9H₂ + ash)
@@ -156,7 +200,11 @@ HABITS      1. alarm fires → STOP → back one line → rewrite
             2. every number must have a parent in the data or a line above
             3. read the number back off the line above when you carry it down
             4. reread the question's LAST NOUN before you move on
-               (difference · per day · annual · per tonne)
+               (difference · per day · annual · per tonne · 'output')
+               rated capacity is NOT output — the 18th's 25 TPD plant
+               delivers 15 T/day and the question says per tonne 'output'
+            7. FINISH the question you started. The back half holds the
+               marks; the openings are the parts you can already do
             5. one answer on the page — strike what you rejected
             6. 25 minutes per 20-marker, hard stop
 ```

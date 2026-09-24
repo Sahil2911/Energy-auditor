@@ -4,7 +4,7 @@ Updated daily. The Reviewer reads this before each assessment.
 
 ## Progress tracker
 
-*Last updated: 24 September 2026 (**Monday 80/100 across five 20-markers**; last three 94%. Two days left — plan re-cut). **Update the bars whenever
+*Last updated: 25 September 2026 (**Thursday 9/10 sub-parts correct**; the failure was selection, not ability. Exam tomorrow). **Update the bars whenever
 the chapter table below changes** — they went stale between Day 3 and Day 10
 because only the table was being maintained.*
 
@@ -2295,3 +2295,90 @@ the exam card three times, pack, **stop at 20:00**.
 
 **The full exam card is now written out in that file** — ladder, currency, reheat,
 steam, ratios, chiller, boiler, pitot, the sanity bands, and the six habits.
+
+---
+
+### Thursday's HVAC session — **9 of 10 sub-parts correct in 45 minutes** — 25 Sep
+
+**Her verdict: "Thursday proved to be very poor."** The scheduling was poor. **The
+work was not**, and the record should say so.
+
+**23:13 → 23:58.** Four questions opened:
+
+| Question | Attempted | Correct |
+|---|---|---|
+| 21st N-2 — 2400 TR centrifugal vs VAM | a, b, c | **3/3** |
+| 22nd N-2(b) — air-fin cooler + chiller | i, ii | **2/2** |
+| 20th N-4(D) — hospital trigeneration | 1 | **1/1** |
+| 18th N-2 — ice plant | a, b, c, d | **3/4** |
+
+76.117 kW · 2040.394 kW · 2.626 TPH · 200 TPH · 132.275 TR · 213.294 Sm³/h ·
+84.333 kWh/T · 18,81,000 kCal · 25.918 TR — **all exact.** The tenth is 3% off on a
+constant. **Review: `assessments/thu-hvac-review.md`.**
+
+**A false verdict is itself a risk.** Going into Saturday believing Thursday was a
+collapse would make her slow and over-cautious on questions she can demonstrably
+do. Corrected explicitly and with the arithmetic shown.
+
+## ⭐ The best single moment of the week — a reading trap, caught
+
+**18th N-2(a):** she wrote `37950/(25 × 30) = 50.6`, struck it, wrote **84.333**.
+
+> *"...in a **25 TPD** ice plant... The daily **output** is **15 Tonnes**..."*
+> *"a) Energy consumption per tonne of ice **'output'**"* — BEE's own quote marks.
+
+**25 is the rated capacity; 15 is the output**, and the paragraph explains the gap
+(ice lost pulling blocks from the cans). **Every alarm she has caught so far was
+arithmetic** — a number too large, a fraction above 1. **This one had no impossible
+number to warn her.** She caught it on the reading. That is the harder skill.
+
+Added to the exam card: *rated capacity is not output*.
+
+## ⚠️ The real failure: four openings instead of one finish
+
+**Every one of the four stopped exactly where the marks start.**
+
+| | Stopped before | Worth |
+|---|---|---|
+| 21st N-2 | **(d) condenser duty + cooling water** | ~8 of 20 |
+| 22nd N-2(b) | (iii) onward, the economics | ~12 of 20 |
+| 20th N-4(D) | 2, 3, 4 | **18 of 20** |
+| 18th N-2 | (e), (f) | ~7 of 20 |
+
+**Opening parts are the cheap ones, and the ones she has proved for five days that
+she can do.** The marks and the learning are both in the back half.
+
+> **And 21st N-2 (d) is the exact part the question was ranked first for.** Chiller
+> heat rejection has cost her marks twice — Mock 1's N-4(A) and Day 15. BEE prints
+> the general form in that very key. **She did a, b, c and stopped one line short.**
+
+**New rule, now on the card as habit 7:** *finish the question you started.*
+
+## Friday rewritten around it
+
+`curriculum/final-two-days.md` Friday replaced: **fewer questions, finished.**
+
+1. **21st N-2 (d) first, 25 min** — `condenser duty = TR × 3024 × (1 + 1/COP)`;
+   ×1.227 at COP 4.4 against ×1.833 at COP 1.2; **a VAM rejects ~50% more**.
+2. **20th N-4(D) end to end, 25 min** — 18 marks outstanding, and it carries the
+   whole of Group 4 (`HR = 860/η`, then the engine's three-way heat split).
+3. **The eight boiler losses from memory, writing not reading**, with the Cp beside
+   each.
+4. **Pitot chain, read-only.**
+5. **The checklist, which outranks all of it** — tab the guidebooks, exam card three
+   times from memory, pack, **stop at 20:00**.
+
+**And a floor, in case Friday compresses too:** *21st N-2 (d) · the eight losses ·
+the card three times.* **Forty-five minutes covering the two concepts that have cost
+the most marks.**
+
+## One constant corrected
+
+**18th N-2(d):** `EER = 2.244` against BEE's **2.313**. Method right, including the
+88% motor efficiency that most candidates drop. The slip is **3.413 for 3.516**.
+
+```
+    3.516 kW/TR  =  3024/860        ← this one
+    3.413 Btu/Wh =  unrelated British-unit conversion
+```
+**Derive it, don't remember it.** On the card.
