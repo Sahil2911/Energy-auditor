@@ -4,7 +4,7 @@ Updated daily. The Reviewer reads this before each assessment.
 
 ## Progress tracker
 
-*Last updated: 22 September 2026 (**Monday 1.4: 10.5/20** — alarm now fires on percentages, not yet on heat rates). **Update the bars whenever
+*Last updated: 24 September 2026 (**Monday 80/100 across five 20-markers**; last three 94%. Two days left — plan re-cut). **Update the bars whenever
 the chapter table below changes** — they went stale between Day 3 and Day 10
 because only the table was being maintained.*
 
@@ -2184,3 +2184,114 @@ against the rendered paper: boiler efficiency **85.88** (not 85.8), Unit 1 gross
 the question body actually specifies. BEE prints both 75% and 85% and notes that
 marks were awarded for either. The block now also carries the three traps with the
 marks attached.
+
+---
+
+### Monday 1.5, 1.6 and 2.1 — **56.5/60** — 24 Sep
+
+| | Question | Time | Score |
+|---|---|---|---|
+| 1.5 | 24th N-4(A) — 500 MW back pressure + 1000 MW station | 12:38 → 12:55 · **17 min** | **20/20** |
+| 1.6 | 17th N-4(A) — 110 MW design vs actual | → 13:43 · ~48 min | **19.5/20** |
+| 2.1 | 16th N-4(A) — 150 bar reheat cycle | 19:34 → 20:02 · **28 min** | **17/20** |
+
+**Review:** `assessments/mon-15-16-21-review.md`.
+
+## Monday's trajectory — 80/100 across five 20-markers
+
+```
+    1.3   13.0 / 20      1.4   10.5 / 20      ← before the two reviews
+    1.5   20.0 / 20      1.6   19.5 / 20      1.6   2.1  17.0 / 20
+```
+
+**First two: 23.5/40 = 59%. Last three: 56.5/60 = 94%.** Every named fix from the
+1.3 and 1.4 reviews appears in the work.
+
+## ⭐ She beat BEE's answer key
+
+**2.1 part (a): she wrote 89.889 MW. BEE prints 71.5 MW** (from a turbine output of
+75.73). The correct figure is `228000 × 1494/3600 × 0.95 = 89.889` — **exact to
+three decimals**, derived independently, without the 18th sitting's correct key in
+front of her.
+
+**This is the single most encouraging result of the programme.** It also teaches
+the thing worth carrying in: *a model answer is not always right, and a consistent
+chain of your own is worth more than a remembered number.*
+
+## The alarm-and-act habit is now running by itself — four times in one sitting
+
+| | What fired | What she did |
+|---|---|---|
+| 1.5 part 4 | wrote `coal × GCV/(500 × 0.74)` — fuel over power, inverted | struck it, rewrote `kWh × LF × improvement/GCV` ✓ |
+| 2.1 part (d) | `x = 1.071` | wrote **"not possible"**, inverted the fraction → 93.36% ✓ |
+| *(1.4, prev.)* | L2 = 14.789 · L3 = 14.711 | wrote **"impossible"** twice, fixed the bracket ✓ |
+
+**Two reviews asked for this. It is now unprompted and automatic.**
+
+## What 1.5 shows that no alarm could have caught
+
+**She excluded the HSD.** 150 MT of diesel for earthmoving equipment is not heat
+into the plant, and putting it in the gross heat rate numerator is invisible — no
+sanity check would catch it. **That one had to be known, and it was.** She also left
+the two unused distractors (turbine 93%, alternator 96%) alone.
+
+**And her vacuum figures are better than BEE's** — 653.6 and 676.4 against BEE's 650
+and 674, which come from converting through 1.0332 and then using 760 mmHg per
+kg/cm². `1 ata = 760 mmHg` is the clean reading.
+
+## The one new concept error — 2.1 part (b)
+
+```
+    She wrote:  228[(3450 − 230) + 0.9(3560 − 2300)]/89.889/4.18 = 2642.046
+    Correct:    228[(3450 − 990.3) + (3560 − 3090)]/89.889       = 7431 kJ/kWh
+```
+
+**Two faults, one conceptual and one clerical:**
+
+**1 · She put a WORK term inside a HEAT rate.** `0.9(3560 − 2300) = 1134` is the LP
+cylinder's output; the reheater's *duty* is `3560 − 3090 = 470`. **The reheat stream
+appears in both calculations and flips ends** — work subtracts the LP exhaust, heat
+subtracts the cold reheat. Now `concept-distinctions.md` entry 24, with the check:
+**heat in must exceed work out**, and any bracket bigger than
+`(h_MS − h_fw) + (h_HRH − h_CRH)` is wrong by construction.
+
+**2 · `230` as the feedwater enthalpy.** 990.3 is the only feedwater number on the
+page; 230 appears nowhere in the data. *(990.3 kJ/kg is 236.6 kCal/kg, and she did
+divide by 4.18 at the end, so a half-finished conversion is the likely cause.)*
+**Rule added: every number must have a parent — the data table, or a line above.**
+
+**Part (c) inherits**: `860/2642 = 32.551%` against a true 48.44%. **The band would
+have caught it** — a turbine *cycle* runs 45–50%, a plant 28–36%, and **this
+question contains no fuel at all**, so nothing in it can be a plant efficiency.
+
+## A repeat clerical pattern worth naming
+
+**1.6's last line gives two answers**: `1.393 × 720 = 1002.96` and, elsewhere,
+`988.56` — which is `1.373 × 720`. **The 9 and 7 swapped.** That is the second digit
+transposition in three questions, after 1.4's `142.111 → 141.211`. **Both in the
+second digit.** Mechanical fix prescribed: read the number back off the line above
+before multiplying. And: **leave one answer on the page.**
+
+## ⚠️ Schedule — the plan no longer fits and has been re-cut
+
+**It is Thursday. She is five questions into Monday's list.** Cogeneration and power
+plant are thoroughly covered; **HVAC, pumps, fans, compressed air and boilers have
+had no time in the final week at all.** About seven working hours remain.
+
+**`curriculum/final-two-days.md` issued**, and it drops things on purpose:
+
+| Dropped | Because |
+|---|---|
+| Group 2.2, 2.3 | 2.1 proved the method. Read the keys |
+| Group 3 (EUF, H:P, steam rate) | Concepts, not practice — Part A plus the 19th N-1 key |
+| Group 4 (GT / trigeneration) | Five of six carry a chiller — they come free with Thursday |
+| A fourth full mock | Three sat. Untouched topics are worth more |
+
+**Thursday → HVAC and chillers**, four ranked questions, led by the 21st N-2 because
+**chiller heat rejection has cost her marks twice** and BEE prints the general form
+there. **Friday → boilers (the eight losses from memory, with the Cp beside each) and
+a read-only pass on the pitot chain**, then the checklist: tab the guidebooks, write
+the exam card three times, pack, **stop at 20:00**.
+
+**The full exam card is now written out in that file** — ladder, currency, reheat,
+steam, ratios, chiller, boiler, pitot, the sanity bands, and the six habits.

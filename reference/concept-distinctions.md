@@ -758,3 +758,51 @@ the steam.** *(19th N-1.)*
 **The failure mode is silent and large:** multiplying an already-thermal numerator
 by 860 gives an answer 860× too big, which looks like a different kind of mistake
 entirely. `2133 → 18,34,294`.
+
+---
+
+## 24. Heat IN is not work OUT — the two brackets of a reheat turbine
+
+**The same two steam streams answer both questions, and the reheat term flips.**
+
+```
+               ┌────────┐         ┌──────────┐         ┌──────────┐
+  feedwater ──►│ BOILER ├──h_MS──►│    HP    ├──h_CRH─►│ REHEATER │
+     h_fw      └────────┘         └──────────┘         └─────┬────┘
+                                                             │ h_HRH
+                                         ┌──────────┐        │
+                     h_exh ◄─────────────┤    LP    │◄───────┘
+                                         └──────────┘
+
+  WORK OUT  (power at the shaft)       HEAT IN  (the heat rate numerator)
+    HP:  h_MS  − h_CRH                   boiler:   h_MS  − h_fw
+    LP:  h_HRH − h_exh                   reheater: h_HRH − h_CRH
+         ▲ subtract what comes OUT                 ▲ subtract what went IN
+```
+
+**The reheat stream appears in both**, but it ends at the **LP exhaust** for work and
+starts at the **cold reheat** for heat. Using the work term inside the heat rate
+double-counts the reheater and inflates the answer.
+
+> ### The check
+>
+> **Heat in must exceed work out, by the condenser loss.** On the 16th sitting's
+> unit:
+> ```
+>     heat in  = 2459.7 + 470  = 2929.7 kJ/kg
+>     work out =   360  + 1134 = 1494   kJ/kg
+>     ratio                    = 51 %      ← the cycle efficiency, near enough
+> ```
+> **Any heat-rate bracket larger than `(h_MS − h_fw) + (h_HRH − h_CRH)` is wrong by
+> construction.**
+
+**And the efficiency bands that separate the two rungs:**
+
+```
+    turbine CYCLE efficiency   45 – 50 %    ← no boiler inside the box
+    PLANT / overall            28 – 36 %    ← boiler inside the box
+```
+
+**If a question contains no fuel at all, nothing you compute can be a plant
+efficiency.** A 32% answer to "turbine cycle efficiency" is a rung error, not a bad
+machine.
